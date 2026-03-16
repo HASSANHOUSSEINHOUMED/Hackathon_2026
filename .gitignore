@@ -1,0 +1,29 @@
+# Secrets — ne jamais committer sur GitHub
+.env
+
+# Python — fichiers générés automatiquement par Python
+__pycache__/        # dossier cache Python
+*.py[cod]           # fichiers compilés Python (.pyc, .pyo, .pyd)
+.venv/              # environnement virtuel Python
+venv/               # environnement virtuel Python (autre nom)
+
+# Données générées — trop lourdes pour GitHub
+dataset/raw/*       # documents bruts générés par Tahina
+dataset/noisy/*     # images dégradées générées par Tahina
+dataset/labels/*    # fichiers d'annotations générés par Tahina
+
+# Docker
+*.tar               # images Docker exportées (très lourdes)
+
+# IDE — fichiers de configuration personnels
+.vscode/            # configuration VS Code
+.idea/              # configuration IntelliJ
+.DS_Store           # fichier système Mac
+
+# Node.js — dépendances frontend (Yanis/Khalil)
+node_modules/       # dépendances installées par npm
+npm-debug.log*      # logs d'erreurs npm
+
+# React — fichiers de build générés automatiquement
+frontend/build/     # version compilée du frontend
+frontend/dist/      # version distribuable du frontend

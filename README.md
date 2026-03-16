@@ -13,6 +13,7 @@ de documents administratifs (factures, Kbis, URSSAF, RIB…)
 avec auto-remplissage de deux applications métiers.
 
 ---
+
 ## 👥 Équipe & Rôles
 
 | # | Rôle | Membre | Responsabilités | Dossier | Port(s) |
@@ -23,6 +24,7 @@ avec auto-remplissage de deux applications métiers.
 | 4 | Chef BDD / Data Lake | Hassan | MinIO 3 zones · MongoDB · API Flask · scripts init & monitoring | `storage/` | `:9000` `:9001` `:27017` |
 | 5 | Anomaly Detector | Wael | Détection incohérences · règles métier · SIRET · TVA · dates expirées | `services/validation/` | `:5002` |
 | 6 | Pipeline Engineer | Korniti | Docker Compose global · DAG Airflow · orchestration · tests E2E | `dags/` | `:8080` |
+
 ---
 
 ## 🏗️ Architecture
@@ -96,6 +98,27 @@ docker compose up --build
 | Validation | http://localhost:5002 |
 | MinIO console | http://localhost:9001 |
 | Airflow | http://localhost:8080 |
+
+---
+
+## 🧪 Tester uniquement le Data Lake
+
+Si tu veux tester uniquement la partie stockage sans attendre les autres services :
+```bash
+docker compose up minio mongo storage-init
+```
+
+Puis ouvre la console MinIO : http://localhost:9001
+
+| Champ | Valeur |
+|-------|--------|
+| Login | voir `.env` → `MINIO_ROOT_USER` |
+| Password | voir `.env` → `MINIO_ROOT_PASSWORD` |
+
+Tu devrais voir les 3 zones créées :
+- `raw-zone`
+- `clean-zone`
+- `curated-zone`
 
 ---
 
