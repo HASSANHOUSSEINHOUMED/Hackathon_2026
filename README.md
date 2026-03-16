@@ -65,7 +65,7 @@ CRM  ·  Outil conformité
 ## 🚀 Lancer le projet
 ```bash
 # 1. Cloner
-git clone https://github.com/TON_PSEUDO/hackathon-2026.git
+git clone https://github.com/HASSANHOUSSEINHOUMED/Hackathon_2026.git
 cd hackathon-2026
 
 # 2. Variables d'environnement
