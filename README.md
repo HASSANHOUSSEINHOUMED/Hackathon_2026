@@ -13,18 +13,16 @@ de documents administratifs (factures, Kbis, URSSAF, RIB…)
 avec auto-remplissage de deux applications métiers.
 
 ---
-
 ## 👥 Équipe & Rôles
 
-| # | Rôle | Dossier | Port(s) |
-|---|------|---------|---------|
-| 1 | Scénario Maker | `dataset/` | — |
-| 2 | Responsable OCR | `services/ocr/` | `:5001` |
-| 3 | Front-end & API | `frontend/` `backend/` | `:3000` `:4000` |
-| 4 | Chef BDD / Data Lake | `storage/` | `:9000` `:9001` `:27017` |
-| 5 | Anomaly Detector | `services/validation/` | `:5002` |
-| 6 | Pipeline Engineer | `dags/` | `:8080` |
-
+| # | Rôle | Membre | Responsabilités | Dossier | Port(s) |
+|---|------|--------|----------------|---------|---------|
+| 1 | Scénario Maker | Tahina | Génération dataset · 6 types de docs · 5 scénarios · simulation scans bruités | `dataset/` | — |
+| 2 | Responsable OCR | Abdelmalek | EasyOCR + Tesseract · prétraitement image · extraction entités · classification | `services/ocr/` | `:5001` |
+| 3 | Front-end & API | Yanis / Khalil | Interface upload · CRM auto-rempli · dashboard conformité · API Node.js | `frontend/` `backend/` | `:3000` `:4000` |
+| 4 | Chef BDD / Data Lake | Hassan | MinIO 3 zones · MongoDB · API Flask · scripts init & monitoring | `storage/` | `:9000` `:9001` `:27017` |
+| 5 | Anomaly Detector | Wael | Détection incohérences · règles métier · SIRET · TVA · dates expirées | `services/validation/` | `:5002` |
+| 6 | Pipeline Engineer | Korniti | Docker Compose global · DAG Airflow · orchestration · tests E2E | `dags/` | `:8080` |
 ---
 
 ## 🏗️ Architecture
@@ -51,6 +49,19 @@ CRM  ·  Outil conformité
 
 ---
 
+## ✅ Statut des parties
+
+| # | Rôle | Statut |
+|---|------|--------|
+| 1 | Scénario Maker | ⏳ En cours |
+| 2 | Responsable OCR | ⏳ En cours |
+| 3 | Front-end & API | ⏳ En cours |
+| 4 | Chef BDD / Data Lake | ✅ Terminé — 3 zones opérationnelles |
+| 5 | Anomaly Detector | ⏳ En cours |
+| 6 | Pipeline Engineer | ⏳ En cours |
+
+---
+
 ## 🛠️ Stack technique
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -66,7 +77,7 @@ CRM  ·  Outil conformité
 ```bash
 # 1. Cloner
 git clone https://github.com/HASSANHOUSSEINHOUMED/Hackathon_2026.git
-cd hackathon-2026
+cd Hackathon_2026
 
 # 2. Variables d'environnement
 cp .env.example .env
@@ -123,6 +134,13 @@ hackathon-2026/
 ├── backend/               ← Rôle 3
 ├── frontend/              ← Rôle 3
 ├── storage/               ← Rôle 4
+│   ├── app.py
+│   ├── storage_client.py
+│   ├── init_buckets.py
+│   ├── mongo_schemas.py
+│   ├── health_check.py
+│   ├── Dockerfile
+│   └── requirements.txt
 └── dags/                  ← Rôle 6
 ```
 
