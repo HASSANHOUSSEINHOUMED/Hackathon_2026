@@ -1,0 +1,31 @@
+# OCR Service — Dépendances Python
+# Phase 1 — Setup & Infrastructure
+
+# Serveur web
+flask==3.0.3
+gunicorn==22.0.0
+
+# OCR
+pytesseract==0.3.13
+easyocr==1.7.1
+
+# Traitement d'images
+opencv-python-headless==4.9.0.80
+Pillow==10.3.0
+numpy==1.26.4
+
+# NLP / NER
+spacy==3.7.4
+
+# PDF
+pdf2image==1.17.0
+PyMuPDF==1.24.3
+
+# Détection de type MIME
+python-magic==0.4.27
+
+# Calcul de distance d'édition (CER)
+editdistance==0.8.1
+
+# Tests
+pytest==8.2.0
