@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_092",
+  "type": "devis",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "28197276858841",
+    "date_devis": "2026-03-16",
+    "date_validite": "2026-04-15",
+    "designation": "transform next-generation models",
+    "quantite": 33,
+    "prix_unitaire": 226.36,
+    "total_ht": 7469.88,
+    "tva": 1493.98,
+    "ttc": 8968.86
+  },
+  "expected_anomalies": []
+}

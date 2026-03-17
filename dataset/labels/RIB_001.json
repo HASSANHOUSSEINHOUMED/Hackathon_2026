@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_001",
+  "type": "rib",
+  "scenario": "D",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR9632830073352509826259502",
+    "bic": "BNPAFRPP",
+    "titulaire": "Ruiz",
+    "domiciliation_bancaire": "Noël SARL",
+    "siret_associe": "44386981250031"
+  },
+  "expected_anomalies": []
+}

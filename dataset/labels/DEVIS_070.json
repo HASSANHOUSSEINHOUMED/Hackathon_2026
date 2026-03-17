@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_070",
+  "type": "devis",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "52944470163003",
+    "date_devis": "2026-03-16",
+    "date_validite": "2026-04-15",
+    "designation": "exploit efficient deliverables",
+    "quantite": 21,
+    "prix_unitaire": 346.42,
+    "total_ht": 7274.82,
+    "tva": 1454.96,
+    "ttc": 8729.78
+  },
+  "expected_anomalies": []
+}

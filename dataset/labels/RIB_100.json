@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_100",
+  "type": "rib",
+  "scenario": "D",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR2709303295216027113715980",
+    "bic": "BNPAFRPP",
+    "titulaire": "Vaillant Noël SARL",
+    "domiciliation_bancaire": "Thomas S.A.R.L.",
+    "siret_associe": "33209407179237"
+  },
+  "expected_anomalies": []
+}

@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_086",
+  "type": "devis",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "68233164540592",
+    "date_devis": "2026-03-16",
+    "date_validite": "2026-04-15",
+    "designation": "redefine web-enabled relationships",
+    "quantite": 18,
+    "prix_unitaire": 27.13,
+    "total_ht": 488.34,
+    "tva": 97.67,
+    "ttc": 591.01
+  },
+  "expected_anomalies": []
+}

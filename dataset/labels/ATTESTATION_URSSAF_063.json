@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_063",
+  "type": "urssaf",
+  "scenario": "D",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "96653068639097",
+    "raison_sociale": "Goncalves Lemaire SA",
+    "date_debut_validite": "2026-03-16",
+    "date_fin_validite": "2026-02-14",
+    "numero_attestation": 54543617
+  },
+  "expected_anomalies": []
+}

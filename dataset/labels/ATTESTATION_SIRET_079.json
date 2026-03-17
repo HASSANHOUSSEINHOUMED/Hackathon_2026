@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_079",
+  "type": "siret",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "41674314749510",
+    "raison_sociale": "Jacob Lévêque SARL",
+    "adresse": "32, rue Adrien Jourdan\n32440 Fournier",
+    "date_delivrance": "2026-03-16",
+    "date_expiration": "2026-02-14"
+  },
+  "expected_anomalies": []
+}

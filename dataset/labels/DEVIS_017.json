@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_017",
+  "type": "devis",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "84909729246693",
+    "date_devis": "2026-03-16",
+    "date_validite": "2026-04-15",
+    "designation": "integrate viral experiences",
+    "quantite": 18,
+    "prix_unitaire": 421.8,
+    "total_ht": 7592.4,
+    "tva": 1518.48,
+    "ttc": 9115.88
+  },
+  "expected_anomalies": []
+}

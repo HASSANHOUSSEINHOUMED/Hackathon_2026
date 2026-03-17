@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_073",
+  "type": "rib",
+  "scenario": "D",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR2994448353800302044535635",
+    "bic": "BNPAFRPP",
+    "titulaire": "Lebrun Pascal et Fils",
+    "domiciliation_bancaire": "Fouquet",
+    "siret_associe": "57705568082497"
+  },
+  "expected_anomalies": []
+}

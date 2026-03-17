@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_033",
+  "type": "kbis",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "89670486169348",
+    "siren": "896704861",
+    "raison_sociale": "Hernandez",
+    "forme_juridique": "SARL",
+    "capital_social": "61492 €",
+    "date_immatriculation": "2025-06-24",
+    "dirigeant": "Élise Regnier"
+  },
+  "expected_anomalies": []
+}

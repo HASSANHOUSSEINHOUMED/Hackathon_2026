@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_010",
+  "type": "rib",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR4176825922271903571011611",
+    "bic": "BNPAFRPP",
+    "titulaire": "Thomas",
+    "domiciliation_bancaire": "Huet Charpentier S.A.",
+    "siret_associe": "80890851951501"
+  },
+  "expected_anomalies": []
+}

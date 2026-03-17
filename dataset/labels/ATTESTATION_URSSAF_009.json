@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_009",
+  "type": "urssaf",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "79919854194501",
+    "raison_sociale": "Lemaître",
+    "date_debut_validite": "2026-03-16",
+    "date_fin_validite": "2026-02-14",
+    "numero_attestation": 67022727
+  },
+  "expected_anomalies": []
+}

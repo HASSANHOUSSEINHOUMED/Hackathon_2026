@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_022",
+  "type": "kbis",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "16036404678645",
+    "siren": "160364046",
+    "raison_sociale": "Lelièvre Vallée S.A.R.L.",
+    "forme_juridique": "SARL",
+    "capital_social": "16027 €",
+    "date_immatriculation": "2026-02-25",
+    "dirigeant": "Luc Durand"
+  },
+  "expected_anomalies": []
+}

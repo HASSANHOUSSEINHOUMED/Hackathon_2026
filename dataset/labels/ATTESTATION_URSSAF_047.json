@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_047",
+  "type": "urssaf",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "46820363986963",
+    "raison_sociale": "Perrier",
+    "date_debut_validite": "2026-03-16",
+    "date_fin_validite": "2027-03-16",
+    "numero_attestation": 88475175
+  },
+  "expected_anomalies": []
+}

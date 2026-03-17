@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_027",
+  "type": "kbis",
+  "scenario": "D",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "41132326774836",
+    "siren": "411323267",
+    "raison_sociale": "Grégoire",
+    "forme_juridique": "SARL",
+    "capital_social": "75882 €",
+    "date_immatriculation": "2025-08-20",
+    "dirigeant": "Lucy Legendre"
+  },
+  "expected_anomalies": []
+}

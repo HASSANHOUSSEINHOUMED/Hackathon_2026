@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_083",
+  "type": "siret",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "76339353428732",
+    "raison_sociale": "Allard",
+    "adresse": "240, avenue de Vallet\n16579 Gay-les-Bains",
+    "date_delivrance": "2026-03-16",
+    "date_expiration": "2027-03-16"
+  },
+  "expected_anomalies": []
+}

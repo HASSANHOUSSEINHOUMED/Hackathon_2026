@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_067",
+  "type": "rib",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR1109093297946381646938012",
+    "bic": "BNPAFRPP",
+    "titulaire": "Hardy S.A.",
+    "domiciliation_bancaire": "Cousin",
+    "siret_associe": "29881279290037"
+  },
+  "expected_anomalies": []
+}

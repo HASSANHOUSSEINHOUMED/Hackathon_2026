@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_008",
+  "type": "urssaf",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "90517788563114",
+    "raison_sociale": "Faure Poirier SA",
+    "date_debut_validite": "2026-03-16",
+    "date_fin_validite": "2027-03-16",
+    "numero_attestation": 88622832
+  },
+  "expected_anomalies": []
+}

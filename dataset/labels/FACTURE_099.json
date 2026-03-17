@@ -1,0 +1,15 @@
+{
+  "document_id": "FACTURE_099",
+  "type": "facture",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "34962361032274",
+    "siret_client": "97573926643447",
+    "montant_ht": 3401.93,
+    "tva": 680.39,
+    "ttc": 4126.32,
+    "date_emission": "2026-03-16"
+  },
+  "expected_anomalies": []
+}

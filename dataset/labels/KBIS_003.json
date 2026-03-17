@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_003",
+  "type": "kbis",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "52029579622386",
+    "siren": "520295796",
+    "raison_sociale": "Bouvier",
+    "forme_juridique": "SARL",
+    "capital_social": "11589 €",
+    "date_immatriculation": "2025-06-12",
+    "dirigeant": "Xavier Neveu"
+  },
+  "expected_anomalies": []
+}

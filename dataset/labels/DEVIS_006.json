@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_006",
+  "type": "devis",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "57148322058829",
+    "date_devis": "2026-03-16",
+    "date_validite": "2026-04-15",
+    "designation": "maximize world-class mindshare",
+    "quantite": 4,
+    "prix_unitaire": 92.21,
+    "total_ht": 368.84,
+    "tva": 73.77,
+    "ttc": 447.61
+  },
+  "expected_anomalies": []
+}

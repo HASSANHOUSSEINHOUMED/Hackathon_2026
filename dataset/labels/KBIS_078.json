@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_078",
+  "type": "kbis",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "93229087174957",
+    "siren": "932290871",
+    "raison_sociale": "Mercier Bonnet S.A.",
+    "forme_juridique": "SARL",
+    "capital_social": "9740 €",
+    "date_immatriculation": "2025-11-04",
+    "dirigeant": "Georges Hebert"
+  },
+  "expected_anomalies": []
+}

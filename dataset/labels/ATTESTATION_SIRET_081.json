@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_081",
+  "type": "siret",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "73601403559600",
+    "raison_sociale": "Coulon Marchal et Fils",
+    "adresse": "47, rue de Bonnin\n87891 Collin",
+    "date_delivrance": "2026-03-16",
+    "date_expiration": "2027-03-16"
+  },
+  "expected_anomalies": []
+}

@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_018",
+  "type": "devis",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "52284789876058",
+    "date_devis": "2026-03-16",
+    "date_validite": "2026-04-15",
+    "designation": "e-enable customized architectures",
+    "quantite": 44,
+    "prix_unitaire": 431.1,
+    "total_ht": 18968.4,
+    "tva": 3793.68,
+    "ttc": 22767.08
+  },
+  "expected_anomalies": []
+}

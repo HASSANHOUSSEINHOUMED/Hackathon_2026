@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_051",
+  "type": "kbis",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "91709203183728",
+    "siren": "917092031",
+    "raison_sociale": "Bertin SARL",
+    "forme_juridique": "SARL",
+    "capital_social": "95731 €",
+    "date_immatriculation": "2025-04-28",
+    "dirigeant": "Zacharie Vidal"
+  },
+  "expected_anomalies": []
+}

@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_015",
+  "type": "devis",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "75899050291879",
+    "date_devis": "2026-03-16",
+    "date_validite": "2026-04-15",
+    "designation": "synthesize 24/7 niches",
+    "quantite": 10,
+    "prix_unitaire": 133.28,
+    "total_ht": 1332.8,
+    "tva": 266.56,
+    "ttc": 1599.36
+  },
+  "expected_anomalies": []
+}

@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_021",
+  "type": "urssaf",
+  "scenario": "D",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "76088506816229",
+    "raison_sociale": "Rey",
+    "date_debut_validite": "2026-03-16",
+    "date_fin_validite": "2026-02-14",
+    "numero_attestation": 98774322
+  },
+  "expected_anomalies": []
+}

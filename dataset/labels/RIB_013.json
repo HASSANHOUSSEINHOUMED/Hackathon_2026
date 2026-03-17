@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_013",
+  "type": "rib",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR5325097609072427714443685",
+    "bic": "BNPAFRPP",
+    "titulaire": "Regnier Navarro et Fils",
+    "domiciliation_bancaire": "Camus Benoit SARL",
+    "siret_associe": "93906188519201"
+  },
+  "expected_anomalies": []
+}

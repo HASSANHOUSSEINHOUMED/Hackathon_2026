@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_043",
+  "type": "urssaf",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "37472272559030",
+    "raison_sociale": "Roche",
+    "date_debut_validite": "2026-03-16",
+    "date_fin_validite": "2027-03-16",
+    "numero_attestation": 72838533
+  },
+  "expected_anomalies": []
+}

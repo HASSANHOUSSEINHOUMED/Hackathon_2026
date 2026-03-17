@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_020",
+  "type": "urssaf",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "67920340260416",
+    "raison_sociale": "Peltier Duhamel S.A.S.",
+    "date_debut_validite": "2026-03-16",
+    "date_fin_validite": "2026-02-14",
+    "numero_attestation": 51895676
+  },
+  "expected_anomalies": []
+}

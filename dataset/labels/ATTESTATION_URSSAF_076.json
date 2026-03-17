@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_076",
+  "type": "urssaf",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "62486438672095",
+    "raison_sociale": "Weber Toussaint SARL",
+    "date_debut_validite": "2026-03-16",
+    "date_fin_validite": "2027-03-16",
+    "numero_attestation": 80646948
+  },
+  "expected_anomalies": []
+}

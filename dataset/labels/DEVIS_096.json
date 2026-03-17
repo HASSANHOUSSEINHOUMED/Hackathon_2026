@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_096",
+  "type": "devis",
+  "scenario": "D",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "16379765219844",
+    "date_devis": "2026-03-16",
+    "date_validite": "2026-04-15",
+    "designation": "enable visionary web services",
+    "quantite": 1,
+    "prix_unitaire": 48.69,
+    "total_ht": 48.69,
+    "tva": 9.74,
+    "ttc": 63.43
+  },
+  "expected_anomalies": []
+}

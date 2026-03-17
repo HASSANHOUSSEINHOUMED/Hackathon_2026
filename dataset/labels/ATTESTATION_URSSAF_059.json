@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_059",
+  "type": "urssaf",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "97152168189002",
+    "raison_sociale": "Gallet",
+    "date_debut_validite": "2026-03-16",
+    "date_fin_validite": "2026-02-14",
+    "numero_attestation": 9096935
+  },
+  "expected_anomalies": []
+}

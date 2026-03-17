@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_025",
+  "type": "siret",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "90499034026170",
+    "raison_sociale": "Brunet Henry et Fils",
+    "adresse": "93, rue de Schmitt\n26348 Lucas",
+    "date_delivrance": "2026-03-16",
+    "date_expiration": "2026-02-14"
+  },
+  "expected_anomalies": []
+}

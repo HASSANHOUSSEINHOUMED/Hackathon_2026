@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_095",
+  "type": "rib",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR2760365629281093176145249",
+    "bic": "BNPAFRPP",
+    "titulaire": "Masson",
+    "domiciliation_bancaire": "Barre",
+    "siret_associe": "96766079831204"
+  },
+  "expected_anomalies": []
+}

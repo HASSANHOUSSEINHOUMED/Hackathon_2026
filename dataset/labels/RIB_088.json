@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_088",
+  "type": "rib",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR4262038103178325240146721",
+    "bic": "BNPAFRPP",
+    "titulaire": "Bouvet Gosselin S.A.S.",
+    "domiciliation_bancaire": "Sauvage",
+    "siret_associe": "78713597358742"
+  },
+  "expected_anomalies": []
+}

@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_030",
+  "type": "siret",
+  "scenario": "D",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "15427099124851",
+    "raison_sociale": "Riou",
+    "adresse": "boulevard de Garnier\n02645 Lecoq",
+    "date_delivrance": "2026-03-16",
+    "date_expiration": "2026-02-14"
+  },
+  "expected_anomalies": []
+}

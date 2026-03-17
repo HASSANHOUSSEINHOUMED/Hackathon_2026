@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_049",
+  "type": "siret",
+  "scenario": "D",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "56345913898949",
+    "raison_sociale": "Roy S.A.",
+    "adresse": "41, boulevard de Lacroix\n09591 Michaud",
+    "date_delivrance": "2026-03-16",
+    "date_expiration": "2026-02-14"
+  },
+  "expected_anomalies": []
+}

@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_046",
+  "type": "siret",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "77174818741525",
+    "raison_sociale": "Delaunay Vasseur S.A.R.L.",
+    "adresse": "chemin Royer\n50270 Picard",
+    "date_delivrance": "2026-03-16",
+    "date_expiration": "2027-03-16"
+  },
+  "expected_anomalies": []
+}

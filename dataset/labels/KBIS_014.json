@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_014",
+  "type": "kbis",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "32820829920497",
+    "siren": "328208299",
+    "raison_sociale": "Vallet",
+    "forme_juridique": "SARL",
+    "capital_social": "41390 €",
+    "date_immatriculation": "2025-07-27",
+    "dirigeant": "Denise Maurice-Maury"
+  },
+  "expected_anomalies": []
+}

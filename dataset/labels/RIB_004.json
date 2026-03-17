@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_004",
+  "type": "rib",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR1494610327717954621417765",
+    "bic": "BNPAFRPP",
+    "titulaire": "Charpentier SA",
+    "domiciliation_bancaire": "Lacombe",
+    "siret_associe": "67004581962120"
+  },
+  "expected_anomalies": []
+}

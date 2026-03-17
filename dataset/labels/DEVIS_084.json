@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_084",
+  "type": "devis",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "42693547878004",
+    "date_devis": "2026-03-16",
+    "date_validite": "2026-04-15",
+    "designation": "maximize ubiquitous markets",
+    "quantite": 47,
+    "prix_unitaire": 385.61,
+    "total_ht": 18123.67,
+    "tva": 3624.73,
+    "ttc": 21753.4
+  },
+  "expected_anomalies": []
+}

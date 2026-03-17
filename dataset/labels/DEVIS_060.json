@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_060",
+  "type": "devis",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "29407419438019",
+    "date_devis": "2026-03-16",
+    "date_validite": "2026-04-15",
+    "designation": "transition value-added technologies",
+    "quantite": 36,
+    "prix_unitaire": 270.8,
+    "total_ht": 9748.8,
+    "tva": 1949.76,
+    "ttc": 11698.56
+  },
+  "expected_anomalies": []
+}

@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_068",
+  "type": "urssaf",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "83068607079713",
+    "raison_sociale": "Jacob",
+    "date_debut_validite": "2026-03-16",
+    "date_fin_validite": "2026-02-14",
+    "numero_attestation": 73848029
+  },
+  "expected_anomalies": []
+}

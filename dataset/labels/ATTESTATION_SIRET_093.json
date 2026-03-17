@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_093",
+  "type": "siret",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "61337493340080",
+    "raison_sociale": "Berger",
+    "adresse": "50, rue Renée Marin\n28277 Renaud",
+    "date_delivrance": "2026-03-16",
+    "date_expiration": "2027-03-16"
+  },
+  "expected_anomalies": []
+}

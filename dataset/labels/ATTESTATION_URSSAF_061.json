@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_061",
+  "type": "urssaf",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "40213013544503",
+    "raison_sociale": "Rivière S.A.",
+    "date_debut_validite": "2026-03-16",
+    "date_fin_validite": "2026-02-14",
+    "numero_attestation": 586524
+  },
+  "expected_anomalies": []
+}

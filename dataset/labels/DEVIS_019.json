@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_019",
+  "type": "devis",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "97582877830466",
+    "date_devis": "2026-03-16",
+    "date_validite": "2026-04-15",
+    "designation": "integrate innovative initiatives",
+    "quantite": 22,
+    "prix_unitaire": 414.14,
+    "total_ht": 9111.08,
+    "tva": 1822.22,
+    "ttc": 10933.3
+  },
+  "expected_anomalies": []
+}

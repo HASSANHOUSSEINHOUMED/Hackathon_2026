@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_038",
+  "type": "urssaf",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "52025136792695",
+    "raison_sociale": "Marion SA",
+    "date_debut_validite": "2026-03-16",
+    "date_fin_validite": "2026-02-14",
+    "numero_attestation": 22781653
+  },
+  "expected_anomalies": []
+}

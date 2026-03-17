@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_032",
+  "type": "kbis",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "53612672085867",
+    "siren": "536126720",
+    "raison_sociale": "Collin et Fils",
+    "forme_juridique": "SARL",
+    "capital_social": "60154 €",
+    "date_immatriculation": "2026-03-13",
+    "dirigeant": "Hélène-Aimée Chauveau"
+  },
+  "expected_anomalies": []
+}
