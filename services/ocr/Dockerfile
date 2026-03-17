@@ -46,6 +46,10 @@ RUN pip install --no-cache-dir --upgrade pip \
 RUN pip install --no-cache-dir \
     https://github.com/explosion/spacy-models/releases/download/fr_core_news_md-3.7.0/fr_core_news_md-3.7.0-py3-none-any.whl
 
+# Pré-télécharger les modèles EasyOCR dans l'image pour éviter le téléchargement
+# au runtime (qui peut échouer ou corrompre les fichiers sous charge)
+RUN python -c "import easyocr; easyocr.Reader(['fr', 'en'], gpu=False)" 2>&1 | grep -v "^Progress"
+
 # Copier le code source
 COPY . .
 
@@ -60,4 +64,4 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
     CMD python -c "import urllib.request; urllib.request.urlopen('http://localhost:5001/api/health')" || exit 1
 
 # Lancement via Gunicorn (2 workers, bind 0.0.0.0:5001)
-CMD ["gunicorn", "-w", "2", "-b", "0.0.0.0:5001", "--timeout", "60", "--access-logfile", "-", "app:app"]
+CMD ["gunicorn", "-w", "2", "--preload", "-b", "0.0.0.0:5001", "--timeout", "180", "--access-logfile", "-", "app:app"]

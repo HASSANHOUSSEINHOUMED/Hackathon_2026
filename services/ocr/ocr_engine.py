@@ -21,13 +21,14 @@ class OCREngine:
         # Configuration Tesseract : OEM 3 (LSTM), PSM 6 (bloc de texte uniforme), français
         self._tesseract_config = "--oem 3 --psm 6 -l fra"
 
-        # Initialisation EasyOCR (CPU uniquement, chargement des modèles différé)
+        # Chargement paresseux d'EasyOCR — les modèles sont pré-téléchargés dans
+        # l'image Docker (voir Dockerfile) donc le premier accès est rapide (disque).
         self._reader: easyocr.Reader | None = None
         logger.info("OCREngine initialisé (EasyOCR chargé à la première utilisation)")
 
     @property
     def reader(self) -> easyocr.Reader:
-        """Chargement paresseux d'EasyOCR pour éviter le délai au démarrage."""
+        """Chargement paresseux — modèles déjà en cache dans l'image."""
         if self._reader is None:
             logger.info("Chargement du modèle EasyOCR (fr + en)…")
             self._reader = easyocr.Reader(["fr", "en"], gpu=False)
