@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_021",
+  "type": "devis",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "56727168517567",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "seize cutting-edge bandwidth",
+    "quantite": 48,
+    "prix_unitaire": 100.16,
+    "total_ht": 4807.68,
+    "tva": 961.54,
+    "ttc": 5774.22
+  },
+  "expected_anomalies": []
+}

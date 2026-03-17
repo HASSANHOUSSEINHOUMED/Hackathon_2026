@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_023",
+  "type": "kbis",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "32674883069790",
+    "siren": "326748830",
+    "raison_sociale": "Benoit et Fils",
+    "forme_juridique": "SARL",
+    "capital_social": "95506 €",
+    "date_immatriculation": "2025-05-19",
+    "dirigeant": "Alexandria Georges-Lambert"
+  },
+  "expected_anomalies": []
+}

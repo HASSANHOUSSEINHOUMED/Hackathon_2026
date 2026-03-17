@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_007",
+  "type": "siret",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "73888061151721",
+    "raison_sociale": "Bouvier et Fils",
+    "adresse": "663, boulevard de Delorme, 17545 Moreau",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2027-03-17"
+  },
+  "expected_anomalies": []
+}

@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_014",
+  "type": "rib",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR7054735527907248056263434",
+    "bic": "BNPAFRPP",
+    "titulaire": "Robin",
+    "domiciliation_bancaire": "Allain",
+    "siret_associe": "30626649024291"
+  },
+  "expected_anomalies": []
+}

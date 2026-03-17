@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_004",
+  "type": "rib",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR6176934557528024215622937",
+    "bic": "CMCIFRPP",
+    "titulaire": "Nicolas S.A.S.",
+    "domiciliation_bancaire": "Simon Lemoine S.A.S.",
+    "siret_associe": "79202697878782"
+  },
+  "expected_anomalies": []
+}

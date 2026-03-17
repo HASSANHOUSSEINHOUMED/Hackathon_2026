@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_019",
+  "type": "rib",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "iban": "FR0394973992016794497754783",
+    "bic": "CMCIFRPP",
+    "titulaire": "Rousset Duhamel S.A.S.",
+    "domiciliation_bancaire": "Bonnet Joubert SA",
+    "siret_associe": "65333944965194"
+  },
+  "expected_anomalies": []
+}

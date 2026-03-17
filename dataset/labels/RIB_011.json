@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_011",
+  "type": "rib",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "iban": "FR5957563273017816908865574",
+    "bic": "CEPAFRPP",
+    "titulaire": "Martel SA",
+    "domiciliation_bancaire": "Bernard",
+    "siret_associe": "26133264486760"
+  },
+  "expected_anomalies": []
+}

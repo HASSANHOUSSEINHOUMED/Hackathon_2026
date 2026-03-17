@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_012",
+  "type": "devis",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "41208227697796",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "brand 24/365 partnerships",
+    "quantite": 27,
+    "prix_unitaire": 252.23,
+    "total_ht": 6810.21,
+    "tva": 1362.04,
+    "ttc": 8172.25
+  },
+  "expected_anomalies": []
+}

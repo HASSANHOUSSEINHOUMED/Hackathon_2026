@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_002",
+  "type": "urssaf",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "39102803934710",
+    "raison_sociale": "Valentin",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2027-03-17",
+    "numero_attestation": 45996359
+  },
+  "expected_anomalies": []
+}

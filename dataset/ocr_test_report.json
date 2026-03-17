@@ -1,0 +1,4756 @@
+{
+  "pdf": [
+    {
+      "doc_id": "ATTESTATION_SIRET_012",
+      "type": "attestation_siret",
+      "scenario": "D",
+      "accuracy_pct": 60.0,
+      "cer_pct": 3.37,
+      "duration_ms": 4,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "14540916734476",
+          "got": 14540916734476.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Marchal S.A.S.",
+          "got": "Marchal S.A.S."
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "730, rue Manon Martinez\n70590 Hoareau",
+          "got": "730, rue Manon MartinezI70590 Hoareau"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_025",
+      "type": "attestation_siret",
+      "scenario": "B",
+      "accuracy_pct": 60.0,
+      "cer_pct": 3.41,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "90499034026170",
+          "got": 90499034026170.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Brunet Henry et Fils",
+          "got": "Brunet Henry et Fils"
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "93, rue de Schmitt\n26348 Lucas",
+          "got": "93, rue de SchmittI26348 Lucas"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_026",
+      "type": "attestation_siret",
+      "scenario": "D",
+      "accuracy_pct": 60.0,
+      "cer_pct": 3.0,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "34906036564100",
+          "got": 34906036564100.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Caron S.A.S.",
+          "got": "Caron S.A.S."
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "9, avenue Laetitia Martel\n45629 Barthelemy-sur-Mer",
+          "got": "9, avenue Laetitia MartelI45629 Barthelemy-sur-Mer"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_030",
+      "type": "attestation_siret",
+      "scenario": "D",
+      "accuracy_pct": 60.0,
+      "cer_pct": 4.05,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "15427099124851",
+          "got": 15427099124851.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Riou",
+          "got": "Riou"
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "boulevard de Garnier\n02645 Lecoq",
+          "got": "boulevard de GarnierI02645 Lecoq"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_042",
+      "type": "attestation_siret",
+      "scenario": "B",
+      "accuracy_pct": 60.0,
+      "cer_pct": 3.61,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "96324174968100",
+          "got": 96324174968100.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Nicolas S.A.",
+          "got": "Nicolas S.A."
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "89, avenue de Gros\n32684 Fournier",
+          "got": "89, avenue de GrosI32684 Fournier"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_044",
+      "type": "attestation_siret",
+      "scenario": "B",
+      "accuracy_pct": 60.0,
+      "cer_pct": 3.85,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "70447636746204",
+          "got": 70447636746204.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Cordier",
+          "got": "Cordier"
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "239, chemin de David\n47288 Ledoux",
+          "got": "239, chemin de DavidI47288 Ledoux"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_046",
+      "type": "attestation_siret",
+      "scenario": "A",
+      "accuracy_pct": 60.0,
+      "cer_pct": 3.41,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "77174818741525",
+          "got": 77174818741525.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Delaunay Vasseur S.A.R.L.",
+          "got": "Delaunay Vasseur S.A.R.L."
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "chemin Royer\n50270 Picard",
+          "got": "chemin RoyerI50270 Picard"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2027-03-16",
+          "got": "2027-03-16"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_048",
+      "type": "attestation_siret",
+      "scenario": "C",
+      "accuracy_pct": 60.0,
+      "cer_pct": 4.0,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "24364533552977",
+          "got": 24364533552977.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Hubert",
+          "got": "Hubert"
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "4, rue Jacquet\n55351 Cordierdan",
+          "got": "4, rue JacquetI55351 Cordierdan"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_049",
+      "type": "attestation_siret",
+      "scenario": "D",
+      "accuracy_pct": 60.0,
+      "cer_pct": 3.57,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "56345913898949",
+          "got": 56345913898949.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Roy S.A.",
+          "got": "Roy S.A."
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "41, boulevard de Lacroix\n09591 Michaud",
+          "got": "41, boulevard de LacroixI09591 Michaud"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_052",
+      "type": "attestation_siret",
+      "scenario": "B",
+      "accuracy_pct": 60.0,
+      "cer_pct": 4.05,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "12430794558530",
+          "got": 12430794558530.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Gilbert",
+          "got": "Gilbert"
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "13, rue de Gallet\n23312 Peron",
+          "got": "13, rue de GalletI23312 Peron"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_064",
+      "type": "attestation_siret",
+      "scenario": "C",
+      "accuracy_pct": 60.0,
+      "cer_pct": 3.53,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "25808777091233",
+          "got": 25808777091233.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Lévy SARL",
+          "got": "Lévy SARL"
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "44, boulevard de Hubert\n11386 Weissnec",
+          "got": "44, boulevard de HubertI11386 Weissnec"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_066",
+      "type": "attestation_siret",
+      "scenario": "C",
+      "accuracy_pct": 60.0,
+      "cer_pct": 4.0,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "23290524670838",
+          "got": 23290524670838.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Mahe",
+          "got": "Mahe"
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "55, rue Rémy\n75297 Pichon-sur-Mer",
+          "got": "55, rue RémyI75297 Pichon-sur-Mer"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_069",
+      "type": "attestation_siret",
+      "scenario": "C",
+      "accuracy_pct": 60.0,
+      "cer_pct": 3.0,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "12645814680244",
+          "got": 12645814680244.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Lacroix S.A.",
+          "got": "Lacroix S.A."
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "48, boulevard Geneviève Léger\n59564 Saint Denisnec",
+          "got": "48, boulevard Geneviève LégerI59564 Saint Denisnec"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_074",
+      "type": "attestation_siret",
+      "scenario": "B",
+      "accuracy_pct": 60.0,
+      "cer_pct": 3.66,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "13403438283460",
+          "got": 13403438283460.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Dupont S.A.R.L.",
+          "got": "Dupont S.A.R.L."
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "boulevard Masse\n21555 Huetnec",
+          "got": "boulevard MasseI21555 Huetnec"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_079",
+      "type": "attestation_siret",
+      "scenario": "C",
+      "accuracy_pct": 60.0,
+      "cer_pct": 3.23,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "41674314749510",
+          "got": 41674314749510.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Jacob Lévêque SARL",
+          "got": "Jacob Lévêque SARL"
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "32, rue Adrien Jourdan\n32440 Fournier",
+          "got": "32, rue Adrien JourdanI32440 Fournier"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_081",
+      "type": "attestation_siret",
+      "scenario": "A",
+      "accuracy_pct": 60.0,
+      "cer_pct": 3.33,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "73601403559600",
+          "got": 73601403559600.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Coulon Marchal et Fils",
+          "got": "Coulon Marchal et Fils"
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "47, rue de Bonnin\n87891 Collin",
+          "got": "47, rue de BonninI87891 Collin"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2027-03-16",
+          "got": "2027-03-16"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_082",
+      "type": "attestation_siret",
+      "scenario": "B",
+      "accuracy_pct": 60.0,
+      "cer_pct": 3.19,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "33891087215189",
+          "got": 33891087215189.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Hebert Thomas S.A.S.",
+          "got": "Hebert Thomas S.A.S."
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "60, rue Hugues Bazin\n41546 Alexandre",
+          "got": "60, rue Hugues BazinI41546 Alexandre"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_083",
+      "type": "attestation_siret",
+      "scenario": "A",
+      "accuracy_pct": 60.0,
+      "cer_pct": 3.53,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "76339353428732",
+          "got": 76339353428732.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Allard",
+          "got": "Allard"
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "240, avenue de Vallet\n16579 Gay-les-Bains",
+          "got": "240, avenue de ValletI16579 Gay-les-Bains"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2027-03-16",
+          "got": "2027-03-16"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_085",
+      "type": "attestation_siret",
+      "scenario": "B",
+      "accuracy_pct": 60.0,
+      "cer_pct": 3.66,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "31748887223222",
+          "got": 31748887223222.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Gomes S.A.S.",
+          "got": "Gomes S.A.S."
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "90, chemin de Bruneau\n01191 Riou",
+          "got": "90, chemin de BruneauI01191 Riou"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_093",
+      "type": "attestation_siret",
+      "scenario": "A",
+      "accuracy_pct": 60.0,
+      "cer_pct": 3.95,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "61337493340080",
+          "got": 61337493340080.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Berger",
+          "got": "Berger"
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "50, rue Renée Marin\n28277 Renaud",
+          "got": "50, rue Renée MarinI28277 Renaud"
+        },
+        "date_delivrance": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_expiration": {
+          "status": "OK",
+          "expected": "2027-03-16",
+          "got": "2027-03-16"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_002",
+      "type": "attestation_urssaf",
+      "scenario": "B",
+      "accuracy_pct": 80.0,
+      "cer_pct": 6.67,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "99853823464654",
+          "got": 99853823464654.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Cordier S.A.S.",
+          "got": "Cordier S.A.S."
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 87707534,
+          "got": 87707534.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_008",
+      "type": "attestation_urssaf",
+      "scenario": "A",
+      "accuracy_pct": 80.0,
+      "cer_pct": 6.45,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "90517788563114",
+          "got": 90517788563114.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Faure Poirier SA",
+          "got": "Faure Poirier SA"
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2027-03-16",
+          "got": "2027-03-16"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 88622832,
+          "got": 88622832.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_009",
+      "type": "attestation_urssaf",
+      "scenario": "C",
+      "accuracy_pct": 80.0,
+      "cer_pct": 7.41,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "79919854194501",
+          "got": 79919854194501.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Lemaître",
+          "got": "Lemaître"
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 67022727,
+          "got": 67022727.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_020",
+      "type": "attestation_urssaf",
+      "scenario": "C",
+      "accuracy_pct": 80.0,
+      "cer_pct": 5.88,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "67920340260416",
+          "got": 67920340260416.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Peltier Duhamel S.A.S.",
+          "got": "Peltier Duhamel S.A.S."
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 51895676,
+          "got": 51895676.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_021",
+      "type": "attestation_urssaf",
+      "scenario": "D",
+      "accuracy_pct": 80.0,
+      "cer_pct": 8.16,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "76088506816229",
+          "got": 76088506816229.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Rey",
+          "got": "Rey"
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 98774322,
+          "got": 98774322.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_038",
+      "type": "attestation_urssaf",
+      "scenario": "B",
+      "accuracy_pct": 80.0,
+      "cer_pct": 7.27,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "52025136792695",
+          "got": 52025136792695.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Marion SA",
+          "got": "Marion SA"
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 22781653,
+          "got": 22781653.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_040",
+      "type": "attestation_urssaf",
+      "scenario": "C",
+      "accuracy_pct": 80.0,
+      "cer_pct": 6.45,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "41443862816310",
+          "got": 41443862816310.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Charpentier S.A.",
+          "got": "Charpentier S.A."
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 37421545,
+          "got": 37421545.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_043",
+      "type": "attestation_urssaf",
+      "scenario": "A",
+      "accuracy_pct": 80.0,
+      "cer_pct": 7.84,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "37472272559030",
+          "got": 37472272559030.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Roche",
+          "got": "Roche"
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2027-03-16",
+          "got": "2027-03-16"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 72838533,
+          "got": 72838533.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_047",
+      "type": "attestation_urssaf",
+      "scenario": "A",
+      "accuracy_pct": 80.0,
+      "cer_pct": 7.55,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "46820363986963",
+          "got": 46820363986963.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Perrier",
+          "got": "Perrier"
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2027-03-16",
+          "got": "2027-03-16"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 88475175,
+          "got": 88475175.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_053",
+      "type": "attestation_urssaf",
+      "scenario": "B",
+      "accuracy_pct": 80.0,
+      "cer_pct": 5.8,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "61874759576049",
+          "got": 61874759576049.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Garnier Godard S.A.R.L.",
+          "got": "Garnier Godard S.A.R.L."
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 59892587,
+          "got": 59892587.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_055",
+      "type": "attestation_urssaf",
+      "scenario": "C",
+      "accuracy_pct": 80.0,
+      "cer_pct": 5.8,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "70658240433942",
+          "got": 70658240433942.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Bertrand Gimenez et Fils",
+          "got": "Bertrand Gimenez et Fils"
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 8202381,
+          "got": 8202381.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_057",
+      "type": "attestation_urssaf",
+      "scenario": "B",
+      "accuracy_pct": 80.0,
+      "cer_pct": 7.69,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "78330192295393",
+          "got": 78330192295393.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Voisin",
+          "got": "Voisin"
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 41037215,
+          "got": 41037215.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_059",
+      "type": "attestation_urssaf",
+      "scenario": "C",
+      "accuracy_pct": 80.0,
+      "cer_pct": 7.84,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "97152168189002",
+          "got": 97152168189002.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Gallet",
+          "got": "Gallet"
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 9096935,
+          "got": 9096935.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_061",
+      "type": "attestation_urssaf",
+      "scenario": "C",
+      "accuracy_pct": 80.0,
+      "cer_pct": 7.14,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "40213013544503",
+          "got": 40213013544503.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Rivière S.A.",
+          "got": "Rivière S.A."
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 586524,
+          "got": 586524.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_063",
+      "type": "attestation_urssaf",
+      "scenario": "D",
+      "accuracy_pct": 80.0,
+      "cer_pct": 6.06,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "96653068639097",
+          "got": 96653068639097.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Goncalves Lemaire SA",
+          "got": "Goncalves Lemaire SA"
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 54543617,
+          "got": 54543617.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_068",
+      "type": "attestation_urssaf",
+      "scenario": "C",
+      "accuracy_pct": 80.0,
+      "cer_pct": 7.84,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "83068607079713",
+          "got": 83068607079713.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Jacob",
+          "got": "Jacob"
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 73848029,
+          "got": 73848029.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_072",
+      "type": "attestation_urssaf",
+      "scenario": "C",
+      "accuracy_pct": 80.0,
+      "cer_pct": 6.56,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "69416905696661",
+          "got": 69416905696661.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Loiseau et Fils",
+          "got": "Loiseau et Fils"
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 15443556,
+          "got": 15443556.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_075",
+      "type": "attestation_urssaf",
+      "scenario": "D",
+      "accuracy_pct": 80.0,
+      "cer_pct": 7.84,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "56434987919941",
+          "got": 56434987919941.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Vidal",
+          "got": "Vidal"
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 16971263,
+          "got": 16971263.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_076",
+      "type": "attestation_urssaf",
+      "scenario": "A",
+      "accuracy_pct": 80.0,
+      "cer_pct": 6.06,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "62486438672095",
+          "got": 62486438672095.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Weber Toussaint SARL",
+          "got": "Weber Toussaint SARL"
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2027-03-16",
+          "got": "2027-03-16"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 80646948,
+          "got": 80646948.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_077",
+      "type": "attestation_urssaf",
+      "scenario": "A",
+      "accuracy_pct": 80.0,
+      "cer_pct": 7.55,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "74636271575286",
+          "got": 74636271575286.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Gonzalez",
+          "got": "Gonzalez"
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2027-03-16",
+          "got": "2027-03-16"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 8282597,
+          "got": 8282597.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_087",
+      "type": "attestation_urssaf",
+      "scenario": "D",
+      "accuracy_pct": 80.0,
+      "cer_pct": 7.69,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "72767830596072",
+          "got": 72767830596072.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Dupont",
+          "got": "Dupont"
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2026-02-14",
+          "got": "2026-02-14"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 48571441,
+          "got": 48571441.0
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_094",
+      "type": "attestation_urssaf",
+      "scenario": "A",
+      "accuracy_pct": 80.0,
+      "cer_pct": 6.35,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "31670592782707",
+          "got": 31670592782707.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Cohen Didier SARL",
+          "got": "Cohen Didier SARL"
+        },
+        "date_debut_validite": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_fin_validite": {
+          "status": "OK",
+          "expected": "2027-03-16",
+          "got": "2027-03-16"
+        },
+        "numero_attestation": {
+          "status": "OK",
+          "expected": 85102668,
+          "got": 85102668.0
+        }
+      }
+    },
+    {
+      "doc_id": "DEVIS_006",
+      "type": "devis",
+      "scenario": "B",
+      "accuracy_pct": 88.9,
+      "cer_pct": 4.21,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "57148322058829",
+          "got": 57148322058829.0
+        },
+        "date_devis": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_validite": {
+          "status": "OK",
+          "expected": "2026-04-15",
+          "got": "2026-04-15"
+        },
+        "designation": {
+          "status": "OK",
+          "expected": "maximize world-class mindshare",
+          "got": "maximize world-class mindshare"
+        },
+        "quantite": {
+          "status": "OK",
+          "expected": 4,
+          "got": 4.0
+        },
+        "prix_unitaire": {
+          "status": "OK",
+          "expected": 92.21,
+          "got": 92.21
+        },
+        "total_ht": {
+          "status": "OK",
+          "expected": 368.84,
+          "got": 368.84
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 73.77,
+          "got": 73.77
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 447.61,
+          "got": 447.61
+        }
+      }
+    },
+    {
+      "doc_id": "DEVIS_015",
+      "type": "devis",
+      "scenario": "A",
+      "accuracy_pct": 88.9,
+      "cer_pct": 4.4,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "75899050291879",
+          "got": 75899050291879.0
+        },
+        "date_devis": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_validite": {
+          "status": "OK",
+          "expected": "2026-04-15",
+          "got": "2026-04-15"
+        },
+        "designation": {
+          "status": "OK",
+          "expected": "synthesize 24/7 niches",
+          "got": "synthesize 24/7 niches"
+        },
+        "quantite": {
+          "status": "OK",
+          "expected": 10,
+          "got": 10.0
+        },
+        "prix_unitaire": {
+          "status": "OK",
+          "expected": 133.28,
+          "got": 133.28
+        },
+        "total_ht": {
+          "status": "OK",
+          "expected": 1332.8,
+          "got": 1332.8
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 266.56,
+          "got": 266.56
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 1599.36,
+          "got": 1599.36
+        }
+      }
+    },
+    {
+      "doc_id": "DEVIS_017",
+      "type": "devis",
+      "scenario": "C",
+      "accuracy_pct": 88.9,
+      "cer_pct": 4.17,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "84909729246693",
+          "got": 84909729246693.0
+        },
+        "date_devis": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_validite": {
+          "status": "OK",
+          "expected": "2026-04-15",
+          "got": "2026-04-15"
+        },
+        "designation": {
+          "status": "OK",
+          "expected": "integrate viral experiences",
+          "got": "integrate viral experiences"
+        },
+        "quantite": {
+          "status": "OK",
+          "expected": 18,
+          "got": 18.0
+        },
+        "prix_unitaire": {
+          "status": "OK",
+          "expected": 421.8,
+          "got": 421.8
+        },
+        "total_ht": {
+          "status": "OK",
+          "expected": 7592.4,
+          "got": 7592.4
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 1518.48,
+          "got": 1518.48
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 9115.88,
+          "got": 9115.88
+        }
+      }
+    },
+    {
+      "doc_id": "DEVIS_018",
+      "type": "devis",
+      "scenario": "C",
+      "accuracy_pct": 88.9,
+      "cer_pct": 3.85,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "52284789876058",
+          "got": 52284789876058.0
+        },
+        "date_devis": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_validite": {
+          "status": "OK",
+          "expected": "2026-04-15",
+          "got": "2026-04-15"
+        },
+        "designation": {
+          "status": "OK",
+          "expected": "e-enable customized architectures",
+          "got": "e-enable customized architectures"
+        },
+        "quantite": {
+          "status": "OK",
+          "expected": 44,
+          "got": 44.0
+        },
+        "prix_unitaire": {
+          "status": "OK",
+          "expected": 431.1,
+          "got": 431.1
+        },
+        "total_ht": {
+          "status": "OK",
+          "expected": 18968.4,
+          "got": 18968.4
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 3793.68,
+          "got": 3793.68
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 22767.08,
+          "got": 22767.08
+        }
+      }
+    },
+    {
+      "doc_id": "DEVIS_019",
+      "type": "devis",
+      "scenario": "A",
+      "accuracy_pct": 88.9,
+      "cer_pct": 3.88,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "97582877830466",
+          "got": 97582877830466.0
+        },
+        "date_devis": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_validite": {
+          "status": "OK",
+          "expected": "2026-04-15",
+          "got": "2026-04-15"
+        },
+        "designation": {
+          "status": "OK",
+          "expected": "integrate innovative initiatives",
+          "got": "integrate innovative initiatives"
+        },
+        "quantite": {
+          "status": "OK",
+          "expected": 22,
+          "got": 22.0
+        },
+        "prix_unitaire": {
+          "status": "OK",
+          "expected": 414.14,
+          "got": 414.14
+        },
+        "total_ht": {
+          "status": "OK",
+          "expected": 9111.08,
+          "got": 9111.08
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 1822.22,
+          "got": 1822.22
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 10933.3,
+          "got": 10933.3
+        }
+      }
+    },
+    {
+      "doc_id": "DEVIS_024",
+      "type": "devis",
+      "scenario": "A",
+      "accuracy_pct": 88.9,
+      "cer_pct": 3.85,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "66484779737900",
+          "got": 66484779737900.0
+        },
+        "date_devis": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_validite": {
+          "status": "OK",
+          "expected": "2026-04-15",
+          "got": "2026-04-15"
+        },
+        "designation": {
+          "status": "OK",
+          "expected": "strategize integrated communities",
+          "got": "strategize integrated communities"
+        },
+        "quantite": {
+          "status": "OK",
+          "expected": 26,
+          "got": 26.0
+        },
+        "prix_unitaire": {
+          "status": "OK",
+          "expected": 229.36,
+          "got": 229.36
+        },
+        "total_ht": {
+          "status": "OK",
+          "expected": 5963.36,
+          "got": 5963.36
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 1192.67,
+          "got": 1192.67
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 7156.03,
+          "got": 7156.03
+        }
+      }
+    },
+    {
+      "doc_id": "DEVIS_060",
+      "type": "devis",
+      "scenario": "A",
+      "accuracy_pct": 88.9,
+      "cer_pct": 3.81,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "29407419438019",
+          "got": 29407419438019.0
+        },
+        "date_devis": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_validite": {
+          "status": "OK",
+          "expected": "2026-04-15",
+          "got": "2026-04-15"
+        },
+        "designation": {
+          "status": "OK",
+          "expected": "transition value-added technologies",
+          "got": "transition value-added technologies"
+        },
+        "quantite": {
+          "status": "OK",
+          "expected": 36,
+          "got": 36.0
+        },
+        "prix_unitaire": {
+          "status": "OK",
+          "expected": 270.8,
+          "got": 270.8
+        },
+        "total_ht": {
+          "status": "OK",
+          "expected": 9748.8,
+          "got": 9748.8
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 1949.76,
+          "got": 1949.76
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 11698.56,
+          "got": 11698.56
+        }
+      }
+    },
+    {
+      "doc_id": "DEVIS_062",
+      "type": "devis",
+      "scenario": "B",
+      "accuracy_pct": 88.9,
+      "cer_pct": 4.08,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "75268067859273",
+          "got": 75268067859273.0
+        },
+        "date_devis": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_validite": {
+          "status": "OK",
+          "expected": "2026-04-15",
+          "got": "2026-04-15"
+        },
+        "designation": {
+          "status": "OK",
+          "expected": "evolve customized convergence",
+          "got": "evolve customized convergence"
+        },
+        "quantite": {
+          "status": "OK",
+          "expected": 34,
+          "got": 34.0
+        },
+        "prix_unitaire": {
+          "status": "OK",
+          "expected": 94.43,
+          "got": 94.43
+        },
+        "total_ht": {
+          "status": "OK",
+          "expected": 3210.62,
+          "got": 3210.62
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 642.12,
+          "got": 642.12
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 3857.74,
+          "got": 3857.74
+        }
+      }
+    },
+    {
+      "doc_id": "DEVIS_070",
+      "type": "devis",
+      "scenario": "A",
+      "accuracy_pct": 88.9,
+      "cer_pct": 3.96,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "52944470163003",
+          "got": 52944470163003.0
+        },
+        "date_devis": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_validite": {
+          "status": "OK",
+          "expected": "2026-04-15",
+          "got": "2026-04-15"
+        },
+        "designation": {
+          "status": "OK",
+          "expected": "exploit efficient deliverables",
+          "got": "exploit efficient deliverables"
+        },
+        "quantite": {
+          "status": "OK",
+          "expected": 21,
+          "got": 21.0
+        },
+        "prix_unitaire": {
+          "status": "OK",
+          "expected": 346.42,
+          "got": 346.42
+        },
+        "total_ht": {
+          "status": "OK",
+          "expected": 7274.82,
+          "got": 7274.82
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 1454.96,
+          "got": 1454.96
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 8729.78,
+          "got": 8729.78
+        }
+      }
+    },
+    {
+      "doc_id": "DEVIS_080",
+      "type": "devis",
+      "scenario": "D",
+      "accuracy_pct": 88.9,
+      "cer_pct": 4.12,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "26006789671934",
+          "got": 26006789671934.0
+        },
+        "date_devis": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_validite": {
+          "status": "OK",
+          "expected": "2026-04-15",
+          "got": "2026-04-15"
+        },
+        "designation": {
+          "status": "OK",
+          "expected": "extend frictionless experiences",
+          "got": "extend frictionless experiences"
+        },
+        "quantite": {
+          "status": "OK",
+          "expected": 1,
+          "got": 1.0
+        },
+        "prix_unitaire": {
+          "status": "OK",
+          "expected": 452.89,
+          "got": 452.89
+        },
+        "total_ht": {
+          "status": "OK",
+          "expected": 452.89,
+          "got": 452.89
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 90.58,
+          "got": 90.58
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 548.47,
+          "got": 548.47
+        }
+      }
+    },
+    {
+      "doc_id": "DEVIS_084",
+      "type": "devis",
+      "scenario": "B",
+      "accuracy_pct": 88.9,
+      "cer_pct": 4.04,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "42693547878004",
+          "got": 42693547878004.0
+        },
+        "date_devis": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_validite": {
+          "status": "OK",
+          "expected": "2026-04-15",
+          "got": "2026-04-15"
+        },
+        "designation": {
+          "status": "OK",
+          "expected": "maximize ubiquitous markets",
+          "got": "maximize ubiquitous markets"
+        },
+        "quantite": {
+          "status": "OK",
+          "expected": 47,
+          "got": 47.0
+        },
+        "prix_unitaire": {
+          "status": "OK",
+          "expected": 385.61,
+          "got": 385.61
+        },
+        "total_ht": {
+          "status": "OK",
+          "expected": 18123.67,
+          "got": 18123.67
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 3624.73,
+          "got": 3624.73
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 21753.4,
+          "got": 21753.4
+        }
+      }
+    },
+    {
+      "doc_id": "DEVIS_086",
+      "type": "devis",
+      "scenario": "C",
+      "accuracy_pct": 88.9,
+      "cer_pct": 4.0,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "68233164540592",
+          "got": 68233164540592.0
+        },
+        "date_devis": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_validite": {
+          "status": "OK",
+          "expected": "2026-04-15",
+          "got": "2026-04-15"
+        },
+        "designation": {
+          "status": "OK",
+          "expected": "redefine web-enabled relationships",
+          "got": "redefine web-enabled relationships"
+        },
+        "quantite": {
+          "status": "OK",
+          "expected": 18,
+          "got": 18.0
+        },
+        "prix_unitaire": {
+          "status": "OK",
+          "expected": 27.13,
+          "got": 27.13
+        },
+        "total_ht": {
+          "status": "OK",
+          "expected": 488.34,
+          "got": 488.34
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 97.67,
+          "got": 97.67
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 591.01,
+          "got": 591.01
+        }
+      }
+    },
+    {
+      "doc_id": "DEVIS_091",
+      "type": "devis",
+      "scenario": "A",
+      "accuracy_pct": 88.9,
+      "cer_pct": 4.0,
+      "duration_ms": 2,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "99509561140078",
+          "got": 99509561140078.0
+        },
+        "date_devis": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_validite": {
+          "status": "OK",
+          "expected": "2026-04-15",
+          "got": "2026-04-15"
+        },
+        "designation": {
+          "status": "OK",
+          "expected": "empower enterprise convergence",
+          "got": "empower enterprise convergence"
+        },
+        "quantite": {
+          "status": "OK",
+          "expected": 47,
+          "got": 47.0
+        },
+        "prix_unitaire": {
+          "status": "OK",
+          "expected": 171.75,
+          "got": 171.75
+        },
+        "total_ht": {
+          "status": "OK",
+          "expected": 8072.25,
+          "got": 8072.25
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 1614.45,
+          "got": 1614.45
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 9686.7,
+          "got": 9686.7
+        }
+      }
+    },
+    {
+      "doc_id": "DEVIS_092",
+      "type": "devis",
+      "scenario": "B",
+      "accuracy_pct": 88.9,
+      "cer_pct": 3.88,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "28197276858841",
+          "got": 28197276858841.0
+        },
+        "date_devis": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_validite": {
+          "status": "OK",
+          "expected": "2026-04-15",
+          "got": "2026-04-15"
+        },
+        "designation": {
+          "status": "OK",
+          "expected": "transform next-generation models",
+          "got": "transform next-generation models"
+        },
+        "quantite": {
+          "status": "OK",
+          "expected": 33,
+          "got": 33.0
+        },
+        "prix_unitaire": {
+          "status": "OK",
+          "expected": 226.36,
+          "got": 226.36
+        },
+        "total_ht": {
+          "status": "OK",
+          "expected": 7469.88,
+          "got": 7469.88
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 1493.98,
+          "got": 1493.98
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 8968.86,
+          "got": 8968.86
+        }
+      }
+    },
+    {
+      "doc_id": "DEVIS_096",
+      "type": "devis",
+      "scenario": "D",
+      "accuracy_pct": 88.9,
+      "cer_pct": 4.4,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "16379765219844",
+          "got": 16379765219844.0
+        },
+        "date_devis": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_validite": {
+          "status": "OK",
+          "expected": "2026-04-15",
+          "got": "2026-04-15"
+        },
+        "designation": {
+          "status": "OK",
+          "expected": "enable visionary web services",
+          "got": "enable visionary web services"
+        },
+        "quantite": {
+          "status": "OK",
+          "expected": 1,
+          "got": 1.0
+        },
+        "prix_unitaire": {
+          "status": "OK",
+          "expected": 48.69,
+          "got": 48.69
+        },
+        "total_ht": {
+          "status": "OK",
+          "expected": 48.69,
+          "got": 48.69
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 9.74,
+          "got": 9.74
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 63.43,
+          "got": 63.43
+        }
+      }
+    },
+    {
+      "doc_id": "DEVIS_097",
+      "type": "devis",
+      "scenario": "C",
+      "accuracy_pct": 88.9,
+      "cer_pct": 3.96,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "45477278775131",
+          "got": 45477278775131.0
+        },
+        "date_devis": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_validite": {
+          "status": "OK",
+          "expected": "2026-04-15",
+          "got": "2026-04-15"
+        },
+        "designation": {
+          "status": "OK",
+          "expected": "grow mission-critical synergies",
+          "got": "grow mission-critical synergies"
+        },
+        "quantite": {
+          "status": "OK",
+          "expected": 31,
+          "got": 31.0
+        },
+        "prix_unitaire": {
+          "status": "OK",
+          "expected": 118.97,
+          "got": 118.97
+        },
+        "total_ht": {
+          "status": "OK",
+          "expected": 3688.07,
+          "got": 3688.07
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 737.61,
+          "got": 737.61
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 4430.68,
+          "got": 4430.68
+        }
+      }
+    },
+    {
+      "doc_id": "DEVIS_098",
+      "type": "devis",
+      "scenario": "C",
+      "accuracy_pct": 88.9,
+      "cer_pct": 4.26,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "10318445325494",
+          "got": 10318445325494.0
+        },
+        "date_devis": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        },
+        "date_validite": {
+          "status": "OK",
+          "expected": "2026-04-15",
+          "got": "2026-04-15"
+        },
+        "designation": {
+          "status": "OK",
+          "expected": "redefine 24/7 initiatives",
+          "got": "redefine 24/7 initiatives"
+        },
+        "quantite": {
+          "status": "OK",
+          "expected": 39,
+          "got": 39.0
+        },
+        "prix_unitaire": {
+          "status": "OK",
+          "expected": 35.55,
+          "got": 35.55
+        },
+        "total_ht": {
+          "status": "OK",
+          "expected": 1386.45,
+          "got": 1386.45
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 277.29,
+          "got": 277.29
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 1668.74,
+          "got": 1668.74
+        }
+      }
+    },
+    {
+      "doc_id": "FACTURE_011",
+      "type": "facture",
+      "scenario": "D",
+      "accuracy_pct": 66.7,
+      "cer_pct": 6.35,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "64742148178628",
+          "got": 64742148178628.0
+        },
+        "siret_client": {
+          "status": "MISMATCH",
+          "expected": "54740032964758",
+          "got": 54740032964758.0
+        },
+        "montant_ht": {
+          "status": "OK",
+          "expected": 1732.77,
+          "got": 1732.77
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 346.55,
+          "got": 346.55
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 2106.32,
+          "got": 2106.32
+        },
+        "date_emission": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        }
+      }
+    },
+    {
+      "doc_id": "FACTURE_016",
+      "type": "facture",
+      "scenario": "B",
+      "accuracy_pct": 66.7,
+      "cer_pct": 6.35,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "84863856742828",
+          "got": 84863856742828.0
+        },
+        "siret_client": {
+          "status": "MISMATCH",
+          "expected": "65438705440543",
+          "got": 65438705440543.0
+        },
+        "montant_ht": {
+          "status": "OK",
+          "expected": 2278.55,
+          "got": 2278.55
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 455.71,
+          "got": 455.71
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 2748.26,
+          "got": 2748.26
+        },
+        "date_emission": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        }
+      }
+    },
+    {
+      "doc_id": "FACTURE_023",
+      "type": "facture",
+      "scenario": "D",
+      "accuracy_pct": 66.7,
+      "cer_pct": 6.35,
+      "duration_ms": 3,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "69150498730971",
+          "got": 69150498730971.0
+        },
+        "siret_client": {
+          "status": "MISMATCH",
+          "expected": "18706037214692",
+          "got": 18706037214692.0
+        },
+        "montant_ht": {
+          "status": "OK",
+          "expected": 4158.13,
+          "got": 4158.13
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 831.63,
+          "got": 831.63
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 5004.76,
+          "got": 5004.76
+        },
+        "date_emission": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        }
+      }
+    },
+    {
+      "doc_id": "FACTURE_028",
+      "type": "facture",
+      "scenario": "C",
+      "accuracy_pct": 66.7,
+      "cer_pct": 6.35,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "39851479199007",
+          "got": 39851479199007.0
+        },
+        "siret_client": {
+          "status": "MISMATCH",
+          "expected": "32629731536902",
+          "got": 32629731536902.0
+        },
+        "montant_ht": {
+          "status": "OK",
+          "expected": 3079.41,
+          "got": 3079.41
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 615.88,
+          "got": 615.88
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 3718.29,
+          "got": 3718.29
+        },
+        "date_emission": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        }
+      }
+    },
+    {
+      "doc_id": "FACTURE_029",
+      "type": "facture",
+      "scenario": "D",
+      "accuracy_pct": 66.7,
+      "cer_pct": 6.56,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "42209655545711",
+          "got": 42209655545711.0
+        },
+        "siret_client": {
+          "status": "MISMATCH",
+          "expected": "50698319056324",
+          "got": 50698319056324.0
+        },
+        "montant_ht": {
+          "status": "OK",
+          "expected": 634.62,
+          "got": 634.62
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 126.92,
+          "got": 126.92
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 800.54,
+          "got": 800.54
+        },
+        "date_emission": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        }
+      }
+    },
+    {
+      "doc_id": "FACTURE_035",
+      "type": "facture",
+      "scenario": "A",
+      "accuracy_pct": 66.7,
+      "cer_pct": 6.67,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "18121363078453",
+          "got": 18121363078453.0
+        },
+        "siret_client": {
+          "status": "MISMATCH",
+          "expected": "24506016087142",
+          "got": 24506016087142.0
+        },
+        "montant_ht": {
+          "status": "OK",
+          "expected": 563.33,
+          "got": 563.33
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 112.67,
+          "got": 112.67
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 676.0,
+          "got": 676.0
+        },
+        "date_emission": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        }
+      }
+    },
+    {
+      "doc_id": "FACTURE_037",
+      "type": "facture",
+      "scenario": "B",
+      "accuracy_pct": 66.7,
+      "cer_pct": 6.67,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "56966164513958",
+          "got": 56966164513958.0
+        },
+        "siret_client": {
+          "status": "MISMATCH",
+          "expected": "10061349917063",
+          "got": 10061349917063.0
+        },
+        "montant_ht": {
+          "status": "OK",
+          "expected": 738.67,
+          "got": 738.67
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 147.73,
+          "got": 147.73
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 926.4,
+          "got": 926.4
+        },
+        "date_emission": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        }
+      }
+    },
+    {
+      "doc_id": "FACTURE_039",
+      "type": "facture",
+      "scenario": "B",
+      "accuracy_pct": 66.7,
+      "cer_pct": 6.67,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "39846266929017",
+          "got": 39846266929017.0
+        },
+        "siret_client": {
+          "status": "MISMATCH",
+          "expected": "47876353237463",
+          "got": 47876353237463.0
+        },
+        "montant_ht": {
+          "status": "OK",
+          "expected": 2300.0,
+          "got": 2300.0
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 460.0,
+          "got": 460.0
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 2782.0,
+          "got": 2782.0
+        },
+        "date_emission": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        }
+      }
+    },
+    {
+      "doc_id": "FACTURE_050",
+      "type": "facture",
+      "scenario": "C",
+      "accuracy_pct": 66.7,
+      "cer_pct": 6.56,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "33426935590184",
+          "got": 33426935590184.0
+        },
+        "siret_client": {
+          "status": "MISMATCH",
+          "expected": "24835784292745",
+          "got": 24835784292745.0
+        },
+        "montant_ht": {
+          "status": "OK",
+          "expected": 982.01,
+          "got": 982.01
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 196.4,
+          "got": 196.4
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 1193.41,
+          "got": 1193.41
+        },
+        "date_emission": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        }
+      }
+    },
+    {
+      "doc_id": "FACTURE_054",
+      "type": "facture",
+      "scenario": "B",
+      "accuracy_pct": 66.7,
+      "cer_pct": 6.35,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "85662200119832",
+          "got": 85662200119832.0
+        },
+        "siret_client": {
+          "status": "MISMATCH",
+          "expected": "30352687684883",
+          "got": 30352687684883.0
+        },
+        "montant_ht": {
+          "status": "OK",
+          "expected": 3936.53,
+          "got": 3936.53
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 787.31,
+          "got": 787.31
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 4728.84,
+          "got": 4728.84
+        },
+        "date_emission": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        }
+      }
+    },
+    {
+      "doc_id": "FACTURE_065",
+      "type": "facture",
+      "scenario": "A",
+      "accuracy_pct": 66.7,
+      "cer_pct": 6.35,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "45780739883716",
+          "got": 45780739883716.0
+        },
+        "siret_client": {
+          "status": "MISMATCH",
+          "expected": "53722692181000",
+          "got": 53722692181000.0
+        },
+        "montant_ht": {
+          "status": "OK",
+          "expected": 1128.41,
+          "got": 1128.41
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 225.68,
+          "got": 225.68
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 1354.09,
+          "got": 1354.09
+        },
+        "date_emission": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        }
+      }
+    },
+    {
+      "doc_id": "FACTURE_071",
+      "type": "facture",
+      "scenario": "B",
+      "accuracy_pct": 66.7,
+      "cer_pct": 6.35,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "75482698924293",
+          "got": 75482698924293.0
+        },
+        "siret_client": {
+          "status": "MISMATCH",
+          "expected": "59850393256558",
+          "got": 59850393256558.0
+        },
+        "montant_ht": {
+          "status": "OK",
+          "expected": 3121.68,
+          "got": 3121.68
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 624.34,
+          "got": 624.34
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 3788.02,
+          "got": 3788.02
+        },
+        "date_emission": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        }
+      }
+    },
+    {
+      "doc_id": "FACTURE_099",
+      "type": "facture",
+      "scenario": "C",
+      "accuracy_pct": 66.7,
+      "cer_pct": 6.35,
+      "duration_ms": 1,
+      "fields": {
+        "siret_emetteur": {
+          "status": "MISMATCH",
+          "expected": "34962361032274",
+          "got": 34962361032274.0
+        },
+        "siret_client": {
+          "status": "MISMATCH",
+          "expected": "97573926643447",
+          "got": 97573926643447.0
+        },
+        "montant_ht": {
+          "status": "OK",
+          "expected": 3401.93,
+          "got": 3401.93
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 680.39,
+          "got": 680.39
+        },
+        "ttc": {
+          "status": "OK",
+          "expected": 4126.32,
+          "got": 4126.32
+        },
+        "date_emission": {
+          "status": "OK",
+          "expected": "2026-03-16",
+          "got": "2026-03-16"
+        }
+      }
+    },
+    {
+      "doc_id": "KBIS_003",
+      "type": "kbis",
+      "scenario": "B",
+      "accuracy_pct": 71.4,
+      "cer_pct": 5.8,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "52029579622386",
+          "got": 52029579622386.0
+        },
+        "siren": {
+          "status": "MISMATCH",
+          "expected": "520295796",
+          "got": 520295796.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Bouvier",
+          "got": "Bouvier"
+        },
+        "forme_juridique": {
+          "status": "OK",
+          "expected": "SARL",
+          "got": "SARL"
+        },
+        "capital_social": {
+          "status": "OK",
+          "expected": "11589 €",
+          "got": "11589 €"
+        },
+        "date_immatriculation": {
+          "status": "OK",
+          "expected": "2025-06-12",
+          "got": "2025-06-12"
+        },
+        "dirigeant": {
+          "status": "OK",
+          "expected": "Xavier Neveu",
+          "got": "Xavier Neveu"
+        }
+      }
+    },
+    {
+      "doc_id": "KBIS_014",
+      "type": "kbis",
+      "scenario": "B",
+      "accuracy_pct": 71.4,
+      "cer_pct": 5.26,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "32820829920497",
+          "got": 32820829920497.0
+        },
+        "siren": {
+          "status": "MISMATCH",
+          "expected": "328208299",
+          "got": 328208299.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Vallet",
+          "got": "Vallet"
+        },
+        "forme_juridique": {
+          "status": "OK",
+          "expected": "SARL",
+          "got": "SARL"
+        },
+        "capital_social": {
+          "status": "OK",
+          "expected": "41390 €",
+          "got": "41390 €"
+        },
+        "date_immatriculation": {
+          "status": "OK",
+          "expected": "2025-07-27",
+          "got": "2025-07-27"
+        },
+        "dirigeant": {
+          "status": "OK",
+          "expected": "Denise Maurice-Maury",
+          "got": "Denise Maurice-Maury"
+        }
+      }
+    },
+    {
+      "doc_id": "KBIS_022",
+      "type": "kbis",
+      "scenario": "A",
+      "accuracy_pct": 71.4,
+      "cer_pct": 4.76,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "16036404678645",
+          "got": 16036404678645.0
+        },
+        "siren": {
+          "status": "MISMATCH",
+          "expected": "160364046",
+          "got": 160364046.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Lelièvre Vallée S.A.R.L.",
+          "got": "Lelièvre Vallée S.A.R.L."
+        },
+        "forme_juridique": {
+          "status": "OK",
+          "expected": "SARL",
+          "got": "SARL"
+        },
+        "capital_social": {
+          "status": "OK",
+          "expected": "16027 €",
+          "got": "16027 €"
+        },
+        "date_immatriculation": {
+          "status": "OK",
+          "expected": "2026-02-25",
+          "got": "2026-02-25"
+        },
+        "dirigeant": {
+          "status": "OK",
+          "expected": "Luc Durand",
+          "got": "Luc Durand"
+        }
+      }
+    },
+    {
+      "doc_id": "KBIS_027",
+      "type": "kbis",
+      "scenario": "D",
+      "accuracy_pct": 71.4,
+      "cer_pct": 5.63,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "41132326774836",
+          "got": 41132326774836.0
+        },
+        "siren": {
+          "status": "MISMATCH",
+          "expected": "411323267",
+          "got": 411323267.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Grégoire",
+          "got": "Grégoire"
+        },
+        "forme_juridique": {
+          "status": "OK",
+          "expected": "SARL",
+          "got": "SARL"
+        },
+        "capital_social": {
+          "status": "OK",
+          "expected": "75882 €",
+          "got": "75882 €"
+        },
+        "date_immatriculation": {
+          "status": "OK",
+          "expected": "2025-08-20",
+          "got": "2025-08-20"
+        },
+        "dirigeant": {
+          "status": "OK",
+          "expected": "Lucy Legendre",
+          "got": "Lucy Legendre"
+        }
+      }
+    },
+    {
+      "doc_id": "KBIS_031",
+      "type": "kbis",
+      "scenario": "B",
+      "accuracy_pct": 71.4,
+      "cer_pct": 5.97,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "84428455798715",
+          "got": 84428455798715.0
+        },
+        "siren": {
+          "status": "MISMATCH",
+          "expected": "844284557",
+          "got": 844284557.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Joseph",
+          "got": "Joseph"
+        },
+        "forme_juridique": {
+          "status": "OK",
+          "expected": "SARL",
+          "got": "SARL"
+        },
+        "capital_social": {
+          "status": "OK",
+          "expected": "85136 €",
+          "got": "85136 €"
+        },
+        "date_immatriculation": {
+          "status": "OK",
+          "expected": "2025-08-31",
+          "got": "2025-08-31"
+        },
+        "dirigeant": {
+          "status": "OK",
+          "expected": "Éric Samson",
+          "got": "Éric Samson"
+        }
+      }
+    },
+    {
+      "doc_id": "KBIS_032",
+      "type": "kbis",
+      "scenario": "B",
+      "accuracy_pct": 71.4,
+      "cer_pct": 4.71,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "53612672085867",
+          "got": 53612672085867.0
+        },
+        "siren": {
+          "status": "MISMATCH",
+          "expected": "536126720",
+          "got": 536126720.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Collin et Fils",
+          "got": "Collin et Fils"
+        },
+        "forme_juridique": {
+          "status": "OK",
+          "expected": "SARL",
+          "got": "SARL"
+        },
+        "capital_social": {
+          "status": "OK",
+          "expected": "60154 €",
+          "got": "60154 €"
+        },
+        "date_immatriculation": {
+          "status": "OK",
+          "expected": "2026-03-13",
+          "got": "2026-03-13"
+        },
+        "dirigeant": {
+          "status": "OK",
+          "expected": "Hélène-Aimée Chauveau",
+          "got": "Hélène-Aimée Chauveau"
+        }
+      }
+    },
+    {
+      "doc_id": "KBIS_033",
+      "type": "kbis",
+      "scenario": "A",
+      "accuracy_pct": 71.4,
+      "cer_pct": 5.56,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "89670486169348",
+          "got": 89670486169348.0
+        },
+        "siren": {
+          "status": "MISMATCH",
+          "expected": "896704861",
+          "got": 896704861.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Hernandez",
+          "got": "Hernandez"
+        },
+        "forme_juridique": {
+          "status": "OK",
+          "expected": "SARL",
+          "got": "SARL"
+        },
+        "capital_social": {
+          "status": "OK",
+          "expected": "61492 €",
+          "got": "61492 €"
+        },
+        "date_immatriculation": {
+          "status": "OK",
+          "expected": "2025-06-24",
+          "got": "2025-06-24"
+        },
+        "dirigeant": {
+          "status": "OK",
+          "expected": "Élise Regnier",
+          "got": "Élise Regnier"
+        }
+      }
+    },
+    {
+      "doc_id": "KBIS_036",
+      "type": "kbis",
+      "scenario": "A",
+      "accuracy_pct": 71.4,
+      "cer_pct": 4.6,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "26332464299857",
+          "got": 26332464299857.0
+        },
+        "siren": {
+          "status": "MISMATCH",
+          "expected": "263324642",
+          "got": 263324642.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Gimenez SARL",
+          "got": "Gimenez SARL"
+        },
+        "forme_juridique": {
+          "status": "OK",
+          "expected": "SARL",
+          "got": "SARL"
+        },
+        "capital_social": {
+          "status": "OK",
+          "expected": "67265 €",
+          "got": "67265 €"
+        },
+        "date_immatriculation": {
+          "status": "OK",
+          "expected": "2025-03-19",
+          "got": "2025-03-19"
+        },
+        "dirigeant": {
+          "status": "OK",
+          "expected": "Zacharie Maillard-Le Goff",
+          "got": "Zacharie Maillard-Le Goff"
+        }
+      }
+    },
+    {
+      "doc_id": "KBIS_051",
+      "type": "kbis",
+      "scenario": "B",
+      "accuracy_pct": 71.4,
+      "cer_pct": 5.33,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "91709203183728",
+          "got": 91709203183728.0
+        },
+        "siren": {
+          "status": "MISMATCH",
+          "expected": "917092031",
+          "got": 917092031.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Bertin SARL",
+          "got": "Bertin SARL"
+        },
+        "forme_juridique": {
+          "status": "OK",
+          "expected": "SARL",
+          "got": "SARL"
+        },
+        "capital_social": {
+          "status": "OK",
+          "expected": "95731 €",
+          "got": "95731 €"
+        },
+        "date_immatriculation": {
+          "status": "OK",
+          "expected": "2025-04-28",
+          "got": "2025-04-28"
+        },
+        "dirigeant": {
+          "status": "OK",
+          "expected": "Zacharie Vidal",
+          "got": "Zacharie Vidal"
+        }
+      }
+    },
+    {
+      "doc_id": "KBIS_078",
+      "type": "kbis",
+      "scenario": "C",
+      "accuracy_pct": 71.4,
+      "cer_pct": 4.88,
+      "duration_ms": 1,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "93229087174957",
+          "got": 93229087174957.0
+        },
+        "siren": {
+          "status": "MISMATCH",
+          "expected": "932290871",
+          "got": 932290871.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Mercier Bonnet S.A.",
+          "got": "Mercier Bonnet S.A."
+        },
+        "forme_juridique": {
+          "status": "OK",
+          "expected": "SARL",
+          "got": "SARL"
+        },
+        "capital_social": {
+          "status": "OK",
+          "expected": "9740 €",
+          "got": "9740 €"
+        },
+        "date_immatriculation": {
+          "status": "OK",
+          "expected": "2025-11-04",
+          "got": "2025-11-04"
+        },
+        "dirigeant": {
+          "status": "OK",
+          "expected": "Georges Hebert",
+          "got": "Georges Hebert"
+        }
+      }
+    },
+    {
+      "doc_id": "KBIS_090",
+      "type": "kbis",
+      "scenario": "C",
+      "accuracy_pct": 71.4,
+      "cer_pct": 4.71,
+      "duration_ms": 4,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "74392694328235",
+          "got": 74392694328235.0
+        },
+        "siren": {
+          "status": "MISMATCH",
+          "expected": "743926943",
+          "got": 743926943.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Besson Bonnin S.A.R.L.",
+          "got": "Besson Bonnin S.A.R.L."
+        },
+        "forme_juridique": {
+          "status": "OK",
+          "expected": "SARL",
+          "got": "SARL"
+        },
+        "capital_social": {
+          "status": "OK",
+          "expected": "2934 €",
+          "got": "2934 €"
+        },
+        "date_immatriculation": {
+          "status": "OK",
+          "expected": "2025-11-13",
+          "got": "2025-11-13"
+        },
+        "dirigeant": {
+          "status": "OK",
+          "expected": "Henri Teixeira",
+          "got": "Henri Teixeira"
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_001",
+      "type": "rib",
+      "scenario": "D",
+      "accuracy_pct": 80.0,
+      "cer_pct": 3.03,
+      "duration_ms": 1,
+      "fields": {
+        "iban": {
+          "status": "OK",
+          "expected": "FR9632830073352509826259502",
+          "got": "FR9632830073352509826259502"
+        },
+        "bic": {
+          "status": "OK",
+          "expected": "BNPAFRPP",
+          "got": "BNPAFRPP"
+        },
+        "titulaire": {
+          "status": "OK",
+          "expected": "Ruiz",
+          "got": "Ruiz"
+        },
+        "domiciliation_bancaire": {
+          "status": "OK",
+          "expected": "Noël SARL",
+          "got": "Noël SARL"
+        },
+        "siret_associe": {
+          "status": "MISMATCH",
+          "expected": "44386981250031",
+          "got": 44386981250031.0
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_004",
+      "type": "rib",
+      "scenario": "C",
+      "accuracy_pct": 80.0,
+      "cer_pct": 2.7,
+      "duration_ms": 1,
+      "fields": {
+        "iban": {
+          "status": "OK",
+          "expected": "FR1494610327717954621417765",
+          "got": "FR1494610327717954621417765"
+        },
+        "bic": {
+          "status": "OK",
+          "expected": "BNPAFRPP",
+          "got": "BNPAFRPP"
+        },
+        "titulaire": {
+          "status": "OK",
+          "expected": "Charpentier SA",
+          "got": "Charpentier SA"
+        },
+        "domiciliation_bancaire": {
+          "status": "OK",
+          "expected": "Lacombe",
+          "got": "Lacombe"
+        },
+        "siret_associe": {
+          "status": "MISMATCH",
+          "expected": "67004581962120",
+          "got": 67004581962120.0
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_005",
+      "type": "rib",
+      "scenario": "C",
+      "accuracy_pct": 80.0,
+      "cer_pct": 2.44,
+      "duration_ms": 1,
+      "fields": {
+        "iban": {
+          "status": "OK",
+          "expected": "FR6375863542093525164605290",
+          "got": "FR6375863542093525164605290"
+        },
+        "bic": {
+          "status": "OK",
+          "expected": "BNPAFRPP",
+          "got": "BNPAFRPP"
+        },
+        "titulaire": {
+          "status": "OK",
+          "expected": "Letellier",
+          "got": "Letellier"
+        },
+        "domiciliation_bancaire": {
+          "status": "OK",
+          "expected": "Garnier Ramos S.A.S.",
+          "got": "Garnier Ramos S.A.S."
+        },
+        "siret_associe": {
+          "status": "MISMATCH",
+          "expected": "30387271648024",
+          "got": 30387271648024.0
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_007",
+      "type": "rib",
+      "scenario": "C",
+      "accuracy_pct": 80.0,
+      "cer_pct": 2.41,
+      "duration_ms": 1,
+      "fields": {
+        "iban": {
+          "status": "OK",
+          "expected": "FR2702095586502258333472791",
+          "got": "FR2702095586502258333472791"
+        },
+        "bic": {
+          "status": "OK",
+          "expected": "BNPAFRPP",
+          "got": "BNPAFRPP"
+        },
+        "titulaire": {
+          "status": "OK",
+          "expected": "Courtois S.A.S.",
+          "got": "Courtois S.A.S."
+        },
+        "domiciliation_bancaire": {
+          "status": "OK",
+          "expected": "Allard S.A.R.L.",
+          "got": "Allard S.A.R.L."
+        },
+        "siret_associe": {
+          "status": "MISMATCH",
+          "expected": "97780780238550",
+          "got": 97780780238550.0
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_010",
+      "type": "rib",
+      "scenario": "C",
+      "accuracy_pct": 80.0,
+      "cer_pct": 2.5,
+      "duration_ms": 2,
+      "fields": {
+        "iban": {
+          "status": "OK",
+          "expected": "FR4176825922271903571011611",
+          "got": "FR4176825922271903571011611"
+        },
+        "bic": {
+          "status": "OK",
+          "expected": "BNPAFRPP",
+          "got": "BNPAFRPP"
+        },
+        "titulaire": {
+          "status": "OK",
+          "expected": "Thomas",
+          "got": "Thomas"
+        },
+        "domiciliation_bancaire": {
+          "status": "OK",
+          "expected": "Huet Charpentier S.A.",
+          "got": "Huet Charpentier S.A."
+        },
+        "siret_associe": {
+          "status": "MISMATCH",
+          "expected": "80890851951501",
+          "got": 80890851951501.0
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_013",
+      "type": "rib",
+      "scenario": "A",
+      "accuracy_pct": 80.0,
+      "cer_pct": 2.15,
+      "duration_ms": 2,
+      "fields": {
+        "iban": {
+          "status": "OK",
+          "expected": "FR5325097609072427714443685",
+          "got": "FR5325097609072427714443685"
+        },
+        "bic": {
+          "status": "OK",
+          "expected": "BNPAFRPP",
+          "got": "BNPAFRPP"
+        },
+        "titulaire": {
+          "status": "OK",
+          "expected": "Regnier Navarro et Fils",
+          "got": "Regnier Navarro et Fils"
+        },
+        "domiciliation_bancaire": {
+          "status": "OK",
+          "expected": "Camus Benoit SARL",
+          "got": "Camus Benoit SARL"
+        },
+        "siret_associe": {
+          "status": "MISMATCH",
+          "expected": "93906188519201",
+          "got": 93906188519201.0
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_034",
+      "type": "rib",
+      "scenario": "C",
+      "accuracy_pct": 80.0,
+      "cer_pct": 2.5,
+      "duration_ms": 1,
+      "fields": {
+        "iban": {
+          "status": "OK",
+          "expected": "FR3356461686981056455295691",
+          "got": "FR3356461686981056455295691"
+        },
+        "bic": {
+          "status": "OK",
+          "expected": "BNPAFRPP",
+          "got": "BNPAFRPP"
+        },
+        "titulaire": {
+          "status": "OK",
+          "expected": "Joubert Da Silva SARL",
+          "got": "Joubert Da Silva SARL"
+        },
+        "domiciliation_bancaire": {
+          "status": "OK",
+          "expected": "Samson",
+          "got": "Samson"
+        },
+        "siret_associe": {
+          "status": "MISMATCH",
+          "expected": "24449657479841",
+          "got": 24449657479841.0
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_041",
+      "type": "rib",
+      "scenario": "B",
+      "accuracy_pct": 80.0,
+      "cer_pct": 2.67,
+      "duration_ms": 1,
+      "fields": {
+        "iban": {
+          "status": "OK",
+          "expected": "FR1275185793244877660601878",
+          "got": "FR1275185793244877660601878"
+        },
+        "bic": {
+          "status": "OK",
+          "expected": "BNPAFRPP",
+          "got": "BNPAFRPP"
+        },
+        "titulaire": {
+          "status": "OK",
+          "expected": "Gomez S.A.R.L.",
+          "got": "Gomez S.A.R.L."
+        },
+        "domiciliation_bancaire": {
+          "status": "OK",
+          "expected": "Blanchet",
+          "got": "Blanchet"
+        },
+        "siret_associe": {
+          "status": "MISMATCH",
+          "expected": "45701679575048",
+          "got": 45701679575048.0
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_045",
+      "type": "rib",
+      "scenario": "D",
+      "accuracy_pct": 80.0,
+      "cer_pct": 2.6,
+      "duration_ms": 1,
+      "fields": {
+        "iban": {
+          "status": "OK",
+          "expected": "FR2193853564157254459185977",
+          "got": "FR2193853564157254459185977"
+        },
+        "bic": {
+          "status": "OK",
+          "expected": "BNPAFRPP",
+          "got": "BNPAFRPP"
+        },
+        "titulaire": {
+          "status": "OK",
+          "expected": "Guillou Robin S.A.",
+          "got": "Guillou Robin S.A."
+        },
+        "domiciliation_bancaire": {
+          "status": "OK",
+          "expected": "Dufour",
+          "got": "Dufour"
+        },
+        "siret_associe": {
+          "status": "MISMATCH",
+          "expected": "12174198124094",
+          "got": 12174198124094.0
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_056",
+      "type": "rib",
+      "scenario": "D",
+      "accuracy_pct": 80.0,
+      "cer_pct": 2.47,
+      "duration_ms": 1,
+      "fields": {
+        "iban": {
+          "status": "OK",
+          "expected": "FR1051203521540155217250977",
+          "got": "FR1051203521540155217250977"
+        },
+        "bic": {
+          "status": "OK",
+          "expected": "BNPAFRPP",
+          "got": "BNPAFRPP"
+        },
+        "titulaire": {
+          "status": "OK",
+          "expected": "Guillon Diallo SARL",
+          "got": "Guillon Diallo SARL"
+        },
+        "domiciliation_bancaire": {
+          "status": "OK",
+          "expected": "Blin S.A.",
+          "got": "Blin S.A."
+        },
+        "siret_associe": {
+          "status": "MISMATCH",
+          "expected": "64782129791873",
+          "got": 64782129791873.0
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_058",
+      "type": "rib",
+      "scenario": "A",
+      "accuracy_pct": 80.0,
+      "cer_pct": 2.82,
+      "duration_ms": 1,
+      "fields": {
+        "iban": {
+          "status": "OK",
+          "expected": "FR3923679141253469657360809",
+          "got": "FR3923679141253469657360809"
+        },
+        "bic": {
+          "status": "OK",
+          "expected": "BNPAFRPP",
+          "got": "BNPAFRPP"
+        },
+        "titulaire": {
+          "status": "OK",
+          "expected": "Lévy",
+          "got": "Lévy"
+        },
+        "domiciliation_bancaire": {
+          "status": "OK",
+          "expected": "Martins S.A.S.",
+          "got": "Martins S.A.S."
+        },
+        "siret_associe": {
+          "status": "MISMATCH",
+          "expected": "24011403632209",
+          "got": 24011403632209.0
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_067",
+      "type": "rib",
+      "scenario": "B",
+      "accuracy_pct": 80.0,
+      "cer_pct": 2.9,
+      "duration_ms": 1,
+      "fields": {
+        "iban": {
+          "status": "OK",
+          "expected": "FR1109093297946381646938012",
+          "got": "FR1109093297946381646938012"
+        },
+        "bic": {
+          "status": "OK",
+          "expected": "BNPAFRPP",
+          "got": "BNPAFRPP"
+        },
+        "titulaire": {
+          "status": "OK",
+          "expected": "Hardy S.A.",
+          "got": "Hardy S.A."
+        },
+        "domiciliation_bancaire": {
+          "status": "OK",
+          "expected": "Cousin",
+          "got": "Cousin"
+        },
+        "siret_associe": {
+          "status": "MISMATCH",
+          "expected": "29881279290037",
+          "got": 29881279290037.0
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_073",
+      "type": "rib",
+      "scenario": "D",
+      "accuracy_pct": 80.0,
+      "cer_pct": 2.47,
+      "duration_ms": 1,
+      "fields": {
+        "iban": {
+          "status": "OK",
+          "expected": "FR2994448353800302044535635",
+          "got": "FR2994448353800302044535635"
+        },
+        "bic": {
+          "status": "OK",
+          "expected": "BNPAFRPP",
+          "got": "BNPAFRPP"
+        },
+        "titulaire": {
+          "status": "OK",
+          "expected": "Lebrun Pascal et Fils",
+          "got": "Lebrun Pascal et Fils"
+        },
+        "domiciliation_bancaire": {
+          "status": "OK",
+          "expected": "Fouquet",
+          "got": "Fouquet"
+        },
+        "siret_associe": {
+          "status": "MISMATCH",
+          "expected": "57705568082497",
+          "got": 57705568082497.0
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_088",
+      "type": "rib",
+      "scenario": "A",
+      "accuracy_pct": 80.0,
+      "cer_pct": 2.44,
+      "duration_ms": 1,
+      "fields": {
+        "iban": {
+          "status": "OK",
+          "expected": "FR4262038103178325240146721",
+          "got": "FR4262038103178325240146721"
+        },
+        "bic": {
+          "status": "OK",
+          "expected": "BNPAFRPP",
+          "got": "BNPAFRPP"
+        },
+        "titulaire": {
+          "status": "OK",
+          "expected": "Bouvet Gosselin S.A.S.",
+          "got": "Bouvet Gosselin S.A.S."
+        },
+        "domiciliation_bancaire": {
+          "status": "OK",
+          "expected": "Sauvage",
+          "got": "Sauvage"
+        },
+        "siret_associe": {
+          "status": "MISMATCH",
+          "expected": "78713597358742",
+          "got": 78713597358742.0
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_089",
+      "type": "rib",
+      "scenario": "D",
+      "accuracy_pct": 80.0,
+      "cer_pct": 2.7,
+      "duration_ms": 1,
+      "fields": {
+        "iban": {
+          "status": "OK",
+          "expected": "FR9372159348063457958684174",
+          "got": "FR9372159348063457958684174"
+        },
+        "bic": {
+          "status": "OK",
+          "expected": "BNPAFRPP",
+          "got": "BNPAFRPP"
+        },
+        "titulaire": {
+          "status": "OK",
+          "expected": "Techer S.A.R.L.",
+          "got": "Techer S.A.R.L."
+        },
+        "domiciliation_bancaire": {
+          "status": "OK",
+          "expected": "Pichon",
+          "got": "Pichon"
+        },
+        "siret_associe": {
+          "status": "MISMATCH",
+          "expected": "19045549995765",
+          "got": 19045549995765.0
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_095",
+      "type": "rib",
+      "scenario": "C",
+      "accuracy_pct": 80.0,
+      "cer_pct": 3.12,
+      "duration_ms": 1,
+      "fields": {
+        "iban": {
+          "status": "OK",
+          "expected": "FR2760365629281093176145249",
+          "got": "FR2760365629281093176145249"
+        },
+        "bic": {
+          "status": "OK",
+          "expected": "BNPAFRPP",
+          "got": "BNPAFRPP"
+        },
+        "titulaire": {
+          "status": "OK",
+          "expected": "Masson",
+          "got": "Masson"
+        },
+        "domiciliation_bancaire": {
+          "status": "OK",
+          "expected": "Barre",
+          "got": "Barre"
+        },
+        "siret_associe": {
+          "status": "MISMATCH",
+          "expected": "96766079831204",
+          "got": 96766079831204.0
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_100",
+      "type": "rib",
+      "scenario": "D",
+      "accuracy_pct": 80.0,
+      "cer_pct": 2.33,
+      "duration_ms": 1,
+      "fields": {
+        "iban": {
+          "status": "OK",
+          "expected": "FR2709303295216027113715980",
+          "got": "FR2709303295216027113715980"
+        },
+        "bic": {
+          "status": "OK",
+          "expected": "BNPAFRPP",
+          "got": "BNPAFRPP"
+        },
+        "titulaire": {
+          "status": "OK",
+          "expected": "Vaillant Noël SARL",
+          "got": "Vaillant Noël SARL"
+        },
+        "domiciliation_bancaire": {
+          "status": "OK",
+          "expected": "Thomas S.A.R.L.",
+          "got": "Thomas S.A.R.L."
+        },
+        "siret_associe": {
+          "status": "MISMATCH",
+          "expected": "33209407179237",
+          "got": 33209407179237.0
+        }
+      }
+    }
+  ],
+  "noisy": [
+    {
+      "doc_id": "ATTESTATION_SIRET_012",
+      "type": "attestation_siret",
+      "scenario": "D",
+      "ocr_confidence": 0.378,
+      "accuracy_pct": 0.0,
+      "cer_pct": 95.51,
+      "duration_ms": 678,
+      "fields": {
+        "siret": {
+          "status": "ABSENT",
+          "expected": "14540916734476",
+          "got": null
+        },
+        "raison_sociale": {
+          "status": "ABSENT",
+          "expected": "Marchal S.A.S.",
+          "got": null
+        },
+        "adresse": {
+          "status": "ABSENT",
+          "expected": "730, rue Manon Martinez\n70590 Hoareau",
+          "got": null
+        },
+        "date_delivrance": {
+          "status": "ABSENT",
+          "expected": "2026-03-16",
+          "got": null
+        },
+        "date_expiration": {
+          "status": "ABSENT",
+          "expected": "2026-02-14",
+          "got": null
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_026",
+      "type": "attestation_siret",
+      "scenario": "D",
+      "ocr_confidence": 0.706,
+      "accuracy_pct": 0.0,
+      "cer_pct": 23.0,
+      "duration_ms": 613,
+      "fields": {
+        "siret": {
+          "status": "ABSENT",
+          "expected": "34906036564100",
+          "got": null
+        },
+        "raison_sociale": {
+          "status": "MISMATCH",
+          "expected": "Caron S.A.S.",
+          "got": "Caron SAS."
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "9, avenue Laetitia Martel\n45629 Barthelemy-sur-Mer",
+          "got": "8. avenue Laetitia HMarte 45629 Barthelemy-sur-Mer"
+        },
+        "date_delivrance": {
+          "status": "MISMATCH",
+          "expected": "2026-03-16",
+          "got": "2026-63-16"
+        },
+        "date_expiration": {
+          "status": "MISMATCH",
+          "expected": "2026-02-14",
+          "got": "2028-02-14"
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_030",
+      "type": "attestation_siret",
+      "scenario": "D",
+      "ocr_confidence": 0.363,
+      "accuracy_pct": 0.0,
+      "cer_pct": 94.59,
+      "duration_ms": 581,
+      "fields": {
+        "siret": {
+          "status": "ABSENT",
+          "expected": "15427099124851",
+          "got": null
+        },
+        "raison_sociale": {
+          "status": "ABSENT",
+          "expected": "Riou",
+          "got": null
+        },
+        "adresse": {
+          "status": "ABSENT",
+          "expected": "boulevard de Garnier\n02645 Lecoq",
+          "got": null
+        },
+        "date_delivrance": {
+          "status": "ABSENT",
+          "expected": "2026-03-16",
+          "got": null
+        },
+        "date_expiration": {
+          "status": "ABSENT",
+          "expected": "2026-02-14",
+          "got": null
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_SIRET_049",
+      "type": "attestation_siret",
+      "scenario": "D",
+      "ocr_confidence": 0.617,
+      "accuracy_pct": 0.0,
+      "cer_pct": 55.95,
+      "duration_ms": 530,
+      "fields": {
+        "siret": {
+          "status": "ABSENT",
+          "expected": "56345913898949",
+          "got": null
+        },
+        "raison_sociale": {
+          "status": "ABSENT",
+          "expected": "Roy S.A.",
+          "got": null
+        },
+        "adresse": {
+          "status": "MISMATCH",
+          "expected": "41, boulevard de Lacroix\n09591 Michaud",
+          "got": "#1, houteverd de Lacroix 09591 Michaud"
+        },
+        "date_delivrance": {
+          "status": "ABSENT",
+          "expected": "2026-03-16",
+          "got": null
+        },
+        "date_expiration": {
+          "status": "ABSENT",
+          "expected": "2026-02-14",
+          "got": null
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_021",
+      "type": "attestation_urssaf",
+      "scenario": "D",
+      "ocr_confidence": 0.209,
+      "accuracy_pct": 0.0,
+      "cer_pct": 91.84,
+      "duration_ms": 519,
+      "fields": {
+        "siret": {
+          "status": "ABSENT",
+          "expected": "76088506816229",
+          "got": null
+        },
+        "raison_sociale": {
+          "status": "ABSENT",
+          "expected": "Rey",
+          "got": null
+        },
+        "date_debut_validite": {
+          "status": "ABSENT",
+          "expected": "2026-03-16",
+          "got": null
+        },
+        "date_fin_validite": {
+          "status": "ABSENT",
+          "expected": "2026-02-14",
+          "got": null
+        },
+        "numero_attestation": {
+          "status": "ABSENT",
+          "expected": 98774322,
+          "got": null
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_063",
+      "type": "attestation_urssaf",
+      "scenario": "D",
+      "ocr_confidence": 0.406,
+      "accuracy_pct": 0.0,
+      "cer_pct": 78.79,
+      "duration_ms": 587,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "96653068639097",
+          "got": "°665306863000"
+        },
+        "raison_sociale": {
+          "status": "ABSENT",
+          "expected": "Goncalves Lemaire SA",
+          "got": null
+        },
+        "date_debut_validite": {
+          "status": "ABSENT",
+          "expected": "2026-03-16",
+          "got": null
+        },
+        "date_fin_validite": {
+          "status": "ABSENT",
+          "expected": "2026-02-14",
+          "got": null
+        },
+        "numero_attestation": {
+          "status": "ABSENT",
+          "expected": 54543617,
+          "got": null
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_075",
+      "type": "attestation_urssaf",
+      "scenario": "D",
+      "ocr_confidence": 0.53,
+      "accuracy_pct": 20.0,
+      "cer_pct": 62.75,
+      "duration_ms": 528,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "56434987919941",
+          "got": 66434987019941.0
+        },
+        "raison_sociale": {
+          "status": "OK",
+          "expected": "Vidal",
+          "got": "Vidal"
+        },
+        "date_debut_validite": {
+          "status": "ABSENT",
+          "expected": "2026-03-16",
+          "got": null
+        },
+        "date_fin_validite": {
+          "status": "ABSENT",
+          "expected": "2026-02-14",
+          "got": null
+        },
+        "numero_attestation": {
+          "status": "ABSENT",
+          "expected": 16971263,
+          "got": null
+        }
+      }
+    },
+    {
+      "doc_id": "ATTESTATION_URSSAF_087",
+      "type": "attestation_urssaf",
+      "scenario": "D",
+      "ocr_confidence": 0.416,
+      "accuracy_pct": 0.0,
+      "cer_pct": 73.08,
+      "duration_ms": 534,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "72767830596072",
+          "got": "7o 76 7830596 72"
+        },
+        "raison_sociale": {
+          "status": "ABSENT",
+          "expected": "Dupont",
+          "got": null
+        },
+        "date_debut_validite": {
+          "status": "ABSENT",
+          "expected": "2026-03-16",
+          "got": null
+        },
+        "date_fin_validite": {
+          "status": "ABSENT",
+          "expected": "2026-02-14",
+          "got": null
+        },
+        "numero_attestation": {
+          "status": "ABSENT",
+          "expected": 48571441,
+          "got": null
+        }
+      }
+    },
+    {
+      "doc_id": "DEVIS_096",
+      "type": "devis",
+      "scenario": "D",
+      "ocr_confidence": 0.359,
+      "accuracy_pct": 0.0,
+      "cer_pct": 91.21,
+      "duration_ms": 608,
+      "fields": {
+        "siret_emetteur": {
+          "status": "ABSENT",
+          "expected": "16379765219844",
+          "got": null
+        },
+        "date_devis": {
+          "status": "ABSENT",
+          "expected": "2026-03-16",
+          "got": null
+        },
+        "date_validite": {
+          "status": "ABSENT",
+          "expected": "2026-04-15",
+          "got": null
+        },
+        "designation": {
+          "status": "ABSENT",
+          "expected": "enable visionary web services",
+          "got": null
+        },
+        "quantite": {
+          "status": "ABSENT",
+          "expected": 1,
+          "got": null
+        },
+        "prix_unitaire": {
+          "status": "ABSENT",
+          "expected": 48.69,
+          "got": null
+        },
+        "total_ht": {
+          "status": "ABSENT",
+          "expected": 48.69,
+          "got": null
+        },
+        "tva": {
+          "status": "ABSENT",
+          "expected": 9.74,
+          "got": null
+        },
+        "ttc": {
+          "status": "ABSENT",
+          "expected": 63.43,
+          "got": null
+        }
+      }
+    },
+    {
+      "doc_id": "FACTURE_011",
+      "type": "facture",
+      "scenario": "D",
+      "ocr_confidence": 0.505,
+      "accuracy_pct": 16.7,
+      "cer_pct": 69.84,
+      "duration_ms": 504,
+      "fields": {
+        "siret_emetteur": {
+          "status": "ABSENT",
+          "expected": "64742148178628",
+          "got": null
+        },
+        "siret_client": {
+          "status": "ABSENT",
+          "expected": "54740032964758",
+          "got": null
+        },
+        "montant_ht": {
+          "status": "ABSENT",
+          "expected": 1732.77,
+          "got": null
+        },
+        "tva": {
+          "status": "OK",
+          "expected": 346.55,
+          "got": 346.55
+        },
+        "ttc": {
+          "status": "ABSENT",
+          "expected": 2106.32,
+          "got": null
+        },
+        "date_emission": {
+          "status": "MISMATCH",
+          "expected": "2026-03-16",
+          "got": "2028-43-16"
+        }
+      }
+    },
+    {
+      "doc_id": "FACTURE_023",
+      "type": "facture",
+      "scenario": "D",
+      "ocr_confidence": 0.473,
+      "accuracy_pct": 0.0,
+      "cer_pct": 71.43,
+      "duration_ms": 523,
+      "fields": {
+        "siret_emetteur": {
+          "status": "ABSENT",
+          "expected": "69150498730971",
+          "got": null
+        },
+        "siret_client": {
+          "status": "MISMATCH",
+          "expected": "18706037214692",
+          "got": "4 8706037 14692"
+        },
+        "montant_ht": {
+          "status": "ABSENT",
+          "expected": 4158.13,
+          "got": null
+        },
+        "tva": {
+          "status": "ABSENT",
+          "expected": 831.63,
+          "got": null
+        },
+        "ttc": {
+          "status": "ABSENT",
+          "expected": 5004.76,
+          "got": null
+        },
+        "date_emission": {
+          "status": "ABSENT",
+          "expected": "2026-03-16",
+          "got": null
+        }
+      }
+    },
+    {
+      "doc_id": "FACTURE_029",
+      "type": "facture",
+      "scenario": "D",
+      "ocr_confidence": 0.479,
+      "accuracy_pct": 0.0,
+      "cer_pct": 91.8,
+      "duration_ms": 526,
+      "fields": {
+        "siret_emetteur": {
+          "status": "ABSENT",
+          "expected": "42209655545711",
+          "got": null
+        },
+        "siret_client": {
+          "status": "ABSENT",
+          "expected": "50698319056324",
+          "got": null
+        },
+        "montant_ht": {
+          "status": "ABSENT",
+          "expected": 634.62,
+          "got": null
+        },
+        "tva": {
+          "status": "ABSENT",
+          "expected": 126.92,
+          "got": null
+        },
+        "ttc": {
+          "status": "ABSENT",
+          "expected": 800.54,
+          "got": null
+        },
+        "date_emission": {
+          "status": "ABSENT",
+          "expected": "2026-03-16",
+          "got": null
+        }
+      }
+    },
+    {
+      "doc_id": "KBIS_027",
+      "type": "kbis",
+      "scenario": "D",
+      "ocr_confidence": 0.488,
+      "accuracy_pct": 0.0,
+      "cer_pct": 67.61,
+      "duration_ms": 562,
+      "fields": {
+        "siret": {
+          "status": "MISMATCH",
+          "expected": "41132326774836",
+          "got": "44 132326774836"
+        },
+        "siren": {
+          "status": "MISMATCH",
+          "expected": "411323267",
+          "got": "44 1325367"
+        },
+        "raison_sociale": {
+          "status": "ABSENT",
+          "expected": "Grégoire",
+          "got": null
+        },
+        "forme_juridique": {
+          "status": "ABSENT",
+          "expected": "SARL",
+          "got": null
+        },
+        "capital_social": {
+          "status": "ABSENT",
+          "expected": "75882 €",
+          "got": null
+        },
+        "date_immatriculation": {
+          "status": "ABSENT",
+          "expected": "2025-08-20",
+          "got": null
+        },
+        "dirigeant": {
+          "status": "ABSENT",
+          "expected": "Lucy Legendre",
+          "got": null
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_001",
+      "type": "rib",
+      "scenario": "D",
+      "ocr_confidence": 0.174,
+      "accuracy_pct": 0.0,
+      "cer_pct": 93.94,
+      "duration_ms": 499,
+      "fields": {
+        "iban": {
+          "status": "ABSENT",
+          "expected": "FR9632830073352509826259502",
+          "got": null
+        },
+        "bic": {
+          "status": "ABSENT",
+          "expected": "BNPAFRPP",
+          "got": null
+        },
+        "titulaire": {
+          "status": "ABSENT",
+          "expected": "Ruiz",
+          "got": null
+        },
+        "domiciliation_bancaire": {
+          "status": "ABSENT",
+          "expected": "Noël SARL",
+          "got": null
+        },
+        "siret_associe": {
+          "status": "ABSENT",
+          "expected": "44386981250031",
+          "got": null
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_045",
+      "type": "rib",
+      "scenario": "D",
+      "ocr_confidence": 0.221,
+      "accuracy_pct": 0.0,
+      "cer_pct": 94.81,
+      "duration_ms": 557,
+      "fields": {
+        "iban": {
+          "status": "ABSENT",
+          "expected": "FR2193853564157254459185977",
+          "got": null
+        },
+        "bic": {
+          "status": "ABSENT",
+          "expected": "BNPAFRPP",
+          "got": null
+        },
+        "titulaire": {
+          "status": "ABSENT",
+          "expected": "Guillou Robin S.A.",
+          "got": null
+        },
+        "domiciliation_bancaire": {
+          "status": "ABSENT",
+          "expected": "Dufour",
+          "got": null
+        },
+        "siret_associe": {
+          "status": "ABSENT",
+          "expected": "12174198124094",
+          "got": null
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_056",
+      "type": "rib",
+      "scenario": "D",
+      "ocr_confidence": 0.247,
+      "accuracy_pct": 0.0,
+      "cer_pct": 95.06,
+      "duration_ms": 559,
+      "fields": {
+        "iban": {
+          "status": "ABSENT",
+          "expected": "FR1051203521540155217250977",
+          "got": null
+        },
+        "bic": {
+          "status": "ABSENT",
+          "expected": "BNPAFRPP",
+          "got": null
+        },
+        "titulaire": {
+          "status": "ABSENT",
+          "expected": "Guillon Diallo SARL",
+          "got": null
+        },
+        "domiciliation_bancaire": {
+          "status": "ABSENT",
+          "expected": "Blin S.A.",
+          "got": null
+        },
+        "siret_associe": {
+          "status": "ABSENT",
+          "expected": "64782129791873",
+          "got": null
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_073",
+      "type": "rib",
+      "scenario": "D",
+      "ocr_confidence": 0.379,
+      "accuracy_pct": 0.0,
+      "cer_pct": 87.65,
+      "duration_ms": 609,
+      "fields": {
+        "iban": {
+          "status": "ABSENT",
+          "expected": "FR2994448353800302044535635",
+          "got": null
+        },
+        "bic": {
+          "status": "MISMATCH",
+          "expected": "BNPAFRPP",
+          "got": "BNPAFRpRp"
+        },
+        "titulaire": {
+          "status": "ABSENT",
+          "expected": "Lebrun Pascal et Fils",
+          "got": null
+        },
+        "domiciliation_bancaire": {
+          "status": "ABSENT",
+          "expected": "Fouquet",
+          "got": null
+        },
+        "siret_associe": {
+          "status": "ABSENT",
+          "expected": "57705568082497",
+          "got": null
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_089",
+      "type": "rib",
+      "scenario": "D",
+      "ocr_confidence": 0.406,
+      "accuracy_pct": 0.0,
+      "cer_pct": 59.46,
+      "duration_ms": 2016,
+      "fields": {
+        "iban": {
+          "status": "MISMATCH",
+          "expected": "FR9372159348063457958684174",
+          "got": "FR937215934806345 705g6n4 F4"
+        },
+        "bic": {
+          "status": "MISMATCH",
+          "expected": "BNPAFRPP",
+          "got": "ENPAFRER"
+        },
+        "titulaire": {
+          "status": "ABSENT",
+          "expected": "Techer S.A.R.L.",
+          "got": null
+        },
+        "domiciliation_bancaire": {
+          "status": "ABSENT",
+          "expected": "Pichon",
+          "got": null
+        },
+        "siret_associe": {
+          "status": "ABSENT",
+          "expected": "19045549995765",
+          "got": null
+        }
+      }
+    },
+    {
+      "doc_id": "RIB_100",
+      "type": "rib",
+      "scenario": "D",
+      "ocr_confidence": 0.283,
+      "accuracy_pct": 0.0,
+      "cer_pct": 95.35,
+      "duration_ms": 598,
+      "fields": {
+        "iban": {
+          "status": "ABSENT",
+          "expected": "FR2709303295216027113715980",
+          "got": null
+        },
+        "bic": {
+          "status": "ABSENT",
+          "expected": "BNPAFRPP",
+          "got": null
+        },
+        "titulaire": {
+          "status": "ABSENT",
+          "expected": "Vaillant Noël SARL",
+          "got": null
+        },
+        "domiciliation_bancaire": {
+          "status": "ABSENT",
+          "expected": "Thomas S.A.R.L.",
+          "got": null
+        },
+        "siret_associe": {
+          "status": "ABSENT",
+          "expected": "33209407179237",
+          "got": null
+        }
+      }
+    }
+  ],
+  "errors": [
+    {
+      "doc_id": "DEVIS_080",
+      "error": "could not convert string to float: '548 4%'"
+    }
+  ]
+}

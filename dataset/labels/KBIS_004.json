@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_004",
+  "type": "kbis",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "23146030483585",
+    "siren": "231460304",
+    "raison_sociale": "Legrand S.A.",
+    "forme_juridique": "SNC",
+    "capital_social": "87593 €",
+    "date_immatriculation": "2026-02-27",
+    "dirigeant": "William Sanchez"
+  },
+  "expected_anomalies": []
+}

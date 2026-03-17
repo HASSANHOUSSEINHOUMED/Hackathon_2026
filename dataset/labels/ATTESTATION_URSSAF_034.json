@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_034",
+  "type": "urssaf",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "44433972558983",
+    "raison_sociale": "Jean",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 45531122
+  },
+  "expected_anomalies": []
+}

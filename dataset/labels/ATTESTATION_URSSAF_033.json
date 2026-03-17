@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_033",
+  "type": "urssaf",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "97098054157933",
+    "raison_sociale": "Olivier",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2027-03-17",
+    "numero_attestation": 70620973
+  },
+  "expected_anomalies": []
+}

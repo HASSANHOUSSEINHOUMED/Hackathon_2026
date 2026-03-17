@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_010",
+  "type": "rib",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR2267758544324732984117608",
+    "bic": "CMCIFRPP",
+    "titulaire": "Guillaume",
+    "domiciliation_bancaire": "Vidal",
+    "siret_associe": "36807912451443"
+  },
+  "expected_anomalies": []
+}

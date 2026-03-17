@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_007",
+  "type": "kbis",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "61939049154152",
+    "siren": "619390491",
+    "raison_sociale": "Lemaître Potier S.A.S.",
+    "forme_juridique": "SARL",
+    "capital_social": "42204 €",
+    "date_immatriculation": "2025-05-02",
+    "dirigeant": "Éric-Stéphane Petitjean"
+  },
+  "expected_anomalies": []
+}

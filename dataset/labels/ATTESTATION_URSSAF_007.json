@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_007",
+  "type": "urssaf",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "85550804518534",
+    "raison_sociale": "Martineau Gilles SA",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 67130773
+  },
+  "expected_anomalies": []
+}

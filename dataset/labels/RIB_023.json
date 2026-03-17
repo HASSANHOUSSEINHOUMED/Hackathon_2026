@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_023",
+  "type": "rib",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR3442995697262180995836074",
+    "bic": "AGRIFRPP",
+    "titulaire": "Masson S.A.S.",
+    "domiciliation_bancaire": "Lefèvre Marty S.A.S.",
+    "siret_associe": "94248652119550"
+  },
+  "expected_anomalies": []
+}

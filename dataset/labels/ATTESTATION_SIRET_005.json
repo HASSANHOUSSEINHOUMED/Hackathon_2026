@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_005",
+  "type": "siret",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "25962804328413",
+    "raison_sociale": "Barbier",
+    "adresse": "79, rue Laroche, 97132 Bègue-la-Forêt",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

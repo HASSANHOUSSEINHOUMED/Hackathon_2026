@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_021",
+  "type": "urssaf",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "siret": "95448674655085",
+    "raison_sociale": "Allard S.A.R.L.",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 49386055
+  },
+  "expected_anomalies": []
+}

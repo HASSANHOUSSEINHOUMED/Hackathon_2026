@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_018",
+  "type": "rib",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR7371923716805760313430556",
+    "bic": "AGRIFRPP",
+    "titulaire": "De Sousa Dupuis S.A.",
+    "domiciliation_bancaire": "Tanguy S.A.R.L.",
+    "siret_associe": "55417369877723"
+  },
+  "expected_anomalies": []
+}

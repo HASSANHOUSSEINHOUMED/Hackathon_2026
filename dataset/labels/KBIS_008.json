@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_008",
+  "type": "kbis",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "68200412472226",
+    "siren": "682004124",
+    "raison_sociale": "Henry Brunel S.A.S.",
+    "forme_juridique": "SAS",
+    "capital_social": "19828 €",
+    "date_immatriculation": "2025-04-13",
+    "dirigeant": "Xavier Schneider"
+  },
+  "expected_anomalies": []
+}

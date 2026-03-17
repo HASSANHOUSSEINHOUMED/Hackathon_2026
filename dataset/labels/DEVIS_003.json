@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_003",
+  "type": "devis",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "11988576060074",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "repurpose rich relationships",
+    "quantite": 3,
+    "prix_unitaire": 310.53,
+    "total_ht": 931.59,
+    "tva": 186.32,
+    "ttc": 1122.91
+  },
+  "expected_anomalies": []
+}

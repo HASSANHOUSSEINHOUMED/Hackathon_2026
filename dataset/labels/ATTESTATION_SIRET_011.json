@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_011",
+  "type": "siret",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "76600416468889",
+    "raison_sociale": "Cohen",
+    "adresse": "863, rue Émilie Rolland, 32190 Humbert",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2027-03-17"
+  },
+  "expected_anomalies": []
+}

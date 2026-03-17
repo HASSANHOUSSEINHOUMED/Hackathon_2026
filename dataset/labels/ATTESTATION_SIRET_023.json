@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_023",
+  "type": "siret",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "90978451450820",
+    "raison_sociale": "Gilles",
+    "adresse": "boulevard Lesage, 17835 Lebon",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

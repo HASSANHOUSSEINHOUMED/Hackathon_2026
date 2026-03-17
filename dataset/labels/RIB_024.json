@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_024",
+  "type": "rib",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR3943573326683321851958246",
+    "bic": "CMCIFRPP",
+    "titulaire": "Carpentier et Fils",
+    "domiciliation_bancaire": "Bouvet",
+    "siret_associe": "96110770553038"
+  },
+  "expected_anomalies": []
+}

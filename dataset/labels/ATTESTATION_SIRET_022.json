@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_022",
+  "type": "siret",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "73699168444053",
+    "raison_sociale": "Robin Didier S.A.R.L.",
+    "adresse": "1, avenue Auger, 52407 Pottier",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

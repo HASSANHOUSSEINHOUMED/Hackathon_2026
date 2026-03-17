@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_036",
+  "type": "urssaf",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "33740863534693",
+    "raison_sociale": "Carpentier Marchal et Fils",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 7244961
+  },
+  "expected_anomalies": []
+}

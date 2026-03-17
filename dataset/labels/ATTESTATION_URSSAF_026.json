@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_026",
+  "type": "urssaf",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "14447921064550",
+    "raison_sociale": "Besnard S.A.",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2027-03-17",
+    "numero_attestation": 9648417
+  },
+  "expected_anomalies": []
+}

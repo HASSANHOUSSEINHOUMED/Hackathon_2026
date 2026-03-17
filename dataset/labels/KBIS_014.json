@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_014",
+  "type": "kbis",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "26165194268039",
+    "siren": "261651942",
+    "raison_sociale": "Cousin SA",
+    "forme_juridique": "EURL",
+    "capital_social": "23776 €",
+    "date_immatriculation": "2025-04-05",
+    "dirigeant": "Franck Marty-Bodin"
+  },
+  "expected_anomalies": []
+}

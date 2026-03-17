@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_027",
+  "type": "rib",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR9521851488532534300364751",
+    "bic": "BNPAFRPP",
+    "titulaire": "Delmas et Fils",
+    "domiciliation_bancaire": "Lemaître",
+    "siret_associe": "93125433390792"
+  },
+  "expected_anomalies": []
+}

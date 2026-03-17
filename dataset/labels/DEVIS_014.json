@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_014",
+  "type": "devis",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "siret_emetteur": "59831780165249",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "architect impactful communities",
+    "quantite": 44,
+    "prix_unitaire": 82.14,
+    "total_ht": 3614.16,
+    "tva": 722.83,
+    "ttc": 4341.99
+  },
+  "expected_anomalies": []
+}

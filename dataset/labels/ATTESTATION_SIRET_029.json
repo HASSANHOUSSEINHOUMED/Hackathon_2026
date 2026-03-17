@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_029",
+  "type": "siret",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "siret": "67174447931940",
+    "raison_sociale": "Renault SA",
+    "adresse": "rue Olivier, 55748 Saint Anouk-la-Forêt",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

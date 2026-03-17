@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_022",
+  "type": "rib",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR8151210845709188043784365",
+    "bic": "CMCIFRPP",
+    "titulaire": "Guillon",
+    "domiciliation_bancaire": "Gay S.A.S.",
+    "siret_associe": "64301448829781"
+  },
+  "expected_anomalies": []
+}

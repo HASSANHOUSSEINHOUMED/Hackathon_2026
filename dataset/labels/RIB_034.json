@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_034",
+  "type": "rib",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR5831409081921873168484679",
+    "bic": "BNPAFRPP",
+    "titulaire": "Denis",
+    "domiciliation_bancaire": "Bourdon S.A.S.",
+    "siret_associe": "90868718695403"
+  },
+  "expected_anomalies": []
+}

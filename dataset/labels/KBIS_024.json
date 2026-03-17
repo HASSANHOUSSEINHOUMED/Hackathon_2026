@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_024",
+  "type": "kbis",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "62364359925720",
+    "siren": "623643599",
+    "raison_sociale": "Jourdan SARL",
+    "forme_juridique": "EURL",
+    "capital_social": "91776 €",
+    "date_immatriculation": "2025-12-01",
+    "dirigeant": "René-Maurice Chevallier"
+  },
+  "expected_anomalies": []
+}

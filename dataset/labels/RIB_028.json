@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_028",
+  "type": "rib",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR2631195032963676870189316",
+    "bic": "CEPAFRPP",
+    "titulaire": "Dijoux S.A.",
+    "domiciliation_bancaire": "Bonneau Colas SARL",
+    "siret_associe": "28450024521844"
+  },
+  "expected_anomalies": []
+}

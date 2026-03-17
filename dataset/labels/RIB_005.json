@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_005",
+  "type": "rib",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR2805721275019338885116066",
+    "bic": "CMCIFRPP",
+    "titulaire": "Dufour",
+    "domiciliation_bancaire": "Fernandes",
+    "siret_associe": "87368463562330"
+  },
+  "expected_anomalies": []
+}

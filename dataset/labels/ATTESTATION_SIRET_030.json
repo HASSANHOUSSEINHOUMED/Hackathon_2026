@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_030",
+  "type": "siret",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "35308276470644",
+    "raison_sociale": "Martinez S.A.",
+    "adresse": "5, chemin Faivre, 33193 PelletierVille",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_021",
+  "type": "kbis",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "76332278192909",
+    "siren": "763322781",
+    "raison_sociale": "Evrard Joly SA",
+    "forme_juridique": "EURL",
+    "capital_social": "83094 €",
+    "date_immatriculation": "2025-06-17",
+    "dirigeant": "Marine Gillet"
+  },
+  "expected_anomalies": []
+}

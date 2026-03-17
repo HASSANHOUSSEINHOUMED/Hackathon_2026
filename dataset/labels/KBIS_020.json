@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_020",
+  "type": "kbis",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "39161094064588",
+    "siren": "391610940",
+    "raison_sociale": "Hardy",
+    "forme_juridique": "SNC",
+    "capital_social": "69286 €",
+    "date_immatriculation": "2025-03-21",
+    "dirigeant": "Marguerite Le Cordier"
+  },
+  "expected_anomalies": []
+}

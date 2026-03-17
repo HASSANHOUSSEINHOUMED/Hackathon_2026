@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_011",
+  "type": "kbis",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "19188814579493",
+    "siren": "191888145",
+    "raison_sociale": "Dufour",
+    "forme_juridique": "SNC",
+    "capital_social": "9632 €",
+    "date_immatriculation": "2025-10-05",
+    "dirigeant": "Brigitte Martinez de Hebert"
+  },
+  "expected_anomalies": []
+}

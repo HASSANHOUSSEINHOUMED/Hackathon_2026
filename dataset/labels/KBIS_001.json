@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_001",
+  "type": "kbis",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "siret": "34826549399897",
+    "siren": "348265493",
+    "raison_sociale": "Breton",
+    "forme_juridique": "SARL",
+    "capital_social": "81372 €",
+    "date_immatriculation": "2025-09-17",
+    "dirigeant": "Étienne Ferreira Le Dupré"
+  },
+  "expected_anomalies": []
+}

@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_033",
+  "type": "rib",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR8882914900095645918793648",
+    "bic": "AGRIFRPP",
+    "titulaire": "Berger Morel S.A.R.L.",
+    "domiciliation_bancaire": "Guillon Meyer S.A.S.",
+    "siret_associe": "83587973330887"
+  },
+  "expected_anomalies": []
+}

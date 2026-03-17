@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_008",
+  "type": "siret",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "23828004297788",
+    "raison_sociale": "Dumont SARL",
+    "adresse": "avenue de Hebert, 83802 Lacroix",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

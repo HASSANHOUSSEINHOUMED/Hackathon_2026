@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_025",
+  "type": "kbis",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "siret": "20372747296676",
+    "siren": "203727472",
+    "raison_sociale": "Valentin",
+    "forme_juridique": "EURL",
+    "capital_social": "51759 €",
+    "date_immatriculation": "2025-07-30",
+    "dirigeant": "Jérôme Lopez"
+  },
+  "expected_anomalies": []
+}

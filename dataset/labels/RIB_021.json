@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_021",
+  "type": "rib",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR8818534944731225394238433",
+    "bic": "AGRIFRPP",
+    "titulaire": "Marchand",
+    "domiciliation_bancaire": "Bruneau SARL",
+    "siret_associe": "51807941265373"
+  },
+  "expected_anomalies": []
+}
