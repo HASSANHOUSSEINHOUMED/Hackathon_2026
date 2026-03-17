@@ -33,7 +33,13 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 # Installer les dépendances Python
 COPY requirements.txt .
+# Forcer PyTorch CPU-only AVANT d'installer easyocr
+# (sans ça, pip résout la version CUDA de torch = +5 GB inutiles en conteneur)
 RUN pip install --no-cache-dir --upgrade pip \
+    && pip install --no-cache-dir \
+        torch==2.3.1+cpu \
+        torchvision==0.18.1+cpu \
+        --index-url https://download.pytorch.org/whl/cpu \
     && pip install --no-cache-dir -r requirements.txt
 
 # Télécharger le modèle spaCy français (installation directe pour éviter les erreurs d'URL)
