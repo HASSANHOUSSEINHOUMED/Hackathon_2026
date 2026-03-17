@@ -26,4 +26,5 @@ npm-debug.log*      # logs d'erreurs npm
 
 # React — fichiers de build générés automatiquement
 frontend/build/     # version compilée du frontend
-frontend/dist/      # version distribuable du frontend
+frontend/dist/      # version distribuable du frontend__pycache__/
+*.pyc
