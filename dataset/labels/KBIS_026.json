@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_026",
+  "type": "kbis",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "77851043253713",
+    "siren": "778510432",
+    "raison_sociale": "Costa S.A.",
+    "forme_juridique": "SA",
+    "capital_social": "78630 €",
+    "date_immatriculation": "2025-09-08",
+    "dirigeant": "Dominique Rodrigues"
+  },
+  "expected_anomalies": []
+}

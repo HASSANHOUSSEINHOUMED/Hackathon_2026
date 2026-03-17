@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_031",
+  "type": "urssaf",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "70625215962678",
+    "raison_sociale": "Bertin",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 16925708
+  },
+  "expected_anomalies": []
+}

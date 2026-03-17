@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_007",
+  "type": "devis",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "86551150873207",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "monetize rich synergies",
+    "quantite": 33,
+    "prix_unitaire": 407.73,
+    "total_ht": 13455.09,
+    "tva": 2691.02,
+    "ttc": 16151.11
+  },
+  "expected_anomalies": []
+}

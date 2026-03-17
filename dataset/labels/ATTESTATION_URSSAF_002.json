@@ -1,14 +1,14 @@
 {
   "document_id": "ATTESTATION_URSSAF_002",
   "type": "urssaf",
-  "scenario": "B",
+  "scenario": "A",
   "degradation": "none",
   "expected_fields": {
-    "siret": "99853823464654",
-    "raison_sociale": "Cordier S.A.S.",
-    "date_debut_validite": "2026-03-16",
-    "date_fin_validite": "2026-02-14",
-    "numero_attestation": 87707534
+    "siret": "39102803934710",
+    "raison_sociale": "Valentin",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2027-03-17",
+    "numero_attestation": 45996359
   },
   "expected_anomalies": []
 }

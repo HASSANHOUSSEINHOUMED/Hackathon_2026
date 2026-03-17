@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_002",
+  "type": "siret",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "46737216515308",
+    "raison_sociale": "Bernier",
+    "adresse": "54, boulevard de Antoine, 16143 Saint Lucas",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

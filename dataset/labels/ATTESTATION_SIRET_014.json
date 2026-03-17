@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_014",
+  "type": "siret",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "83954481314392",
+    "raison_sociale": "Wagner et Fils",
+    "adresse": "381, avenue Gallet, 94241 Duvalboeuf",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2027-03-17"
+  },
+  "expected_anomalies": []
+}

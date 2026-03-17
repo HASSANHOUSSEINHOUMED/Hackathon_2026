@@ -4,11 +4,11 @@
   "scenario": "C",
   "degradation": "none",
   "expected_fields": {
-    "siret": "79919854194501",
-    "raison_sociale": "Lemaître",
-    "date_debut_validite": "2026-03-16",
-    "date_fin_validite": "2026-02-14",
-    "numero_attestation": 67022727
+    "siret": "49724300718529",
+    "raison_sociale": "Leduc",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 7761561
   },
   "expected_anomalies": []
 }

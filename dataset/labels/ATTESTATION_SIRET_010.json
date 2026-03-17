@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_010",
+  "type": "siret",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "50902294864537",
+    "raison_sociale": "Lemaître",
+    "adresse": "9, boulevard Astrid Vincent, 78703 Lemaître",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

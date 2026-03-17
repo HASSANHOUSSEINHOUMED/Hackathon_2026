@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_009",
+  "type": "rib",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "iban": "FR1786563581871706830600058",
+    "bic": "BNPAFRPP",
+    "titulaire": "Lebon Hoareau S.A.R.L.",
+    "domiciliation_bancaire": "Lopez",
+    "siret_associe": "90664169351986"
+  },
+  "expected_anomalies": []
+}

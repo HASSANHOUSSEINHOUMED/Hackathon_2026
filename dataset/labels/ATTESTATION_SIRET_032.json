@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_032",
+  "type": "siret",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "85859453672970",
+    "raison_sociale": "Prévost",
+    "adresse": "27, boulevard Laurence Boucher, 35608 Lenoir",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2027-03-17"
+  },
+  "expected_anomalies": []
+}

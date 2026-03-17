@@ -2,13 +2,13 @@
   "document_id": "ATTESTATION_SIRET_012",
   "type": "siret",
   "scenario": "D",
-  "degradation": "none",
+  "degradation": "noisy",
   "expected_fields": {
-    "siret": "14540916734476",
-    "raison_sociale": "Marchal S.A.S.",
-    "adresse": "730, rue Manon Martinez\n70590 Hoareau",
-    "date_delivrance": "2026-03-16",
-    "date_expiration": "2026-02-14"
+    "siret": "44484523750648",
+    "raison_sociale": "Colin S.A.R.L.",
+    "adresse": "977, avenue Verdier, 79233 Sainte Thibaultnec",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
   },
   "expected_anomalies": []
 }

@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_039",
+  "type": "siret",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "siret": "51468248578646",
+    "raison_sociale": "Boulay",
+    "adresse": "rue Henry, 23852 ChauvetBourg",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_028",
+  "type": "kbis",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "44243075767235",
+    "siren": "442430757",
+    "raison_sociale": "Aubert",
+    "forme_juridique": "SARL",
+    "capital_social": "1178 €",
+    "date_immatriculation": "2025-08-28",
+    "dirigeant": "Robert De Oliveira"
+  },
+  "expected_anomalies": []
+}

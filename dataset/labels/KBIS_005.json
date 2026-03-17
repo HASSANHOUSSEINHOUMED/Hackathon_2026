@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_005",
+  "type": "kbis",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "siret": "58402799284179",
+    "siren": "584027992",
+    "raison_sociale": "Normand S.A.",
+    "forme_juridique": "SNC",
+    "capital_social": "69756 €",
+    "date_immatriculation": "2025-08-07",
+    "dirigeant": "Jeanne Le Meunier"
+  },
+  "expected_anomalies": []
+}

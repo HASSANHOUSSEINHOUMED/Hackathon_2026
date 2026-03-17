@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_036",
+  "type": "rib",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR3890341288399966527602010",
+    "bic": "CEPAFRPP",
+    "titulaire": "Fernandes",
+    "domiciliation_bancaire": "Vincent",
+    "siret_associe": "24546945298502"
+  },
+  "expected_anomalies": []
+}

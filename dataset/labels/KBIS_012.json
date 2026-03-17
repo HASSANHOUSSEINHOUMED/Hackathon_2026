@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_012",
+  "type": "kbis",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "86082140161884",
+    "siren": "860821401",
+    "raison_sociale": "Guillot Diaz et Fils",
+    "forme_juridique": "SNC",
+    "capital_social": "18312 €",
+    "date_immatriculation": "2025-09-12",
+    "dirigeant": "Virginie Renard-Sanchez"
+  },
+  "expected_anomalies": []
+}

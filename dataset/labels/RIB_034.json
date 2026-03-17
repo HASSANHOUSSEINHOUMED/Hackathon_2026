@@ -1,14 +1,14 @@
 {
   "document_id": "RIB_034",
   "type": "rib",
-  "scenario": "C",
+  "scenario": "A",
   "degradation": "none",
   "expected_fields": {
-    "iban": "FR3356461686981056455295691",
+    "iban": "FR5831409081921873168484679",
     "bic": "BNPAFRPP",
-    "titulaire": "Joubert Da Silva SARL",
-    "domiciliation_bancaire": "Samson",
-    "siret_associe": "24449657479841"
+    "titulaire": "Denis",
+    "domiciliation_bancaire": "Bourdon S.A.S.",
+    "siret_associe": "90868718695403"
   },
   "expected_anomalies": []
 }

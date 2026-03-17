@@ -1,18 +1,18 @@
 {
   "document_id": "DEVIS_019",
   "type": "devis",
-  "scenario": "A",
+  "scenario": "B",
   "degradation": "none",
   "expected_fields": {
-    "siret_emetteur": "97582877830466",
-    "date_devis": "2026-03-16",
-    "date_validite": "2026-04-15",
-    "designation": "integrate innovative initiatives",
-    "quantite": 22,
-    "prix_unitaire": 414.14,
-    "total_ht": 9111.08,
-    "tva": 1822.22,
-    "ttc": 10933.3
+    "siret_emetteur": "32428005154204",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "implement leading-edge e-commerce",
+    "quantite": 3,
+    "prix_unitaire": 152.2,
+    "total_ht": 456.6,
+    "tva": 91.32,
+    "ttc": 552.92
   },
   "expected_anomalies": []
 }

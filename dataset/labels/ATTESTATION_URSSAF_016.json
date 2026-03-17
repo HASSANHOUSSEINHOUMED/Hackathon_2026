@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_016",
+  "type": "urssaf",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "24549962162178",
+    "raison_sociale": "Da Silva S.A.S.",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2027-03-17",
+    "numero_attestation": 10629032
+  },
+  "expected_anomalies": []
+}

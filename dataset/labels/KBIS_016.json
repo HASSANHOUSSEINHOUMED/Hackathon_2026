@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_016",
+  "type": "kbis",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "31099390558327",
+    "siren": "310993905",
+    "raison_sociale": "Vallée",
+    "forme_juridique": "SARL",
+    "capital_social": "13780 €",
+    "date_immatriculation": "2025-06-07",
+    "dirigeant": "Thomas Muller Le Andre"
+  },
+  "expected_anomalies": []
+}

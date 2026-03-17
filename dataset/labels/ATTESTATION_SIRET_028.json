@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_028",
+  "type": "siret",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "siret": "10215385858731",
+    "raison_sociale": "Lévêque",
+    "adresse": "63, boulevard Humbert, 13937 MerleVille",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

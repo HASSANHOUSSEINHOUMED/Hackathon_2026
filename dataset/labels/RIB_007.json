@@ -1,14 +1,14 @@
 {
   "document_id": "RIB_007",
   "type": "rib",
-  "scenario": "C",
-  "degradation": "none",
+  "scenario": "D",
+  "degradation": "noisy",
   "expected_fields": {
-    "iban": "FR2702095586502258333472791",
-    "bic": "BNPAFRPP",
-    "titulaire": "Courtois S.A.S.",
-    "domiciliation_bancaire": "Allard S.A.R.L.",
-    "siret_associe": "97780780238550"
+    "iban": "FR0746279020655221117421338",
+    "bic": "AGRIFRPP",
+    "titulaire": "Thibault",
+    "domiciliation_bancaire": "Valette Lecomte S.A.R.L.",
+    "siret_associe": "84073496157909"
   },
   "expected_anomalies": []
 }

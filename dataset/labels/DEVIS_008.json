@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_008",
+  "type": "devis",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "48207997126406",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "architect 24/365 vortals",
+    "quantite": 7,
+    "prix_unitaire": 218.32,
+    "total_ht": 1528.24,
+    "tva": 305.65,
+    "ttc": 1838.89
+  },
+  "expected_anomalies": []
+}

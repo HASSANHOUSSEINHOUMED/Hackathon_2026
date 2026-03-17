@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_013",
+  "type": "devis",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "73880745999502",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "extend B2C systems",
+    "quantite": 17,
+    "prix_unitaire": 328.93,
+    "total_ht": 5591.81,
+    "tva": 1118.36,
+    "ttc": 6715.17
+  },
+  "expected_anomalies": []
+}

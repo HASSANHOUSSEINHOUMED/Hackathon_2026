@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_004",
+  "type": "devis",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "siret_emetteur": "41975599490339",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "synthesize distributed methodologies",
+    "quantite": 33,
+    "prix_unitaire": 296.68,
+    "total_ht": 9790.44,
+    "tva": 1958.09,
+    "ttc": 11753.53
+  },
+  "expected_anomalies": []
+}

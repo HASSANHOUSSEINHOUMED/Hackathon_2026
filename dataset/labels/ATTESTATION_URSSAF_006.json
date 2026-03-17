@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_006",
+  "type": "urssaf",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "63839473630493",
+    "raison_sociale": "Guillou",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2027-03-17",
+    "numero_attestation": 82258076
+  },
+  "expected_anomalies": []
+}

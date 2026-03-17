@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_035",
+  "type": "siret",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "10469973410157",
+    "raison_sociale": "Laroche",
+    "adresse": "41, boulevard Leclerc, 23404 Sainte Brigitte",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

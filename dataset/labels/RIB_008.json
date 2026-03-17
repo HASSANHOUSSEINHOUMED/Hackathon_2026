@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_008",
+  "type": "rib",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "iban": "FR1938979925486520769951413",
+    "bic": "CEPAFRPP",
+    "titulaire": "Duhamel Cousin SARL",
+    "domiciliation_bancaire": "Gillet",
+    "siret_associe": "72460810380128"
+  },
+  "expected_anomalies": []
+}

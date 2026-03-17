@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_020",
+  "type": "siret",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "20173499759266",
+    "raison_sociale": "Bègue Gilles S.A.",
+    "adresse": "5, rue de Mace, 06285 Labbé-sur-Lambert",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

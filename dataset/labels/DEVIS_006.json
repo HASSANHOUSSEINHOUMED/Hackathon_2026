@@ -1,18 +1,18 @@
 {
   "document_id": "DEVIS_006",
   "type": "devis",
-  "scenario": "B",
-  "degradation": "none",
+  "scenario": "D",
+  "degradation": "noisy",
   "expected_fields": {
-    "siret_emetteur": "57148322058829",
-    "date_devis": "2026-03-16",
-    "date_validite": "2026-04-15",
-    "designation": "maximize world-class mindshare",
-    "quantite": 4,
-    "prix_unitaire": 92.21,
-    "total_ht": 368.84,
-    "tva": 73.77,
-    "ttc": 447.61
+    "siret_emetteur": "30327105359272",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "maximize rich info-mediaries",
+    "quantite": 1,
+    "prix_unitaire": 264.67,
+    "total_ht": 264.67,
+    "tva": 52.93,
+    "ttc": 322.6
   },
   "expected_anomalies": []
 }

@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_018",
+  "type": "siret",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "19073672343783",
+    "raison_sociale": "Pinto",
+    "adresse": "34, rue Sophie Duhamel, 16304 Saint Joseph",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

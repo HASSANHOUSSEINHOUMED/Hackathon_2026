@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_019",
+  "type": "kbis",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "siret": "72039443371373",
+    "siren": "720394433",
+    "raison_sociale": "Chauvin",
+    "forme_juridique": "EURL",
+    "capital_social": "5193 €",
+    "date_immatriculation": "2025-11-19",
+    "dirigeant": "Margaux Verdier"
+  },
+  "expected_anomalies": []
+}

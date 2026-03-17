@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_013",
+  "type": "kbis",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "15520796230388",
+    "siren": "155207962",
+    "raison_sociale": "Rousseau",
+    "forme_juridique": "SA",
+    "capital_social": "68655 €",
+    "date_immatriculation": "2025-10-07",
+    "dirigeant": "Virginie Boulay"
+  },
+  "expected_anomalies": []
+}

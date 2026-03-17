@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_015",
+  "type": "rib",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR1381291249473865307959342",
+    "bic": "AGRIFRPP",
+    "titulaire": "Wagner S.A.",
+    "domiciliation_bancaire": "Julien",
+    "siret_associe": "46661524652582"
+  },
+  "expected_anomalies": []
+}

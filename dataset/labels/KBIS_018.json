@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_018",
+  "type": "kbis",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "52950641119006",
+    "siren": "529506411",
+    "raison_sociale": "Pascal",
+    "forme_juridique": "SA",
+    "capital_social": "4173 €",
+    "date_immatriculation": "2025-08-31",
+    "dirigeant": "Michelle Briand"
+  },
+  "expected_anomalies": []
+}

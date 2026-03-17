@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_004",
+  "type": "urssaf",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "21399026187909",
+    "raison_sociale": "Pelletier SARL",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2027-03-17",
+    "numero_attestation": 50094725
+  },
+  "expected_anomalies": []
+}

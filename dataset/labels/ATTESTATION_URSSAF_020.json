@@ -1,14 +1,14 @@
 {
   "document_id": "ATTESTATION_URSSAF_020",
   "type": "urssaf",
-  "scenario": "C",
+  "scenario": "B",
   "degradation": "none",
   "expected_fields": {
-    "siret": "67920340260416",
-    "raison_sociale": "Peltier Duhamel S.A.S.",
-    "date_debut_validite": "2026-03-16",
-    "date_fin_validite": "2026-02-14",
-    "numero_attestation": 51895676
+    "siret": "83079323483312",
+    "raison_sociale": "Toussaint",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 50526957
   },
   "expected_anomalies": []
 }

@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_009",
+  "type": "kbis",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "24863362482400",
+    "siren": "248633624",
+    "raison_sociale": "Albert SARL",
+    "forme_juridique": "SAS",
+    "capital_social": "55253 €",
+    "date_immatriculation": "2025-07-15",
+    "dirigeant": "Océane Morel-Delahaye"
+  },
+  "expected_anomalies": []
+}

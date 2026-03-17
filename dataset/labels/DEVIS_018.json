@@ -4,15 +4,15 @@
   "scenario": "C",
   "degradation": "none",
   "expected_fields": {
-    "siret_emetteur": "52284789876058",
-    "date_devis": "2026-03-16",
-    "date_validite": "2026-04-15",
-    "designation": "e-enable customized architectures",
-    "quantite": 44,
-    "prix_unitaire": 431.1,
-    "total_ht": 18968.4,
-    "tva": 3793.68,
-    "ttc": 22767.08
+    "siret_emetteur": "86238685529941",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "reinvent best-of-breed e-services",
+    "quantite": 26,
+    "prix_unitaire": 451.5,
+    "total_ht": 11739.0,
+    "tva": 2347.8,
+    "ttc": 14091.8
   },
   "expected_anomalies": []
 }

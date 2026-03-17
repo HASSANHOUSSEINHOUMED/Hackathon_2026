@@ -1,14 +1,14 @@
 {
   "document_id": "ATTESTATION_SIRET_025",
   "type": "siret",
-  "scenario": "B",
+  "scenario": "C",
   "degradation": "none",
   "expected_fields": {
-    "siret": "90499034026170",
-    "raison_sociale": "Brunet Henry et Fils",
-    "adresse": "93, rue de Schmitt\n26348 Lucas",
-    "date_delivrance": "2026-03-16",
-    "date_expiration": "2026-02-14"
+    "siret": "62348568495051",
+    "raison_sociale": "Jourdan",
+    "adresse": "rue Royer, 32287 Boulay",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
   },
   "expected_anomalies": []
 }

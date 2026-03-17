@@ -1,18 +1,18 @@
 {
   "document_id": "DEVIS_015",
   "type": "devis",
-  "scenario": "A",
-  "degradation": "none",
+  "scenario": "D",
+  "degradation": "noisy",
   "expected_fields": {
-    "siret_emetteur": "75899050291879",
-    "date_devis": "2026-03-16",
-    "date_validite": "2026-04-15",
-    "designation": "synthesize 24/7 niches",
-    "quantite": 10,
-    "prix_unitaire": 133.28,
-    "total_ht": 1332.8,
-    "tva": 266.56,
-    "ttc": 1599.36
+    "siret_emetteur": "37213050088199",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "visualize granular relationships",
+    "quantite": 40,
+    "prix_unitaire": 26.5,
+    "total_ht": 1060.0,
+    "tva": 212.0,
+    "ttc": 1277.0
   },
   "expected_anomalies": []
 }

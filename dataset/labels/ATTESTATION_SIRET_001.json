@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_001",
+  "type": "siret",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "20541502639258",
+    "raison_sociale": "Gomez Vallée SA",
+    "adresse": "44, rue de Brun, 87899 Bertin",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

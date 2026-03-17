@@ -1,16 +1,16 @@
 {
   "document_id": "KBIS_022",
   "type": "kbis",
-  "scenario": "A",
+  "scenario": "B",
   "degradation": "none",
   "expected_fields": {
-    "siret": "16036404678645",
-    "siren": "160364046",
-    "raison_sociale": "Lelièvre Vallée S.A.R.L.",
-    "forme_juridique": "SARL",
-    "capital_social": "16027 €",
-    "date_immatriculation": "2026-02-25",
-    "dirigeant": "Luc Durand"
+    "siret": "99139217370026",
+    "siren": "991392173",
+    "raison_sociale": "Brunel Duhamel S.A.S.",
+    "forme_juridique": "SNC",
+    "capital_social": "52461 €",
+    "date_immatriculation": "2025-09-11",
+    "dirigeant": "Antoine Garcia"
   },
   "expected_anomalies": []
 }

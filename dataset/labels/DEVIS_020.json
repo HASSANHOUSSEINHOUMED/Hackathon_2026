@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_020",
+  "type": "devis",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "16811459638634",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "re-intermediate holistic communities",
+    "quantite": 34,
+    "prix_unitaire": 42.42,
+    "total_ht": 1442.28,
+    "tva": 288.46,
+    "ttc": 1735.74
+  },
+  "expected_anomalies": []
+}

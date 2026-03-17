@@ -1,14 +1,14 @@
 {
   "document_id": "RIB_013",
   "type": "rib",
-  "scenario": "A",
+  "scenario": "C",
   "degradation": "none",
   "expected_fields": {
-    "iban": "FR5325097609072427714443685",
-    "bic": "BNPAFRPP",
-    "titulaire": "Regnier Navarro et Fils",
-    "domiciliation_bancaire": "Camus Benoit SARL",
-    "siret_associe": "93906188519201"
+    "iban": "FR3458842488833874247159649",
+    "bic": "CMCIFRPP",
+    "titulaire": "Goncalves",
+    "domiciliation_bancaire": "Gillet",
+    "siret_associe": "64635100898174"
   },
   "expected_anomalies": []
 }

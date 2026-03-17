@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_006",
+  "type": "rib",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR7006754649566100704625485",
+    "bic": "BNPAFRPP",
+    "titulaire": "Hervé",
+    "domiciliation_bancaire": "Leclerc",
+    "siret_associe": "25273722172390"
+  },
+  "expected_anomalies": []
+}

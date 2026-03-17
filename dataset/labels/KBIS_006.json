@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_006",
+  "type": "kbis",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "siret": "49755946398661",
+    "siren": "497559463",
+    "raison_sociale": "Jacquot Duval S.A.S.",
+    "forme_juridique": "SAS",
+    "capital_social": "82936 €",
+    "date_immatriculation": "2026-03-06",
+    "dirigeant": "Lorraine François"
+  },
+  "expected_anomalies": []
+}

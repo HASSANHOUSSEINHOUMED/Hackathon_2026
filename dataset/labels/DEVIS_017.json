@@ -1,18 +1,18 @@
 {
   "document_id": "DEVIS_017",
   "type": "devis",
-  "scenario": "C",
-  "degradation": "none",
+  "scenario": "D",
+  "degradation": "noisy",
   "expected_fields": {
-    "siret_emetteur": "84909729246693",
-    "date_devis": "2026-03-16",
-    "date_validite": "2026-04-15",
-    "designation": "integrate viral experiences",
-    "quantite": 18,
-    "prix_unitaire": 421.8,
-    "total_ht": 7592.4,
-    "tva": 1518.48,
-    "ttc": 9115.88
+    "siret_emetteur": "11625372757402",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "morph bricks-and-clicks initiatives",
+    "quantite": 20,
+    "prix_unitaire": 294.5,
+    "total_ht": 5890.0,
+    "tva": 1178.0,
+    "ttc": 7073.0
   },
   "expected_anomalies": []
 }

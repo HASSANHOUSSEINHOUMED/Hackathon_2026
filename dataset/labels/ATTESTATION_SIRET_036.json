@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_036",
+  "type": "siret",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "79321360477122",
+    "raison_sociale": "Paul",
+    "adresse": "86, boulevard Vincent, 80571 Martins",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2027-03-17"
+  },
+  "expected_anomalies": []
+}

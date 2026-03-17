@@ -4,12 +4,12 @@
   "scenario": "A",
   "degradation": "none",
   "expected_fields": {
-    "siret_emetteur": "18121363078453",
-    "siret_client": "24506016087142",
-    "montant_ht": 563.33,
-    "tva": 112.67,
-    "ttc": 676.0,
-    "date_emission": "2026-03-16"
+    "siret_emetteur": "36800858829605",
+    "siret_client": "92871771068820",
+    "montant_ht": 1402.86,
+    "tva": 280.57,
+    "ttc": 1683.43,
+    "date_emission": "2026-03-17"
   },
   "expected_anomalies": []
 }

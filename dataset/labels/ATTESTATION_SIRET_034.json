@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_034",
+  "type": "siret",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "26479012748545",
+    "raison_sociale": "Pages",
+    "adresse": "222, rue Juliette Lelièvre, 47853 Guichard",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2027-03-17"
+  },
+  "expected_anomalies": []
+}

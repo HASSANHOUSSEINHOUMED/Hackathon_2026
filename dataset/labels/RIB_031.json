@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_031",
+  "type": "rib",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR4629483486524002853292402",
+    "bic": "AGRIFRPP",
+    "titulaire": "Aubry",
+    "domiciliation_bancaire": "Salmon",
+    "siret_associe": "65527762972091"
+  },
+  "expected_anomalies": []
+}

@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_016",
+  "type": "rib",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR5003506149401452478349750",
+    "bic": "CMCIFRPP",
+    "titulaire": "Colin S.A.S.",
+    "domiciliation_bancaire": "Coste Evrard S.A.R.L.",
+    "siret_associe": "13939602731912"
+  },
+  "expected_anomalies": []
+}

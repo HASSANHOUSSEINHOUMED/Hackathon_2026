@@ -1,14 +1,14 @@
 {
   "document_id": "RIB_005",
   "type": "rib",
-  "scenario": "C",
+  "scenario": "A",
   "degradation": "none",
   "expected_fields": {
-    "iban": "FR6375863542093525164605290",
-    "bic": "BNPAFRPP",
-    "titulaire": "Letellier",
-    "domiciliation_bancaire": "Garnier Ramos S.A.S.",
-    "siret_associe": "30387271648024"
+    "iban": "FR2805721275019338885116066",
+    "bic": "CMCIFRPP",
+    "titulaire": "Dufour",
+    "domiciliation_bancaire": "Fernandes",
+    "siret_associe": "87368463562330"
   },
   "expected_anomalies": []
 }

@@ -1,16 +1,16 @@
 {
   "document_id": "KBIS_003",
   "type": "kbis",
-  "scenario": "B",
+  "scenario": "A",
   "degradation": "none",
   "expected_fields": {
-    "siret": "52029579622386",
-    "siren": "520295796",
-    "raison_sociale": "Bouvier",
-    "forme_juridique": "SARL",
-    "capital_social": "11589 €",
-    "date_immatriculation": "2025-06-12",
-    "dirigeant": "Xavier Neveu"
+    "siret": "65396380668062",
+    "siren": "653963806",
+    "raison_sociale": "Clément S.A.",
+    "forme_juridique": "EURL",
+    "capital_social": "32881 €",
+    "date_immatriculation": "2025-07-18",
+    "dirigeant": "Léon Baron"
   },
   "expected_anomalies": []
 }

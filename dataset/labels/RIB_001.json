@@ -1,14 +1,14 @@
 {
   "document_id": "RIB_001",
   "type": "rib",
-  "scenario": "D",
+  "scenario": "A",
   "degradation": "none",
   "expected_fields": {
-    "iban": "FR9632830073352509826259502",
-    "bic": "BNPAFRPP",
-    "titulaire": "Ruiz",
-    "domiciliation_bancaire": "Noël SARL",
-    "siret_associe": "44386981250031"
+    "iban": "FR1890533601648558986553048",
+    "bic": "CMCIFRPP",
+    "titulaire": "Garcia",
+    "domiciliation_bancaire": "Andre",
+    "siret_associe": "73803675674562"
   },
   "expected_anomalies": []
 }

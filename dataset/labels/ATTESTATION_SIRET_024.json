@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_024",
+  "type": "siret",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "23489076571615",
+    "raison_sociale": "Roussel",
+    "adresse": "39, boulevard Leroux, 22357 Boulay",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2027-03-17"
+  },
+  "expected_anomalies": []
+}

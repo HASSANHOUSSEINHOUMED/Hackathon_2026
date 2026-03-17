@@ -2,14 +2,14 @@
   "document_id": "FACTURE_011",
   "type": "facture",
   "scenario": "D",
-  "degradation": "none",
+  "degradation": "noisy",
   "expected_fields": {
-    "siret_emetteur": "64742148178628",
-    "siret_client": "54740032964758",
-    "montant_ht": 1732.77,
-    "tva": 346.55,
-    "ttc": 2106.32,
-    "date_emission": "2026-03-16"
+    "siret_emetteur": "37171631762568",
+    "siret_client": "48068826554479",
+    "montant_ht": 3795.32,
+    "tva": 759.06,
+    "ttc": 4603.38,
+    "date_emission": "2026-03-17"
   },
   "expected_anomalies": []
 }

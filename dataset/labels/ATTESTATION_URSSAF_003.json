@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_003",
+  "type": "urssaf",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "19748365474934",
+    "raison_sociale": "Michaud",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 10886684
+  },
+  "expected_anomalies": []
+}
