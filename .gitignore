@@ -1,30 +1,58 @@
 # Secrets — ne jamais committer sur GitHub
 .env
+.env.local
+.env.docker
 
-# Python — fichiers générés automatiquement par Python
-__pycache__/        # dossier cache Python
-*.py[cod]           # fichiers compilés Python (.pyc, .pyo, .pyd)
-.venv/              # environnement virtuel Python
-venv/               # environnement virtuel Python (autre nom)
+# Python — fichiers générés automatiquement
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Tests
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
 
 # Données générées — trop lourdes pour GitHub
-dataset/raw/*       # documents bruts générés par Tahina
-dataset/noisy/*     # images dégradées générées par Tahina
-dataset/labels/*    # fichiers d'annotations générés par Tahina
+dataset/raw/*
+dataset/noisy/*
+dataset/labels/*
 
 # Docker
-*.tar               # images Docker exportées (très lourdes)
+*.tar
 
-# IDE — fichiers de configuration personnels
-.vscode/            # configuration VS Code
-.idea/              # configuration IntelliJ
-.DS_Store           # fichier système Mac
+# IDE
+.vscode/
+.idea/
 
-# Node.js — dépendances frontend (Yanis/Khalil)
-node_modules/       # dépendances installées par npm
-npm-debug.log*      # logs d'erreurs npm
+# OS
+.DS_Store
+Thumbs.db
 
-# React — fichiers de build générés automatiquement
-frontend/build/     # version compilée du frontend
-frontend/dist/      # version distribuable du frontend__pycache__/
-*.pyc
+# Node.js
+node_modules/
+npm-debug.log*
+
+# React — fichiers de build
+frontend/build/
+frontend/dist/
+
+# Logs
+*.log
+
+# Temp
+/tmp/
