@@ -21,6 +21,9 @@ KEYWORDS: dict[str, list[tuple[str, int]]] = {
         ("numéro de facture", 2),
         ("référence facture", 1),
         ("avoir", 1),
+        ("montant ht", 2),
+        ("date d'émission", 1),
+        ("prestation", 1),
     ],
     "devis": [
         ("devis", 3),
@@ -59,11 +62,11 @@ KEYWORDS: dict[str, list[tuple[str, int]]] = {
     "rib": [
         ("relevé d'identité bancaire", 4),
         ("rib", 3),
-        ("iban", 2),
-        ("bic", 2),
+        ("iban", 1),
+        ("bic", 1),
         ("domiciliation", 2),
-        ("titulaire du compte", 1),
-        ("code banque", 1),
+        ("titulaire du compte", 2),
+        ("code banque", 2),
     ],
 }
 

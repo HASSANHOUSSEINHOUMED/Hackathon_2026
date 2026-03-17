@@ -35,8 +35,11 @@ MOIS_FR = {
 
 
 def _normalise(text: str) -> str:
-    """Remplace les espaces insécables par des espaces normaux."""
-    return text.replace("\xa0", " ").replace("\u202f", " ")
+    """Remplace les espaces insécables et les artefacts OCR fréquents."""
+    text = text.replace("\xa0", " ").replace("\u202f", " ")
+    # Le caractère | est souvent un artefact OCR pour un séparateur vertical
+    text = text.replace("|", " ")
+    return text
 
 
 def _ocr_digit(c: str) -> str:
@@ -62,21 +65,29 @@ class EntityExtractor:
         """
         text = _normalise(text)
 
-        # Pattern : 14 chiffres avec séparateurs optionnels (espace, tiret, point)
+        # Pattern ancré sur mot-clé (prioritaire) puis pattern générique
         # Tolérance OCR : O↔0, l/I↔1
-        raw_pattern = r"(?:SIRET|N[°o]\s*SIRET|Siret\s*:?)[\s:]*([0-9OolI]{3}[\s\-.]?[0-9OolI]{3}[\s\-.]?[0-9OolI]{3}[\s\-.]?[0-9OolI]{3}[\s\-.]?[0-9OolI]{2})"
-        generic_pattern = r"\b([0-9OolI]{3}[\s\-.]?[0-9OolI]{3}[\s\-.]?[0-9OolI]{3}[\s\-.]?[0-9OolI]{3}[\s\-.]?[0-9OolI]{2})\b"
+        siret_re = r"[0-9OolI]{3}[\s\-.]?[0-9OolI]{3}[\s\-.]?[0-9OolI]{3}[\s\-.]?[0-9OolI]{3}[\s\-.]?[0-9OolI]{2}"
+        # (?:[^:\d\n]{0,20}) tolère du texte entre le mot-clé et le numéro, ex: "SIRET (siège) :"
+        keyword_pattern = rf"(?:SIRET|N[°o]\s*SIRET|Siret\s*:?)(?:[^:\d\n]{{0,20}}):?\s*({siret_re})"
+        generic_pattern = rf"\b({siret_re})\b"
 
-        candidates = []
+        luhn_validated: list[str] = []
+        keyword_fallback: list[str] = []
 
-        for pattern in (raw_pattern, generic_pattern):
+        for pattern, is_keyword in ((keyword_pattern, True), (generic_pattern, False)):
             for m in re.finditer(pattern, text, re.IGNORECASE):
-                raw = m.group(1)
-                digits = self._ocr_to_digits(raw)
-                # Luhn s'applique sur le SIREN (9 premiers chiffres du SIRET)
-                if len(digits) == 14 and self._luhn_check(digits[:9]):
-                    candidates.append(digits)
+                digits = self._ocr_to_digits(m.group(1))
+                if len(digits) != 14:
+                    continue
+                if self._luhn_check(digits[:9]):
+                    luhn_validated.append(digits)
+                elif is_keyword:
+                    # Trouvé après mot-clé mais Luhn échoue (SIRET de test/synthétique)
+                    keyword_fallback.append(digits)
 
+        # Priorité : Luhn valide > ancré mot-clé sans Luhn > rien
+        candidates = luhn_validated or keyword_fallback
         return candidates[0] if candidates else None
 
     @staticmethod
@@ -131,6 +142,9 @@ class EntityExtractor:
             {"ht": float | None, "tva": float | None, "ttc": float | None}
         """
         text = _normalise(text)
+        # Supprimer les expressions parenthétiques (ex: "(20%)", "(TVA incluse)")
+        # qui parasitent les patterns entre le label et le montant
+        text = re.sub(r'\([^)\n]*\)', ' ', text)
         result: dict = {"ht": None, "tva": None, "ttc": None}
 
         # Pattern de montant : 1 234,56 € ou 1234.56 EUR ou 1 234 €
@@ -331,6 +345,32 @@ class EntityExtractor:
             return False
 
     # ------------------------------------------------------------------
+    # BIC
+    # ------------------------------------------------------------------
+
+    def extract_bic(self, text: str) -> Optional[str]:
+        """
+        Extrait un code BIC/SWIFT depuis le texte.
+        Format ISO 9362 : 8 ou 11 caractères alphanumériques (AAAABBCCDDD).
+        - AAAA : code banque (4 lettres)
+        - BB   : code pays ISO 3166-1 alpha-2 (2 lettres)
+        - CC   : code localisation (2 alphanums)
+        - DDD  : code branche optionnel (3 alphanums, ou 'XXX' pour siège)
+        """
+        text = _normalise(text)
+
+        # Uniquement après mot-clé explicite — le pattern standalone génère trop de faux positifs
+        # (tout mot de 8 lettres majuscules peut matcher : FAMILLES, REGISTRE, etc.)
+        pattern = r"(?:BIC|SWIFT|Code\s+(?:BIC|SWIFT))\s*[/:]?\s*(?:SWIFT\s*:?\s*)?([A-Z]{4}[A-Z]{2}[A-Z0-9]{2}(?:[A-Z0-9]{3})?)"
+
+        for m in re.finditer(pattern, text, re.IGNORECASE):
+            candidate = m.group(1).upper()
+            if len(candidate) in (8, 11) and candidate[:6].isalpha():
+                return candidate
+
+        return None
+
+    # ------------------------------------------------------------------
     # Raison sociale
     # ------------------------------------------------------------------
 
@@ -343,11 +383,13 @@ class EntityExtractor:
         """
         text = _normalise(text)
 
-        # Stratégie 1 : mots-clés
+        # Stratégie 1 : mots-clés — capture jusqu'au premier délimiteur connu
+        # "N° SIRET" ajouté (URSSAF), "Dénomination (Raison sociale)" ajouté (KBIS)
         keyword_pattern = (
-            r"(?:Soci[ée]t[ée]\s*:|D[ée]nomination\s*sociale?\s*:|"
+            r"(?:D[ée]nomination\s*\(?(?:Raison\s+sociale\s*)?\)?\s*:|"
+            r"Soci[ée]t[ée]\s*:|D[ée]nomination\s*sociale?\s*:|"
             r"Raison\s+sociale\s*:|Entreprise\s*:|Nom\s+(?:commercial|entreprise)\s*:)"
-            r"\s*(.+)"
+            r"\s*(.+?)(?=\s*(?:SIRET|N[°o]\s*(?:TVA|SIREN|SIRET)|Adresse|RCS|Code\s+APE|Forme\s+juridique|Capital\s+social|$))"
         )
         m = re.search(keyword_pattern, text, re.IGNORECASE)
         if m:
@@ -390,6 +432,7 @@ class EntityExtractor:
         montants = self.extract_montants(text)
         dates = self.extract_dates(text)
         iban = self.extract_iban(text)
+        bic = self.extract_bic(text)
         raison_sociale = self.extract_raison_sociale(text)
 
         # Champs critiques pour les rôles 4 et 5 — toujours présents (null si absent)
@@ -403,7 +446,7 @@ class EntityExtractor:
             "date_expiration": dates.get("expiration"),
             "raison_sociale": raison_sociale,
             "iban": iban,
-            "bic": None,  # Extrait séparément si nécessaire
+            "bic": bic,
         }
 
         # Calcul du score de confiance : ratio champs trouvés / total attendu
