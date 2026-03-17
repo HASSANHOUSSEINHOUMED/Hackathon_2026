@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_017",
+  "type": "siret",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "37542014048021",
+    "raison_sociale": "Reynaud",
+    "adresse": "60, avenue Andre, 70618 Philippe",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2027-03-17"
+  },
+  "expected_anomalies": []
+}

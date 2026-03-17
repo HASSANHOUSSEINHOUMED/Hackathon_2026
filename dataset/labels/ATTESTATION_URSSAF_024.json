@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_024",
+  "type": "urssaf",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "64977771769533",
+    "raison_sociale": "Lecoq Lecoq SA",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 46449583
+  },
+  "expected_anomalies": []
+}

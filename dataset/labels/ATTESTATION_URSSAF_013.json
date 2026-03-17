@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_013",
+  "type": "urssaf",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "82182434391089",
+    "raison_sociale": "Dumont",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 59937145
+  },
+  "expected_anomalies": []
+}

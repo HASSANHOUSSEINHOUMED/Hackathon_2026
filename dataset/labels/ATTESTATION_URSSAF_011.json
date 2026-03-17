@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_011",
+  "type": "urssaf",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "60578010361536",
+    "raison_sociale": "Chartier SA",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2027-03-17",
+    "numero_attestation": 16938998
+  },
+  "expected_anomalies": []
+}

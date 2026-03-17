@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_037",
+  "type": "siret",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "siret": "71244673412466",
+    "raison_sociale": "Vallet Brunel S.A.R.L.",
+    "adresse": "95, rue Richard, 40469 AndreVille",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

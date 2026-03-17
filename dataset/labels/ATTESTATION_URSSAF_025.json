@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_025",
+  "type": "urssaf",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "63272846532729",
+    "raison_sociale": "Fischer",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 64071969
+  },
+  "expected_anomalies": []
+}

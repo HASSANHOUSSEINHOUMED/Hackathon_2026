@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_002",
+  "type": "kbis",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "61570743095345",
+    "siren": "615707430",
+    "raison_sociale": "Dubois",
+    "forme_juridique": "SARL",
+    "capital_social": "96491 €",
+    "date_immatriculation": "2025-10-02",
+    "dirigeant": "Bertrand Ruiz"
+  },
+  "expected_anomalies": []
+}

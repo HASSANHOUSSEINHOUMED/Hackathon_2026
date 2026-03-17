@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_013",
+  "type": "siret",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "44684788615200",
+    "raison_sociale": "Charpentier S.A.R.L.",
+    "adresse": "994, boulevard Marianne Brunet, 10343 Devaux-sur-Bazin",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2027-03-17"
+  },
+  "expected_anomalies": []
+}

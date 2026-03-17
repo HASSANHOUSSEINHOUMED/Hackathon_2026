@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_021",
+  "type": "siret",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "48659087896205",
+    "raison_sociale": "Payet",
+    "adresse": "60, avenue Peron, 52225 Lucasboeuf",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_015",
+  "type": "urssaf",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "75205746242633",
+    "raison_sociale": "Vaillant",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 78740611
+  },
+  "expected_anomalies": []
+}

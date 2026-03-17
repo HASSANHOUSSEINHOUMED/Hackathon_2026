@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_009",
+  "type": "devis",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "53468784569049",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "envisioneer collaborative web-readiness",
+    "quantite": 43,
+    "prix_unitaire": 342.53,
+    "total_ht": 14728.79,
+    "tva": 2945.76,
+    "ttc": 17679.55
+  },
+  "expected_anomalies": []
+}

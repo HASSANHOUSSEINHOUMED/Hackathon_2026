@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_029",
+  "type": "urssaf",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "75314633540221",
+    "raison_sociale": "Gonzalez",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 60930805
+  },
+  "expected_anomalies": []
+}

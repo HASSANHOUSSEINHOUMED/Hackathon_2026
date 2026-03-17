@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_019",
+  "type": "urssaf",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "20741206794811",
+    "raison_sociale": "Berthelot Da Silva SARL",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2027-03-17",
+    "numero_attestation": 111982
+  },
+  "expected_anomalies": []
+}

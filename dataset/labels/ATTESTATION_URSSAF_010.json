@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_010",
+  "type": "urssaf",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "16562264712242",
+    "raison_sociale": "Marques",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 91569806
+  },
+  "expected_anomalies": []
+}

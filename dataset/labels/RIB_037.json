@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_037",
+  "type": "rib",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR1710284860175210871691599",
+    "bic": "CMCIFRPP",
+    "titulaire": "Hervé S.A.S.",
+    "domiciliation_bancaire": "Collin S.A.S.",
+    "siret_associe": "75439329772130"
+  },
+  "expected_anomalies": []
+}

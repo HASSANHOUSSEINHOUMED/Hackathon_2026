@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_002",
+  "type": "devis",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "38480368479577",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "visualize mission-critical e-commerce",
+    "quantite": 45,
+    "prix_unitaire": 448.74,
+    "total_ht": 20193.3,
+    "tva": 4038.66,
+    "ttc": 24236.96
+  },
+  "expected_anomalies": []
+}

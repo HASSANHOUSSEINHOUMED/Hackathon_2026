@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_025",
+  "type": "rib",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR2340507678796365812509620",
+    "bic": "CEPAFRPP",
+    "titulaire": "Delahaye et Fils",
+    "domiciliation_bancaire": "Neveu",
+    "siret_associe": "16255863456976"
+  },
+  "expected_anomalies": []
+}

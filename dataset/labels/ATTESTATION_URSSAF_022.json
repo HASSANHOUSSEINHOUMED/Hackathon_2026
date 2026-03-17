@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_022",
+  "type": "urssaf",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "65293643429882",
+    "raison_sociale": "Boyer",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2027-03-17",
+    "numero_attestation": 81870045
+  },
+  "expected_anomalies": []
+}

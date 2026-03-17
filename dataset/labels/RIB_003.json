@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_003",
+  "type": "rib",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "iban": "FR1823200606727477385938953",
+    "bic": "CMCIFRPP",
+    "titulaire": "Labbé",
+    "domiciliation_bancaire": "Guillou",
+    "siret_associe": "72659552375616"
+  },
+  "expected_anomalies": []
+}

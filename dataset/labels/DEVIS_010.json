@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_010",
+  "type": "devis",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "siret_emetteur": "54934395642479",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "target bricks-and-clicks metrics",
+    "quantite": 21,
+    "prix_unitaire": 204.91,
+    "total_ht": 4303.11,
+    "tva": 860.62,
+    "ttc": 5168.73
+  },
+  "expected_anomalies": []
+}

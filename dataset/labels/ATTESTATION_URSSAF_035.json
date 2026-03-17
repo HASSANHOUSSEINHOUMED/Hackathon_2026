@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_035",
+  "type": "urssaf",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "55353266050604",
+    "raison_sociale": "Normand S.A.R.L.",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 18849375
+  },
+  "expected_anomalies": []
+}

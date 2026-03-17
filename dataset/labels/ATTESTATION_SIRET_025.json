@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_025",
+  "type": "siret",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "62348568495051",
+    "raison_sociale": "Jourdan",
+    "adresse": "rue Royer, 32287 Boulay",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

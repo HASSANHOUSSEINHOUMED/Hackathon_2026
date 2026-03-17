@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_033",
+  "type": "siret",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "14603082627321",
+    "raison_sociale": "Chevallier",
+    "adresse": "2, boulevard de Raynaud, 31392 Da Costa",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

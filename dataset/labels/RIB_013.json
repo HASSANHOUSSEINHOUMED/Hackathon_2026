@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_013",
+  "type": "rib",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR3458842488833874247159649",
+    "bic": "CMCIFRPP",
+    "titulaire": "Goncalves",
+    "domiciliation_bancaire": "Gillet",
+    "siret_associe": "64635100898174"
+  },
+  "expected_anomalies": []
+}

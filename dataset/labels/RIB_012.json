@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_012",
+  "type": "rib",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "iban": "FR3027235077560350747133737",
+    "bic": "CEPAFRPP",
+    "titulaire": "Roussel",
+    "domiciliation_bancaire": "Gimenez SARL",
+    "siret_associe": "14218700425209"
+  },
+  "expected_anomalies": []
+}

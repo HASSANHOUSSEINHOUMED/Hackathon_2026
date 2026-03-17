@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_017",
+  "type": "urssaf",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "57954145699473",
+    "raison_sociale": "Breton Martinez SA",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2027-03-17",
+    "numero_attestation": 31897504
+  },
+  "expected_anomalies": []
+}

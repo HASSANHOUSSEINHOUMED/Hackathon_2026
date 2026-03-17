@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_012",
+  "type": "urssaf",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "64128827466334",
+    "raison_sociale": "Nguyen Thierry SA",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 48414815
+  },
+  "expected_anomalies": []
+}

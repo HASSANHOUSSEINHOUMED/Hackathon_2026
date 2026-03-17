@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_031",
+  "type": "siret",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "siret": "71986397910538",
+    "raison_sociale": "Thibault",
+    "adresse": "49, avenue de Leblanc, 34796 Julien",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

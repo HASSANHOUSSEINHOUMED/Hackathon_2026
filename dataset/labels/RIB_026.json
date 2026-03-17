@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_026",
+  "type": "rib",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR1992759371132470308821510",
+    "bic": "BNPAFRPP",
+    "titulaire": "Marques SARL",
+    "domiciliation_bancaire": "Le Gall",
+    "siret_associe": "98492906371359"
+  },
+  "expected_anomalies": []
+}

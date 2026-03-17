@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_032",
+  "type": "urssaf",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "53482035938060",
+    "raison_sociale": "Martins Hoarau et Fils",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 86941066
+  },
+  "expected_anomalies": []
+}

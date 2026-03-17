@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_003",
+  "type": "siret",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "66867120413983",
+    "raison_sociale": "Lévêque",
+    "adresse": "rue Carre, 30885 Julien",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2027-03-17"
+  },
+  "expected_anomalies": []
+}

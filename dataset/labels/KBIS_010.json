@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_010",
+  "type": "kbis",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "60455172140682",
+    "siren": "604551721",
+    "raison_sociale": "Laroche",
+    "forme_juridique": "SA",
+    "capital_social": "94788 €",
+    "date_immatriculation": "2026-01-15",
+    "dirigeant": "Julien-Christophe Chauveau"
+  },
+  "expected_anomalies": []
+}

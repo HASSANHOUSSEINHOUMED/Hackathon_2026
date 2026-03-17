@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_017",
+  "type": "rib",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR0327803766293733275643179",
+    "bic": "CEPAFRPP",
+    "titulaire": "Joseph",
+    "domiciliation_bancaire": "Renard et Fils",
+    "siret_associe": "57655632947101"
+  },
+  "expected_anomalies": []
+}

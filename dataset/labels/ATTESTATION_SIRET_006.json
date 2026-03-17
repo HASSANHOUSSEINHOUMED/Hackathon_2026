@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_006",
+  "type": "siret",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "53812948367198",
+    "raison_sociale": "Navarro S.A.S.",
+    "adresse": "avenue de Valentin, 33711 Letellierboeuf",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2027-03-17"
+  },
+  "expected_anomalies": []
+}

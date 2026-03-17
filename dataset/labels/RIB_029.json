@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_029",
+  "type": "rib",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR7595657910274759695195118",
+    "bic": "CMCIFRPP",
+    "titulaire": "Joseph Pons S.A.R.L.",
+    "domiciliation_bancaire": "Renaud",
+    "siret_associe": "11802141521402"
+  },
+  "expected_anomalies": []
+}

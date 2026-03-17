@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_035",
+  "type": "rib",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR3081241319227258000629956",
+    "bic": "BNPAFRPP",
+    "titulaire": "Antoine S.A.S.",
+    "domiciliation_bancaire": "Fernandes Julien S.A.",
+    "siret_associe": "96867933074528"
+  },
+  "expected_anomalies": []
+}

@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_028",
+  "type": "urssaf",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "38369033574599",
+    "raison_sociale": "Bertrand Imbert SARL",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 35110401
+  },
+  "expected_anomalies": []
+}

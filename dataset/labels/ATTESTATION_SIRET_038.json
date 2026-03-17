@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_038",
+  "type": "siret",
+  "scenario": "B",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "57711374116505",
+    "raison_sociale": "Chevallier",
+    "adresse": "rue Vasseur, 09787 Baron-les-Bains",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

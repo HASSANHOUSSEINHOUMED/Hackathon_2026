@@ -4,9 +4,9 @@
 
 ## 📌 Contexte
 
-**Projet** : Pipeline de traitement de documents comptables français  
-**Type** : Projet en équipe (7 personnes)  
-**Stack** : Python · EasyOCR · spaCy · MinIO · React · Airflow · Docker  
+**Projet** : Pipeline de traitement de documents comptables français
+**Type** : Projet en équipe (7 personnes)
+**Stack** : Python · EasyOCR · spaCy · MinIO · React · Airflow · Docker
 
 Plateforme complète d'upload, classification, extraction et validation
 de documents administratifs (factures, Kbis, URSSAF, RIB…)
@@ -16,7 +16,6 @@ avec auto-remplissage de deux applications métiers.
 
 ## 👥 Équipe & Rôles
 
-<<<<<<< HEAD
 | # | Rôle | Membre | Responsabilités | Dossier | Port(s) |
 |---|------|--------|----------------|---------|---------|
 | 1 | Scénario Maker | Tahina | Génération dataset · 6 types de docs · 5 scénarios · simulation scans bruités | `dataset/` | — |
@@ -25,16 +24,6 @@ avec auto-remplissage de deux applications métiers.
 | 4 | Chef BDD / Data Lake | Hassan | MinIO 3 zones · MongoDB · API Flask · scripts init & monitoring | `storage/` | `:9000` `:9001` `:27017` |
 | 5 | Anomaly Detector | Wael | Détection incohérences · règles métier · SIRET · TVA · dates expirées | `services/validation/` | `:5002` |
 | 6 | Pipeline Engineer | Korniti | Docker Compose global · DAG Airflow · orchestration · tests E2E | `dags/` | `:8080` |
-=======
-| # | Rôle | Dossier | Port(s) |
-|---|------|---------|---------|
-| 1 | Scénario Maker | `dataset/` | — |
-| 2 | Responsable OCR | `services/ocr/` | `:5001` |
-| 3 | Front-end & API | `frontend/` `backend/` | `:3000` `:4000` |
-| 4 | Chef BDD / Data Lake | `storage/` | `:9000` `:9001` `:27017` |
-| 5 | Anomaly Detector | `services/validation/` | `:5002` |
-| 6 | Pipeline Engineer | `dags/` | `:8080` |
->>>>>>> ff0d25b (feat(ocr): initial structure du service OCR)
 
 ---
 
@@ -62,7 +51,6 @@ CRM  ·  Outil conformité
 
 ---
 
-<<<<<<< HEAD
 ## ✅ Statut des parties
 
 | # | Rôle | Statut |
@@ -76,8 +64,6 @@ CRM  ·  Outil conformité
 
 ---
 
-=======
->>>>>>> ff0d25b (feat(ocr): initial structure du service OCR)
 ## 🛠️ Stack technique
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
@@ -92,13 +78,8 @@ CRM  ·  Outil conformité
 ## 🚀 Lancer le projet
 ```bash
 # 1. Cloner
-<<<<<<< HEAD
 git clone https://github.com/HASSANHOUSSEINHOUMED/Hackathon_2026.git
 cd Hackathon_2026
-=======
-git clone https://github.com/TON_PSEUDO/hackathon-2026.git
-cd hackathon-2026
->>>>>>> ff0d25b (feat(ocr): initial structure du service OCR)
 
 # 2. Variables d'environnement
 cp .env.example .env
@@ -120,7 +101,6 @@ docker compose up --build
 
 ---
 
-<<<<<<< HEAD
 ## 🧪 Tester uniquement le Data Lake
 
 Si tu veux tester uniquement la partie stockage sans attendre les autres services :
@@ -142,8 +122,6 @@ Tu devrais voir les 3 zones créées :
 
 ---
 
-=======
->>>>>>> ff0d25b (feat(ocr): initial structure du service OCR)
 ## 🌿 Workflow Git
 ```bash
 # Chaque membre travaille sur SA branche
@@ -179,7 +157,6 @@ hackathon-2026/
 ├── backend/               ← Rôle 3
 ├── frontend/              ← Rôle 3
 ├── storage/               ← Rôle 4
-<<<<<<< HEAD
 │   ├── app.py
 │   ├── storage_client.py
 │   ├── init_buckets.py
@@ -187,8 +164,6 @@ hackathon-2026/
 │   ├── health_check.py
 │   ├── Dockerfile
 │   └── requirements.txt
-=======
->>>>>>> ff0d25b (feat(ocr): initial structure du service OCR)
 └── dags/                  ← Rôle 6
 ```
 
@@ -205,8 +180,4 @@ hackathon-2026/
 - Chaque membre touche **uniquement son dossier**
 - Secrets dans `.env`, jamais dans le code
 - Commentaires en **français** dans le code métier
-<<<<<<< HEAD
 - **Aucun push direct sur `main`** — Pull Request obligatoire
-=======
-- **Aucun push direct sur `main`** — Pull Request obligatoire
->>>>>>> ff0d25b (feat(ocr): initial structure du service OCR)

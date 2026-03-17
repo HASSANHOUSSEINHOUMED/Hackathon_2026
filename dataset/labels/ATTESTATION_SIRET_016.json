@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_016",
+  "type": "siret",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "61638826681289",
+    "raison_sociale": "Lopez",
+    "adresse": "23, rue Laure Boyer, 03782 Andre",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2027-03-17"
+  },
+  "expected_anomalies": []
+}

@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_040",
+  "type": "siret",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "95248213483681",
+    "raison_sociale": "Roger",
+    "adresse": "7, avenue Barre, 31792 Lombard-sur-Mary",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

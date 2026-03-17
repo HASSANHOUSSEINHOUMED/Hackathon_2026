@@ -22,6 +22,16 @@ services:
     volumes:
       - mongo_data:/data/db
 
+  ocr:
+    build: ./services/ocr
+    container_name: hackathon-ocr
+    ports:
+      - "5001:5001"
+    env_file: .env
+    depends_on:
+      - minio
+      - mongo
+
   storage-init:
     build: ./storage
     container_name: hackathon-storage-init

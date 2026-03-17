@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_007",
+  "type": "rib",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "iban": "FR0746279020655221117421338",
+    "bic": "AGRIFRPP",
+    "titulaire": "Thibault",
+    "domiciliation_bancaire": "Valette Lecomte S.A.R.L.",
+    "siret_associe": "84073496157909"
+  },
+  "expected_anomalies": []
+}

@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_032",
+  "type": "rib",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR7338917000929665589892429",
+    "bic": "CMCIFRPP",
+    "titulaire": "Costa et Fils",
+    "domiciliation_bancaire": "Olivier",
+    "siret_associe": "99567352277053"
+  },
+  "expected_anomalies": []
+}

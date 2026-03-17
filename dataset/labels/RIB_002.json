@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_002",
+  "type": "rib",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "iban": "FR0315241852218688235831226",
+    "bic": "AGRIFRPP",
+    "titulaire": "Goncalves",
+    "domiciliation_bancaire": "Antoine",
+    "siret_associe": "77396520934098"
+  },
+  "expected_anomalies": []
+}

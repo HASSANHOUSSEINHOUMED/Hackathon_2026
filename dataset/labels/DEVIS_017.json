@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_017",
+  "type": "devis",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "siret_emetteur": "11625372757402",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "morph bricks-and-clicks initiatives",
+    "quantite": 20,
+    "prix_unitaire": 294.5,
+    "total_ht": 5890.0,
+    "tva": 1178.0,
+    "ttc": 7073.0
+  },
+  "expected_anomalies": []
+}

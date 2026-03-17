@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_017",
+  "type": "kbis",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "76066951645628",
+    "siren": "760669516",
+    "raison_sociale": "Carre",
+    "forme_juridique": "EURL",
+    "capital_social": "72518 €",
+    "date_immatriculation": "2025-12-24",
+    "dirigeant": "Zoé Delahaye"
+  },
+  "expected_anomalies": []
+}

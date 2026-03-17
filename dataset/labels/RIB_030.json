@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_030",
+  "type": "rib",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR2093509505117131839181626",
+    "bic": "CMCIFRPP",
+    "titulaire": "Daniel",
+    "domiciliation_bancaire": "Devaux Huet S.A.S.",
+    "siret_associe": "89572156258651"
+  },
+  "expected_anomalies": []
+}

@@ -1,0 +1,14 @@
+{
+  "document_id": "RIB_020",
+  "type": "rib",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "iban": "FR9621720646529840535733214",
+    "bic": "AGRIFRPP",
+    "titulaire": "Godard S.A.R.L.",
+    "domiciliation_bancaire": "Foucher Gaudin et Fils",
+    "siret_associe": "81498935111451"
+  },
+  "expected_anomalies": []
+}

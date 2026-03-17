@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_URSSAF_027",
+  "type": "urssaf",
+  "scenario": "D",
+  "degradation": "noisy",
+  "expected_fields": {
+    "siret": "48607925211168",
+    "raison_sociale": "Paul Dos Santos S.A.",
+    "date_debut_validite": "2026-03-17",
+    "date_fin_validite": "2026-02-15",
+    "numero_attestation": 95602225
+  },
+  "expected_anomalies": []
+}

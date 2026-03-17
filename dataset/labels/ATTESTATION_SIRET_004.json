@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_004",
+  "type": "siret",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "76967713618973",
+    "raison_sociale": "Andre",
+    "adresse": "71, avenue de Barbe, 46850 Julien-les-Bains",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

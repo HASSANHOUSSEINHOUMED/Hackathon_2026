@@ -1,0 +1,16 @@
+{
+  "document_id": "KBIS_027",
+  "type": "kbis",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "49440255140465",
+    "siren": "494402551",
+    "raison_sociale": "Klein",
+    "forme_juridique": "SARL",
+    "capital_social": "58057 €",
+    "date_immatriculation": "2025-08-09",
+    "dirigeant": "Nathalie Perez"
+  },
+  "expected_anomalies": []
+}

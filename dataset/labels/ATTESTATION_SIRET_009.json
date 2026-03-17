@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_009",
+  "type": "siret",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "92855354083329",
+    "raison_sociale": "Thierry SARL",
+    "adresse": "91, avenue Guillot, 97268 Gérard-les-Bains",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2026-02-15"
+  },
+  "expected_anomalies": []
+}

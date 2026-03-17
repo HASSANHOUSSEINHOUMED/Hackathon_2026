@@ -1,0 +1,18 @@
+{
+  "document_id": "DEVIS_018",
+  "type": "devis",
+  "scenario": "C",
+  "degradation": "none",
+  "expected_fields": {
+    "siret_emetteur": "86238685529941",
+    "date_devis": "2026-03-17",
+    "date_validite": "2026-04-16",
+    "designation": "reinvent best-of-breed e-services",
+    "quantite": 26,
+    "prix_unitaire": 451.5,
+    "total_ht": 11739.0,
+    "tva": 2347.8,
+    "ttc": 14091.8
+  },
+  "expected_anomalies": []
+}

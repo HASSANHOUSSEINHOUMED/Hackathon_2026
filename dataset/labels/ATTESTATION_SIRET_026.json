@@ -1,0 +1,14 @@
+{
+  "document_id": "ATTESTATION_SIRET_026",
+  "type": "siret",
+  "scenario": "A",
+  "degradation": "none",
+  "expected_fields": {
+    "siret": "92852090572672",
+    "raison_sociale": "Guyon Lemonnier et Fils",
+    "adresse": "696, boulevard Bègue, 67308 Andre-sur-Antoine",
+    "date_delivrance": "2026-03-17",
+    "date_expiration": "2027-03-17"
+  },
+  "expected_anomalies": []
+}
