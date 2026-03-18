@@ -1,163 +1,217 @@
-import os
+"""
+Client Python pour le Data Lake MinIO (3 zones : raw, clean, curated).
+"""
 import io
 import json
 import logging
-from datetime import datetime
-from typing import Any
+import os
+from datetime import datetime, timedelta
 
-from minio import Minio          # Client pour interagir avec MinIO (Data Lake)
-from pymongo import MongoClient  # Client pour interagir avec MongoDB (métadonnées)
-from dotenv import load_dotenv   # Charge les variables depuis le fichier .env
+from dotenv import load_dotenv
+from minio import Minio
+from minio.error import S3Error
 
-# Chargement des variables d'environnement
 load_dotenv()
 
-# Logs en JSON structuré pour faciliter le monitoring et le débogage
-logging.basicConfig(
-    format='{"time": "%(asctime)s", "level": "%(levelname)s", "msg": "%(message)s"}',
-    level=logging.INFO,
-)
-logger = logging.getLogger(__name__)
-
-# ── Noms des 3 zones du Data Lake ─────────────────────────────────────
-# Récupérés depuis .env avec des valeurs par défaut si non définis
-BUCKET_RAW     = os.getenv("BUCKET_RAW", "raw-zone")
-BUCKET_CLEAN   = os.getenv("BUCKET_CLEAN", "clean-zone")
-BUCKET_CURATED = os.getenv("BUCKET_CURATED", "curated-zone")
-
-# Dictionnaire utilisé par init_buckets.py pour créer les zones
-BUCKETS = {
-    BUCKET_RAW:     "Original uploaded documents",
-    BUCKET_CLEAN:   "Extracted OCR text (JSON)",
-    BUCKET_CURATED: "Final structured data (JSON)",
-}
+logger = logging.getLogger("storage.datalake")
 
 
-def get_minio_client() -> Minio:
-    """Crée et retourne une connexion MinIO depuis les variables d'environnement."""
-    return Minio(
-        endpoint=os.getenv("MINIO_ENDPOINT", "localhost:9000"),
-        access_key=os.getenv("MINIO_ROOT_USER", "admin"),
-        secret_key=os.getenv("MINIO_ROOT_PASSWORD", "changeme_minio"),
-        # HTTPS activé uniquement en production (false en développement local)
-        secure=os.getenv("MINIO_SECURE", "false").lower() == "true",
-    )
+class DataLakeClient:
+    """Client pour le stockage Data Lake sur MinIO."""
+
+    ZONES = ["raw-zone", "clean-zone", "curated-zone"]
+
+    def __init__(self) -> None:
+        self.endpoint = os.getenv("MINIO_ENDPOINT", "localhost:9000")
+        self.access_key = os.getenv("MINIO_ROOT_USER", os.getenv("MINIO_ACCESS_KEY", "admin"))
+        self.secret_key = os.getenv("MINIO_ROOT_PASSWORD", os.getenv("MINIO_SECRET_KEY", "ChangeMe2024!"))
+        self.secure = os.getenv("MINIO_SECURE", "false").lower() == "true"
+
+        self.client = Minio(
+            self.endpoint,
+            access_key=self.access_key,
+            secret_key=self.secret_key,
+            secure=self.secure,
+        )
+        logger.info("DataLakeClient connecté à MinIO : %s", self.endpoint)
+
+    def _ensure_bucket(self, bucket: str) -> None:
+        """Crée le bucket s'il n'existe pas."""
+        if not self.client.bucket_exists(bucket):
+            self.client.make_bucket(bucket)
+            logger.info("Bucket créé : %s", bucket)
+
+    def _date_prefix(self) -> str:
+        """Retourne le préfixe date du jour (YYYY-MM-DD)."""
+        return datetime.now().strftime("%Y-%m-%d")
+
+    def upload_raw(self, file_path: str, document_id: str, metadata: dict | None = None) -> str:
+        """
+        Upload un fichier brut dans raw-zone.
+
+        Args:
+            file_path: chemin local du fichier
+            document_id: identifiant unique du document
+            metadata: métadonnées additionnelles
+
+        Returns:
+            URL presigned d'accès (valable 24h)
+        """
+        bucket = "raw-zone"
+        self._ensure_bucket(bucket)
+
+        ext = os.path.splitext(file_path)[1]
+        object_name = f"{self._date_prefix()}/{document_id}{ext}"
+
+        meta = {"uploader": "api", "original_name": os.path.basename(file_path)}
+        if metadata:
+            meta.update({k: str(v) for k, v in metadata.items()})
+
+        self.client.fput_object(bucket, object_name, file_path, metadata=meta)
+        logger.info("Upload raw : %s/%s", bucket, object_name)
+
+        url = self.client.presigned_get_object(bucket, object_name, expires=timedelta(hours=24))
+        return url
+
+    def upload_clean(self, document_id: str, ocr_result: dict) -> str:
+        """
+        Upload le résultat OCR (JSON) dans clean-zone.
+
+        Args:
+            document_id: identifiant du document
+            ocr_result: dictionnaire des résultats OCR
+
+        Returns:
+            Chemin MinIO de l'objet
+        """
+        bucket = "clean-zone"
+        self._ensure_bucket(bucket)
+
+        object_name = f"{self._date_prefix()}/{document_id}.json"
+        data = json.dumps(ocr_result, ensure_ascii=False, indent=2).encode("utf-8")
+        data_stream = io.BytesIO(data)
+
+        self.client.put_object(
+            bucket, object_name, data_stream, len(data),
+            content_type="application/json",
+        )
+        logger.info("Upload clean : %s/%s", bucket, object_name)
+        return f"{bucket}/{object_name}"
+
+    def upload_curated(self, document_id: str, structured_data: dict) -> str:
+        """
+        Upload les données structurées dans curated-zone.
+        Si le document existe déjà, archive l'ancienne version.
+
+        Args:
+            document_id: identifiant du document
+            structured_data: données structurées finales
+
+        Returns:
+            Chemin MinIO de l'objet
+        """
+        bucket = "curated-zone"
+        self._ensure_bucket(bucket)
+
+        object_name = f"{self._date_prefix()}/{document_id}.json"
+
+        # Versionning : archiver l'existant
+        try:
+            self.client.stat_object(bucket, object_name)
+            archive_name = f"archive/{document_id}_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+            self.client.copy_object(
+                bucket, archive_name,
+                f"/{bucket}/{object_name}",
+            )
+            logger.info("Version archivée : %s/%s", bucket, archive_name)
+        except S3Error:
+            pass  # L'objet n'existe pas encore
+
+        data = json.dumps(structured_data, ensure_ascii=False, indent=2).encode("utf-8")
+        data_stream = io.BytesIO(data)
+
+        self.client.put_object(
+            bucket, object_name, data_stream, len(data),
+            content_type="application/json",
+        )
+        logger.info("Upload curated : %s/%s", bucket, object_name)
+        return f"{bucket}/{object_name}"
+
+    def get_raw_url(self, document_id: str) -> str | None:
+        """Génère une presigned URL pour télécharger un fichier raw (valable 1h)."""
+        bucket = "raw-zone"
+        # Chercher le fichier dans le bucket
+        for obj in self.client.list_objects(bucket, recursive=True):
+            if document_id in obj.object_name:
+                return self.client.presigned_get_object(
+                    bucket, obj.object_name, expires=timedelta(hours=1),
+                )
+        return None
+
+    def get_curated(self, document_id: str) -> dict | None:
+        """Télécharge et désérialise le JSON depuis curated-zone."""
+        bucket = "curated-zone"
+        for obj in self.client.list_objects(bucket, recursive=True):
+            if document_id in obj.object_name and "archive" not in obj.object_name:
+                response = self.client.get_object(bucket, obj.object_name)
+                data = json.loads(response.read().decode("utf-8"))
+                response.close()
+                response.release_conn()
+                return data
+        return None
+
+    def list_pending(self, zone: str = "raw-zone") -> list[str]:
+        """Liste les document_ids dans raw-zone/pending/."""
+        bucket = zone
+        prefix = "pending/"
+        ids = []
+        for obj in self.client.list_objects(bucket, prefix=prefix, recursive=True):
+            name = obj.object_name.replace(prefix, "").rsplit(".", 1)[0]
+            if name:
+                ids.append(name)
+        return ids
+
+    def move_to_pending(self, document_id: str) -> None:
+        """Copie un document vers raw-zone/pending/ pour signaler à Airflow."""
+        bucket = "raw-zone"
+        for obj in self.client.list_objects(bucket, recursive=True):
+            if document_id in obj.object_name and "pending" not in obj.object_name:
+                dest = f"pending/{os.path.basename(obj.object_name)}"
+                self.client.copy_object(bucket, dest, f"/{bucket}/{obj.object_name}")
+                logger.info("Déplacé vers pending : %s", dest)
+                return
+
+    def move_from_pending_to_done(self, document_id: str) -> None:
+        """Déplace un fichier de pending/ vers done/."""
+        bucket = "raw-zone"
+        for obj in self.client.list_objects(bucket, prefix="pending/", recursive=True):
+            if document_id in obj.object_name:
+                dest = obj.object_name.replace("pending/", "done/")
+                self.client.copy_object(bucket, dest, f"/{bucket}/{obj.object_name}")
+                self.client.remove_object(bucket, obj.object_name)
+                logger.info("Déplacé de pending vers done : %s", dest)
+                return
+
+    def get_stats(self) -> dict:
+        """Retourne les statistiques de stockage par bucket."""
+        stats = {}
+        for bucket in self.ZONES:
+            if not self.client.bucket_exists(bucket):
+                stats[bucket] = {"count": 0, "total_size_bytes": 0}
+                continue
+            count = 0
+            total_size = 0
+            for obj in self.client.list_objects(bucket, recursive=True):
+                count += 1
+                total_size += obj.size or 0
+            stats[bucket] = {
+                "count": count,
+                "total_size_bytes": total_size,
+                "total_size_mb": round(total_size / (1024 * 1024), 2),
+            }
+        return stats
 
 
-def get_mongo_collection(collection_name: str):
-    """Retourne une collection MongoDB prête à l'emploi."""
-    client = MongoClient(os.getenv("MONGO_URI", "mongodb://localhost:27017"))
-    db = client[os.getenv("MONGO_DB", "hackathon2026")]
-    return db[collection_name]
-
-
-# ── Raw zone ──────────────────────────────────────────────────────────
-
-def upload_raw(file_bytes: bytes, filename: str, content_type: str) -> str:
-    """
-    Dépose le document brut original dans la raw-zone.
-    Le chemin inclut la date pour organiser les fichiers par jour.
-    """
-    client = get_minio_client()
-    # Organisation des fichiers par date : 2026/03/16/facture.pdf
-    object_name = f"{datetime.utcnow().strftime('%Y/%m/%d')}/{filename}"
-    client.put_object(
-        bucket_name=BUCKET_RAW,
-        object_name=object_name,
-        data=io.BytesIO(file_bytes),  # Conversion bytes → flux lisible par MinIO
-        length=len(file_bytes),
-        content_type=content_type,
-    )
-    logger.info(f"raw-zone : file uploaded → {object_name}")
-    return object_name
-
-
-def get_raw(object_name: str) -> bytes:
-    """Récupère un document brut depuis la raw-zone."""
-    client = get_minio_client()
-    response = client.get_object(BUCKET_RAW, object_name)
-    return response.read()
-
-
-# ── Clean zone ────────────────────────────────────────────────────────
-
-def upload_clean(doc_id: str, ocr_data: dict[str, Any]) -> str:
-    """
-    Dépose le résultat OCR (texte extrait) dans la clean-zone au format JSON.
-    Appelé par le service OCR après extraction du texte.
-    """
-    client = get_minio_client()
-    object_name = f"{doc_id}/ocr_result.json"
-    # Sérialisation du dict Python en JSON encodé en UTF-8
-    payload = json.dumps(ocr_data, ensure_ascii=False, indent=2).encode("utf-8")
-    client.put_object(
-        bucket_name=BUCKET_CLEAN,
-        object_name=object_name,
-        data=io.BytesIO(payload),
-        length=len(payload),
-        content_type="application/json",
-    )
-    logger.info(f"clean-zone : OCR result uploaded → {object_name}")
-    return object_name
-
-
-def get_clean(doc_id: str) -> dict[str, Any]:
-    """Récupère le résultat OCR depuis la clean-zone."""
-    client = get_minio_client()
-    response = client.get_object(BUCKET_CLEAN, f"{doc_id}/ocr_result.json")
-    return json.loads(response.read())
-
-
-# ── Curated zone ──────────────────────────────────────────────────────
-
-def upload_curated(doc_id: str, structured_data: dict[str, Any]) -> str:
-    """
-    Dépose les données structurées finales dans la curated-zone.
-    Appelé après extraction regex + NER par le service d'extraction.
-    """
-    client = get_minio_client()
-    object_name = f"{doc_id}/structured.json"
-    payload = json.dumps(structured_data, ensure_ascii=False, indent=2).encode("utf-8")
-    client.put_object(
-        bucket_name=BUCKET_CURATED,
-        object_name=object_name,
-        data=io.BytesIO(payload),
-        length=len(payload),
-        content_type="application/json",
-    )
-    logger.info(f"curated-zone : structured data uploaded → {object_name}")
-    return object_name
-
-
-def get_curated(doc_id: str) -> dict[str, Any]:
-    """Récupère les données structurées depuis la curated-zone."""
-    client = get_minio_client()
-    response = client.get_object(BUCKET_CURATED, f"{doc_id}/structured.json")
-    return json.loads(response.read())
-
-
-# ── MongoDB : suivi du pipeline ───────────────────────────────────────
-
-def track_document(doc_id: str, metadata: dict[str, Any]) -> None:
-    """
-    Enregistre ou met à jour le statut d'un document dans MongoDB.
-    Utilisé par tous les services pour suivre l'avancement dans le pipeline.
-    upsert=True : crée le document s'il n'existe pas, le met à jour sinon.
-    """
-    col = get_mongo_collection("documents")
-    col.update_one(
-        {"doc_id": doc_id},
-        {"$set": {**metadata, "updated_at": datetime.utcnow()}},
-        upsert=True,
-    )
-    logger.info(f"MongoDB : document tracked → {doc_id}")
-
-
-def get_document_status(doc_id: str) -> dict[str, Any] | None:
-    """
-    Retourne le statut complet d'un document depuis MongoDB.
-    Retourne None si le document n'existe pas.
-    """
-    col = get_mongo_collection("documents")
-    # _id: 0 exclut l'identifiant interne MongoDB de la réponse
-    return col.find_one({"doc_id": doc_id}, {"_id": 0})
+if __name__ == "__main__":
+    client = DataLakeClient()
+    print(json.dumps(client.get_stats(), indent=2))

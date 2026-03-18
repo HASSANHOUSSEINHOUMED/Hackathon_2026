@@ -1,11 +1,5 @@
-# Client MinIO : connexion et opérations sur le Data Lake (upload, download)
-minio==7.2.5
-
-# Client MongoDB : stockage des métadonnées et suivi des documents
+minio==7.2.4
 pymongo==4.6.1
-
-# Gestion des variables d'environnement depuis le fichier .env
-python-dotenv==1.0.0
-
-# API Flask : expose les fonctions du Data Lake aux autres services
 flask==3.0.2
+gunicorn==21.2.0
+python-dotenv==1.0.1

@@ -1,29 +1,102 @@
-# Secrets — ne jamais committer sur GitHub
+# ═══════════════════════════════════════════════════════════════
+# DocuFlow - Fichiers et dossiers ignorés par Git
+# ═══════════════════════════════════════════════════════════════
+
+# ─────────────────────────────────────────────────────────────────
+# Environnement et secrets
+# ─────────────────────────────────────────────────────────────────
 .env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets/
 
-# Python — fichiers générés automatiquement par Python
-__pycache__/        # dossier cache Python
-*.py[cod]           # fichiers compilés Python (.pyc, .pyo, .pyd)
-.venv/              # environnement virtuel Python
-venv/               # environnement virtuel Python (autre nom)
+# ─────────────────────────────────────────────────────────────────
+# Python
+# ─────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.pytest_cache/
+.benchmarks/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
 
-# Données générées — trop lourdes pour GitHub
-dataset/raw/*       # documents bruts générés par Tahina
-dataset/noisy/*     # images dégradées générées par Tahina
-dataset/labels/*    # fichiers d'annotations générés par Tahina
+# ─────────────────────────────────────────────────────────────────
+# Node.js
+# ─────────────────────────────────────────────────────────────────
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+*.tsbuildinfo
 
-# Docker
-*.tar               # images Docker exportées (très lourdes)
+# ─────────────────────────────────────────────────────────────────
+# Builds et artefacts
+# ─────────────────────────────────────────────────────────────────
+frontend/dist/
+*.local
 
-# IDE — fichiers de configuration personnels
-.vscode/            # configuration VS Code
-.idea/              # configuration IntelliJ
-.DS_Store           # fichier système Mac
+# ─────────────────────────────────────────────────────────────────
+# IDEs et éditeurs
+# ─────────────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
 
-# Node.js — dépendances frontend (Yanis/Khalil)
-node_modules/       # dépendances installées par npm
-npm-debug.log*      # logs d'erreurs npm
+# ─────────────────────────────────────────────────────────────────
+# Docker (données locales)
+# ─────────────────────────────────────────────────────────────────
+docker-data/
 
-# React — fichiers de build générés automatiquement
-frontend/build/     # version compilée du frontend
-frontend/dist/      # version distribuable du frontend
+# ─────────────────────────────────────────────────────────────────
+# Dataset généré (ne pas versionner les PDFs générés)
+# ─────────────────────────────────────────────────────────────────
+dataset/output/
+dataset/*.pdf
+
+# ─────────────────────────────────────────────────────────────────
+# Logs et fichiers temporaires
+# ─────────────────────────────────────────────────────────────────
+logs/
+*.log
+airflow-logs/
+tmp/
+*.tmp
+
+# ─────────────────────────────────────────────────────────────────
+# Airflow
+# ─────────────────────────────────────────────────────────────────
+airflow.db
+airflow.cfg
+webserver_config.py
