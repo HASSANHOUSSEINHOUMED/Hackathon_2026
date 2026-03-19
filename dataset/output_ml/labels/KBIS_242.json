@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_242",
+  "file_path": "raw/KBIS_242.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "88160930968539",
+    "siren": "881609309",
+    "raison_sociale": "Dubois EURL",
+    "forme_juridique": "EURL",
+    "capital_social": 5000,
+    "dirigeant": "Nicolas Maréchal",
+    "num_rcs": "446 795 355",
+    "ville_greffe": "Lyon",
+    "date_immatriculation": "23/09/2020",
+    "objet_social": "Commerce de gros de matériel électrique et électronique",
+    "tva_intra": "FR40881609309",
+    "code_naf": "4399A",
+    "date_kbis": "21/02/2026",
+    "expired": false
+  }
+}

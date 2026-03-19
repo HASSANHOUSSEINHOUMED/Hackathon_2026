@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_248",
+  "file_path": "raw/KBIS_248.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "12910933671188",
+    "siren": "129109336",
+    "raison_sociale": "Courtois Gérard S.A.R.L. SAS",
+    "forme_juridique": "SAS",
+    "capital_social": 50000,
+    "dirigeant": "Thierry Leclerc",
+    "num_rcs": "220 546 169",
+    "ville_greffe": "Grenoble",
+    "date_immatriculation": "23/08/2022",
+    "objet_social": "Formation professionnelle continue",
+    "tva_intra": "FR36129109336",
+    "code_naf": "7010Z",
+    "date_kbis": "04/03/2026",
+    "expired": false
+  }
+}

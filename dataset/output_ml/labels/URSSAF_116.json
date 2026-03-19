@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_116",
+  "file_path": "raw/URSSAF_116.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-77197151",
+    "siret": "98808177403887",
+    "siren": "988081774",
+    "raison_sociale": "Petit SARL SNC",
+    "date_emission": "09/02/2026",
+    "date_expiration": "23/04/2026",
+    "expired": false
+  }
+}

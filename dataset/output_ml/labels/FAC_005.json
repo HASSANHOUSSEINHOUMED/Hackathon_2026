@@ -1,0 +1,26 @@
+{
+  "document_id": "FAC_005",
+  "file_path": "raw/FAC_005.pdf",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0005",
+    "siret": "10801326977369",
+    "siret_affiche": "10801326977369",
+    "tva_intra": "FR67108013269",
+    "raison_sociale": "Rocher et Fils SNC",
+    "montant_ht": 19230.65,
+    "tva": 3846.13,
+    "tva_affichee": 3846.13,
+    "montant_ttc": 23076.78,
+    "date_emission": "13/02/2026",
+    "iban": "FR4731579596720EXSAPQSNH637",
+    "bic": "BNPAFRPP",
+    "nb_lignes": 3,
+    "tva_rate": 0.2,
+    "coherent": true
+  }
+}

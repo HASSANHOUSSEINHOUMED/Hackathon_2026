@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_133",
+  "file_path": "raw/URSSAF_133.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-34267798",
+    "siret": "40792904190471",
+    "siren": "407929041",
+    "raison_sociale": "Coulon Perrier SA SNC",
+    "date_emission": "22/02/2026",
+    "date_expiration": "19/05/2026",
+    "expired": false
+  }
+}

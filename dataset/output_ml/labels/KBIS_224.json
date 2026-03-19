@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_224",
+  "file_path": "raw/KBIS_224.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "70661498928245",
+    "siren": "706614989",
+    "raison_sociale": "Fischer SARL",
+    "forme_juridique": "SARL",
+    "capital_social": 50000,
+    "dirigeant": "Henriette Delaunay",
+    "num_rcs": "482 493 601",
+    "ville_greffe": "Grenoble",
+    "date_immatriculation": "16/12/2017",
+    "objet_social": "Commerce de gros de matériel électrique et électronique",
+    "tva_intra": "FR92706614989",
+    "code_naf": "4690Z",
+    "date_kbis": "10/03/2026",
+    "expired": false
+  }
+}

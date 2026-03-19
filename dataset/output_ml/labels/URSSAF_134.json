@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_134",
+  "file_path": "raw/URSSAF_134.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-68349054",
+    "siret": "05129276163724",
+    "siren": "051292761",
+    "raison_sociale": "Fernandez SNC",
+    "date_emission": "04/02/2026",
+    "date_expiration": "12/06/2026",
+    "expired": false
+  }
+}

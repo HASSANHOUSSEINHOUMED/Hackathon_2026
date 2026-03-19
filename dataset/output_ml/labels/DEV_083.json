@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_083",
+  "file_path": "raw/DEV_083.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0083",
+    "siret": "94057202759095",
+    "siret_affiche": "94057202759095",
+    "tva_intra": "FR61940572027",
+    "raison_sociale": "Martin et Fils SARL",
+    "montant_ht": 85651.78,
+    "tva": 8565.18,
+    "montant_ttc": 94216.96,
+    "date_emission": "24/02/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

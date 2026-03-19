@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_294",
+  "file_path": "raw/RIB_294.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "87339785559822",
+    "raison_sociale": "Letellier SARL",
+    "iban": "FR526752466034MVK4I3H1J0T47",
+    "iban_formate": "FR52 6752 4660 34MV K4I3 H1J0 T47",
+    "bic": "AGRIFRPP",
+    "code_banque": "67524",
+    "code_guichet": "66034",
+    "numero_compte": "MVK4I3H1J0T",
+    "cle_rib": "47",
+    "banque": "Crédit Industriel et Financier",
+    "agence": "Agence Lyon Part-Dieu"
+  }
+}

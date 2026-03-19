@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_246",
+  "file_path": "raw/KBIS_246.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "18923923912607",
+    "siren": "189239239",
+    "raison_sociale": "Clément EURL",
+    "forme_juridique": "EURL",
+    "capital_social": 10000,
+    "dirigeant": "Laurent-Julien Bouvet",
+    "num_rcs": "472 387 459",
+    "ville_greffe": "Toulouse",
+    "date_immatriculation": "12/01/2001",
+    "objet_social": "Formation professionnelle continue",
+    "tva_intra": "FR09189239239",
+    "code_naf": "7022Z",
+    "date_kbis": "25/02/2026",
+    "expired": false
+  }
+}

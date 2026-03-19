@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_280",
+  "file_path": "raw/RIB_280.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "13072407387541",
+    "raison_sociale": "Bonnin S.A.R.L. SAS",
+    "iban": "FR068212921018C7EFCFD1DX634",
+    "iban_formate": "FR06 8212 9210 18C7 EFCF D1DX 634",
+    "bic": "BPCEFRPP",
+    "code_banque": "82129",
+    "code_guichet": "21018",
+    "numero_compte": "C7EFCFD1DX6",
+    "cle_rib": "34",
+    "banque": "Banque Européenne de Commerce",
+    "agence": "Agence Strasbourg Kléber"
+  }
+}

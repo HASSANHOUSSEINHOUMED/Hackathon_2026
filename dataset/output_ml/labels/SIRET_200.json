@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_200",
+  "file_path": "raw/SIRET_200.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "94200749346535",
+    "siren": "942007493",
+    "nic": "46535",
+    "raison_sociale": "Martins Masse S.A.R.L. EURL",
+    "forme_juridique": "EURL",
+    "adresse": "chemin Georges Pelletier, 40853 Rogerboeuf",
+    "date_creation": "19/09/2020",
+    "code_naf": "4332A",
+    "libelle_naf": "Travaux de menuiserie bois et PVC",
+    "dirigeant": "Julien-André Guillon",
+    "date_avis": "23/02/2026",
+    "expired": false
+  }
+}

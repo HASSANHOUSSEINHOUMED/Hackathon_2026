@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_212",
+  "file_path": "raw/KBIS_212.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "77665754660270",
+    "siren": "776657546",
+    "raison_sociale": "Ollivier EURL",
+    "forme_juridique": "EURL",
+    "capital_social": 200000,
+    "dirigeant": "Gérard Laroche",
+    "num_rcs": "409 863 935",
+    "ville_greffe": "Toulouse",
+    "date_immatriculation": "14/06/2021",
+    "objet_social": "Transport routier de marchandises",
+    "tva_intra": "FR58776657546",
+    "code_naf": "8559A",
+    "date_kbis": "23/02/2026",
+    "expired": false
+  }
+}

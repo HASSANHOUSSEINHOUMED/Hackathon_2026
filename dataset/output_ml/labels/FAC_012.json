@@ -1,0 +1,26 @@
+{
+  "document_id": "FAC_012",
+  "file_path": "raw/FAC_012.pdf",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0012",
+    "siret": "10033092732717",
+    "siret_affiche": "10033092732717",
+    "tva_intra": "FR47100330927",
+    "raison_sociale": "Vasseur SARL",
+    "montant_ht": 35859.38,
+    "tva": 7171.88,
+    "tva_affichee": 7171.88,
+    "montant_ttc": 43031.26,
+    "date_emission": "07/03/2026",
+    "iban": "FR323856970952PR6LQ4TY30B96",
+    "bic": "BPCEFRPP",
+    "nb_lignes": 3,
+    "tva_rate": 0.2,
+    "coherent": true
+  }
+}

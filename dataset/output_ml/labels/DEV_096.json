@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_096",
+  "file_path": "raw/DEV_096.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0096",
+    "siret": "43866322170260",
+    "siret_affiche": "43866322170260",
+    "tva_intra": "FR84438663221",
+    "raison_sociale": "Thierry S.A.S. SAS",
+    "montant_ht": 57455.6,
+    "tva": 11491.12,
+    "montant_ttc": 68946.72,
+    "date_emission": "21/02/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

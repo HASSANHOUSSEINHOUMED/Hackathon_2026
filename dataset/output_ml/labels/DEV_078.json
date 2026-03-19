@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_078",
+  "file_path": "raw/DEV_078.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0078",
+    "siret": "89163756328902",
+    "siret_affiche": "89163756328902",
+    "tva_intra": "FR58891637563",
+    "raison_sociale": "Gaudin Ramos S.A.R.L. SNC",
+    "montant_ht": 52603.12,
+    "tva": 5260.31,
+    "montant_ttc": 57863.43,
+    "date_emission": "22/01/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

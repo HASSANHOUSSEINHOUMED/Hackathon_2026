@@ -1,0 +1,26 @@
+{
+  "document_id": "FAC_043",
+  "file_path": "raw/FAC_043.pdf",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0043",
+    "siret": "66882634035176",
+    "siret_affiche": "66882634035176",
+    "tva_intra": "FR82668826340",
+    "raison_sociale": "Raynaud Maillot SARL SNC",
+    "montant_ht": 35230.11,
+    "tva": 1937.66,
+    "tva_affichee": 1937.66,
+    "montant_ttc": 37167.77,
+    "date_emission": "19/01/2026",
+    "iban": "FR362211980206Q69OLV6RQKH52",
+    "bic": "AGRIFRPP",
+    "nb_lignes": 4,
+    "tva_rate": 0.055,
+    "coherent": true
+  }
+}

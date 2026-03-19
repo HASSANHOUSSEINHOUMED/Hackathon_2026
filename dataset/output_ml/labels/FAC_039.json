@@ -1,0 +1,26 @@
+{
+  "document_id": "FAC_039",
+  "file_path": "raw/FAC_039.pdf",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0039",
+    "siret": "72874315427428",
+    "siret_affiche": "72874315427428",
+    "tva_intra": "FR18728743154",
+    "raison_sociale": "Chrétien Alexandre S.A. SNC",
+    "montant_ht": 58217.35,
+    "tva": 5821.74,
+    "tva_affichee": 5821.74,
+    "montant_ttc": 64039.09,
+    "date_emission": "23/02/2026",
+    "iban": "FR985418548669KR6UWTI3O6551",
+    "bic": "SOGEFRPP",
+    "nb_lignes": 4,
+    "tva_rate": 0.1,
+    "coherent": true
+  }
+}

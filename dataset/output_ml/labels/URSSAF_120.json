@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_120",
+  "file_path": "raw/URSSAF_120.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-87194344",
+    "siret": "45561681347215",
+    "siren": "455616813",
+    "raison_sociale": "Perret et Fils SAS",
+    "date_emission": "21/02/2026",
+    "date_expiration": "21/05/2026",
+    "expired": false
+  }
+}

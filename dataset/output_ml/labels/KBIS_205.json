@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_205",
+  "file_path": "raw/KBIS_205.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "35058319197171",
+    "siren": "350583191",
+    "raison_sociale": "Clément EURL",
+    "forme_juridique": "EURL",
+    "capital_social": 100000,
+    "dirigeant": "Claire Hardy",
+    "num_rcs": "970 490 511",
+    "ville_greffe": "Toulouse",
+    "date_immatriculation": "12/07/2011",
+    "objet_social": "Formation professionnelle continue",
+    "tva_intra": "FR22350583191",
+    "code_naf": "4332A",
+    "date_kbis": "16/03/2026",
+    "expired": false
+  }
+}

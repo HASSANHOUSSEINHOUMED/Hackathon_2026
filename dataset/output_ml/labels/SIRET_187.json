@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_187",
+  "file_path": "raw/SIRET_187.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "93417223029715",
+    "siren": "934172230",
+    "nic": "29715",
+    "raison_sociale": "Barthelemy SARL",
+    "forme_juridique": "SARL",
+    "adresse": "rue de Ribeiro, 34996 Ferrand",
+    "date_creation": "17/03/2018",
+    "code_naf": "8121Z",
+    "libelle_naf": "Nettoyage courant des bâtiments",
+    "dirigeant": "Charlotte Dias",
+    "date_avis": "02/03/2026",
+    "expired": false
+  }
+}

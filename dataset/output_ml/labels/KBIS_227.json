@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_227",
+  "file_path": "raw/KBIS_227.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "68646225022374",
+    "siren": "686462250",
+    "raison_sociale": "Tessier Ruiz S.A.S. SAS",
+    "forme_juridique": "SAS",
+    "capital_social": 1000,
+    "dirigeant": "Léon Richard-Pruvost",
+    "num_rcs": "486 227 383",
+    "ville_greffe": "Lyon",
+    "date_immatriculation": "11/06/2020",
+    "objet_social": "Activités de nettoyage et d'entretien",
+    "tva_intra": "FR35686462250",
+    "code_naf": "5610A",
+    "date_kbis": "17/03/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_168",
+  "file_path": "raw/SIRET_168.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "29737489469084",
+    "siren": "297374894",
+    "nic": "69084",
+    "raison_sociale": "Fontaine SNC",
+    "forme_juridique": "SNC",
+    "adresse": "78, chemin Pages, 53269 Fabre",
+    "date_creation": "29/12/2014",
+    "code_naf": "4711B",
+    "libelle_naf": "Commerce d'alimentation générale",
+    "dirigeant": "Bernadette Bruneau",
+    "date_avis": "28/02/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_157",
+  "file_path": "raw/SIRET_157.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "18952028145763",
+    "siren": "189520281",
+    "nic": "45763",
+    "raison_sociale": "Leclerc Gallet et Fils SA",
+    "forme_juridique": "SA",
+    "adresse": "48, boulevard Le Gall, 27322 Diaz-sur-Renaud",
+    "date_creation": "26/09/2015",
+    "code_naf": "6311Z",
+    "libelle_naf": "Traitement de données, hébergement et activités connexes",
+    "dirigeant": "Marine Monnier",
+    "date_avis": "21/02/2026",
+    "expired": false
+  }
+}

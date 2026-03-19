@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_086",
+  "file_path": "raw/DEV_086.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0086",
+    "siret": "43536822023943",
+    "siret_affiche": "43536822023943",
+    "tva_intra": "FR60435368220",
+    "raison_sociale": "Buisson S.A.R.L. SAS",
+    "montant_ht": 85320.95,
+    "tva": 8532.09,
+    "montant_ttc": 93853.04,
+    "date_emission": "06/03/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

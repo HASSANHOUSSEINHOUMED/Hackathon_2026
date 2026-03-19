@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_180",
+  "file_path": "raw/SIRET_180.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "74905097759238",
+    "siren": "749050977",
+    "nic": "59238",
+    "raison_sociale": "Gonzalez S.A. EURL",
+    "forme_juridique": "EURL",
+    "adresse": "avenue de Devaux, 23479 Cordier",
+    "date_creation": "19/09/2009",
+    "code_naf": "6202A",
+    "libelle_naf": "Conseil en systèmes et logiciels informatiques",
+    "dirigeant": "Yves Barbe",
+    "date_avis": "10/03/2026",
+    "expired": false
+  }
+}

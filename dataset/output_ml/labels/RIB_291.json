@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_291",
+  "file_path": "raw/RIB_291.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "40258835486818",
+    "raison_sociale": "Le Goff EURL",
+    "iban": "FR139597229844CPCPSARAEWN58",
+    "iban_formate": "FR13 9597 2298 44CP CPSA RAEW N58",
+    "bic": "CCBPFRPP",
+    "code_banque": "95972",
+    "code_guichet": "29844",
+    "numero_compte": "CPCPSARAEWN",
+    "cle_rib": "58",
+    "banque": "Banque de l'Avenir",
+    "agence": "Agence Toulouse Capitole"
+  }
+}

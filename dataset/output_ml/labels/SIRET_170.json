@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_170",
+  "file_path": "raw/SIRET_170.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "65162319181897",
+    "siren": "651623191",
+    "nic": "81897",
+    "raison_sociale": "Perrier SAS",
+    "forme_juridique": "SAS",
+    "adresse": "41, rue de Da Costa, 40201 Blin",
+    "date_creation": "22/07/2015",
+    "code_naf": "4399A",
+    "libelle_naf": "Travaux d'étanchéification",
+    "dirigeant": "Françoise Pires",
+    "date_avis": "06/03/2026",
+    "expired": false
+  }
+}

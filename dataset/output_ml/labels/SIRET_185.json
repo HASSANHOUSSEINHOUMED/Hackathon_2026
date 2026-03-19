@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_185",
+  "file_path": "raw/SIRET_185.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "93349605101665",
+    "siren": "933496051",
+    "nic": "01665",
+    "raison_sociale": "Morvan SARL EURL",
+    "forme_juridique": "EURL",
+    "adresse": "82, avenue Leleu, 01940 Lévêque",
+    "date_creation": "02/02/2016",
+    "code_naf": "6920Z",
+    "libelle_naf": "Activités comptables",
+    "dirigeant": "Aurélie Ribeiro",
+    "date_avis": "02/03/2026",
+    "expired": false
+  }
+}

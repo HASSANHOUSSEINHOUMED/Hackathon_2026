@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_296",
+  "file_path": "raw/RIB_296.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "69918724101077",
+    "raison_sociale": "Ribeiro Masson et Fils SAS",
+    "iban": "FR263952395240CHSV8X0S7LD97",
+    "iban_formate": "FR26 3952 3952 40CH SV8X 0S7L D97",
+    "bic": "BNPAFRPP",
+    "code_banque": "39523",
+    "code_guichet": "95240",
+    "numero_compte": "CHSV8X0S7LD",
+    "cle_rib": "97",
+    "banque": "Banque Nationale de France",
+    "agence": "Agence Lille Grand-Place"
+  }
+}

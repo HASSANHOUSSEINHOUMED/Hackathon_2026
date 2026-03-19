@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_193",
+  "file_path": "raw/SIRET_193.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "44926831758937",
+    "siren": "449268317",
+    "nic": "58937",
+    "raison_sociale": "Roussel Hoareau et Fils SA",
+    "forme_juridique": "SA",
+    "adresse": "2, avenue de Dumont, 10506 Delannoy-la-Forêt",
+    "date_creation": "04/05/2004",
+    "code_naf": "7112B",
+    "libelle_naf": "Ingénierie, études techniques",
+    "dirigeant": "Simone Noël",
+    "date_avis": "27/02/2026",
+    "expired": false
+  }
+}

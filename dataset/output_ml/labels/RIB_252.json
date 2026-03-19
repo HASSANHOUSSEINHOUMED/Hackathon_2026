@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_252",
+  "file_path": "raw/RIB_252.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "40422693812164",
+    "raison_sociale": "Letellier SARL",
+    "iban": "FR336964094557Y3IQTLD0TRN15",
+    "iban_formate": "FR33 6964 0945 57Y3 IQTL D0TR N15",
+    "bic": "CRLYFRPP",
+    "code_banque": "69640",
+    "code_guichet": "94557",
+    "numero_compte": "Y3IQTLD0TRN",
+    "cle_rib": "15",
+    "banque": "Banque Européenne de Commerce",
+    "agence": "Agence Marseille Canebière"
+  }
+}

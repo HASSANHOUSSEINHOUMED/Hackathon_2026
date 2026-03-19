@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_123",
+  "file_path": "raw/URSSAF_123.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-60226379",
+    "siret": "39551240356821",
+    "siren": "395512403",
+    "raison_sociale": "Pascal et Fils SAS",
+    "date_emission": "26/02/2026",
+    "date_expiration": "25/04/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_101",
+  "file_path": "raw/URSSAF_101.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-81988124",
+    "siret": "43503136450246",
+    "siren": "435031364",
+    "raison_sociale": "Lombard EURL",
+    "date_emission": "28/02/2026",
+    "date_expiration": "01/06/2026",
+    "expired": false
+  }
+}

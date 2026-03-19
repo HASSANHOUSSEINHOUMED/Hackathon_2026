@@ -1,0 +1,26 @@
+{
+  "document_id": "FAC_049",
+  "file_path": "raw/FAC_049.pdf",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0049",
+    "siret": "52909656210142",
+    "siret_affiche": "52909656210142",
+    "tva_intra": "FR31529096562",
+    "raison_sociale": "Grenier SA SARL",
+    "montant_ht": 44131.42,
+    "tva": 8826.28,
+    "tva_affichee": 8826.28,
+    "montant_ttc": 52957.7,
+    "date_emission": "10/03/2026",
+    "iban": "FR737693577999KO7DGOO5ZHA20",
+    "bic": "CEPAFRPP",
+    "nb_lignes": 5,
+    "tva_rate": 0.2,
+    "coherent": true
+  }
+}

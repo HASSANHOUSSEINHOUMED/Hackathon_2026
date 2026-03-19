@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_085",
+  "file_path": "raw/DEV_085.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0085",
+    "siret": "80919015081445",
+    "siret_affiche": "80919015081445",
+    "tva_intra": "FR59809190150",
+    "raison_sociale": "Fischer SAS",
+    "montant_ht": 35654.57,
+    "tva": 7130.91,
+    "montant_ttc": 42785.48,
+    "date_emission": "01/02/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

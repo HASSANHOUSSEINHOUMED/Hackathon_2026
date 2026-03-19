@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_143",
+  "file_path": "raw/URSSAF_143.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-82123324",
+    "siret": "81958837734038",
+    "siren": "819588377",
+    "raison_sociale": "Joubert SAS",
+    "date_emission": "06/03/2026",
+    "date_expiration": "16/06/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_155",
+  "file_path": "raw/SIRET_155.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "30024471246276",
+    "siren": "300244712",
+    "nic": "46276",
+    "raison_sociale": "Petitjean S.A. EURL",
+    "forme_juridique": "EURL",
+    "adresse": "72, rue Louis, 83114 Lefèvre",
+    "date_creation": "20/04/2010",
+    "code_naf": "8559A",
+    "libelle_naf": "Formation continue d'adultes",
+    "dirigeant": "Martine Schmitt",
+    "date_avis": "19/03/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_241",
+  "file_path": "raw/KBIS_241.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "96727578544689",
+    "siren": "967275785",
+    "raison_sociale": "Dos Santos Germain et Fils SARL",
+    "forme_juridique": "SARL",
+    "capital_social": 500000,
+    "dirigeant": "Laurent Mallet-Rémy",
+    "num_rcs": "793 620 848",
+    "ville_greffe": "Lille",
+    "date_immatriculation": "29/01/2005",
+    "objet_social": "Activités d'architecture et d'ingénierie",
+    "tva_intra": "FR05967275785",
+    "code_naf": "8559A",
+    "date_kbis": "15/03/2026",
+    "expired": false
+  }
+}

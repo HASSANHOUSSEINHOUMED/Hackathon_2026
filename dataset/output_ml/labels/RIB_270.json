@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_270",
+  "file_path": "raw/RIB_270.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "81964825431108",
+    "raison_sociale": "Carlier S.A.S. SARL",
+    "iban": "FR231151292430R5MJZK0QZMR33",
+    "iban_formate": "FR23 1151 2924 30R5 MJZK 0QZM R33",
+    "bic": "SOGEFRPP",
+    "code_banque": "11512",
+    "code_guichet": "92430",
+    "numero_compte": "R5MJZK0QZMR",
+    "cle_rib": "33",
+    "banque": "Banque Européenne de Commerce",
+    "agence": "Agence Bordeaux Centre"
+  }
+}

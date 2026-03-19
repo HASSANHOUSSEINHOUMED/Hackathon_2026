@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_159",
+  "file_path": "raw/SIRET_159.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "90714014901190",
+    "siren": "907140149",
+    "nic": "01190",
+    "raison_sociale": "Morel SNC",
+    "forme_juridique": "SNC",
+    "adresse": "81, boulevard Grégoire, 97135 Perrin",
+    "date_creation": "06/11/2002",
+    "code_naf": "4711B",
+    "libelle_naf": "Commerce d'alimentation générale",
+    "dirigeant": "Emmanuelle Launay",
+    "date_avis": "23/02/2026",
+    "expired": false
+  }
+}

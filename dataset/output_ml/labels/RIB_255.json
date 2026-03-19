@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_255",
+  "file_path": "raw/RIB_255.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "10225267371194",
+    "raison_sociale": "Sanchez SA",
+    "iban": "FR3746500289613Z6DBFOESCS93",
+    "iban_formate": "FR37 4650 0289 613Z 6DBF OESC S93",
+    "bic": "SOGEFRPP",
+    "code_banque": "46500",
+    "code_guichet": "28961",
+    "numero_compte": "3Z6DBFOESCS",
+    "cle_rib": "93",
+    "banque": "Crédit Coopératif du Sud",
+    "agence": "Agence Strasbourg Kléber"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_139",
+  "file_path": "raw/URSSAF_139.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-51302939",
+    "siret": "01585174432806",
+    "siren": "015851744",
+    "raison_sociale": "Meyer EURL",
+    "date_emission": "03/02/2026",
+    "date_expiration": "29/05/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_264",
+  "file_path": "raw/RIB_264.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "14708272135908",
+    "raison_sociale": "Dumont EURL",
+    "iban": "FR385984418178XDFH1VYO9M318",
+    "iban_formate": "FR38 5984 4181 78XD FH1V YO9M 318",
+    "bic": "AGRIFRPP",
+    "code_banque": "59844",
+    "code_guichet": "18178",
+    "numero_compte": "XDFH1VYO9M3",
+    "cle_rib": "18",
+    "banque": "Banque Européenne de Commerce",
+    "agence": "Agence Strasbourg Kléber"
+  }
+}

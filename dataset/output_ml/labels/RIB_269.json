@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_269",
+  "file_path": "raw/RIB_269.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "30600025889552",
+    "raison_sociale": "Bodin Dupuy SARL EURL",
+    "iban": "FR6084997663638Z6NTSK4MZ650",
+    "iban_formate": "FR60 8499 7663 638Z 6NTS K4MZ 650",
+    "bic": "TRNOFRP1",
+    "code_banque": "84997",
+    "code_guichet": "66363",
+    "numero_compte": "8Z6NTSK4MZ6",
+    "cle_rib": "50",
+    "banque": "Caisse Régionale du Centre",
+    "agence": "Agence Lyon Part-Dieu"
+  }
+}

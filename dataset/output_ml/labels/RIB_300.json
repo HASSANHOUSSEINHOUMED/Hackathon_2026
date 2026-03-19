@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_300",
+  "file_path": "raw/RIB_300.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "03362680540854",
+    "raison_sociale": "Wagner S.A.R.L. EURL",
+    "iban": "FR958978854068XWTLRCTFFQQ17",
+    "iban_formate": "FR95 8978 8540 68XW TLRC TFFQ Q17",
+    "bic": "CEPAFRPP",
+    "code_banque": "89788",
+    "code_guichet": "54068",
+    "numero_compte": "XWTLRCTFFQQ",
+    "cle_rib": "17",
+    "banque": "Banque Européenne de Commerce",
+    "agence": "Agence Strasbourg Kléber"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_277",
+  "file_path": "raw/RIB_277.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "64771591103006",
+    "raison_sociale": "Buisson SAS",
+    "iban": "FR862378052317VQ83QTTJ0O115",
+    "iban_formate": "FR86 2378 0523 17VQ 83QT TJ0O 115",
+    "bic": "CEPAFRPP",
+    "code_banque": "23780",
+    "code_guichet": "52317",
+    "numero_compte": "VQ83QTTJ0O1",
+    "cle_rib": "15",
+    "banque": "Crédit Moderne",
+    "agence": "Agence Toulouse Capitole"
+  }
+}

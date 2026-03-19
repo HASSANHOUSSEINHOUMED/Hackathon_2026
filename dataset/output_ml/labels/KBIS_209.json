@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_209",
+  "file_path": "raw/KBIS_209.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "50033423042589",
+    "siren": "500334230",
+    "raison_sociale": "Delmas SNC",
+    "forme_juridique": "SNC",
+    "capital_social": 100000,
+    "dirigeant": "Emmanuelle Henry-Millet",
+    "num_rcs": "544 999 828",
+    "ville_greffe": "Clermont-Ferrand",
+    "date_immatriculation": "28/01/2012",
+    "objet_social": "Commerce de gros de matériel électrique et électronique",
+    "tva_intra": "FR64500334230",
+    "code_naf": "8559A",
+    "date_kbis": "17/03/2026",
+    "expired": false
+  }
+}

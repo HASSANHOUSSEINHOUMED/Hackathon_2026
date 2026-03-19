@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_163",
+  "file_path": "raw/SIRET_163.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "01017026495245",
+    "siren": "010170264",
+    "nic": "95245",
+    "raison_sociale": "Bertin SARL",
+    "forme_juridique": "SARL",
+    "adresse": "314, chemin de Leroy, 52730 Saint Raymond",
+    "date_creation": "11/03/2007",
+    "code_naf": "7010Z",
+    "libelle_naf": "Activités des sièges sociaux",
+    "dirigeant": "Olivie Leduc",
+    "date_avis": "07/03/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_268",
+  "file_path": "raw/RIB_268.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "81789046033783",
+    "raison_sociale": "Ramos SA SNC",
+    "iban": "FR902500735632UYCSGWNSEXS74",
+    "iban_formate": "FR90 2500 7356 32UY CSGW NSEX S74",
+    "bic": "AGRIFRPP",
+    "code_banque": "25007",
+    "code_guichet": "35632",
+    "numero_compte": "UYCSGWNSEXS",
+    "cle_rib": "74",
+    "banque": "Banque Européenne de Commerce",
+    "agence": "Agence Toulouse Capitole"
+  }
+}

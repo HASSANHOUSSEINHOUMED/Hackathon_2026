@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_131",
+  "file_path": "raw/URSSAF_131.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-87882357",
+    "siret": "76212679569277",
+    "siren": "762126795",
+    "raison_sociale": "Fernandes SARL",
+    "date_emission": "14/02/2026",
+    "date_expiration": "25/04/2026",
+    "expired": false
+  }
+}

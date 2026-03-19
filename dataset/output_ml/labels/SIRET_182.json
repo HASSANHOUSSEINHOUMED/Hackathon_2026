@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_182",
+  "file_path": "raw/SIRET_182.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "14761742724389",
+    "siren": "147617427",
+    "nic": "24389",
+    "raison_sociale": "Guilbert et Fils SNC",
+    "forme_juridique": "SNC",
+    "adresse": "55, chemin Michelle Léger, 97175 Guyon",
+    "date_creation": "13/05/2001",
+    "code_naf": "8121Z",
+    "libelle_naf": "Nettoyage courant des bâtiments",
+    "dirigeant": "Thérèse Costa",
+    "date_avis": "26/02/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_107",
+  "file_path": "raw/URSSAF_107.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-87347488",
+    "siret": "89921075122458",
+    "siren": "899210751",
+    "raison_sociale": "Lebrun SNC",
+    "date_emission": "07/03/2026",
+    "date_expiration": "03/06/2026",
+    "expired": false
+  }
+}

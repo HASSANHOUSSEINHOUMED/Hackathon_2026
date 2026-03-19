@@ -1,0 +1,26 @@
+{
+  "document_id": "FAC_002",
+  "file_path": "raw/FAC_002.pdf",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0002",
+    "siret": "16475255234193",
+    "siret_affiche": "16475255234193",
+    "tva_intra": "FR85164752552",
+    "raison_sociale": "Evrard SARL",
+    "montant_ht": 73799.0,
+    "tva": 14759.8,
+    "tva_affichee": 14759.8,
+    "montant_ttc": 88558.8,
+    "date_emission": "22/01/2026",
+    "iban": "FR0480010420875DZNKOUR81B44",
+    "bic": "CEPAFRPP",
+    "nb_lignes": 8,
+    "tva_rate": 0.2,
+    "coherent": true
+  }
+}

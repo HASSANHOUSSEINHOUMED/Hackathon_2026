@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_287",
+  "file_path": "raw/RIB_287.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "12875857056767",
+    "raison_sociale": "Dupont EURL",
+    "iban": "FR517046113627W0R35WSKDMW47",
+    "iban_formate": "FR51 7046 1136 27W0 R35W SKDM W47",
+    "bic": "BNPAFRPP",
+    "code_banque": "70461",
+    "code_guichet": "13627",
+    "numero_compte": "W0R35WSKDMW",
+    "cle_rib": "47",
+    "banque": "Banque de l'Avenir",
+    "agence": "Agence Lille Grand-Place"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "document_id": "FAC_021",
+  "file_path": "raw/FAC_021.pdf",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0021",
+    "siret": "85160481975498",
+    "siret_affiche": "85160481975498",
+    "tva_intra": "FR48851604819",
+    "raison_sociale": "Hardy EURL",
+    "montant_ht": 26374.0,
+    "tva": 1450.57,
+    "tva_affichee": 1450.57,
+    "montant_ttc": 27824.57,
+    "date_emission": "18/01/2026",
+    "iban": "FR839369558689380VKW72TWA62",
+    "bic": "CEPAFRPP",
+    "nb_lignes": 3,
+    "tva_rate": 0.055,
+    "coherent": true
+  }
+}

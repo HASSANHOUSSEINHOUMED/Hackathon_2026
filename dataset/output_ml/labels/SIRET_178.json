@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_178",
+  "file_path": "raw/SIRET_178.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "57287032703204",
+    "siren": "572870327",
+    "nic": "03204",
+    "raison_sociale": "Tessier Guillet S.A.R.L. SARL",
+    "forme_juridique": "SARL",
+    "adresse": "47, chemin Petit, 30122 Saint Richard",
+    "date_creation": "25/08/2021",
+    "code_naf": "6920Z",
+    "libelle_naf": "Activités comptables",
+    "dirigeant": "Jacques-Zacharie Lenoir",
+    "date_avis": "20/02/2026",
+    "expired": false
+  }
+}

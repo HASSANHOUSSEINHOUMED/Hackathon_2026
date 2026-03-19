@@ -1,0 +1,26 @@
+{
+  "document_id": "FAC_026",
+  "file_path": "raw/FAC_026.pdf",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0026",
+    "siret": "96966416805296",
+    "siret_affiche": "96966416805296",
+    "tva_intra": "FR55969664168",
+    "raison_sociale": "Duval SARL SA",
+    "montant_ht": 65564.77,
+    "tva": 6556.48,
+    "tva_affichee": 6556.48,
+    "montant_ttc": 72121.25,
+    "date_emission": "25/02/2026",
+    "iban": "FR425742821551F3FE2VQ7S2M77",
+    "bic": "TRNOFRP1",
+    "nb_lignes": 8,
+    "tva_rate": 0.1,
+    "coherent": true
+  }
+}

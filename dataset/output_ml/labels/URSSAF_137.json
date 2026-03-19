@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_137",
+  "file_path": "raw/URSSAF_137.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-14678950",
+    "siret": "17465421040664",
+    "siren": "174654210",
+    "raison_sociale": "Rey SA EURL",
+    "date_emission": "21/02/2026",
+    "date_expiration": "24/04/2026",
+    "expired": false
+  }
+}

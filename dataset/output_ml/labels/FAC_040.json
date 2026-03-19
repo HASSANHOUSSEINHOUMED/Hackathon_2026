@@ -1,0 +1,26 @@
+{
+  "document_id": "FAC_040",
+  "file_path": "raw/FAC_040.pdf",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0040",
+    "siret": "45933272279562",
+    "siret_affiche": "45933272279562",
+    "tva_intra": "FR76459332722",
+    "raison_sociale": "Lemonnier SARL SAS",
+    "montant_ht": 67850.31,
+    "tva": 13570.06,
+    "tva_affichee": 13570.06,
+    "montant_ttc": 81420.37,
+    "date_emission": "13/02/2026",
+    "iban": "FR847171280453STROLSIJDX480",
+    "bic": "TRNOFRP1",
+    "nb_lignes": 4,
+    "tva_rate": 0.2,
+    "coherent": true
+  }
+}

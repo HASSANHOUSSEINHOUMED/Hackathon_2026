@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_199",
+  "file_path": "raw/SIRET_199.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "61706304589136",
+    "siren": "617063045",
+    "nic": "89136",
+    "raison_sociale": "Wagner S.A.R.L. SNC",
+    "forme_juridique": "SNC",
+    "adresse": "92, avenue de Gautier, 31293 Guichard-sur-Mer",
+    "date_creation": "07/02/2000",
+    "code_naf": "2562B",
+    "libelle_naf": "Mécanique industrielle",
+    "dirigeant": "Alice de Leclercq",
+    "date_avis": "21/02/2026",
+    "expired": false
+  }
+}

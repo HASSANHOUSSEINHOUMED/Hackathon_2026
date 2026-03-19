@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_151",
+  "file_path": "raw/SIRET_151.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "84222231705921",
+    "siren": "842222317",
+    "nic": "05921",
+    "raison_sociale": "Boulay Roy S.A.R.L. SARL",
+    "forme_juridique": "SARL",
+    "adresse": "29, avenue de Didier, 27428 Augernec",
+    "date_creation": "22/04/2001",
+    "code_naf": "6910Z",
+    "libelle_naf": "Activités juridiques",
+    "dirigeant": "Michel Lambert",
+    "date_avis": "15/03/2026",
+    "expired": false
+  }
+}

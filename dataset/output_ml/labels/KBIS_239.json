@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_239",
+  "file_path": "raw/KBIS_239.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "59892625166095",
+    "siren": "598926251",
+    "raison_sociale": "Loiseau S.A.R.L. SARL",
+    "forme_juridique": "SARL",
+    "capital_social": 50000,
+    "dirigeant": "Charles Julien",
+    "num_rcs": "226 279 639",
+    "ville_greffe": "Rouen",
+    "date_immatriculation": "30/01/2010",
+    "objet_social": "Transport routier de marchandises",
+    "tva_intra": "FR41598926251",
+    "code_naf": "8559A",
+    "date_kbis": "24/02/2026",
+    "expired": false
+  }
+}

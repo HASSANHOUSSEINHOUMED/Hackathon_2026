@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_221",
+  "file_path": "raw/KBIS_221.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "89241956525251",
+    "siren": "892419565",
+    "raison_sociale": "Hervé S.A.S. SAS",
+    "forme_juridique": "SAS",
+    "capital_social": 500000,
+    "dirigeant": "Denis du Gomes",
+    "num_rcs": "181 161 240",
+    "ville_greffe": "Montpellier",
+    "date_immatriculation": "24/05/2007",
+    "objet_social": "Activités d'architecture et d'ingénierie",
+    "tva_intra": "FR22892419565",
+    "code_naf": "6920Z",
+    "date_kbis": "08/03/2026",
+    "expired": false
+  }
+}

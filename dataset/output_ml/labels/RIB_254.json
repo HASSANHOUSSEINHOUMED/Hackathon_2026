@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_254",
+  "file_path": "raw/RIB_254.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "36172131945193",
+    "raison_sociale": "Joseph SA",
+    "iban": "FR392551257250XXWL6JLO5OA46",
+    "iban_formate": "FR39 2551 2572 50XX WL6J LO5O A46",
+    "bic": "CMCIFRPP",
+    "code_banque": "25512",
+    "code_guichet": "57250",
+    "numero_compte": "XXWL6JLO5OA",
+    "cle_rib": "46",
+    "banque": "Crédit Coopératif du Sud",
+    "agence": "Agence Nantes Commerce"
+  }
+}

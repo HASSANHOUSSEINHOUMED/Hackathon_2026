@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_165",
+  "file_path": "raw/SIRET_165.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "50090255690562",
+    "siren": "500902556",
+    "nic": "90562",
+    "raison_sociale": "Albert SA",
+    "forme_juridique": "SA",
+    "adresse": "26, rue Lopez, 10414 Saint Clémence-la-Forêt",
+    "date_creation": "03/10/2022",
+    "code_naf": "4120A",
+    "libelle_naf": "Construction de maisons individuelles",
+    "dirigeant": "Robert Alexandre",
+    "date_avis": "26/02/2026",
+    "expired": false
+  }
+}

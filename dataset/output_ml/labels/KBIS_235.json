@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_235",
+  "file_path": "raw/KBIS_235.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "20185962663014",
+    "siren": "201859626",
+    "raison_sociale": "Brunel Breton et Fils EURL",
+    "forme_juridique": "EURL",
+    "capital_social": 10000,
+    "dirigeant": "Olivier Fontaine Le Bouvier",
+    "num_rcs": "219 184 224",
+    "ville_greffe": "Lyon",
+    "date_immatriculation": "02/12/2001",
+    "objet_social": "Restauration et services de traiteur",
+    "tva_intra": "FR33201859626",
+    "code_naf": "8559A",
+    "date_kbis": "04/03/2026",
+    "expired": false
+  }
+}

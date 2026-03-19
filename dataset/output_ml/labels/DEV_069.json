@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_069",
+  "file_path": "raw/DEV_069.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0069",
+    "siret": "79970246929962",
+    "siret_affiche": "79970246929962",
+    "tva_intra": "FR17799702469",
+    "raison_sociale": "Gaillard Rousset S.A.R.L. EURL",
+    "montant_ht": 76438.59,
+    "tva": 15287.72,
+    "montant_ttc": 91726.31,
+    "date_emission": "14/02/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

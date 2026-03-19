@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_289",
+  "file_path": "raw/RIB_289.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "93110291781339",
+    "raison_sociale": "Gallet EURL",
+    "iban": "FR467209413231TF24EZTUJTO94",
+    "iban_formate": "FR46 7209 4132 31TF 24EZ TUJT O94",
+    "bic": "CMCIFR2A",
+    "code_banque": "72094",
+    "code_guichet": "13231",
+    "numero_compte": "TF24EZTUJTO",
+    "cle_rib": "94",
+    "banque": "Banque de l'Avenir",
+    "agence": "Agence Paris Opéra"
+  }
+}

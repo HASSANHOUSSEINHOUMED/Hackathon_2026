@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_158",
+  "file_path": "raw/SIRET_158.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "07545279785247",
+    "siren": "075452797",
+    "nic": "85247",
+    "raison_sociale": "Charrier SARL",
+    "forme_juridique": "SARL",
+    "adresse": "boulevard de Samson, 24819 Alves-la-Forêt",
+    "date_creation": "26/12/2013",
+    "code_naf": "6201Z",
+    "libelle_naf": "Programmation informatique",
+    "dirigeant": "Caroline-Aurélie Bonnet",
+    "date_avis": "18/03/2026",
+    "expired": false
+  }
+}

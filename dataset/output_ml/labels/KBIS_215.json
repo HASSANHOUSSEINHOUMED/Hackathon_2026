@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_215",
+  "file_path": "raw/KBIS_215.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "71597412718206",
+    "siren": "715974127",
+    "raison_sociale": "Langlois Bouvier SARL SARL",
+    "forme_juridique": "SARL",
+    "capital_social": 5000,
+    "dirigeant": "Nicolas Gauthier",
+    "num_rcs": "649 528 589",
+    "ville_greffe": "Marseille",
+    "date_immatriculation": "01/08/2005",
+    "objet_social": "Commerce de gros de matériel électrique et électronique",
+    "tva_intra": "FR80715974127",
+    "code_naf": "7010Z",
+    "date_kbis": "24/02/2026",
+    "expired": false
+  }
+}

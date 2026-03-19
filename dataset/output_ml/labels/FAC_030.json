@@ -1,0 +1,26 @@
+{
+  "document_id": "FAC_030",
+  "file_path": "raw/FAC_030.pdf",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0030",
+    "siret": "86143410836972",
+    "siret_affiche": "86143410836972",
+    "tva_intra": "FR12861434108",
+    "raison_sociale": "Weiss SNC",
+    "montant_ht": 41535.44,
+    "tva": 8307.09,
+    "tva_affichee": 8307.09,
+    "montant_ttc": 49842.53,
+    "date_emission": "15/02/2026",
+    "iban": "FR622453075513L0I85FM8EN356",
+    "bic": "CEPAFRPP",
+    "nb_lignes": 7,
+    "tva_rate": 0.2,
+    "coherent": true
+  }
+}

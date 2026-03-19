@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_286",
+  "file_path": "raw/RIB_286.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "69143075536660",
+    "raison_sociale": "Deschamps SARL",
+    "iban": "FR024424349586L6FVS5R9E7A48",
+    "iban_formate": "FR02 4424 3495 86L6 FVS5 R9E7 A48",
+    "bic": "CMCIFR2A",
+    "code_banque": "44243",
+    "code_guichet": "49586",
+    "numero_compte": "L6FVS5R9E7A",
+    "cle_rib": "48",
+    "banque": "Banque de l'Avenir",
+    "agence": "Agence Lille Grand-Place"
+  }
+}

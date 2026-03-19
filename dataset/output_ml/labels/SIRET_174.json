@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_174",
+  "file_path": "raw/SIRET_174.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "29543165426699",
+    "siren": "295431654",
+    "nic": "26699",
+    "raison_sociale": "Martinez et Fils SA",
+    "forme_juridique": "SA",
+    "adresse": "rue Lemaître, 57827 Petitnec",
+    "date_creation": "22/07/2017",
+    "code_naf": "8559A",
+    "libelle_naf": "Formation continue d'adultes",
+    "dirigeant": "Cécile de la Loiseau",
+    "date_avis": "16/03/2026",
+    "expired": false
+  }
+}

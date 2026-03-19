@@ -1,0 +1,26 @@
+{
+  "document_id": "FAC_025",
+  "file_path": "raw/FAC_025.pdf",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0025",
+    "siret": "29014767797648",
+    "siret_affiche": "29014767797648",
+    "tva_intra": "FR60290147677",
+    "raison_sociale": "Devaux SARL",
+    "montant_ht": 61246.0,
+    "tva": 6124.6,
+    "tva_affichee": 6124.6,
+    "montant_ttc": 67370.6,
+    "date_emission": "12/03/2026",
+    "iban": "FR707715424918C3OLIB7Z17Y27",
+    "bic": "AGRIFRPP",
+    "nb_lignes": 3,
+    "tva_rate": 0.1,
+    "coherent": true
+  }
+}

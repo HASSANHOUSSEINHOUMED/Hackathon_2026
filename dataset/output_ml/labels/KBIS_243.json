@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_243",
+  "file_path": "raw/KBIS_243.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "47443096434805",
+    "siren": "474430964",
+    "raison_sociale": "Vallet S.A.R.L. SA",
+    "forme_juridique": "SA",
+    "capital_social": 5000,
+    "dirigeant": "Alain Laine",
+    "num_rcs": "599 107 259",
+    "ville_greffe": "Lyon",
+    "date_immatriculation": "01/09/2015",
+    "objet_social": "Transport routier de marchandises",
+    "tva_intra": "FR70474430964",
+    "code_naf": "6910Z",
+    "date_kbis": "23/02/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_171",
+  "file_path": "raw/SIRET_171.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "90785158867348",
+    "siren": "907851588",
+    "nic": "67348",
+    "raison_sociale": "Pires Guibert SARL SA",
+    "forme_juridique": "SA",
+    "adresse": "568, chemin Martineau, 27574 Joubert-la-Forêt",
+    "date_creation": "22/11/2016",
+    "code_naf": "4399C",
+    "libelle_naf": "Travaux de maçonnerie générale",
+    "dirigeant": "Christine de la Bigot",
+    "date_avis": "17/02/2026",
+    "expired": false
+  }
+}

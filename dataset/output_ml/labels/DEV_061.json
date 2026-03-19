@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_061",
+  "file_path": "raw/DEV_061.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0061",
+    "siret": "13568044520675",
+    "siret_affiche": "13568044520675",
+    "tva_intra": "FR53135680445",
+    "raison_sociale": "Hamon Baudry et Fils SARL",
+    "montant_ht": 17472.1,
+    "tva": 1747.21,
+    "montant_ttc": 19219.31,
+    "date_emission": "21/01/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

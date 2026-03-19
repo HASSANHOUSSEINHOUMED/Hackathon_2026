@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_072",
+  "file_path": "raw/DEV_072.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0072",
+    "siret": "32830965320742",
+    "siret_affiche": "32830965320742",
+    "tva_intra": "FR89328309653",
+    "raison_sociale": "Lucas SA",
+    "montant_ht": 87444.91,
+    "tva": 4809.47,
+    "montant_ttc": 92254.38,
+    "date_emission": "20/01/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

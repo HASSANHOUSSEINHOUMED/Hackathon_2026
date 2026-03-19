@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_055",
+  "file_path": "raw/DEV_055.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0055",
+    "siret": "21890927353267",
+    "siret_affiche": "21890927353267",
+    "tva_intra": "FR01218909273",
+    "raison_sociale": "Mary S.A. SARL",
+    "montant_ht": 120414.69,
+    "tva": 24082.94,
+    "montant_ttc": 144497.63,
+    "date_emission": "04/02/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

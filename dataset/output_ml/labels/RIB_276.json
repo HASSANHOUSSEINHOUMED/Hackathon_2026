@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_276",
+  "file_path": "raw/RIB_276.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "72959639504091",
+    "raison_sociale": "Lambert SAS",
+    "iban": "FR5170525472724Y1JIC0GTEA50",
+    "iban_formate": "FR51 7052 5472 724Y 1JIC 0GTE A50",
+    "bic": "CMCIFRPP",
+    "code_banque": "70525",
+    "code_guichet": "47272",
+    "numero_compte": "4Y1JIC0GTEA",
+    "cle_rib": "50",
+    "banque": "Crédit Industriel et Financier",
+    "agence": "Agence Strasbourg Kléber"
+  }
+}

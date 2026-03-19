@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_062",
+  "file_path": "raw/DEV_062.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0062",
+    "siret": "02966706062536",
+    "siret_affiche": "02966706062536",
+    "tva_intra": "FR06029667060",
+    "raison_sociale": "David Bonnet SA EURL",
+    "montant_ht": 75595.3,
+    "tva": 15119.06,
+    "montant_ttc": 90714.36,
+    "date_emission": "22/01/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

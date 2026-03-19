@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_091",
+  "file_path": "raw/DEV_091.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0091",
+    "siret": "98643009881806",
+    "siret_affiche": "98643009881806",
+    "tva_intra": "FR47986430098",
+    "raison_sociale": "Maréchal Faure SARL SA",
+    "montant_ht": 72350.11,
+    "tva": 14470.02,
+    "montant_ttc": 86820.13,
+    "date_emission": "12/02/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

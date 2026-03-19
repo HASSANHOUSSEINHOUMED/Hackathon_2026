@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_251",
+  "file_path": "raw/RIB_251.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "34240891164982",
+    "raison_sociale": "Lemoine SA",
+    "iban": "FR436795838919B7MUEGQF5HH68",
+    "iban_formate": "FR43 6795 8389 19B7 MUEG QF5H H68",
+    "bic": "CRLYFRPP",
+    "code_banque": "67958",
+    "code_guichet": "38919",
+    "numero_compte": "B7MUEGQF5HH",
+    "cle_rib": "68",
+    "banque": "Caisse Régionale du Centre",
+    "agence": "Agence Strasbourg Kléber"
+  }
+}

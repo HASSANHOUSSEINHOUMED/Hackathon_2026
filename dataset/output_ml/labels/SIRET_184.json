@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_184",
+  "file_path": "raw/SIRET_184.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "95641220931031",
+    "siren": "956412209",
+    "nic": "31031",
+    "raison_sociale": "Buisson Hebert SA SNC",
+    "forme_juridique": "SNC",
+    "adresse": "67, rue de Alexandre, 74825 Guillou-sur-Valette",
+    "date_creation": "20/05/2012",
+    "code_naf": "6201Z",
+    "libelle_naf": "Programmation informatique",
+    "dirigeant": "Anne Boyer",
+    "date_avis": "19/03/2026",
+    "expired": false
+  }
+}

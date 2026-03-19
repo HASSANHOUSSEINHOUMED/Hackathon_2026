@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_111",
+  "file_path": "raw/URSSAF_111.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-61096850",
+    "siret": "38848792806984",
+    "siren": "388487928",
+    "raison_sociale": "Lecomte Dumont S.A.R.L. SARL",
+    "date_emission": "13/02/2026",
+    "date_expiration": "02/05/2026",
+    "expired": false
+  }
+}

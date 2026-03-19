@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_263",
+  "file_path": "raw/RIB_263.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "80214629061367",
+    "raison_sociale": "Lacombe SARL",
+    "iban": "FR389770622255CGJT363YEFE18",
+    "iban_formate": "FR38 9770 6222 55CG JT36 3YEF E18",
+    "bic": "CMCIFRPP",
+    "code_banque": "97706",
+    "code_guichet": "22255",
+    "numero_compte": "CGJT363YEFE",
+    "cle_rib": "18",
+    "banque": "Crédit Coopératif du Sud",
+    "agence": "Agence Bordeaux Centre"
+  }
+}

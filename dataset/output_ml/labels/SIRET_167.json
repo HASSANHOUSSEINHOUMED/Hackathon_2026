@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_167",
+  "file_path": "raw/SIRET_167.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "49639191395415",
+    "siren": "496391913",
+    "nic": "95415",
+    "raison_sociale": "Gallet Hamon S.A. SAS",
+    "forme_juridique": "SAS",
+    "adresse": "82, chemin de Guillet, 26502 Weiss-sur-Moreno",
+    "date_creation": "09/01/2001",
+    "code_naf": "4332A",
+    "libelle_naf": "Travaux de menuiserie bois et PVC",
+    "dirigeant": "Maurice Cohen-Clément",
+    "date_avis": "27/02/2026",
+    "expired": false
+  }
+}

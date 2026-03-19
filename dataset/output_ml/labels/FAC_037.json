@@ -1,0 +1,26 @@
+{
+  "document_id": "FAC_037",
+  "file_path": "raw/FAC_037.pdf",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0037",
+    "siret": "13075626536897",
+    "siret_affiche": "13075626536897",
+    "tva_intra": "FR31130756265",
+    "raison_sociale": "Gautier SNC",
+    "montant_ht": 69987.5,
+    "tva": 6998.75,
+    "tva_affichee": 6998.75,
+    "montant_ttc": 76986.25,
+    "date_emission": "07/03/2026",
+    "iban": "FR541816328098IKZHDYGJJOV97",
+    "bic": "AGRIFRPP",
+    "nb_lignes": 4,
+    "tva_rate": 0.1,
+    "coherent": true
+  }
+}

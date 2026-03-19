@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_059",
+  "file_path": "raw/DEV_059.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0059",
+    "siret": "44518705734944",
+    "siret_affiche": "44518705734944",
+    "tva_intra": "FR96445187057",
+    "raison_sociale": "Parent Legendre S.A.S. EURL",
+    "montant_ht": 98994.39,
+    "tva": 5444.69,
+    "montant_ttc": 104439.08,
+    "date_emission": "25/01/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

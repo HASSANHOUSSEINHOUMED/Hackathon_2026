@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_250",
+  "file_path": "raw/KBIS_250.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "34481230083406",
+    "siren": "344812300",
+    "raison_sociale": "Muller S.A.R.L. SA",
+    "forme_juridique": "SA",
+    "capital_social": 200000,
+    "dirigeant": "Édouard Verdier",
+    "num_rcs": "726 401 432",
+    "ville_greffe": "Lille",
+    "date_immatriculation": "31/10/2006",
+    "objet_social": "Conseil et développement en systèmes informatiques",
+    "tva_intra": "FR06344812300",
+    "code_naf": "4399C",
+    "date_kbis": "18/03/2026",
+    "expired": false
+  }
+}

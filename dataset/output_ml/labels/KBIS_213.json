@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_213",
+  "file_path": "raw/KBIS_213.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "92840445866906",
+    "siren": "928404458",
+    "raison_sociale": "Richard SARL",
+    "forme_juridique": "SARL",
+    "capital_social": 10000,
+    "dirigeant": "Victor Lebon",
+    "num_rcs": "888 814 527",
+    "ville_greffe": "Lille",
+    "date_immatriculation": "10/09/2013",
+    "objet_social": "Activités d'architecture et d'ingénierie",
+    "tva_intra": "FR06928404458",
+    "code_naf": "6920Z",
+    "date_kbis": "13/03/2026",
+    "expired": false
+  }
+}

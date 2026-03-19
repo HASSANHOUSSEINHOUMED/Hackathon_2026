@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_169",
+  "file_path": "raw/SIRET_169.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "63123034977862",
+    "siren": "631230349",
+    "nic": "77862",
+    "raison_sociale": "Bernier SARL",
+    "forme_juridique": "SARL",
+    "adresse": "468, avenue Georges, 28786 Lopesboeuf",
+    "date_creation": "19/10/2002",
+    "code_naf": "8121Z",
+    "libelle_naf": "Nettoyage courant des bâtiments",
+    "dirigeant": "Richard-Robert Coste",
+    "date_avis": "20/02/2026",
+    "expired": false
+  }
+}

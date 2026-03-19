@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_240",
+  "file_path": "raw/KBIS_240.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "71859484991024",
+    "siren": "718594849",
+    "raison_sociale": "Hoarau SNC",
+    "forme_juridique": "SNC",
+    "capital_social": 50000,
+    "dirigeant": "Marianne Marques-Lefebvre",
+    "num_rcs": "373 154 842",
+    "ville_greffe": "Grenoble",
+    "date_immatriculation": "17/11/2014",
+    "objet_social": "Activités de nettoyage et d'entretien",
+    "tva_intra": "FR08718594849",
+    "code_naf": "6311Z",
+    "date_kbis": "27/02/2026",
+    "expired": false
+  }
+}

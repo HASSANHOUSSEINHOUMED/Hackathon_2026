@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_108",
+  "file_path": "raw/URSSAF_108.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-55119729",
+    "siret": "10556613790608",
+    "siren": "105566137",
+    "raison_sociale": "Seguin EURL",
+    "date_emission": "28/02/2026",
+    "date_expiration": "26/04/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_217",
+  "file_path": "raw/KBIS_217.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "92632967362913",
+    "siren": "926329673",
+    "raison_sociale": "Muller et Fils EURL",
+    "forme_juridique": "EURL",
+    "capital_social": 1000,
+    "dirigeant": "Adrien Rousseau",
+    "num_rcs": "884 898 433",
+    "ville_greffe": "Nice",
+    "date_immatriculation": "21/11/2010",
+    "objet_social": "Activités d'architecture et d'ingénierie",
+    "tva_intra": "FR44926329673",
+    "code_naf": "4690Z",
+    "date_kbis": "06/03/2026",
+    "expired": false
+  }
+}

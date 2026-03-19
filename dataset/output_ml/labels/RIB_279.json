@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_279",
+  "file_path": "raw/RIB_279.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "03763715439881",
+    "raison_sociale": "Marie et Fils SARL",
+    "iban": "FR235087169509NU34XDGM7E264",
+    "iban_formate": "FR23 5087 1695 09NU 34XD GM7E 264",
+    "bic": "CRLYFRPP",
+    "code_banque": "50871",
+    "code_guichet": "69509",
+    "numero_compte": "NU34XDGM7E2",
+    "cle_rib": "64",
+    "banque": "Crédit Moderne",
+    "agence": "Agence Marseille Canebière"
+  }
+}

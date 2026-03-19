@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_292",
+  "file_path": "raw/RIB_292.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "99599610502315",
+    "raison_sociale": "Deschamps Aubert et Fils SA",
+    "iban": "FR407546199040HRZTQ8W6WRF18",
+    "iban_formate": "FR40 7546 1990 40HR ZTQ8 W6WR F18",
+    "bic": "BNPAFRPP",
+    "code_banque": "75461",
+    "code_guichet": "99040",
+    "numero_compte": "HRZTQ8W6WRF",
+    "cle_rib": "18",
+    "banque": "Crédit Moderne",
+    "agence": "Agence Paris Opéra"
+  }
+}

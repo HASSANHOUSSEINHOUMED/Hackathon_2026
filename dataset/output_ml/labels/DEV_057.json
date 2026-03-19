@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_057",
+  "file_path": "raw/DEV_057.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0057",
+    "siret": "03161799604217",
+    "siret_affiche": "03161799604217",
+    "tva_intra": "FR28031617996",
+    "raison_sociale": "Richard Pruvost SARL SARL",
+    "montant_ht": 39774.08,
+    "tva": 3977.41,
+    "montant_ttc": 43751.49,
+    "date_emission": "25/02/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

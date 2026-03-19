@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_208",
+  "file_path": "raw/KBIS_208.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "95946521270736",
+    "siren": "959465212",
+    "raison_sociale": "Bouchet SNC",
+    "forme_juridique": "SNC",
+    "capital_social": 10000,
+    "dirigeant": "Nicolas de Delahaye",
+    "num_rcs": "217 245 397",
+    "ville_greffe": "Nice",
+    "date_immatriculation": "07/03/2021",
+    "objet_social": "Restauration et services de traiteur",
+    "tva_intra": "FR91959465212",
+    "code_naf": "6201Z",
+    "date_kbis": "05/03/2026",
+    "expired": false
+  }
+}

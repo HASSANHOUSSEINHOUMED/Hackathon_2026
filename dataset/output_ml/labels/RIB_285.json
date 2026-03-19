@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_285",
+  "file_path": "raw/RIB_285.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "27284982947417",
+    "raison_sociale": "Maury EURL",
+    "iban": "FR6212043694881AL1BFN09CA74",
+    "iban_formate": "FR62 1204 3694 881A L1BF N09C A74",
+    "bic": "TRNOFRP1",
+    "code_banque": "12043",
+    "code_guichet": "69488",
+    "numero_compte": "1AL1BFN09CA",
+    "cle_rib": "74",
+    "banque": "Banque Européenne de Commerce",
+    "agence": "Agence Marseille Canebière"
+  }
+}

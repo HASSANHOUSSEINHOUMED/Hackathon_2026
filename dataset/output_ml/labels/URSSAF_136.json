@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_136",
+  "file_path": "raw/URSSAF_136.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-49536330",
+    "siret": "61817534343002",
+    "siren": "618175343",
+    "raison_sociale": "Boulanger SAS",
+    "date_emission": "26/02/2026",
+    "date_expiration": "04/05/2026",
+    "expired": false
+  }
+}

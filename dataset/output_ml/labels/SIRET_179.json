@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_179",
+  "file_path": "raw/SIRET_179.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "22849939808923",
+    "siren": "228499398",
+    "nic": "08923",
+    "raison_sociale": "Vasseur SA",
+    "forme_juridique": "SA",
+    "adresse": "6, rue de Noël, 80496 Pottier",
+    "date_creation": "28/11/2000",
+    "code_naf": "8121Z",
+    "libelle_naf": "Nettoyage courant des bâtiments",
+    "dirigeant": "Zacharie Philippe",
+    "date_avis": "26/02/2026",
+    "expired": false
+  }
+}

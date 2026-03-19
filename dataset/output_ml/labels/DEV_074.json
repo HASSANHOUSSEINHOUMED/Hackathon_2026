@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_074",
+  "file_path": "raw/DEV_074.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0074",
+    "siret": "30033542916890",
+    "siret_affiche": "30033542916890",
+    "tva_intra": "FR71300335429",
+    "raison_sociale": "Morin Pinto S.A. SNC",
+    "montant_ht": 49238.93,
+    "tva": 4923.89,
+    "montant_ttc": 54162.82,
+    "date_emission": "13/03/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

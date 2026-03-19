@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_067",
+  "file_path": "raw/DEV_067.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0067",
+    "siret": "62565270647743",
+    "siret_affiche": "62565270647743",
+    "tva_intra": "FR79625652706",
+    "raison_sociale": "Navarro SNC",
+    "montant_ht": 27392.43,
+    "tva": 2739.24,
+    "montant_ttc": 30131.67,
+    "date_emission": "06/02/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

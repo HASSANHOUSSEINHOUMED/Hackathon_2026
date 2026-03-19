@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_164",
+  "file_path": "raw/SIRET_164.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "56770028142769",
+    "siren": "567700281",
+    "nic": "42769",
+    "raison_sociale": "Marion EURL",
+    "forme_juridique": "EURL",
+    "adresse": "3, avenue Pichon, 97336 Saint Diane",
+    "date_creation": "08/06/2012",
+    "code_naf": "4399C",
+    "libelle_naf": "Travaux de maçonnerie générale",
+    "dirigeant": "Bertrand Brun",
+    "date_avis": "23/02/2026",
+    "expired": false
+  }
+}

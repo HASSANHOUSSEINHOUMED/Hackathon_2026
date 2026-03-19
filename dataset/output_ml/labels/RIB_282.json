@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_282",
+  "file_path": "raw/RIB_282.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "97432512825729",
+    "raison_sociale": "Dupré S.A.S. SNC",
+    "iban": "FR979729872206F0ZV6R0CH0V70",
+    "iban_formate": "FR97 9729 8722 06F0 ZV6R 0CH0 V70",
+    "bic": "CEPAFRPP",
+    "code_banque": "97298",
+    "code_guichet": "72206",
+    "numero_compte": "F0ZV6R0CH0V",
+    "cle_rib": "70",
+    "banque": "Banque Européenne de Commerce",
+    "agence": "Agence Bordeaux Centre"
+  }
+}

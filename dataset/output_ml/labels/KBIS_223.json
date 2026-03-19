@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_223",
+  "file_path": "raw/KBIS_223.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "71302321629838",
+    "siren": "713023216",
+    "raison_sociale": "Gillet SAS",
+    "forme_juridique": "SAS",
+    "capital_social": 10000,
+    "dirigeant": "Aimé-Jean Richard",
+    "num_rcs": "271 582 551",
+    "ville_greffe": "Lille",
+    "date_immatriculation": "13/06/2015",
+    "objet_social": "Formation professionnelle continue",
+    "tva_intra": "FR52713023216",
+    "code_naf": "8559A",
+    "date_kbis": "06/03/2026",
+    "expired": false
+  }
+}

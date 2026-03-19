@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_218",
+  "file_path": "raw/KBIS_218.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "43807017965630",
+    "siren": "438070179",
+    "raison_sociale": "Peltier Marques et Fils SARL",
+    "forme_juridique": "SARL",
+    "capital_social": 5000,
+    "dirigeant": "Jeanne Hoarau",
+    "num_rcs": "202 281 401",
+    "ville_greffe": "Montpellier",
+    "date_immatriculation": "23/02/2018",
+    "objet_social": "Formation professionnelle continue",
+    "tva_intra": "FR35438070179",
+    "code_naf": "4690Z",
+    "date_kbis": "16/03/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_234",
+  "file_path": "raw/KBIS_234.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "18443861225904",
+    "siren": "184438612",
+    "raison_sociale": "Roche Ferrand SA EURL",
+    "forme_juridique": "EURL",
+    "capital_social": 50000,
+    "dirigeant": "Bernadette de Aubert",
+    "num_rcs": "961 272 157",
+    "ville_greffe": "Rennes",
+    "date_immatriculation": "17/11/2008",
+    "objet_social": "Activités de nettoyage et d'entretien",
+    "tva_intra": "FR09184438612",
+    "code_naf": "4941A",
+    "date_kbis": "16/03/2026",
+    "expired": false
+  }
+}

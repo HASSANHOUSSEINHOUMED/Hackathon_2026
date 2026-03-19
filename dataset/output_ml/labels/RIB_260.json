@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_260",
+  "file_path": "raw/RIB_260.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "40546835665211",
+    "raison_sociale": "Dumont SAS",
+    "iban": "FR1263383760053T5LDLUA5GV21",
+    "iban_formate": "FR12 6338 3760 053T 5LDL UA5G V21",
+    "bic": "SOGEFRPP",
+    "code_banque": "63383",
+    "code_guichet": "76005",
+    "numero_compte": "3T5LDLUA5GV",
+    "cle_rib": "21",
+    "banque": "Banque de l'Avenir",
+    "agence": "Agence Marseille Canebière"
+  }
+}

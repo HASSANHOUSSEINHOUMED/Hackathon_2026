@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_076",
+  "file_path": "raw/DEV_076.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0076",
+    "siret": "42087375430011",
+    "siret_affiche": "42087375430011",
+    "tva_intra": "FR16420873754",
+    "raison_sociale": "Guillot EURL",
+    "montant_ht": 108068.99,
+    "tva": 10806.9,
+    "montant_ttc": 118875.89,
+    "date_emission": "19/02/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

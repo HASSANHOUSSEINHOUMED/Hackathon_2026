@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_259",
+  "file_path": "raw/RIB_259.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "62056341111596",
+    "raison_sociale": "Leroy et Fils EURL",
+    "iban": "FR321367641395AJ2LRBJM19Z82",
+    "iban_formate": "FR32 1367 6413 95AJ 2LRB JM19 Z82",
+    "bic": "BNPAFRPP",
+    "code_banque": "13676",
+    "code_guichet": "41395",
+    "numero_compte": "AJ2LRBJM19Z",
+    "cle_rib": "82",
+    "banque": "Banque Nationale de France",
+    "agence": "Agence Paris Opéra"
+  }
+}

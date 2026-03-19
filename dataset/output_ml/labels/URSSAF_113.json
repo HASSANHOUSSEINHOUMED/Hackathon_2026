@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_113",
+  "file_path": "raw/URSSAF_113.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-31212832",
+    "siret": "25621689636391",
+    "siren": "256216896",
+    "raison_sociale": "Charpentier SARL",
+    "date_emission": "01/02/2026",
+    "date_expiration": "15/06/2026",
+    "expired": false
+  }
+}

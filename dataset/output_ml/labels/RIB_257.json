@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_257",
+  "file_path": "raw/RIB_257.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "60650191479202",
+    "raison_sociale": "Benoit SARL",
+    "iban": "FR96578732851722KT56QQPAE53",
+    "iban_formate": "FR96 5787 3285 1722 KT56 QQPA E53",
+    "bic": "CCBPFRPP",
+    "code_banque": "57873",
+    "code_guichet": "28517",
+    "numero_compte": "22KT56QQPAE",
+    "cle_rib": "53",
+    "banque": "Banque Nationale de France",
+    "agence": "Agence Toulouse Capitole"
+  }
+}

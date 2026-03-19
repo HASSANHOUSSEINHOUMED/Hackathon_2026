@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_112",
+  "file_path": "raw/URSSAF_112.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-47606981",
+    "siret": "15798123487805",
+    "siren": "157981234",
+    "raison_sociale": "Bousquet Lefort SARL SNC",
+    "date_emission": "02/02/2026",
+    "date_expiration": "17/06/2026",
+    "expired": false
+  }
+}

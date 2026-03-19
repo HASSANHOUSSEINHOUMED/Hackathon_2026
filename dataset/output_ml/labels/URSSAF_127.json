@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_127",
+  "file_path": "raw/URSSAF_127.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-63796676",
+    "siret": "77332945362551",
+    "siren": "773329453",
+    "raison_sociale": "Blot Petitjean S.A.S. SA",
+    "date_emission": "03/02/2026",
+    "date_expiration": "17/05/2026",
+    "expired": false
+  }
+}

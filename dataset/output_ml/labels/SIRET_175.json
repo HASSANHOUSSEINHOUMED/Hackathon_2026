@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_175",
+  "file_path": "raw/SIRET_175.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "86771333144767",
+    "siren": "867713331",
+    "nic": "44767",
+    "raison_sociale": "Schneider SAS",
+    "forme_juridique": "SAS",
+    "adresse": "25, rue de Ramos, 97477 Sainte PaulBourg",
+    "date_creation": "16/11/2013",
+    "code_naf": "4399C",
+    "libelle_naf": "Travaux de maçonnerie générale",
+    "dirigeant": "Guy Duval",
+    "date_avis": "05/03/2026",
+    "expired": false
+  }
+}

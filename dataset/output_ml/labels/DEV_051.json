@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_051",
+  "file_path": "raw/DEV_051.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0051",
+    "siret": "25286692696624",
+    "siret_affiche": "25286692696624",
+    "tva_intra": "FR68252866926",
+    "raison_sociale": "Marchand SARL SAS",
+    "montant_ht": 116639.8,
+    "tva": 11663.98,
+    "montant_ttc": 128303.78,
+    "date_emission": "07/02/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

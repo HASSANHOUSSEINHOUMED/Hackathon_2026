@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_258",
+  "file_path": "raw/RIB_258.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "00928206267843",
+    "raison_sociale": "Foucher SARL",
+    "iban": "FR647578150112PF5ZIZ47M7681",
+    "iban_formate": "FR64 7578 1501 12PF 5ZIZ 47M7 681",
+    "bic": "CMCIFR2A",
+    "code_banque": "75781",
+    "code_guichet": "50112",
+    "numero_compte": "PF5ZIZ47M76",
+    "cle_rib": "81",
+    "banque": "Crédit Coopératif du Sud",
+    "agence": "Agence Strasbourg Kléber"
+  }
+}

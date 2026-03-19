@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_152",
+  "file_path": "raw/SIRET_152.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "88547492497511",
+    "siren": "885474924",
+    "nic": "97511",
+    "raison_sociale": "Boulanger Maréchal S.A.S. SAS",
+    "forme_juridique": "SAS",
+    "adresse": "3, rue Cordier, 71454 Rossi",
+    "date_creation": "11/02/2002",
+    "code_naf": "6920Z",
+    "libelle_naf": "Activités comptables",
+    "dirigeant": "Daniel Charrier de Dias",
+    "date_avis": "02/03/2026",
+    "expired": false
+  }
+}

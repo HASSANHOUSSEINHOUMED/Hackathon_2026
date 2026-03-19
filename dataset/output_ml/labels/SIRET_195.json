@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_195",
+  "file_path": "raw/SIRET_195.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "02296044732701",
+    "siren": "022960447",
+    "nic": "32701",
+    "raison_sociale": "Diallo SA EURL",
+    "forme_juridique": "EURL",
+    "adresse": "9, rue de Jacquet, 11559 Sainte StéphaneBourg",
+    "date_creation": "03/02/2018",
+    "code_naf": "4120A",
+    "libelle_naf": "Construction de maisons individuelles",
+    "dirigeant": "Alfred Dias",
+    "date_avis": "26/02/2026",
+    "expired": false
+  }
+}

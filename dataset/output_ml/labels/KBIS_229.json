@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_229",
+  "file_path": "raw/KBIS_229.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "07620918843572",
+    "siren": "076209188",
+    "raison_sociale": "Cordier Barbier et Fils SAS",
+    "forme_juridique": "SAS",
+    "capital_social": 5000,
+    "dirigeant": "Michelle Pages",
+    "num_rcs": "509 856 727",
+    "ville_greffe": "Strasbourg",
+    "date_immatriculation": "19/03/2020",
+    "objet_social": "Commerce de gros de matériel électrique et électronique",
+    "tva_intra": "FR31076209188",
+    "code_naf": "7010Z",
+    "date_kbis": "22/02/2026",
+    "expired": false
+  }
+}

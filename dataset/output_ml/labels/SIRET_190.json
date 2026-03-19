@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_190",
+  "file_path": "raw/SIRET_190.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "07208115156269",
+    "siren": "072081151",
+    "nic": "56269",
+    "raison_sociale": "Vallet SA",
+    "forme_juridique": "SA",
+    "adresse": "70, avenue Payet, 53684 Rodriguez-sur-Meyer",
+    "date_creation": "12/04/2007",
+    "code_naf": "6202A",
+    "libelle_naf": "Conseil en systèmes et logiciels informatiques",
+    "dirigeant": "Paul Gomes",
+    "date_avis": "09/03/2026",
+    "expired": false
+  }
+}

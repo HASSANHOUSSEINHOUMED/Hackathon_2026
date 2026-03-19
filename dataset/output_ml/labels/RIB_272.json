@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_272",
+  "file_path": "raw/RIB_272.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "22402990015572",
+    "raison_sociale": "Lebrun Dubois S.A. EURL",
+    "iban": "FR6988642816280I94LJIR7DW13",
+    "iban_formate": "FR69 8864 2816 280I 94LJ IR7D W13",
+    "bic": "CMCIFRPP",
+    "code_banque": "88642",
+    "code_guichet": "81628",
+    "numero_compte": "0I94LJIR7DW",
+    "cle_rib": "13",
+    "banque": "Crédit Moderne",
+    "agence": "Agence Marseille Canebière"
+  }
+}

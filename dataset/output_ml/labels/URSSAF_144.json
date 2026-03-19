@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_144",
+  "file_path": "raw/URSSAF_144.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-28307917",
+    "siret": "20781137399565",
+    "siren": "207811373",
+    "raison_sociale": "Lacombe SARL",
+    "date_emission": "13/02/2026",
+    "date_expiration": "11/05/2026",
+    "expired": false
+  }
+}

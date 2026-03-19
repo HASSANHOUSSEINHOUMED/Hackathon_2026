@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_299",
+  "file_path": "raw/RIB_299.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "97413283948312",
+    "raison_sociale": "Texier Raynaud SARL EURL",
+    "iban": "FR852860714701ZPNG4H1ADT345",
+    "iban_formate": "FR85 2860 7147 01ZP NG4H 1ADT 345",
+    "bic": "CMCIFR2A",
+    "code_banque": "28607",
+    "code_guichet": "14701",
+    "numero_compte": "ZPNG4H1ADT3",
+    "cle_rib": "45",
+    "banque": "Banque Nationale de France",
+    "agence": "Agence Lille Grand-Place"
+  }
+}

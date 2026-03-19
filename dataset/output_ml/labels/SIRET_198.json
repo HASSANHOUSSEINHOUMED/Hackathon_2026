@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_198",
+  "file_path": "raw/SIRET_198.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "24620952200464",
+    "siren": "246209522",
+    "nic": "00464",
+    "raison_sociale": "Caron SAS",
+    "forme_juridique": "SAS",
+    "adresse": "7, boulevard Martine Marion, 73198 Simonnec",
+    "date_creation": "05/11/2003",
+    "code_naf": "4120A",
+    "libelle_naf": "Construction de maisons individuelles",
+    "dirigeant": "Christine Legendre",
+    "date_avis": "05/03/2026",
+    "expired": false
+  }
+}

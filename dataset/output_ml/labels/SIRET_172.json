@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_172",
+  "file_path": "raw/SIRET_172.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "18376064441342",
+    "siren": "183760644",
+    "nic": "41342",
+    "raison_sociale": "Pasquier SA",
+    "forme_juridique": "SA",
+    "adresse": "8, chemin Charles Dupré, 54360 MaceBourg",
+    "date_creation": "02/05/2006",
+    "code_naf": "4711B",
+    "libelle_naf": "Commerce d'alimentation générale",
+    "dirigeant": "Stéphanie Couturier-Robin",
+    "date_avis": "25/02/2026",
+    "expired": false
+  }
+}

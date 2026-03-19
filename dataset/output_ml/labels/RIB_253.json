@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_253",
+  "file_path": "raw/RIB_253.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "00185132879726",
+    "raison_sociale": "Louis SNC",
+    "iban": "FR03534837277152OM4T3AIU538",
+    "iban_formate": "FR03 5348 3727 7152 OM4T 3AIU 538",
+    "bic": "BNPAFRPP",
+    "code_banque": "53483",
+    "code_guichet": "72771",
+    "numero_compte": "52OM4T3AIU5",
+    "cle_rib": "38",
+    "banque": "Banque Solidaire de France",
+    "agence": "Agence Marseille Canebière"
+  }
+}

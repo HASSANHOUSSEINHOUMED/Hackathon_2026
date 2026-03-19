@@ -1,0 +1,26 @@
+{
+  "document_id": "FAC_001",
+  "file_path": "raw/FAC_001.pdf",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0001",
+    "siret": "04332181996003",
+    "siret_affiche": "04332181996003",
+    "tva_intra": "FR19043321819",
+    "raison_sociale": "Girard S.A.S. SAS",
+    "montant_ht": 72446.46,
+    "tva": 3984.56,
+    "tva_affichee": 3984.56,
+    "montant_ttc": 76431.02,
+    "date_emission": "30/01/2026",
+    "iban": "FR453865740495I07NJ7LT0TP53",
+    "bic": "AGRIFRPP",
+    "nb_lignes": 5,
+    "tva_rate": 0.055,
+    "coherent": true
+  }
+}

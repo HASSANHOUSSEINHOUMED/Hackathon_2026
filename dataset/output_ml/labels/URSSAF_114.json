@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_114",
+  "file_path": "raw/URSSAF_114.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-97183615",
+    "siret": "18812520756642",
+    "siren": "188125207",
+    "raison_sociale": "Barthelemy SA",
+    "date_emission": "30/01/2026",
+    "date_expiration": "18/05/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_288",
+  "file_path": "raw/RIB_288.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "78701041259144",
+    "raison_sociale": "Evrard Bouvier SARL SAS",
+    "iban": "FR247310653425V4LIPPIKY4W91",
+    "iban_formate": "FR24 7310 6534 25V4 LIPP IKY4 W91",
+    "bic": "CRLYFRPP",
+    "code_banque": "73106",
+    "code_guichet": "53425",
+    "numero_compte": "V4LIPPIKY4W",
+    "cle_rib": "91",
+    "banque": "Banque Européenne de Commerce",
+    "agence": "Agence Paris Opéra"
+  }
+}

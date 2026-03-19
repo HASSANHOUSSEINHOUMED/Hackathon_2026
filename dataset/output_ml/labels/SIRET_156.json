@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_156",
+  "file_path": "raw/SIRET_156.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "29025725220457",
+    "siren": "290257252",
+    "nic": "20457",
+    "raison_sociale": "Pasquier SA",
+    "forme_juridique": "SA",
+    "adresse": "28, avenue Édith Colin, 05418 Saint IsaacVille",
+    "date_creation": "21/06/2014",
+    "code_naf": "8121Z",
+    "libelle_naf": "Nettoyage courant des bâtiments",
+    "dirigeant": "Étienne François",
+    "date_avis": "25/02/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_214",
+  "file_path": "raw/KBIS_214.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "80529240675539",
+    "siren": "805292406",
+    "raison_sociale": "Mace EURL",
+    "forme_juridique": "EURL",
+    "capital_social": 100000,
+    "dirigeant": "William Carre du Lévy",
+    "num_rcs": "309 500 165",
+    "ville_greffe": "Lille",
+    "date_immatriculation": "09/07/2012",
+    "objet_social": "Formation professionnelle continue",
+    "tva_intra": "FR80805292406",
+    "code_naf": "8121Z",
+    "date_kbis": "02/03/2026",
+    "expired": false
+  }
+}

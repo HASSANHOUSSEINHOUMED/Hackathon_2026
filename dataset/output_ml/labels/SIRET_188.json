@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_188",
+  "file_path": "raw/SIRET_188.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "74550842489101",
+    "siren": "745508424",
+    "nic": "89101",
+    "raison_sociale": "Lefort SARL",
+    "forme_juridique": "SARL",
+    "adresse": "46, boulevard Clerc, 03645 Benoit",
+    "date_creation": "25/06/2012",
+    "code_naf": "6910Z",
+    "libelle_naf": "Activités juridiques",
+    "dirigeant": "Maurice-Jules Olivier",
+    "date_avis": "04/03/2026",
+    "expired": false
+  }
+}

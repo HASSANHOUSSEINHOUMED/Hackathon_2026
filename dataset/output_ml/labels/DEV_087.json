@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_087",
+  "file_path": "raw/DEV_087.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0087",
+    "siret": "52577754678120",
+    "siret_affiche": "52577754678120",
+    "tva_intra": "FR33525777546",
+    "raison_sociale": "Rocher SA",
+    "montant_ht": 90052.75,
+    "tva": 4952.9,
+    "montant_ttc": 95005.65,
+    "date_emission": "07/02/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_262",
+  "file_path": "raw/RIB_262.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "49551127147473",
+    "raison_sociale": "Grenier S.A.R.L. SAS",
+    "iban": "FR532624884545HDAEMOFIMB362",
+    "iban_formate": "FR53 2624 8845 45HD AEMO FIMB 362",
+    "bic": "TRNOFRP1",
+    "code_banque": "26248",
+    "code_guichet": "84545",
+    "numero_compte": "HDAEMOFIMB3",
+    "cle_rib": "62",
+    "banque": "Banque Nationale de France",
+    "agence": "Agence Paris Opéra"
+  }
+}

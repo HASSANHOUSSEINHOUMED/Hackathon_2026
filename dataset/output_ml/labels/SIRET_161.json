@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_161",
+  "file_path": "raw/SIRET_161.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "15716479947388",
+    "siren": "157164799",
+    "nic": "47388",
+    "raison_sociale": "Vincent Bertin et Fils SAS",
+    "forme_juridique": "SAS",
+    "adresse": "rue de Marion, 20727 Blanchet-les-Bains",
+    "date_creation": "31/07/2022",
+    "code_naf": "8121Z",
+    "libelle_naf": "Nettoyage courant des bâtiments",
+    "dirigeant": "Julie Thierry-Bertin",
+    "date_avis": "07/03/2026",
+    "expired": false
+  }
+}

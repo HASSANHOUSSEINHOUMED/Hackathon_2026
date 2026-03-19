@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_230",
+  "file_path": "raw/KBIS_230.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "67164932589801",
+    "siren": "671649325",
+    "raison_sociale": "Grenier SA",
+    "forme_juridique": "SA",
+    "capital_social": 1000,
+    "dirigeant": "Joseph-Arthur Hoareau",
+    "num_rcs": "129 264 434",
+    "ville_greffe": "Grenoble",
+    "date_immatriculation": "28/02/2010",
+    "objet_social": "Formation professionnelle continue",
+    "tva_intra": "FR64671649325",
+    "code_naf": "4399C",
+    "date_kbis": "19/02/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_081",
+  "file_path": "raw/DEV_081.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0081",
+    "siret": "33945228685159",
+    "siret_affiche": "33945228685159",
+    "tva_intra": "FR42339452286",
+    "raison_sociale": "De Oliveira SARL",
+    "montant_ht": 79066.09,
+    "tva": 7906.61,
+    "montant_ttc": 86972.7,
+    "date_emission": "25/01/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

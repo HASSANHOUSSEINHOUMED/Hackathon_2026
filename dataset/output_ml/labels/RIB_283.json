@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_283",
+  "file_path": "raw/RIB_283.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "22114577458477",
+    "raison_sociale": "Renault Rey et Fils SNC",
+    "iban": "FR3157748701290CPWRUWL4OQ12",
+    "iban_formate": "FR31 5774 8701 290C PWRU WL4O Q12",
+    "bic": "CRLYFRPP",
+    "code_banque": "57748",
+    "code_guichet": "70129",
+    "numero_compte": "0CPWRUWL4OQ",
+    "cle_rib": "12",
+    "banque": "Banque de l'Avenir",
+    "agence": "Agence Nantes Commerce"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_149",
+  "file_path": "raw/URSSAF_149.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-56533319",
+    "siret": "78817884679519",
+    "siren": "788178846",
+    "raison_sociale": "Dos Santos EURL",
+    "date_emission": "01/03/2026",
+    "date_expiration": "18/05/2026",
+    "expired": false
+  }
+}

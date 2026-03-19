@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_077",
+  "file_path": "raw/DEV_077.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0077",
+    "siret": "46762120721692",
+    "siret_affiche": "46762120721692",
+    "tva_intra": "FR66467621207",
+    "raison_sociale": "Charpentier EURL",
+    "montant_ht": 79866.58,
+    "tva": 7986.66,
+    "montant_ttc": 87853.24,
+    "date_emission": "01/02/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_138",
+  "file_path": "raw/URSSAF_138.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-50644896",
+    "siret": "19470720406424",
+    "siren": "194707204",
+    "raison_sociale": "Baudry S.A.S. SAS",
+    "date_emission": "15/02/2026",
+    "date_expiration": "09/05/2026",
+    "expired": false
+  }
+}

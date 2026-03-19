@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_256",
+  "file_path": "raw/RIB_256.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "36196893613509",
+    "raison_sociale": "Bouchet SNC",
+    "iban": "FR801224857500KYX2CUVTA5U63",
+    "iban_formate": "FR80 1224 8575 00KY X2CU VTA5 U63",
+    "bic": "SOGEFRPP",
+    "code_banque": "12248",
+    "code_guichet": "57500",
+    "numero_compte": "KYX2CUVTA5U",
+    "cle_rib": "63",
+    "banque": "Banque Nationale de France",
+    "agence": "Agence Marseille Canebière"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_088",
+  "file_path": "raw/DEV_088.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0088",
+    "siret": "27229927250377",
+    "siret_affiche": "27229927250377",
+    "tva_intra": "FR09272299272",
+    "raison_sociale": "Coste SARL SNC",
+    "montant_ht": 58748.5,
+    "tva": 11749.7,
+    "montant_ttc": 70498.2,
+    "date_emission": "26/02/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

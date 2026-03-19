@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_203",
+  "file_path": "raw/KBIS_203.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "99219212049389",
+    "siren": "992192120",
+    "raison_sociale": "Traore SARL SNC",
+    "forme_juridique": "SNC",
+    "capital_social": 500000,
+    "dirigeant": "Thierry Boucher de Lombard",
+    "num_rcs": "224 796 630",
+    "ville_greffe": "Toulouse",
+    "date_immatriculation": "05/03/2015",
+    "objet_social": "Activités d'architecture et d'ingénierie",
+    "tva_intra": "FR34992192120",
+    "code_naf": "7022Z",
+    "date_kbis": "05/03/2026",
+    "expired": false
+  }
+}

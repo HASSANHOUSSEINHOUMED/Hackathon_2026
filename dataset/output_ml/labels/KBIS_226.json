@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_226",
+  "file_path": "raw/KBIS_226.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "16691836726446",
+    "siren": "166918367",
+    "raison_sociale": "Perrier Rossi S.A.S. SAS",
+    "forme_juridique": "SAS",
+    "capital_social": 200000,
+    "dirigeant": "Chantal Laporte du Valette",
+    "num_rcs": "272 935 603",
+    "ville_greffe": "Paris",
+    "date_immatriculation": "11/04/2001",
+    "objet_social": "Commerce de gros de matériel électrique et électronique",
+    "tva_intra": "FR82166918367",
+    "code_naf": "4399A",
+    "date_kbis": "19/03/2026",
+    "expired": false
+  }
+}

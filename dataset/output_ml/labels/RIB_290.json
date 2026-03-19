@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_290",
+  "file_path": "raw/RIB_290.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "32883774541974",
+    "raison_sociale": "Bailly S.A.R.L. SARL",
+    "iban": "FR809751646068EP3FF1GK0AN94",
+    "iban_formate": "FR80 9751 6460 68EP 3FF1 GK0A N94",
+    "bic": "CMCIFR2A",
+    "code_banque": "97516",
+    "code_guichet": "46068",
+    "numero_compte": "EP3FF1GK0AN",
+    "cle_rib": "94",
+    "banque": "Crédit Industriel et Financier",
+    "agence": "Agence Marseille Canebière"
+  }
+}

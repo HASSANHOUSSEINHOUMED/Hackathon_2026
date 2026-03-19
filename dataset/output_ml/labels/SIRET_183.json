@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_183",
+  "file_path": "raw/SIRET_183.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "22601645997791",
+    "siren": "226016459",
+    "nic": "97791",
+    "raison_sociale": "Briand S.A.S. EURL",
+    "forme_juridique": "EURL",
+    "adresse": "9, avenue Monnier, 91668 Olivier-sur-Mer",
+    "date_creation": "04/05/2022",
+    "code_naf": "7022Z",
+    "libelle_naf": "Conseil pour les affaires et autres conseils de gestion",
+    "dirigeant": "Nath Paris",
+    "date_avis": "10/03/2026",
+    "expired": false
+  }
+}

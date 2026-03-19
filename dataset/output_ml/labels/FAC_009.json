@@ -1,0 +1,26 @@
+{
+  "document_id": "FAC_009",
+  "file_path": "raw/FAC_009.pdf",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0009",
+    "siret": "56159514184651",
+    "siret_affiche": "56159514184651",
+    "tva_intra": "FR01561595141",
+    "raison_sociale": "Pasquier Antoine et Fils SARL",
+    "montant_ht": 46114.62,
+    "tva": 4611.46,
+    "tva_affichee": 4611.46,
+    "montant_ttc": 50726.08,
+    "date_emission": "18/02/2026",
+    "iban": "FR7748752826674FXOWMAJ0AF84",
+    "bic": "CMCIFR2A",
+    "nb_lignes": 6,
+    "tva_rate": 0.1,
+    "coherent": true
+  }
+}

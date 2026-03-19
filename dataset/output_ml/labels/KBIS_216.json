@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_216",
+  "file_path": "raw/KBIS_216.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "32346729094937",
+    "siren": "323467290",
+    "raison_sociale": "Dubois Pottier SA EURL",
+    "forme_juridique": "EURL",
+    "capital_social": 200000,
+    "dirigeant": "Bernard-Alain Muller",
+    "num_rcs": "817 962 828",
+    "ville_greffe": "Nantes",
+    "date_immatriculation": "05/01/2006",
+    "objet_social": "Transport routier de marchandises",
+    "tva_intra": "FR11323467290",
+    "code_naf": "4399A",
+    "date_kbis": "22/02/2026",
+    "expired": false
+  }
+}

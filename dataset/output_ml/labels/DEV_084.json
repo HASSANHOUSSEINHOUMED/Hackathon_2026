@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_084",
+  "file_path": "raw/DEV_084.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0084",
+    "siret": "08588770143580",
+    "siret_affiche": "08588770143580",
+    "tva_intra": "FR75085887701",
+    "raison_sociale": "Guillet S.A.S. SA",
+    "montant_ht": 33680.04,
+    "tva": 6736.01,
+    "montant_ttc": 40416.05,
+    "date_emission": "05/03/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

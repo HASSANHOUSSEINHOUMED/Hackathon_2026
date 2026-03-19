@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_146",
+  "file_path": "raw/URSSAF_146.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-42086411",
+    "siret": "06335693592903",
+    "siren": "063356935",
+    "raison_sociale": "Perrin SA",
+    "date_emission": "15/02/2026",
+    "date_expiration": "06/05/2026",
+    "expired": false
+  }
+}

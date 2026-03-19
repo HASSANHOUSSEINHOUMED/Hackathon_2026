@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_249",
+  "file_path": "raw/KBIS_249.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "80294240990368",
+    "siren": "802942409",
+    "raison_sociale": "Launay S.A.S. SNC",
+    "forme_juridique": "SNC",
+    "capital_social": 500000,
+    "dirigeant": "Eugène Monnier",
+    "num_rcs": "615 824 837",
+    "ville_greffe": "Strasbourg",
+    "date_immatriculation": "30/01/2006",
+    "objet_social": "Transport routier de marchandises",
+    "tva_intra": "FR49802942409",
+    "code_naf": "6920Z",
+    "date_kbis": "03/03/2026",
+    "expired": false
+  }
+}

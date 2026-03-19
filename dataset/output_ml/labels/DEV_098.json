@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_098",
+  "file_path": "raw/DEV_098.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0098",
+    "siret": "78006811049216",
+    "siret_affiche": "78006811049216",
+    "tva_intra": "FR93780068110",
+    "raison_sociale": "Carlier SAS",
+    "montant_ht": 85986.71,
+    "tva": 8598.67,
+    "montant_ttc": 94585.38,
+    "date_emission": "06/03/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_117",
+  "file_path": "raw/URSSAF_117.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-15892974",
+    "siret": "29826657802794",
+    "siren": "298266578",
+    "raison_sociale": "Clerc S.A. SAS",
+    "date_emission": "02/02/2026",
+    "date_expiration": "12/05/2026",
+    "expired": false
+  }
+}

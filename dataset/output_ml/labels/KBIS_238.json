@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_238",
+  "file_path": "raw/KBIS_238.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "59883103003249",
+    "siren": "598831030",
+    "raison_sociale": "Antoine Gomes SARL SNC",
+    "forme_juridique": "SNC",
+    "capital_social": 200000,
+    "dirigeant": "Cécile De Oliveira-Collin",
+    "num_rcs": "308 172 744",
+    "ville_greffe": "Nice",
+    "date_immatriculation": "05/06/2021",
+    "objet_social": "Transport routier de marchandises",
+    "tva_intra": "FR43598831030",
+    "code_naf": "4711B",
+    "date_kbis": "24/02/2026",
+    "expired": false
+  }
+}

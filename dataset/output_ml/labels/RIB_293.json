@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_293",
+  "file_path": "raw/RIB_293.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "75902517462989",
+    "raison_sociale": "Bouvier SAS",
+    "iban": "FR953565343095HO8QFJS30Y314",
+    "iban_formate": "FR95 3565 3430 95HO 8QFJ S30Y 314",
+    "bic": "CRLYFRPP",
+    "code_banque": "35653",
+    "code_guichet": "43095",
+    "numero_compte": "HO8QFJS30Y3",
+    "cle_rib": "14",
+    "banque": "Banque Solidaire de France",
+    "agence": "Agence Lyon Part-Dieu"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_176",
+  "file_path": "raw/SIRET_176.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "07256366194117",
+    "siren": "072563661",
+    "nic": "94117",
+    "raison_sociale": "Lopes Costa et Fils SAS",
+    "forme_juridique": "SAS",
+    "adresse": "10, rue de Vasseur, 29874 Lopez",
+    "date_creation": "30/06/2009",
+    "code_naf": "2562B",
+    "libelle_naf": "Mécanique industrielle",
+    "dirigeant": "Rémy Bousquet du Henry",
+    "date_avis": "15/03/2026",
+    "expired": false
+  }
+}

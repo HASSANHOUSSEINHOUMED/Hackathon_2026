@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_142",
+  "file_path": "raw/URSSAF_142.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-35756766",
+    "siret": "96207100721949",
+    "siren": "962071007",
+    "raison_sociale": "Dupré SA SAS",
+    "date_emission": "02/02/2026",
+    "date_expiration": "03/05/2026",
+    "expired": false
+  }
+}

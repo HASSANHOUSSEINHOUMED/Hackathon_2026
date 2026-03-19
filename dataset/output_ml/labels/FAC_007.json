@@ -1,0 +1,26 @@
+{
+  "document_id": "FAC_007",
+  "file_path": "raw/FAC_007.pdf",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0007",
+    "siret": "35348740816402",
+    "siret_affiche": "35348740816402",
+    "tva_intra": "FR36353487408",
+    "raison_sociale": "Evrard SNC",
+    "montant_ht": 30110.6,
+    "tva": 3011.06,
+    "tva_affichee": 3011.06,
+    "montant_ttc": 33121.66,
+    "date_emission": "11/03/2026",
+    "iban": "FR885371927146M9QJF02VWJU84",
+    "bic": "TRNOFRP1",
+    "nb_lignes": 3,
+    "tva_rate": 0.1,
+    "coherent": true
+  }
+}

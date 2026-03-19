@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_128",
+  "file_path": "raw/URSSAF_128.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-24595457",
+    "siret": "63938276115396",
+    "siren": "639382761",
+    "raison_sociale": "Weber Barbier SARL SNC",
+    "date_emission": "05/03/2026",
+    "date_expiration": "26/05/2026",
+    "expired": false
+  }
+}

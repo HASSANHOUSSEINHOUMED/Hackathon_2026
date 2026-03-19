@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_225",
+  "file_path": "raw/KBIS_225.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "01692364158751",
+    "siren": "016923641",
+    "raison_sociale": "Guyon Teixeira S.A. EURL",
+    "forme_juridique": "EURL",
+    "capital_social": 10000,
+    "dirigeant": "Odette Lagarde",
+    "num_rcs": "692 778 961",
+    "ville_greffe": "Montpellier",
+    "date_immatriculation": "19/03/2020",
+    "objet_social": "Conseil et développement en systèmes informatiques",
+    "tva_intra": "FR68016923641",
+    "code_naf": "6202A",
+    "date_kbis": "14/03/2026",
+    "expired": false
+  }
+}

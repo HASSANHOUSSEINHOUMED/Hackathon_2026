@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_160",
+  "file_path": "raw/SIRET_160.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "83342801438751",
+    "siren": "833428014",
+    "nic": "38751",
+    "raison_sociale": "Guyot SAS",
+    "forme_juridique": "SAS",
+    "adresse": "rue Raymond Michaud, 62308 Malletboeuf",
+    "date_creation": "09/05/2014",
+    "code_naf": "4332A",
+    "libelle_naf": "Travaux de menuiserie bois et PVC",
+    "dirigeant": "Anastasie Pascal",
+    "date_avis": "02/03/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_106",
+  "file_path": "raw/URSSAF_106.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-84311410",
+    "siret": "58556659939831",
+    "siren": "585566599",
+    "raison_sociale": "Peron SARL SA",
+    "date_emission": "20/02/2026",
+    "date_expiration": "15/06/2026",
+    "expired": false
+  }
+}

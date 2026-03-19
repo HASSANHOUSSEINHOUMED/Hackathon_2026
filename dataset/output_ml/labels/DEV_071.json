@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_071",
+  "file_path": "raw/DEV_071.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0071",
+    "siret": "80072290234949",
+    "siret_affiche": "80072290234949",
+    "tva_intra": "FR93800722902",
+    "raison_sociale": "Fouquet Leclerc SA EURL",
+    "montant_ht": 23636.09,
+    "tva": 2363.61,
+    "montant_ttc": 25999.7,
+    "date_emission": "23/02/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

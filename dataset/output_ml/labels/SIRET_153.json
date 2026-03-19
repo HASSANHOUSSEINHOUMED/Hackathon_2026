@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_153",
+  "file_path": "raw/SIRET_153.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "18637599480562",
+    "siren": "186375994",
+    "nic": "80562",
+    "raison_sociale": "Langlois EURL",
+    "forme_juridique": "EURL",
+    "adresse": "76, chemin Jourdan, 07306 Bernardnec",
+    "date_creation": "27/05/2017",
+    "code_naf": "4399C",
+    "libelle_naf": "Travaux de maçonnerie générale",
+    "dirigeant": "Frédéric Perez de la Perez",
+    "date_avis": "15/03/2026",
+    "expired": false
+  }
+}

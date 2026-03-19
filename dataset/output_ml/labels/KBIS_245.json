@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_245",
+  "file_path": "raw/KBIS_245.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "68621102025808",
+    "siren": "686211020",
+    "raison_sociale": "Courtois Boucher S.A.R.L. SA",
+    "forme_juridique": "SA",
+    "capital_social": 500000,
+    "dirigeant": "Amélie Joseph",
+    "num_rcs": "353 782 940",
+    "ville_greffe": "Grenoble",
+    "date_immatriculation": "15/03/2001",
+    "objet_social": "Restauration et services de traiteur",
+    "tva_intra": "FR35686211020",
+    "code_naf": "8559A",
+    "date_kbis": "06/03/2026",
+    "expired": false
+  }
+}

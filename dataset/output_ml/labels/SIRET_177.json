@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_177",
+  "file_path": "raw/SIRET_177.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "09242875472150",
+    "siren": "092428754",
+    "nic": "72150",
+    "raison_sociale": "Ribeiro SNC",
+    "forme_juridique": "SNC",
+    "adresse": "4, chemin de Andre, 34920 Gauthier-sur-Mahe",
+    "date_creation": "20/12/2003",
+    "code_naf": "4399A",
+    "libelle_naf": "Travaux d'étanchéification",
+    "dirigeant": "Antoinette Lecoq-Blanchet",
+    "date_avis": "19/02/2026",
+    "expired": false
+  }
+}

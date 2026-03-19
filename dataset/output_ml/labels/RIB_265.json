@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_265",
+  "file_path": "raw/RIB_265.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "83420165942350",
+    "raison_sociale": "Lombard EURL",
+    "iban": "FR847312772324JSYFWKTKW7Q84",
+    "iban_formate": "FR84 7312 7723 24JS YFWK TKW7 Q84",
+    "bic": "CMCIFR2A",
+    "code_banque": "73127",
+    "code_guichet": "72324",
+    "numero_compte": "JSYFWKTKW7Q",
+    "cle_rib": "84",
+    "banque": "Crédit Industriel et Financier",
+    "agence": "Agence Paris Opéra"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_090",
+  "file_path": "raw/DEV_090.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0090",
+    "siret": "25799136462106",
+    "siret_affiche": "25799136462106",
+    "tva_intra": "FR46257991364",
+    "raison_sociale": "Gomez SA",
+    "montant_ht": 146590.98,
+    "tva": 8062.5,
+    "montant_ttc": 154653.48,
+    "date_emission": "24/01/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

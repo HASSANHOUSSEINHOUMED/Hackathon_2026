@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_231",
+  "file_path": "raw/KBIS_231.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "34712871253993",
+    "siren": "347128712",
+    "raison_sociale": "Guillaume SA",
+    "forme_juridique": "SA",
+    "capital_social": 200000,
+    "dirigeant": "Aurore Picard",
+    "num_rcs": "292 862 218",
+    "ville_greffe": "Clermont-Ferrand",
+    "date_immatriculation": "31/01/2002",
+    "objet_social": "Activités de nettoyage et d'entretien",
+    "tva_intra": "FR65347128712",
+    "code_naf": "4321A",
+    "date_kbis": "01/03/2026",
+    "expired": false
+  }
+}

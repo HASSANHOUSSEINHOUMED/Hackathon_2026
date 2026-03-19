@@ -1,0 +1,26 @@
+{
+  "document_id": "FAC_042",
+  "file_path": "raw/FAC_042.pdf",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0042",
+    "siret": "69033119407905",
+    "siret_affiche": "69033119407905",
+    "tva_intra": "FR41690331194",
+    "raison_sociale": "Boulay Loiseau S.A. SAS",
+    "montant_ht": 106744.1,
+    "tva": 5870.93,
+    "tva_affichee": 5870.93,
+    "montant_ttc": 112615.03,
+    "date_emission": "05/02/2026",
+    "iban": "FR031579862725FJRR5Z8WKKR51",
+    "bic": "SOGEFRPP",
+    "nb_lignes": 7,
+    "tva_rate": 0.055,
+    "coherent": true
+  }
+}

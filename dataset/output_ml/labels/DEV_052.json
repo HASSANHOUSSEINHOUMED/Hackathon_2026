@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_052",
+  "file_path": "raw/DEV_052.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0052",
+    "siret": "14858078036139",
+    "siret_affiche": "14858078036139",
+    "tva_intra": "FR95148580780",
+    "raison_sociale": "Roy S.A.S. SNC",
+    "montant_ht": 53491.33,
+    "tva": 2942.02,
+    "montant_ttc": 56433.35,
+    "date_emission": "23/01/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

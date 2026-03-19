@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_228",
+  "file_path": "raw/KBIS_228.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "93771004409011",
+    "siren": "937710044",
+    "raison_sociale": "Nicolas Michel S.A.S. SAS",
+    "forme_juridique": "SAS",
+    "capital_social": 200000,
+    "dirigeant": "Joseph Klein",
+    "num_rcs": "725 158 464",
+    "ville_greffe": "Lille",
+    "date_immatriculation": "27/04/2015",
+    "objet_social": "Activités de nettoyage et d'entretien",
+    "tva_intra": "FR67937710044",
+    "code_naf": "4711B",
+    "date_kbis": "20/02/2026",
+    "expired": false
+  }
+}

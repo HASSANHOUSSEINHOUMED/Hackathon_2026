@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_058",
+  "file_path": "raw/DEV_058.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0058",
+    "siret": "25241913080009",
+    "siret_affiche": "25241913080009",
+    "tva_intra": "FR33252419130",
+    "raison_sociale": "Lopez SNC",
+    "montant_ht": 41701.48,
+    "tva": 2293.58,
+    "montant_ttc": 43995.06,
+    "date_emission": "06/02/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

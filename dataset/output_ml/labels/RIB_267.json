@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_267",
+  "file_path": "raw/RIB_267.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "66558685512764",
+    "raison_sociale": "Brunel S.A.S. EURL",
+    "iban": "FR363318682450LJDUOFAMXUZ23",
+    "iban_formate": "FR36 3318 6824 50LJ DUOF AMXU Z23",
+    "bic": "CEPAFRPP",
+    "code_banque": "33186",
+    "code_guichet": "82450",
+    "numero_compte": "LJDUOFAMXUZ",
+    "cle_rib": "23",
+    "banque": "Banque Solidaire de France",
+    "agence": "Agence Lyon Part-Dieu"
+  }
+}

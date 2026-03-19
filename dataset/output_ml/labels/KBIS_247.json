@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_247",
+  "file_path": "raw/KBIS_247.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "50200053247495",
+    "siren": "502000532",
+    "raison_sociale": "Lebon SARL",
+    "forme_juridique": "SARL",
+    "capital_social": 100000,
+    "dirigeant": "Eugène de Arnaud",
+    "num_rcs": "765 382 315",
+    "ville_greffe": "Bordeaux",
+    "date_immatriculation": "30/10/2004",
+    "objet_social": "Formation professionnelle continue",
+    "tva_intra": "FR75502000532",
+    "code_naf": "4120A",
+    "date_kbis": "01/03/2026",
+    "expired": false
+  }
+}

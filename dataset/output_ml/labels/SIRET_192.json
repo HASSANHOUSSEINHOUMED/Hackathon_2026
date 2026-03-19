@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_192",
+  "file_path": "raw/SIRET_192.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "08943468210540",
+    "siren": "089434682",
+    "nic": "10540",
+    "raison_sociale": "Gilles SAS",
+    "forme_juridique": "SAS",
+    "adresse": "59, chemin Gilles, 29101 Lopeznec",
+    "date_creation": "28/05/2008",
+    "code_naf": "4399A",
+    "libelle_naf": "Travaux d'étanchéification",
+    "dirigeant": "Noël Joubert",
+    "date_avis": "12/03/2026",
+    "expired": false
+  }
+}

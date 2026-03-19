@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_135",
+  "file_path": "raw/URSSAF_135.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-19120357",
+    "siret": "47658018856948",
+    "siren": "476580188",
+    "raison_sociale": "Gaudin SAS",
+    "date_emission": "09/03/2026",
+    "date_expiration": "10/06/2026",
+    "expired": false
+  }
+}

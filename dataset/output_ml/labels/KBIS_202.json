@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_202",
+  "file_path": "raw/KBIS_202.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "20175370430452",
+    "siren": "201753704",
+    "raison_sociale": "Mathieu EURL",
+    "forme_juridique": "EURL",
+    "capital_social": 1000,
+    "dirigeant": "Xavier Da Silva",
+    "num_rcs": "612 605 274",
+    "ville_greffe": "Montpellier",
+    "date_immatriculation": "20/10/2020",
+    "objet_social": "Restauration et services de traiteur",
+    "tva_intra": "FR39201753704",
+    "code_naf": "4711B",
+    "date_kbis": "02/03/2026",
+    "expired": false
+  }
+}

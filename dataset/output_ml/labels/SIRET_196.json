@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_196",
+  "file_path": "raw/SIRET_196.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "25199663365808",
+    "siren": "251996633",
+    "nic": "65808",
+    "raison_sociale": "Brunel Delmas SA EURL",
+    "forme_juridique": "EURL",
+    "adresse": "rue Lemonnier, 62286 Jolyboeuf",
+    "date_creation": "02/01/2007",
+    "code_naf": "6910Z",
+    "libelle_naf": "Activités juridiques",
+    "dirigeant": "Martin Seguin",
+    "date_avis": "23/02/2026",
+    "expired": false
+  }
+}

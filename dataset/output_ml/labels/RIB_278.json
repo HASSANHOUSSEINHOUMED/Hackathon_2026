@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_278",
+  "file_path": "raw/RIB_278.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "64229712152964",
+    "raison_sociale": "Voisin Masse SARL SNC",
+    "iban": "FR209758626039I8HHARH3RPC41",
+    "iban_formate": "FR20 9758 6260 39I8 HHAR H3RP C41",
+    "bic": "SOGEFRPP",
+    "code_banque": "97586",
+    "code_guichet": "26039",
+    "numero_compte": "I8HHARH3RPC",
+    "cle_rib": "41",
+    "banque": "Crédit Moderne",
+    "agence": "Agence Strasbourg Kléber"
+  }
+}

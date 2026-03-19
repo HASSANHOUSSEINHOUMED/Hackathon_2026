@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_186",
+  "file_path": "raw/SIRET_186.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "46717957860245",
+    "siren": "467179578",
+    "nic": "60245",
+    "raison_sociale": "Aubert SAS",
+    "forme_juridique": "SAS",
+    "adresse": "75, rue Astrid Colin, 07325 Clémentnec",
+    "date_creation": "16/05/2001",
+    "code_naf": "4711B",
+    "libelle_naf": "Commerce d'alimentation générale",
+    "dirigeant": "Jérôme Delahaye",
+    "date_avis": "22/02/2026",
+    "expired": false
+  }
+}

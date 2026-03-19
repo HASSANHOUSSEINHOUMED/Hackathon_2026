@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_125",
+  "file_path": "raw/URSSAF_125.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-92310750",
+    "siret": "84094353434485",
+    "siren": "840943534",
+    "raison_sociale": "Leclercq Rousseau et Fils SAS",
+    "date_emission": "05/03/2026",
+    "date_expiration": "07/05/2026",
+    "expired": false
+  }
+}

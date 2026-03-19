@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_080",
+  "file_path": "raw/DEV_080.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0080",
+    "siret": "79827080786975",
+    "siret_affiche": "79827080786975",
+    "tva_intra": "FR94798270807",
+    "raison_sociale": "Brun EURL",
+    "montant_ht": 87122.38,
+    "tva": 8712.24,
+    "montant_ttc": 95834.62,
+    "date_emission": "22/01/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

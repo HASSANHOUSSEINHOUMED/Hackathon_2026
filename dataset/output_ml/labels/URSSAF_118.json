@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_118",
+  "file_path": "raw/URSSAF_118.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-10882216",
+    "siret": "59222206144743",
+    "siren": "592222061",
+    "raison_sociale": "François et Fils SARL",
+    "date_emission": "30/01/2026",
+    "date_expiration": "26/05/2026",
+    "expired": false
+  }
+}

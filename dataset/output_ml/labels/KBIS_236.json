@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_236",
+  "file_path": "raw/KBIS_236.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "99974192967642",
+    "siren": "999741929",
+    "raison_sociale": "Delorme SAS",
+    "forme_juridique": "SAS",
+    "capital_social": 200000,
+    "dirigeant": "Diane Salmon",
+    "num_rcs": "871 871 312",
+    "ville_greffe": "Lyon",
+    "date_immatriculation": "08/09/2022",
+    "objet_social": "Commerce de gros de matériel électrique et électronique",
+    "tva_intra": "FR58999741929",
+    "code_naf": "4332A",
+    "date_kbis": "17/02/2026",
+    "expired": false
+  }
+}

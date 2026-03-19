@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_273",
+  "file_path": "raw/RIB_273.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "73158477768632",
+    "raison_sociale": "Mace S.A.R.L. SA",
+    "iban": "FR923267035936OVAELRBSYHV64",
+    "iban_formate": "FR92 3267 0359 36OV AELR BSYH V64",
+    "bic": "CMCIFR2A",
+    "code_banque": "32670",
+    "code_guichet": "35936",
+    "numero_compte": "OVAELRBSYHV",
+    "cle_rib": "64",
+    "banque": "Crédit Industriel et Financier",
+    "agence": "Agence Lyon Part-Dieu"
+  }
+}

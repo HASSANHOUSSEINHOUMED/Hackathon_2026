@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_284",
+  "file_path": "raw/RIB_284.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "39653136014876",
+    "raison_sociale": "Chauvet Camus SARL SAS",
+    "iban": "FR583293144774WCBLY96KPU468",
+    "iban_formate": "FR58 3293 1447 74WC BLY9 6KPU 468",
+    "bic": "CMCIFR2A",
+    "code_banque": "32931",
+    "code_guichet": "44774",
+    "numero_compte": "WCBLY96KPU4",
+    "cle_rib": "68",
+    "banque": "Banque Européenne de Commerce",
+    "agence": "Agence Lyon Part-Dieu"
+  }
+}

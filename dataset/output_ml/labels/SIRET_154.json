@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_154",
+  "file_path": "raw/SIRET_154.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "91234785319612",
+    "siren": "912347853",
+    "nic": "19612",
+    "raison_sociale": "Jacquet SNC",
+    "forme_juridique": "SNC",
+    "adresse": "80, avenue Pichon, 79900 Saint Patricia",
+    "date_creation": "11/08/2020",
+    "code_naf": "6201Z",
+    "libelle_naf": "Programmation informatique",
+    "dirigeant": "Bernard Girard",
+    "date_avis": "24/02/2026",
+    "expired": false
+  }
+}

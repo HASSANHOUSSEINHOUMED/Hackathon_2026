@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_271",
+  "file_path": "raw/RIB_271.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "64041209411799",
+    "raison_sociale": "Brunet Grondin SARL SARL",
+    "iban": "FR922403428590AW3HDUEH02Y19",
+    "iban_formate": "FR92 2403 4285 90AW 3HDU EH02 Y19",
+    "bic": "SOGEFRPP",
+    "code_banque": "24034",
+    "code_guichet": "28590",
+    "numero_compte": "AW3HDUEH02Y",
+    "cle_rib": "19",
+    "banque": "Banque Solidaire de France",
+    "agence": "Agence Nantes Commerce"
+  }
+}

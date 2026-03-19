@@ -1,0 +1,26 @@
+{
+  "document_id": "FAC_016",
+  "file_path": "raw/FAC_016.pdf",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0016",
+    "siret": "47174648787719",
+    "siret_affiche": "47174648787719",
+    "tva_intra": "FR64471746487",
+    "raison_sociale": "Louis S.A. SNC",
+    "montant_ht": 41386.88,
+    "tva": 8277.38,
+    "tva_affichee": 8277.38,
+    "montant_ttc": 49664.26,
+    "date_emission": "19/02/2026",
+    "iban": "FR231522466626QL08OUL0RTK32",
+    "bic": "CCBPFRPP",
+    "nb_lignes": 5,
+    "tva_rate": 0.2,
+    "coherent": true
+  }
+}

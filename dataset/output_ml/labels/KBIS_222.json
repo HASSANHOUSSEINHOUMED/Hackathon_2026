@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_222",
+  "file_path": "raw/KBIS_222.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "32630397152451",
+    "siren": "326303971",
+    "raison_sociale": "Gilbert SA SA",
+    "forme_juridique": "SA",
+    "capital_social": 500000,
+    "dirigeant": "Anouk Bruneau",
+    "num_rcs": "429 287 552",
+    "ville_greffe": "Nice",
+    "date_immatriculation": "20/02/2017",
+    "objet_social": "Conseil et développement en systèmes informatiques",
+    "tva_intra": "FR50326303971",
+    "code_naf": "6202A",
+    "date_kbis": "27/02/2026",
+    "expired": false
+  }
+}

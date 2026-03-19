@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_206",
+  "file_path": "raw/KBIS_206.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "99076769191505",
+    "siren": "990767691",
+    "raison_sociale": "Rossi S.A.S. SARL",
+    "forme_juridique": "SARL",
+    "capital_social": 5000,
+    "dirigeant": "Andrée Bègue",
+    "num_rcs": "916 145 161",
+    "ville_greffe": "Marseille",
+    "date_immatriculation": "25/09/2011",
+    "objet_social": "Transport routier de marchandises",
+    "tva_intra": "FR82990767691",
+    "code_naf": "6910Z",
+    "date_kbis": "15/03/2026",
+    "expired": false
+  }
+}

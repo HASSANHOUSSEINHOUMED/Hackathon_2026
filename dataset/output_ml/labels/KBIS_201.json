@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_201",
+  "file_path": "raw/KBIS_201.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "43553795602090",
+    "siren": "435537956",
+    "raison_sociale": "Voisin EURL",
+    "forme_juridique": "EURL",
+    "capital_social": 200000,
+    "dirigeant": "Vincent Barre",
+    "num_rcs": "932 485 947",
+    "ville_greffe": "Nantes",
+    "date_immatriculation": "25/06/2003",
+    "objet_social": "Activités de nettoyage et d'entretien",
+    "tva_intra": "FR18435537956",
+    "code_naf": "6920Z",
+    "date_kbis": "28/02/2026",
+    "expired": false
+  }
+}

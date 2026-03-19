@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_079",
+  "file_path": "raw/DEV_079.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0079",
+    "siret": "83755037558995",
+    "siret_affiche": "83755037558995",
+    "tva_intra": "FR94837550375",
+    "raison_sociale": "Faivre S.A.S. SNC",
+    "montant_ht": 40975.07,
+    "tva": 8195.01,
+    "montant_ttc": 49170.08,
+    "date_emission": "26/01/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

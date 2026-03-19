@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_094",
+  "file_path": "raw/DEV_094.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0094",
+    "siret": "35658804634164",
+    "siret_affiche": "35658804634164",
+    "tva_intra": "FR38356588046",
+    "raison_sociale": "Ollivier et Fils SARL",
+    "montant_ht": 88125.72,
+    "tva": 4846.91,
+    "montant_ttc": 92972.63,
+    "date_emission": "20/01/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_054",
+  "file_path": "raw/DEV_054.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0054",
+    "siret": "01701277406320",
+    "siret_affiche": "01701277406320",
+    "tva_intra": "FR38017012774",
+    "raison_sociale": "Bazin SAS",
+    "montant_ht": 51839.45,
+    "tva": 5183.94,
+    "montant_ttc": 57023.39,
+    "date_emission": "10/03/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

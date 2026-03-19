@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_297",
+  "file_path": "raw/RIB_297.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "26682171995538",
+    "raison_sociale": "Martineau SA EURL",
+    "iban": "FR516721617592830ERTJ1SV817",
+    "iban_formate": "FR51 6721 6175 9283 0ERT J1SV 817",
+    "bic": "CEPAFRPP",
+    "code_banque": "67216",
+    "code_guichet": "17592",
+    "numero_compte": "830ERTJ1SV8",
+    "cle_rib": "17",
+    "banque": "Crédit Coopératif du Sud",
+    "agence": "Agence Marseille Canebière"
+  }
+}

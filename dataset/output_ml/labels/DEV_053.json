@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_053",
+  "file_path": "raw/DEV_053.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0053",
+    "siret": "12604223325361",
+    "siret_affiche": "12604223325361",
+    "tva_intra": "FR50126042233",
+    "raison_sociale": "Garnier et Fils SNC",
+    "montant_ht": 169482.68,
+    "tva": 9321.55,
+    "montant_ttc": 178804.23,
+    "date_emission": "18/01/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "document_id": "SIRET_162",
+  "file_path": "raw/SIRET_162.pdf",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "12153539761364",
+    "siren": "121535397",
+    "nic": "61364",
+    "raison_sociale": "Maillet SNC",
+    "forme_juridique": "SNC",
+    "adresse": "87, rue Jacques Daniel, 06294 Boucher",
+    "date_creation": "25/09/2020",
+    "code_naf": "6920Z",
+    "libelle_naf": "Activités comptables",
+    "dirigeant": "Victor Labbé",
+    "date_avis": "12/03/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_281",
+  "file_path": "raw/RIB_281.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "10313100994313",
+    "raison_sociale": "Poirier Cordier SA EURL",
+    "iban": "FR7323242461058MPE3QV97SC46",
+    "iban_formate": "FR73 2324 2461 058M PE3Q V97S C46",
+    "bic": "CMCIFR2A",
+    "code_banque": "23242",
+    "code_guichet": "46105",
+    "numero_compte": "8MPE3QV97SC",
+    "cle_rib": "46",
+    "banque": "Banque Nationale de France",
+    "agence": "Agence Lyon Part-Dieu"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_056",
+  "file_path": "raw/DEV_056.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0056",
+    "siret": "69658271709100",
+    "siret_affiche": "69658271709100",
+    "tva_intra": "FR48696582717",
+    "raison_sociale": "Pierre SARL",
+    "montant_ht": 58887.6,
+    "tva": 11777.52,
+    "montant_ttc": 70665.12,
+    "date_emission": "01/03/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

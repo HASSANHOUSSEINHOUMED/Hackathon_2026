@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_068",
+  "file_path": "raw/DEV_068.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0068",
+    "siret": "22332061563293",
+    "siret_affiche": "22332061563293",
+    "tva_intra": "FR26223320615",
+    "raison_sociale": "Rodrigues Pineau et Fils EURL",
+    "montant_ht": 66127.26,
+    "tva": 13225.45,
+    "montant_ttc": 79352.71,
+    "date_emission": "05/02/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

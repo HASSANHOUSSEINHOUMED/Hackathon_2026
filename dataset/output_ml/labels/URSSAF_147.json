@@ -1,0 +1,18 @@
+{
+  "document_id": "URSSAF_147",
+  "file_path": "raw/URSSAF_147.pdf",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-58853980",
+    "siret": "07427990277269",
+    "siren": "074279902",
+    "raison_sociale": "Carlier SAS",
+    "date_emission": "06/03/2026",
+    "date_expiration": "20/05/2026",
+    "expired": false
+  }
+}

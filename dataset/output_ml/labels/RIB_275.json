@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_275",
+  "file_path": "raw/RIB_275.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "53795381264937",
+    "raison_sociale": "Masson et Fils SAS",
+    "iban": "FR523850323489KPYTOKNOFT716",
+    "iban_formate": "FR52 3850 3234 89KP YTOK NOFT 716",
+    "bic": "CCBPFRPP",
+    "code_banque": "38503",
+    "code_guichet": "23489",
+    "numero_compte": "KPYTOKNOFT7",
+    "cle_rib": "16",
+    "banque": "Banque Européenne de Commerce",
+    "agence": "Agence Lille Grand-Place"
+  }
+}

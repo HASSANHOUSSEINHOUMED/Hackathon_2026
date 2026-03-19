@@ -1,0 +1,23 @@
+{
+  "document_id": "DEV_075",
+  "file_path": "raw/DEV_075.pdf",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0075",
+    "siret": "89090100216766",
+    "siret_affiche": "89090100216766",
+    "tva_intra": "FR35890901002",
+    "raison_sociale": "Gaillard SA",
+    "montant_ht": 21175.36,
+    "tva": 4235.07,
+    "montant_ttc": 25410.43,
+    "date_emission": "07/03/2026",
+    "date_validite": "18/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

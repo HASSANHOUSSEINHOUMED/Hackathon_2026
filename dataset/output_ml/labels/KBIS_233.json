@@ -1,0 +1,25 @@
+{
+  "document_id": "KBIS_233",
+  "file_path": "raw/KBIS_233.pdf",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "54814973174609",
+    "siren": "548149731",
+    "raison_sociale": "Fernandes SNC",
+    "forme_juridique": "SNC",
+    "capital_social": 100000,
+    "dirigeant": "Sébastien Blondel",
+    "num_rcs": "532 794 584",
+    "ville_greffe": "Nantes",
+    "date_immatriculation": "21/09/2020",
+    "objet_social": "Formation professionnelle continue",
+    "tva_intra": "FR57548149731",
+    "code_naf": "6311Z",
+    "date_kbis": "08/03/2026",
+    "expired": false
+  }
+}

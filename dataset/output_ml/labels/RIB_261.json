@@ -1,0 +1,22 @@
+{
+  "document_id": "RIB_261",
+  "file_path": "raw/RIB_261.pdf",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "98572545696065",
+    "raison_sociale": "Colas Tessier S.A.R.L. SNC",
+    "iban": "FR603737090004LYKZ30RBVSW73",
+    "iban_formate": "FR60 3737 0900 04LY KZ30 RBVS W73",
+    "bic": "CEPAFRPP",
+    "code_banque": "37370",
+    "code_guichet": "90004",
+    "numero_compte": "LYKZ30RBVSW",
+    "cle_rib": "73",
+    "banque": "Banque de l'Avenir",
+    "agence": "Agence Toulouse Capitole"
+  }
+}
