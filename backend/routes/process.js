@@ -59,7 +59,7 @@ async function upsertSupplierFromEntities(entities, documentId) {
   return supplier
 }
 
-// Call validation service
+// Call validation service for a SINGLE document
 async function validateDocument(ocrResult) {
   try {
     const response = await axios.post(`${VALIDATION_URL}/api/validate`, {
@@ -77,14 +77,43 @@ async function validateDocument(ocrResult) {
   }
 }
 
+// Call validation service for BATCH (inter-document checks)
+async function validateBatch(ocrResults) {
+  if (!ocrResults || ocrResults.length === 0) return []
+  
+  try {
+    const documents = ocrResults.map(r => ({
+      document_id: r.document_id,
+      type: r.type,
+      entities: r.entities || {},
+    }))
+    
+    const response = await axios.post(`${VALIDATION_URL}/api/validate`, {
+      documents,
+    }, { timeout: 60000 })
+
+    return response.data?.anomalies || []
+  } catch (err) {
+    console.warn('Batch validation failed:', err.message)
+    return []
+  }
+}
+
 router.post('/', upload.array('documents', 10), async (req, res) => {
   if (!req.files || req.files.length === 0) {
     return res.status(400).json({ error: 'Aucun fichier fourni' })
   }
 
+  console.log(`[BATCH] Received ${req.files.length} file(s):`, req.files.map(f => f.originalname))
+
   const results = []
   const io = req.app.get('io')
+  const ocrResults = []  // Collecter tous les résultats OCR pour validation batch
+  const fileInfos = []   // Infos des fichiers pour mise à jour ultérieure
 
+  // ══════════════════════════════════════════════════════════════════════
+  // PHASE 1 : OCR de tous les documents
+  // ══════════════════════════════════════════════════════════════════════
   for (const file of req.files) {
     try {
       // Hash du fichier comme ID
@@ -115,10 +144,42 @@ router.post('/', upload.array('documents', 10), async (req, res) => {
         }
       }
 
-      // Appel service de validation
       ocrResult.document_id = documentId
-      const anomalies = await validateDocument(ocrResult)
+      ocrResults.push(ocrResult)
+      fileInfos.push({ file, documentId, ocrResult })
 
+    } catch (err) {
+      console.error(`Erreur OCR ${file.originalname}:`, err.message)
+      results.push({ file_name: file.originalname, error: err.message })
+    }
+  }
+
+  // ══════════════════════════════════════════════════════════════════════
+  // PHASE 2 : Validation BATCH (règles inter-documents : SIRET_MISMATCH, etc.)
+  // ══════════════════════════════════════════════════════════════════════
+  console.log(`[BATCH] Sending ${ocrResults.length} document(s) for batch validation`)
+  console.log(`[BATCH] Documents:`, ocrResults.map(r => ({ id: r.document_id?.slice(0,8), type: r.type, siret: r.entities?.siret })))
+  const allAnomalies = await validateBatch(ocrResults)
+  console.log(`[BATCH] Validation returned ${allAnomalies.length} anomalies`)
+  
+  // Indexer les anomalies par document_id
+  const anomaliesByDocId = {}
+  for (const anomaly of allAnomalies) {
+    const docIds = anomaly.concerned_document_ids || []
+    for (const docId of docIds) {
+      if (!anomaliesByDocId[docId]) anomaliesByDocId[docId] = []
+      anomaliesByDocId[docId].push(anomaly)
+    }
+  }
+
+  // ══════════════════════════════════════════════════════════════════════
+  // PHASE 3 : Sauvegarde et notifications
+  // ══════════════════════════════════════════════════════════════════════
+  for (const { file, documentId, ocrResult } of fileInfos) {
+    try {
+      // Récupérer les anomalies pour CE document
+      const anomalies = anomaliesByDocId[documentId] || []
+      
       // Déterminer le statut pipeline
       const hasErrors = anomalies.some(a => a.severity === 'ERROR')
       const hasWarnings = anomalies.some(a => a.severity === 'WARNING')
@@ -259,6 +320,90 @@ router.post('/pipeline/complete', async (req, res) => {
   }
 
   res.json({ status: 'ok', updated: documents.length })
+})
+
+// ══════════════════════════════════════════════════════════════════════════
+// Revalidation BATCH - Compare les documents inter-documents
+// ══════════════════════════════════════════════════════════════════════════
+router.post('/revalidate-batch', async (req, res) => {
+  const { document_ids, supplier_id } = req.body
+  const io = req.app.get('io')
+
+  try {
+    // Récupérer les documents à revalider
+    let query = {}
+    if (document_ids && Array.isArray(document_ids)) {
+      query = { document_id: { $in: document_ids } }
+    } else if (supplier_id) {
+      query = { supplier_id }
+    } else {
+      // Par défaut : tous les documents des dernières 24h
+      const since = new Date(Date.now() - 24 * 60 * 60 * 1000)
+      query = { processed_at: { $gte: since } }
+    }
+
+    const docs = await Document.find(query).lean()
+    if (docs.length === 0) {
+      return res.json({ status: 'ok', message: 'Aucun document à revalider', updated: 0 })
+    }
+
+    // Préparer les documents pour la validation
+    const docsForValidation = docs.map(d => ({
+      document_id: d.document_id,
+      type: d.doc_type,
+      entities: d.entities || {},
+    }))
+
+    // Appel validation batch
+    const allAnomalies = await validateBatch(docsForValidation)
+
+    // Indexer par document_id
+    const anomaliesByDocId = {}
+    for (const anomaly of allAnomalies) {
+      const docIds = anomaly.concerned_document_ids || []
+      for (const docId of docIds) {
+        if (!anomaliesByDocId[docId]) anomaliesByDocId[docId] = []
+        anomaliesByDocId[docId].push(anomaly)
+      }
+    }
+
+    // Mettre à jour chaque document
+    let updated = 0
+    for (const doc of docs) {
+      const anomalies = anomaliesByDocId[doc.document_id] || []
+      const mappedAnomalies = anomalies.map(a => ({
+        rule: a.rule_id || a.rule || 'UNKNOWN',
+        severity: a.severity || 'INFO',
+        message: a.message || '',
+      }))
+
+      await Document.updateOne(
+        { document_id: doc.document_id },
+        { 
+          anomalies: mappedAnomalies,
+          pipeline_status: anomalies.length > 0 ? 'validated' : doc.pipeline_status,
+        }
+      )
+      updated++
+
+      // Notification temps réel
+      if (io && anomalies.length > 0) {
+        for (const anomaly of anomalies) {
+          io.emit('anomaly:detected', { ...anomaly, file_name: doc.file_name })
+        }
+      }
+    }
+
+    res.json({
+      status: 'ok',
+      documents_checked: docs.length,
+      anomalies_found: allAnomalies.length,
+      updated,
+    })
+  } catch (err) {
+    console.error('Revalidation batch error:', err.message)
+    res.status(500).json({ error: err.message })
+  }
 })
 
 export default router

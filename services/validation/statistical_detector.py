@@ -94,6 +94,38 @@ class StatDetector:
             "explanation": explanation,
         }
 
+    def _generate_synthetic_training_data(self, n_samples: int = 500) -> list[dict]:
+        """
+        Génère des données synthétiques de factures normales pour l'entraînement.
+        Distribution réaliste des montants d'entreprises françaises.
+        """
+        import random
+        random.seed(42)
+        
+        docs = []
+        for _ in range(n_samples):
+            # Distribution log-normale réaliste des montants
+            montant_ht = random.lognormvariate(7.5, 1.2)  # médiane ~1800€
+            montant_ht = max(100, min(montant_ht, 100000))  # clamp
+            
+            # TVA taux légaux : 5.5%, 10%, 20%
+            tva_rate = random.choice([0.055, 0.10, 0.20])
+            tva = montant_ht * tva_rate
+            montant_ttc = montant_ht + tva
+            nb_lignes = random.randint(1, 10)
+            
+            docs.append({
+                "entities": {
+                    "montant_ht": round(montant_ht, 2),
+                    "tva": round(tva, 2),
+                    "montant_ttc": round(montant_ttc, 2),
+                    "nb_lignes": nb_lignes,
+                }
+            })
+        
+        logger.info("Généré %d échantillons synthétiques pour entraînement", n_samples)
+        return docs
+
     def load_or_train(self, dataset_path: str | None = None) -> None:
         """Charge un modèle existant ou entraîne sur le dataset."""
         if MODEL_PATH.exists():
@@ -107,6 +139,7 @@ class StatDetector:
             except Exception as e:
                 logger.warning("Erreur chargement modèle : %s", e)
 
+        # Essayer de charger un dataset externe
         if dataset_path:
             import json
             path = Path(dataset_path)
@@ -115,3 +148,9 @@ class StatDetector:
                     data = json.load(f)
                 docs = [{"entities": d.get("expected_fields", {})} for d in data]
                 self.fit(docs)
+                return
+        
+        # Fallback : générer des données synthétiques et entraîner
+        logger.info("Aucun modèle existant, génération de données synthétiques...")
+        synthetic_data = self._generate_synthetic_training_data(500)
+        self.fit(synthetic_data)

@@ -3,7 +3,7 @@ import UploadZone from '../components/upload/UploadZone'
 import { RotateCcw } from 'lucide-react'
 
 export default function UploadPage() {
-  const { files, addFiles, removeFile, processFiles, processing, progress, results, reset } = useUploadContext()
+  const { files, addFiles, removeFile, processFiles, processing, progress, results, reset, batchMode, setBatchMode } = useUploadContext()
 
   return (
     <div>
@@ -24,6 +24,8 @@ export default function UploadPage() {
           onProcess={processFiles}
           processing={processing}
           progress={progress}
+          batchMode={batchMode}
+          onBatchModeChange={setBatchMode}
         />
       </div>
 

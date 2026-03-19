@@ -23,7 +23,7 @@ function StatusIcon({ status }) {
   }
 }
 
-export default function UploadZone({ files, onAddFiles, onRemoveFile, onProcess, processing, progress }) {
+export default function UploadZone({ files, onAddFiles, onRemoveFile, onProcess, processing, progress, batchMode, onBatchModeChange }) {
   const onDrop = useCallback((accepted) => {
     if (accepted.length > 0) onAddFiles(accepted)
   }, [onAddFiles])
@@ -131,23 +131,59 @@ export default function UploadZone({ files, onAddFiles, onRemoveFile, onProcess,
         </div>
       )}
 
-      {/* Bouton de traitement */}
+      {/* Boutons de traitement */}
       {files.length > 0 && (
-        <button
-          className="btn btn-accent"
-          onClick={onProcess}
-          disabled={processing || files.every(f => f.status === 'done')}
-          style={{ width: '100%', justifyContent: 'center', padding: '14px 0', fontSize: 16 }}
-        >
-          {processing ? (
-            <><div className="spinner" /> Traitement en cours...</>
-          ) : (
-            <>
-              <Upload size={18} />
-              Traiter {files.filter(f => f.status === 'pending').length} document(s)
-            </>
+        <div style={{ display: 'flex', gap: 12, flexDirection: files.length > 1 ? 'row' : 'column' }}>
+          {/* Bouton traitement individuel */}
+          <button
+            className="btn btn-accent"
+            onClick={() => { onBatchModeChange(false); onProcess(false); }}
+            disabled={processing || files.every(f => f.status === 'done')}
+            style={{ 
+              flex: 1, 
+              justifyContent: 'center', 
+              padding: '14px 0', 
+              fontSize: 15,
+              background: '#1B2A4A',
+            }}
+          >
+            {processing && !batchMode ? (
+              <><div className="spinner" /> Traitement...</>
+            ) : (
+              <>
+                <Upload size={18} />
+                Traiter {files.filter(f => f.status === 'pending').length} document(s)
+              </>
+            )}
+          </button>
+
+          {/* Bouton batch - visible si > 1 fichier */}
+          {files.length > 1 && (
+            <button
+              className="btn"
+              onClick={() => { onBatchModeChange(true); onProcess(true); }}
+              disabled={processing || files.every(f => f.status === 'done')}
+              style={{ 
+                flex: 1, 
+                justifyContent: 'center', 
+                padding: '14px 0', 
+                fontSize: 15,
+                background: '#00C896',
+                color: 'white',
+                border: 'none',
+              }}
+            >
+              {processing && batchMode ? (
+                <><div className="spinner" /> Traitement batch...</>
+              ) : (
+                <>
+                  <Upload size={18} />
+                  Batch (même fournisseur)
+                </>
+              )}
+            </button>
           )}
-        </button>
+        </div>
       )}
     </div>
   )

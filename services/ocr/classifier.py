@@ -20,9 +20,10 @@ KEYWORDS: dict[str, list[tuple[str, int]]] = {
         ("proposition commerciale", 2),
     ],
     "kbis": [
-        ("extrait kbis", 4), ("greffe", 2), ("rcs", 2),
-        ("immatriculation", 2), ("tribunal de commerce", 2),
-        ("capital social", 1), ("objet social", 1),
+        ("extrait kbis", 4), ("extrait k-bis", 4), ("k-bis", 3), ("kbis", 3),
+        ("greffe", 2), ("rcs", 2), ("immatriculation", 2), 
+        ("tribunal de commerce", 2), ("capital social", 1), ("objet social", 1),
+        ("personne morale", 2), ("forme juridique", 1),
     ],
     "urssaf": [
         ("urssaf", 4), ("attestation de vigilance", 4),

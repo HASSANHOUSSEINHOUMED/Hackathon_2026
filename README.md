@@ -202,3 +202,25 @@ Projet réalisé dans le cadre du **Hackathon 2026**.
 
 MIT
 
+# 1. MongoDB - tout supprimer
+docker exec docuflow-mongodb mongosh -u admin -p admin --authenticationDatabase admin --eval "db = db.getSiblingDB('docuflow'); db.documents.deleteMany({}); db.suppliers.deleteMany({}); print('MongoDB nettoyé');"
+
+# 2. MinIO - toutes les zones (y compris pending-zone)
+docker exec docuflow-minio mc rm --recursive --force local/raw-zone/
+docker exec docuflow-minio mc rm --recursive --force local/clean-zone/
+docker exec docuflow-minio mc rm --recursive --force local/curated-zone/
+docker exec docuflow-minio mc rm --recursive --force local/pending-zone/
+
+# 3. Vérifier que c'est vide
+docker exec docuflow-minio mc du local/
+
+
+Autres commandes utiles :
+
+Action	Commande
+Arrêter	docker compose down
+Relancer	docker compose up -d
+Redémarrer un service	docker compose restart backend
+Reconstruire + relancer	docker compose up -d --build
+Voir les logs	docker compose logs -f backend
+Tout supprimer (données incluses)	docker compose down -v
