@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_065",
+  "file_path": "raw/SIRET_065.pdf",
+  "clean_image_path": "images/SIRET_065_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "71339596029237",
+    "siren": "713395960",
+    "nic": "29237",
+    "raison_sociale": "Leduc SAS",
+    "forme_juridique": "SAS",
+    "adresse": "2, rue de Salmon, 49126 Gaudinnec",
+    "date_creation": "31/10/2018",
+    "code_naf": "4711B",
+    "libelle_naf": "Commerce d'alimentation générale",
+    "dirigeant": "Frédéric Gilbert",
+    "date_avis": "14/03/2026",
+    "expired": false
+  }
+}

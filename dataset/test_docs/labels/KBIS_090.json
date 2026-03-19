@@ -1,0 +1,26 @@
+{
+  "document_id": "KBIS_090",
+  "file_path": "raw/KBIS_090.pdf",
+  "clean_image_path": "images/KBIS_090_clean.jpg",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "40602933033461",
+    "siren": "406029330",
+    "raison_sociale": "Perrin SAS",
+    "forme_juridique": "SAS",
+    "capital_social": 50000,
+    "dirigeant": "Philippine Barre",
+    "num_rcs": "577 409 793",
+    "ville_greffe": "Bordeaux",
+    "date_immatriculation": "25/02/2001",
+    "objet_social": "Formation professionnelle continue",
+    "tva_intra": "FR26406029330",
+    "code_naf": "4399A",
+    "date_kbis": "02/03/2026",
+    "expired": false
+  }
+}

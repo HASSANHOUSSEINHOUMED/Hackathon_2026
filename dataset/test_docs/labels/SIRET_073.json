@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_073",
+  "file_path": "raw/SIRET_073.pdf",
+  "clean_image_path": "images/SIRET_073_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "49177850279257",
+    "siren": "491778502",
+    "nic": "79257",
+    "raison_sociale": "Rousset SA SAS",
+    "forme_juridique": "SAS",
+    "adresse": "boulevard de Richard, 20945 Schneider",
+    "date_creation": "27/10/2000",
+    "code_naf": "5610A",
+    "libelle_naf": "Restauration traditionnelle",
+    "dirigeant": "Alain Dubois",
+    "date_avis": "23/02/2026",
+    "expired": false
+  }
+}

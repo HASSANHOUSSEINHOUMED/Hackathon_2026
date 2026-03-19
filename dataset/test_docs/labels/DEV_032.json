@@ -1,0 +1,24 @@
+{
+  "document_id": "DEV_032",
+  "file_path": "raw/DEV_032.pdf",
+  "clean_image_path": "images/DEV_032_clean.jpg",
+  "noisy_path": "noisy/DEV_032_medium.jpg",
+  "type": "devis",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0032",
+    "siret": "95205852777227",
+    "siret_affiche": "95205852777227",
+    "tva_intra": "FR20952058527",
+    "raison_sociale": "Morin SAS",
+    "montant_ht": 57854.97,
+    "tva": 11570.99,
+    "montant_ttc": 69425.96,
+    "date_emission": "20/02/2026",
+    "date_validite": "17/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

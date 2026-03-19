@@ -1,204 +1,166 @@
-# DocuFlow
+# DocuFlow - Hackathon 2026
 
-> **Validation automatique de documents administratifs fournisseurs**  
-> Hackathon 2026
+## 📌 Contexte
+**Projet :** Validation automatique de documents administratifs fournisseurs avec orchestration Data Lake + Airflow.  
+**Cadre :** Hackathon 2026.  
+**Classe :** Mastère (M1 & M2).  
+**Type :** Projet en équipe (6 personnes).  
+**Stack :** React 18 + Node.js/Express + MongoDB + MinIO + OCR (Tesseract/EasyOCR) + Validation ML + Airflow.
+
+Pipeline production-ready couvrant ingestion documentaire, extraction OCR, validation multi-règles, curation Data Lake, monitoring, et synchronisation CRM/conformité.
 
 ---
 
-## 🚀 Démarrage rapide
+## 👥 Équipe & Contributions
 
-### Prérequis
+| # | Rôle | Nom | Livrables clés | Technologies | Ports / Services |
+|---|------|-----|----------------|--------------|------------------|
+| 1 | Scénario Maker | Tahina | Dataset 50-100 docs, script génération, ground truth JSON, images dégradées | Faker, ReportLab, OpenCV, API INSEE, python-stdnum | Scripts locaux |
+| 2 | Responsable OCR | Abdelmalek | Service OCR, extraction entités (regex + NER), classification, API Flask | Tesseract, EasyOCR, spaCy, OpenCV, Flask | `:5001` `/api/ocr` |
+| 3 | Front-end & API | Yanis | Upload drag&drop, CRM auto-rempli, dashboard conformité, API Node.js | React 18, Node.js, Express, MongoDB, Socket.io | `:3000` front, `:4000` api |
+| 4 | Chef BDD / Data Lake | Hassan | MinIO 3 zones, MongoDB schémas, client Python, scripts init & monitoring | MinIO, MongoDB, Docker, PyMongo, Flask | `:9000` MinIO, `:9001` console, `:27017` Mongo |
+| 5 | Anomaly Detector | Wael | Moteur de règles (12 règles), détection statistique, API validation, tests | scikit-learn, IsolationForest, python-stdnum, Flask, pytest | `:5002` `/api/validate` |
+| 6 | Pipeline Engineer | Korniti | Docker Compose global (9 services), DAG Airflow, `deploy.sh`, tests E2E | Airflow, Docker, PostgreSQL, bash, XCom | `:8080` Airflow, `:5432` Postgres |
 
-- **Docker Desktop** ≥ 24.0 avec Docker Compose v2
-- **8 Go RAM** minimum
-- **Git**
+---
 
-### Installation
+## 🔄 Flux de Données Complet
+
+```
+Upload documents (Front)
+        ↓
+OCR Service (:5001)
+        ↓
+Validation Service (:5002)
+        ↓
+Data Lake (MinIO Raw/Clean/Curated + Mongo metadata)
+        ↓
+Backend API (:4000)
+        ↓
+Apps métier (CRM + Conformité)
+        ↓
+Orchestration & Monitoring (Airflow :8080)
+```
+
+---
+
+## 🛠️ Stack Technique
+
+### Frontend & API
+- React 18, Vite
+- Node.js, Express, Socket.io
+
+### OCR & Validation
+- Tesseract, EasyOCR, spaCy
+- Flask, scikit-learn, IsolationForest, python-stdnum
+
+### Data & Orchestration
+- MongoDB
+- MinIO (S3-compatible)
+- Apache Airflow + PostgreSQL
+
+### Infra
+- Docker Compose
+- Scripts `deploy.sh`, `test_e2e.sh`, `reset.sh`
+
+---
+
+## ⚙️ Configuration de l'environnement
+
+Un fichier `.env.example` est fourni à la racine et contient toutes les variables nécessaires.  
+**Ne jamais committer le fichier `.env` — il est exclu par `.gitignore`.**
 
 ```bash
-# 1. Cloner le projet
+cp .env.example .env
+```
+
+> **En prod :** Changer tous les mots de passe par défaut avant déploiement.
+
+---
+
+## 🚀 Lancement du Projet
+
+```bash
+# 1) Cloner
 git clone https://github.com/HASSANHOUSSEINHOUMED/Hackathon_2026.git
 cd Hackathon_2026
 
-# 2. Configurer l'environnement
+# 2) Configuration
 cp .env.example .env
+# Éditer .env si besoin (mots de passe, clés API)
 
-# 3. (Optionnel) Ajouter votre clé OpenAI pour le raffinement LLM
-# Éditer .env et renseigner OPENAI_API_KEY=sk-...
-
-# 4. Démarrer tous les services
+# 3) Démarrage global
 docker compose up -d --build
 
-# 5. Vérifier le statut
+# 4) Vérification
 docker compose ps
 ```
 
-> ⏱️ Le premier démarrage prend 5-10 minutes (téléchargement des images Docker).
-
-### Accès aux services
-
-| Service | URL | Identifiants |
-|---------|-----|--------------|
-| **Frontend** | http://localhost:3000 | — |
-| **Backend API** | http://localhost:4000/api | — |
-| **MinIO Console** | http://localhost:9001 | minioadmin / minioadmin |
-| **Airflow** | http://localhost:8080 | admin / admin |
+### Accès principaux
+- Frontend : `http://localhost:3000`
+- Backend API : `http://localhost:4000/api`
+- Airflow : `http://localhost:8080`
+- MinIO Console : `http://localhost:9001`
 
 ---
 
-## 📐 Architecture
+## 💡 Décisions Architecturales
 
-```
-┌──────────────┐     ┌───────────────┐     ┌──────────────────┐
-│   Frontend   │────▶│  Backend API  │────▶│   OCR Service    │
-│  React/Vite  │     │  Express.js   │     │ Tesseract+EasyOCR│
-│  :3000       │     │  :4000        │     │  :5001           │
-└──────────────┘     └───────┬───────┘     └──────────────────┘
-                             │
-                     ┌───────┴───────┐     ┌──────────────────┐
-                     │   MongoDB     │     │ Validation Svc   │
-                     │   :27017      │     │ Règles + ML      │
-                     └───────────────┘     │  :5002           │
-                                           └──────────────────┘
-┌──────────────┐     ┌───────────────┐
-│    MinIO     │     │    Airflow    │
-│  Data Lake   │     │  Orchestrator │
-│  :9000/:9001 │     │  :8080        │
-└──────────────┘     └───────────────┘
-```
+### 1. Chaîne documentaire orientée fiabilité
+- Upload -> OCR -> Validation -> Curation -> Sync métier.
+- Séparation claire des responsabilités par service.
+
+### 2. Data Lake 3 zones
+- Raw : brut, traçabilité source.
+- Clean : OCR normalisé.
+- Curated : prêt métier.
+
+### 3. Validation hybride
+- Règles explicites + détection statistique pour réduire les faux négatifs.
+
+### 4. Orchestration industrielle
+- Airflow pour batch pipeline et monitoring périodique.
 
 ---
 
-## 📁 Structure du projet
+## 📈 Résultats & Impact
 
-```
-hackaton2026/
-├── backend/           # API Node.js (Express, Mongoose, Socket.io)
-├── frontend/          # Interface React (Vite, Tailwind, Recharts)
-├── services/
-│   ├── ocr/           # Service OCR (Tesseract + EasyOCR)
-│   └── validation/    # Règles métier + IsolationForest
-├── storage/           # Client Data Lake (MinIO + MongoDB)
-├── dataset/           # Génération de documents synthétiques
-├── dags/              # Pipelines Airflow
-├── scripts/           # Scripts de déploiement
-├── docker-compose.yml
-└── .env.example
-```
-
-> Chaque dossier contient son propre `README.md` avec la documentation détaillée.
+- Traitement automatique de documents administratifs fournisseurs de bout en bout.
+- CRM auto-rempli et dashboard conformité connectés au pipeline.
+- Monitoring opérationnel des services critiques.
+- Architecture démontrable en hackathon avec découpage rôles/équipes clair.
 
 ---
 
-## 📄 Types de documents supportés
+## 🎓 Compétences Démontrées
 
-| Type | Description | Règles de validation |
-|------|-------------|---------------------|
-| **Facture** | Factures fournisseurs | TVA, TTC, SIRET, IBAN, montants anormaux |
-| **Devis** | Propositions commerciales | TVA, TTC, date de validité |
-| **Attestation URSSAF** | Vigilance sociale | SIRET, date d'expiration |
-| **Kbis** | Extrait registre commerce | Péremption 90 jours |
-| **Attestation SIRET** | Inscription INSEE | Format SIRET (Luhn) |
-| **RIB** | Identité bancaire | Format IBAN, cohérence |
+- Architecture Data Lake appliquée à un cas documentaire réel.
+- OCR + extraction d'entités + validation multi-règles.
+- APIs micro-services, orchestration Docker/Airflow.
+- Monitoring, fiabilisation et sécurisation applicative.
+- Collaboration d'équipe multi-rôles (Mastère M1/M2).
 
 ---
 
-## 🔄 Pipeline de traitement
+## 📂 Fichiers Livrés (principaux)
 
-```
-Upload     ──▶    OCR       ──▶   Validation   ──▶   CRM Auto
-(PDF/IMG)       (Tesseract)      (11 règles)        (Fournisseur)
-                (EasyOCR)        (IsolationForest)  (MinIO)
-```
-
-**Fonctionnalités :**
-- Upload drag & drop multi-fichiers
-- OCR double moteur (Tesseract + EasyOCR)
-- 11 règles de validation métier
-- Détection d'anomalies statistiques (ML)
-- Raffinement LLM optionnel (GPT-4o-mini)
-- Création automatique des fournisseurs
-- Stockage Data Lake (MinIO 4 zones)
+- `README.md`
+- `docker-compose.yml`
+- `dags/document_pipeline.py`
+- `dags/monitoring_pipeline.py`
+- `backend/`
+- `frontend/`
+- `services/ocr/`
+- `services/validation/`
+- `dataset/`
+- `storage/`
 
 ---
 
-## 🛠️ Commandes utiles
+## 👤 Auteurs
 
-```bash
-# Démarrer
-docker compose up -d
+Projet réalisé en équipe : **Tahina, Abdelmalek, Yanis, Hassan, Wael, Korniti**.
 
-# Arrêter
-docker compose down
+**Formation :** Mastère (M1 & M2) Big Data & IA - IPSSI Paris.
 
-# Logs en temps réel
-docker compose logs -f backend
-
-# Reset complet (supprime les données)
-docker compose down -v
-
-# Reconstruire un service
-docker compose build --no-cache backend
-docker compose up -d backend
-```
-
----
-
-## 🧪 Tests
-
-```bash
-# Tests OCR
-docker exec docuflow-ocr pytest tests/ -v
-
-# Tests Validation
-docker exec docuflow-validation pytest tests/ -v
-
-# Health checks
-curl http://localhost:4000/api/health
-curl http://localhost:5001/api/health
-curl http://localhost:5002/api/health
-```
-
----
-
-## 📊 Génération du dataset
-
-```bash
-cd dataset
-pip install -r requirements.txt
-
-# Générer 15 documents par type
-python generate.py --n 15 --output ./output
-
-# Générer des documents avec erreurs (tests)
-python generate_test_errors.py
-```
-
----
-
-## ⚙️ Stack technique
-
-| Composant | Technologies |
-|-----------|--------------|
-| **Frontend** | React 18, Vite, Tailwind CSS, Recharts |
-| **Backend** | Node.js 20, Express, Mongoose, Socket.io |
-| **OCR** | Python 3.11, Tesseract, EasyOCR, OpenCV |
-| **Validation** | Python 3.11, scikit-learn (IsolationForest) |
-| **LLM** | OpenAI GPT-4o-mini (optionnel) |
-| **Data Lake** | MinIO (S3-compatible) |
-| **Base de données** | MongoDB 7.0 |
-| **Orchestration** | Apache Airflow 2.8.1 |
-| **Conteneurs** | Docker Compose |
-
----
-
-## 👥 Équipe
-
-Projet réalisé dans le cadre du **Hackathon 2026**.
-
----
-
-## 📜 Licence
-
-MIT
 

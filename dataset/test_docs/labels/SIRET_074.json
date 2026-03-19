@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_074",
+  "file_path": "raw/SIRET_074.pdf",
+  "clean_image_path": "images/SIRET_074_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "35365419751801",
+    "siren": "353654197",
+    "nic": "51801",
+    "raison_sociale": "Dumont S.A.R.L. EURL",
+    "forme_juridique": "EURL",
+    "adresse": "rue Berthelot, 40591 Mercier",
+    "date_creation": "17/03/2006",
+    "code_naf": "5610A",
+    "libelle_naf": "Restauration traditionnelle",
+    "dirigeant": "Emmanuel Masse",
+    "date_avis": "07/03/2026",
+    "expired": false
+  }
+}

@@ -8,6 +8,7 @@ import uuid
 
 from flask import Flask, jsonify, request
 
+from entity_enricher import enrich_entities
 from rules_catalog import RULES
 from rules_engine import RulesEngine
 from statistical_detector import StatDetector
@@ -44,11 +45,29 @@ def validate():
     documents = data["documents"]
     start = time.time()
 
-    # 1. Règles déterministes
-    anomalies = rules_engine.validate_batch(documents)
-
-    # 2. Détection statistique pour les factures
+    # 0. Enrichissement prioritaire regex/NER léger (avant tout modèle IA)
+    enriched_docs = []
+    enrichment_notes = []
     for doc in documents:
+        entities = doc.get("entities", {})
+        raw_text = doc.get("raw_text", "")
+        enriched_entities, meta = enrich_entities(entities, raw_text, doc.get("type"))
+        enriched_doc = {**doc, "entities": enriched_entities}
+        enriched_docs.append(enriched_doc)
+        if meta.get("filled_count", 0) > 0:
+            enrichment_notes.append({
+                "document_id": doc.get("document_id", "?"),
+                "filled_fields": meta.get("filled_fields", []),
+            })
+
+    # 1. Règles déterministes
+    anomalies = rules_engine.validate_batch(enriched_docs)
+
+    # 2. Mini-modèle de détection d'anomalies (léger, sans entraînement)
+    anomalies.extend(stat_detector.detect_lightweight_batch(enriched_docs))
+
+    # 3. Détection statistique entraînée (optionnelle)
+    for doc in enriched_docs:
         if doc.get("type") == "facture" and stat_detector.trained:
             result = stat_detector.predict(doc)
             if result["is_anomaly"]:
@@ -82,6 +101,11 @@ def validate():
         "status": status,
         "anomaly_count": anomaly_count,
         "anomalies": anomalies,
+        "enrichment": {
+            "strategy": "regex_ner_light_first",
+            "documents_enriched": len(enrichment_notes),
+            "details": enrichment_notes,
+        },
         "documents_checked": len(documents),
         "validation_time_ms": duration_ms,
     }

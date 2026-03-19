@@ -1,0 +1,26 @@
+{
+  "document_id": "KBIS_094",
+  "file_path": "raw/KBIS_094.pdf",
+  "clean_image_path": "images/KBIS_094_clean.jpg",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "27129666767609",
+    "siren": "271296667",
+    "raison_sociale": "Gautier SA SNC",
+    "forme_juridique": "SNC",
+    "capital_social": 100000,
+    "dirigeant": "Aimée Lévy",
+    "num_rcs": "271 166 943",
+    "ville_greffe": "Toulouse",
+    "date_immatriculation": "18/06/2013",
+    "objet_social": "Transport routier de marchandises",
+    "tva_intra": "FR67271296667",
+    "code_naf": "6202A",
+    "date_kbis": "17/03/2026",
+    "expired": false
+  }
+}

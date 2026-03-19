@@ -1,0 +1,24 @@
+{
+  "document_id": "DEV_037",
+  "file_path": "raw/DEV_037.pdf",
+  "clean_image_path": "images/DEV_037_clean.jpg",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0037",
+    "siret": "88153714673219",
+    "siret_affiche": "88153714673219",
+    "tva_intra": "FR55881537146",
+    "raison_sociale": "Breton SA",
+    "montant_ht": 72444.9,
+    "tva": 3984.47,
+    "montant_ttc": 76429.37,
+    "date_emission": "16/02/2026",
+    "date_validite": "17/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

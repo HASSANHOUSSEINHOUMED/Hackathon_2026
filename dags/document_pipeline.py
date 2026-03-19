@@ -1,9 +1,8 @@
 """
-DAG Airflow : Pipeline de validation de documents administratifs.
-Fréquence : toutes les 5 minutes.
-Tâches : ingest → ocr → validate → autofill
+DAG Airflow: Orchestration d'industrialisation DocuFlow.
+Frequence: toutes les 5 minutes.
+Etapes: ingestion candidates -> validation batch -> passage curated -> sync CRM/conformite.
 """
-import json
 import logging
 from datetime import datetime, timedelta
 
@@ -14,11 +13,9 @@ from airflow.operators.python import PythonOperator
 logger = logging.getLogger("airflow.document_pipeline")
 
 BACKEND_URL = "http://backend:4000"
-OCR_URL = "http://ocr-service:5001"
 VALIDATION_URL = "http://validation-service:5002"
-STORAGE_URL = "http://storage-api:5003"
 
-default_args = {
+DEFAULT_ARGS = {
     "owner": "docuflow",
     "depends_on_past": False,
     "email_on_failure": False,
@@ -28,197 +25,215 @@ default_args = {
 }
 
 
-def ingest_pending_documents(**context):
-    """Récupère les documents en attente de traitement depuis le Data Lake."""
-    try:
-        resp = requests.get(f"{STORAGE_URL}/stats", timeout=10)
-        resp.raise_for_status()
-        stats = resp.json()
-        logger.info("Stats Data Lake : %s", stats)
-
-        # Récupérer les documents en pending depuis MongoDB via le backend
-        resp = requests.get(
-            f"{BACKEND_URL}/api/documents",
-            params={"status": "uploaded"},
-            timeout=15,
-        )
-        resp.raise_for_status()
-        documents = resp.json().get("documents", [])
-
-        logger.info("Documents en attente : %d", len(documents))
-        context["ti"].xcom_push(key="pending_documents", value=documents)
-        return len(documents)
-    except requests.RequestException as e:
-        logger.error("Erreur récupération documents : %s", e)
-        return 0
+def _safe_get_json(url: str, **kwargs):
+    response = requests.get(url, timeout=kwargs.pop("timeout", 20), **kwargs)
+    response.raise_for_status()
+    return response.json()
 
 
-def process_ocr(**context):
-    """Envoie les documents au service OCR."""
-    documents = context["ti"].xcom_pull(task_ids="ingest", key="pending_documents") or []
-    if not documents:
-        logger.info("Aucun document à traiter")
-        return []
-
-    results = []
-    for doc in documents:
-        doc_id = doc.get("document_id", doc.get("_id", ""))
-        try:
-            # Récupérer le fichier depuis MinIO via le storage
-            resp = requests.get(f"{STORAGE_URL}/document/{doc_id}", timeout=10)
-            if resp.status_code != 200:
-                logger.warning("Document %s non trouvé dans le storage", doc_id)
-                continue
-
-            doc_data = resp.json()
-            raw_url = doc_data.get("raw_url")
-            if not raw_url:
-                continue
-
-            # Appeler le service OCR
-            ocr_resp = requests.post(
-                f"{OCR_URL}/api/ocr",
-                json={"document_id": doc_id, "file_url": raw_url},
-                timeout=60,
-            )
-            ocr_resp.raise_for_status()
-            ocr_result = ocr_resp.json()
-            ocr_result["document_id"] = doc_id
-
-            results.append(ocr_result)
-            logger.info("OCR traité : %s (type=%s, confiance=%.2f)",
-                        doc_id, ocr_result.get("type"), ocr_result.get("confidence", 0))
-
-        except requests.RequestException as e:
-            logger.error("Erreur OCR document %s : %s", doc_id, e)
-
-    context["ti"].xcom_push(key="ocr_results", value=results)
-    return len(results)
+def _safe_post_json(url: str, payload: dict, timeout: int = 30):
+    response = requests.post(url, json=payload, timeout=timeout)
+    response.raise_for_status()
+    return response.json()
 
 
-def validate_documents(**context):
-    """Envoie les résultats OCR au service de validation."""
-    ocr_results = context["ti"].xcom_pull(task_ids="ocr_processing", key="ocr_results") or []
-    if not ocr_results:
-        logger.info("Aucun résultat OCR à valider")
-        return []
+def ingest_candidates(**context):
+    """
+    Recupere les documents valides non encore passes en curated.
+    On cible 'validated' pour industrialiser la fin de pipeline.
+    """
+    data_validated = _safe_get_json(f"{BACKEND_URL}/api/documents", params={"status": "validated", "limit": 200})
+    data_ocr_done = _safe_get_json(f"{BACKEND_URL}/api/documents", params={"status": "ocr_done", "limit": 200})
+    docs = (data_validated.get("documents", []) or []) + (data_ocr_done.get("documents", []) or [])
 
-    # Préparer le payload
-    documents = []
-    for result in ocr_results:
-        documents.append({
-            "document_id": result.get("document_id"),
-            "type": result.get("type", "inconnu"),
-            "entities": result.get("entities", {}),
+    seen_ids = set()
+    dedup_docs = []
+    for d in docs:
+        doc_id = d.get("document_id")
+        if not doc_id or doc_id in seen_ids:
+            continue
+        seen_ids.add(doc_id)
+        dedup_docs.append(d)
+
+    candidates = []
+    for d in dedup_docs:
+        candidates.append({
+            "document_id": d.get("document_id"),
+            "type": d.get("doc_type", "inconnu"),
+            "entities": d.get("entities", {}),
+            "raw_text": d.get("raw_text", ""),
+            "existing_anomalies": d.get("anomalies", []),
         })
 
-    try:
-        resp = requests.post(
-            f"{VALIDATION_URL}/api/validate",
-            json={"documents": documents},
-            timeout=30,
-        )
-        resp.raise_for_status()
-        validation_result = resp.json()
-        logger.info("Validation : statut=%s, anomalies=%s",
-                     validation_result.get("status"),
-                     validation_result.get("anomaly_count"))
-
-        context["ti"].xcom_push(key="validation_result", value=validation_result)
-        context["ti"].xcom_push(key="ocr_documents", value=documents)
-        return validation_result
-    except requests.RequestException as e:
-        logger.error("Erreur validation : %s", e)
-        return None
+    logger.info("Candidates industrialisation: %d", len(candidates))
+    context["ti"].xcom_push(key="candidates", value=candidates)
+    return len(candidates)
 
 
-def autofill_and_finalize(**context):
-    """Met à jour le backend avec les résultats et notifie le frontend."""
-    validation = context["ti"].xcom_pull(task_ids="validation", key="validation_result")
-    documents = context["ti"].xcom_pull(task_ids="validation", key="ocr_documents") or []
+def validate_batch_context(**context):
+    """
+    Relance une validation batch (regex/NER leger + mini modele + regles inter-doc).
+    """
+    candidates = context["ti"].xcom_pull(task_ids="ingest_candidates", key="candidates") or []
+    if not candidates:
+        logger.info("Aucun candidat a valider")
+        context["ti"].xcom_push(key="validation_map", value={})
+        return 0
 
-    if not documents:
-        logger.info("Aucun document à finaliser")
-        return
+    payload_docs = [
+        {
+            "document_id": d["document_id"],
+            "type": d["type"],
+            "entities": d.get("entities", {}),
+            "raw_text": d.get("raw_text", ""),
+        }
+        for d in candidates
+        if d.get("document_id")
+    ]
 
-    for doc in documents:
-        doc_id = doc.get("document_id")
-        anomalies = []
-        if validation:
-            anomalies = [
-                a for a in validation.get("anomalies", [])
-                if doc_id in a.get("concerned_document_ids", [])
-            ]
+    validation = _safe_post_json(
+        f"{VALIDATION_URL}/api/validate",
+        {"documents": payload_docs},
+        timeout=60,
+    )
+
+    anomalies = validation.get("anomalies", [])
+    validation_map = {d["document_id"]: [] for d in payload_docs}
+
+    for anomaly in anomalies:
+        for doc_id in anomaly.get("concerned_document_ids", []):
+            if doc_id in validation_map:
+                validation_map[doc_id].append({
+                    "rule": anomaly.get("rule_id", "UNKNOWN"),
+                    "severity": anomaly.get("severity", "INFO"),
+                    "message": anomaly.get("message", ""),
+                })
+
+    context["ti"].xcom_push(key="validation_map", value=validation_map)
+    logger.info(
+        "Validation batch: docs=%d, anomalies=%d",
+        len(payload_docs),
+        len(anomalies),
+    )
+    return len(payload_docs)
+
+
+def curate_documents(**context):
+    """
+    Finalise en curated-zone via endpoint backend pipeline complete.
+    """
+    candidates = context["ti"].xcom_pull(task_ids="ingest_candidates", key="candidates") or []
+    validation_map = context["ti"].xcom_pull(task_ids="validate_batch_context", key="validation_map") or {}
+
+    if not candidates:
+        logger.info("Aucun document a passer en curated")
+        return 0
+
+    documents_payload = []
+    all_anomalies = []
+
+    for d in candidates:
+        doc_id = d.get("document_id")
+        doc_anomalies = validation_map.get(doc_id, d.get("existing_anomalies", []))
+
+        documents_payload.append({
+            "document_id": doc_id,
+            "type": d.get("type", "inconnu"),
+            "entities": d.get("entities", {}),
+            "anomalies": doc_anomalies,
+        })
+
+        all_anomalies.extend(doc_anomalies)
+
+    _safe_post_json(
+        f"{BACKEND_URL}/api/process/pipeline/complete",
+        {
+            "documents": documents_payload,
+            "anomalies": all_anomalies,
+        },
+        timeout=60,
+    )
+
+    context["ti"].xcom_push(key="curated_documents", value=documents_payload)
+    logger.info("Passage curated termine pour %d documents", len(documents_payload))
+    return len(documents_payload)
+
+
+def sync_internal_apps(**context):
+    """
+    Auto-remplit les applications metiers internes:
+    - CRM (fiche fournisseur)
+    - Outil conformite (statut fournisseur)
+    """
+    docs = context["ti"].xcom_pull(task_ids="curate_documents", key="curated_documents") or []
+    if not docs:
+        logger.info("Aucune synchronisation CRM/conformite necessaire")
+        return 0
+
+    synced = 0
+    for doc in docs:
+        entities = doc.get("entities", {}) or {}
+        siret = entities.get("siret")
+        if not siret:
+            continue
+
+        anomalies = doc.get("anomalies", []) or []
+        severity = {a.get("severity") for a in anomalies}
+        if "ERROR" in severity:
+            conformity = "error"
+        elif "WARNING" in severity:
+            conformity = "warning"
+        else:
+            conformity = "ok"
+
+        payload = {
+            "siret": siret,
+            "raison_sociale": entities.get("raison_sociale") or f"Fournisseur {siret}",
+            "tva_intra": entities.get("tva_intra") or "",
+            "iban": entities.get("iban") or "",
+            "conformity_status": conformity,
+            "last_check": datetime.utcnow().isoformat(),
+        }
 
         try:
-            # Mettre à jour le statut du document dans le backend
-            status = "validated" if not anomalies else "anomaly_detected"
-            resp = requests.post(
-                f"{BACKEND_URL}/api/process/pipeline/complete",
-                json={
-                    "document_id": doc_id,
-                    "status": status,
-                    "entities": doc.get("entities", {}),
-                    "anomalies": anomalies,
-                    "type": doc.get("type"),
-                },
-                timeout=15,
-            )
-            resp.raise_for_status()
-            logger.info("Document %s finalisé : statut=%s, anomalies=%d",
-                        doc_id, status, len(anomalies))
+            _safe_post_json(f"{BACKEND_URL}/api/suppliers", payload, timeout=20)
+            synced += 1
+        except requests.RequestException as exc:
+            logger.error("Sync fournisseur echec (%s): %s", siret, exc)
 
-            # Auto-remplissage fournisseur
-            siret = doc.get("entities", {}).get("siret")
-            if siret:
-                supplier_data = {
-                    "siret": siret,
-                    "raison_sociale": doc.get("entities", {}).get("raison_sociale", ""),
-                    "tva_intra": doc.get("entities", {}).get("tva_intra", ""),
-                    "iban": doc.get("entities", {}).get("iban", ""),
-                    "conformity_status": "conforme" if not anomalies else "non_conforme",
-                }
-                resp = requests.post(
-                    f"{BACKEND_URL}/api/suppliers",
-                    json=supplier_data,
-                    timeout=10,
-                )
-                resp.raise_for_status()
-                logger.info("Fournisseur SIRET=%s mis à jour", siret)
-
-        except requests.RequestException as e:
-            logger.error("Erreur finalisation document %s : %s", doc_id, e)
+    logger.info("Synchronisation metiers terminee: %d fournisseurs", synced)
+    return synced
 
 
 with DAG(
     dag_id="document_validation_pipeline",
-    default_args=default_args,
-    description="Pipeline de traitement et validation des documents administratifs",
+    default_args=DEFAULT_ARGS,
+    description="Pipeline ingestion, validation intelligente, curated et sync metiers",
     schedule_interval="*/5 * * * *",
     start_date=datetime(2024, 1, 1),
     catchup=False,
     max_active_runs=1,
-    tags=["docuflow", "documents", "validation"],
+    tags=["docuflow", "industrialisation", "ingestion", "crm", "conformite"],
 ) as dag:
 
     t_ingest = PythonOperator(
-        task_id="ingest",
-        python_callable=ingest_pending_documents,
-    )
-
-    t_ocr = PythonOperator(
-        task_id="ocr_processing",
-        python_callable=process_ocr,
+        task_id="ingest_candidates",
+        python_callable=ingest_candidates,
     )
 
     t_validate = PythonOperator(
-        task_id="validation",
-        python_callable=validate_documents,
+        task_id="validate_batch_context",
+        python_callable=validate_batch_context,
     )
 
-    t_autofill = PythonOperator(
-        task_id="autofill_finalize",
-        python_callable=autofill_and_finalize,
+    t_curate = PythonOperator(
+        task_id="curate_documents",
+        python_callable=curate_documents,
     )
 
-    t_ingest >> t_ocr >> t_validate >> t_autofill
+    t_sync = PythonOperator(
+        task_id="sync_internal_apps",
+        python_callable=sync_internal_apps,
+    )
+
+    t_ingest >> t_validate >> t_curate >> t_sync

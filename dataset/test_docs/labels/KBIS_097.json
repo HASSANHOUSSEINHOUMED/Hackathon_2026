@@ -1,0 +1,26 @@
+{
+  "document_id": "KBIS_097",
+  "file_path": "raw/KBIS_097.pdf",
+  "clean_image_path": "images/KBIS_097_clean.jpg",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "00119721981148",
+    "siren": "001197219",
+    "raison_sociale": "Lévy SARL",
+    "forme_juridique": "SARL",
+    "capital_social": 200000,
+    "dirigeant": "Nathalie Charrier",
+    "num_rcs": "436 466 548",
+    "ville_greffe": "Marseille",
+    "date_immatriculation": "22/06/2003",
+    "objet_social": "Transport routier de marchandises",
+    "tva_intra": "FR50001197219",
+    "code_naf": "8559A",
+    "date_kbis": "16/02/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "document_id": "URSSAF_060",
+  "file_path": "raw/URSSAF_060.pdf",
+  "clean_image_path": "images/URSSAF_060_clean.jpg",
+  "noisy_path": "noisy/URSSAF_060_light.jpg",
+  "type": "attestation_urssaf",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-25446483",
+    "siret": "88993756179827",
+    "siren": "889937561",
+    "raison_sociale": "Rousset Gaudin S.A.R.L. SNC",
+    "date_emission": "17/02/2026",
+    "date_expiration": "19/04/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "document_id": "RIB_116",
+  "file_path": "raw/RIB_116.pdf",
+  "clean_image_path": "images/RIB_116_clean.jpg",
+  "noisy_path": "noisy/RIB_116_medium.jpg",
+  "type": "rib",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "02959391072514",
+    "raison_sociale": "Lopez Navarro et Fils SNC",
+    "iban": "FR0555457518796V3PNVG982923",
+    "iban_formate": "FR05 5545 7518 796V 3PNV G982 923",
+    "bic": "BNPAFRPP",
+    "code_banque": "55457",
+    "code_guichet": "51879",
+    "numero_compte": "6V3PNVG9829",
+    "cle_rib": "23",
+    "banque": "Crédit Coopératif du Sud",
+    "agence": "Agence Lille Grand-Place"
+  }
+}

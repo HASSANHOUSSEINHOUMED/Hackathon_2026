@@ -80,6 +80,15 @@ Thumbs.db
 docker-data/
 
 # ─────────────────────────────────────────────────────────────────
+# Fichiers temporaires backend (debug live)
+# ─────────────────────────────────────────────────────────────────
+backend/_bundle_live.js
+backend/_front_index.html
+backend/_index_live.html
+
+
+
+# ─────────────────────────────────────────────────────────────────
 # Dataset généré (ne pas versionner les PDFs générés)
 # ─────────────────────────────────────────────────────────────────
 dataset/output/

@@ -1,0 +1,24 @@
+{
+  "document_id": "DEV_024",
+  "file_path": "raw/DEV_024.pdf",
+  "clean_image_path": "images/DEV_024_clean.jpg",
+  "noisy_path": "noisy/DEV_024_heavy.jpg",
+  "type": "devis",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0024",
+    "siret": "65604945919836",
+    "siret_affiche": "65604945919836",
+    "tva_intra": "FR56656049459",
+    "raison_sociale": "Rousset Bertin S.A. SAS",
+    "montant_ht": 58357.14,
+    "tva": 11671.43,
+    "montant_ttc": 70028.57,
+    "date_emission": "30/01/2026",
+    "date_validite": "17/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

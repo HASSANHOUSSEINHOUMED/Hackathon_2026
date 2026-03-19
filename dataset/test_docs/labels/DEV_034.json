@@ -1,0 +1,26 @@
+{
+  "document_id": "DEV_034",
+  "file_path": "raw/DEV_034.pdf",
+  "clean_image_path": "images/DEV_034_clean.jpg",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "mismatch",
+  "anomalies_expected": [
+    "SIRET_MISMATCH"
+  ],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0034",
+    "siret": "71928565243108",
+    "siret_affiche": "75779008599647",
+    "tva_intra": "FR12719285652",
+    "raison_sociale": "Mallet SA",
+    "montant_ht": 107638.24,
+    "tva": 10763.82,
+    "montant_ttc": 118402.06,
+    "date_emission": "08/03/2026",
+    "date_validite": "17/04/2026",
+    "expired": false,
+    "coherent": false
+  }
+}

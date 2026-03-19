@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_070",
+  "file_path": "raw/SIRET_070.pdf",
+  "clean_image_path": "images/SIRET_070_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "99940438798364",
+    "siren": "999404387",
+    "nic": "98364",
+    "raison_sociale": "Petitjean S.A. SNC",
+    "forme_juridique": "SNC",
+    "adresse": "662, boulevard Jean Vidal, 60944 Saint Marc",
+    "date_creation": "24/04/2006",
+    "code_naf": "4941A",
+    "libelle_naf": "Transports routiers de fret interurbains",
+    "dirigeant": "Adèle Lefèvre",
+    "date_avis": "01/03/2026",
+    "expired": false
+  }
+}

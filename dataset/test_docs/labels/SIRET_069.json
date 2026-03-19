@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_069",
+  "file_path": "raw/SIRET_069.pdf",
+  "clean_image_path": "images/SIRET_069_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "26221890292750",
+    "siren": "262218902",
+    "nic": "92750",
+    "raison_sociale": "Renault SARL SA",
+    "forme_juridique": "SA",
+    "adresse": "2, avenue Laetitia Schmitt, 33175 Leduc",
+    "date_creation": "22/12/2002",
+    "code_naf": "4711B",
+    "libelle_naf": "Commerce d'alimentation générale",
+    "dirigeant": "Virginie-Manon Rodriguez",
+    "date_avis": "11/03/2026",
+    "expired": false
+  }
+}

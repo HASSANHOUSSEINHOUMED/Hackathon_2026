@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_067",
+  "file_path": "raw/SIRET_067.pdf",
+  "clean_image_path": "images/SIRET_067_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "expired",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "63637454858922",
+    "siren": "636374548",
+    "nic": "58922",
+    "raison_sociale": "Bonneau SNC",
+    "forme_juridique": "SNC",
+    "adresse": "34, rue Guilbert, 67117 Barre-sur-Lejeune",
+    "date_creation": "23/03/2021",
+    "code_naf": "4332A",
+    "libelle_naf": "Travaux de menuiserie bois et PVC",
+    "dirigeant": "Alain Guérin",
+    "date_avis": "10/08/2025",
+    "expired": true
+  }
+}

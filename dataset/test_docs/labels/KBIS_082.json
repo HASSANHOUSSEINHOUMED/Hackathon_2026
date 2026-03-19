@@ -1,0 +1,26 @@
+{
+  "document_id": "KBIS_082",
+  "file_path": "raw/KBIS_082.pdf",
+  "clean_image_path": "images/KBIS_082_clean.jpg",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "56915452926753",
+    "siren": "569154529",
+    "raison_sociale": "Dumont SAS",
+    "forme_juridique": "SAS",
+    "capital_social": 5000,
+    "dirigeant": "Olivier de la Pottier",
+    "num_rcs": "928 726 326",
+    "ville_greffe": "Nantes",
+    "date_immatriculation": "28/08/2018",
+    "objet_social": "Commerce de gros de matériel électrique et électronique",
+    "tva_intra": "FR50569154529",
+    "code_naf": "5610A",
+    "date_kbis": "26/02/2026",
+    "expired": false
+  }
+}

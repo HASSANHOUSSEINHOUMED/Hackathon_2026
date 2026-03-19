@@ -1,7 +1,6 @@
 """
-DAG Airflow : Monitoring quotidien DocuFlow.
-Fréquence : tous les jours à 08h00 UTC.
-Tâches : health_check → cleanup_old → daily_report
+DAG Airflow: Monitoring et observabilite DocuFlow.
+Frequence: toutes les 15 minutes.
 """
 import json
 import logging
@@ -17,12 +16,12 @@ SERVICES = {
     "ocr-service": "http://ocr-service:5001/api/health",
     "validation-service": "http://validation-service:5002/api/health",
     "backend": "http://backend:4000/api/health",
-    "storage-api": "http://storage-api:5003/health",
+    "storage-api-proxy": "http://backend:4000/api/storage/health",
 }
 
 BACKEND_URL = "http://backend:4000"
 
-default_args = {
+DEFAULT_ARGS = {
     "owner": "docuflow",
     "depends_on_past": False,
     "email_on_failure": False,
@@ -32,136 +31,89 @@ default_args = {
 
 
 def check_services_health(**context):
-    """Vérifie l'état de santé de tous les services."""
     results = {}
     all_healthy = True
 
-    for service_name, url in SERVICES.items():
+    for name, url in SERVICES.items():
         try:
             resp = requests.get(url, timeout=10)
             healthy = resp.status_code == 200
-            results[service_name] = {
+            results[name] = {
                 "status": "healthy" if healthy else "degraded",
                 "status_code": resp.status_code,
-                "response": resp.json() if healthy else None,
             }
             if not healthy:
                 all_healthy = False
-        except requests.RequestException as e:
-            results[service_name] = {
-                "status": "down",
-                "error": str(e),
-            }
+        except requests.RequestException as exc:
+            results[name] = {"status": "down", "error": str(exc)}
             all_healthy = False
 
-    logger.info("Health check : %s", "ALL OK" if all_healthy else "ISSUES DETECTED")
-    for svc, status in results.items():
-        level = logging.INFO if status["status"] == "healthy" else logging.ERROR
-        logger.log(level, "  %s: %s", svc, status["status"])
-
     context["ti"].xcom_push(key="health_results", value=results)
+    logger.info("Health check global: %s", "OK" if all_healthy else "ISSUES")
     return all_healthy
 
 
-def cleanup_old_documents(**context):
-    """Nettoie les documents traités de plus de 30 jours."""
-    try:
-        resp = requests.get(
-            f"{BACKEND_URL}/api/documents",
-            params={"status": "validated"},
-            timeout=15,
-        )
-        resp.raise_for_status()
-        documents = resp.json().get("documents", [])
-
-        cutoff = datetime.utcnow() - timedelta(days=30)
-        cleaned = 0
-
-        for doc in documents:
-            created = doc.get("created_at")
-            if not created:
-                continue
-            try:
-                doc_date = datetime.fromisoformat(created.replace("Z", "+00:00"))
-                if doc_date.replace(tzinfo=None) < cutoff:
-                    cleaned += 1
-                    logger.info("Document ancien identifié pour archivage : %s", doc.get("document_id"))
-            except (ValueError, TypeError):
-                continue
-
-        logger.info("Nettoyage : %d documents anciens identifiés sur %d total", cleaned, len(documents))
-        context["ti"].xcom_push(key="cleanup_count", value=cleaned)
-        return cleaned
-
-    except requests.RequestException as e:
-        logger.error("Erreur lors du nettoyage : %s", e)
-        return 0
-
-
-def generate_daily_report(**context):
-    """Génère un rapport quotidien."""
-    health = context["ti"].xcom_pull(task_ids="health_check", key="health_results") or {}
-    cleanup_count = context["ti"].xcom_pull(task_ids="cleanup_old", key="cleanup_count") or 0
-
-    # Récupérer les statistiques
-    try:
-        resp = requests.get(f"{BACKEND_URL}/api/documents", timeout=15)
-        resp.raise_for_status()
-        docs = resp.json()
-        total_docs = docs.get("total", 0)
-    except requests.RequestException:
-        total_docs = "N/A"
-
-    try:
-        resp = requests.get(f"{BACKEND_URL}/api/validation/results", timeout=15)
-        resp.raise_for_status()
-        validation = resp.json()
-    except requests.RequestException:
-        validation = {}
-
-    report = {
-        "date": datetime.utcnow().strftime("%Y-%m-%d"),
-        "services_health": {k: v["status"] for k, v in health.items()},
-        "total_documents": total_docs,
-        "anomaly_summary": validation.get("anomaly_count", {}),
-        "documents_archived": cleanup_count,
+def compute_platform_kpis(**context):
+    kpis = {
+        "documents_total": 0,
+        "documents_validated": 0,
+        "documents_curated": 0,
+        "anomalies_total": 0,
+        "anomalies_error": 0,
+        "anomalies_warning": 0,
     }
 
-    logger.info("═" * 60)
-    logger.info("RAPPORT QUOTIDIEN DOCUFLOW - %s", report["date"])
-    logger.info("═" * 60)
-    logger.info("Services: %s", json.dumps(report["services_health"], indent=2))
-    logger.info("Documents totaux: %s", report["total_documents"])
-    logger.info("Anomalies: %s", report["anomaly_summary"])
-    logger.info("Documents archivés: %s", report["documents_archived"])
-    logger.info("═" * 60)
+    docs_data = requests.get(f"{BACKEND_URL}/api/documents", timeout=20).json()
+    docs = docs_data.get("documents", [])
+    kpis["documents_total"] = docs_data.get("total", len(docs))
+
+    for d in docs:
+        status = d.get("pipeline_status")
+        if status == "validated":
+            kpis["documents_validated"] += 1
+        if status == "curated":
+            kpis["documents_curated"] += 1
+
+    validation = requests.get(f"{BACKEND_URL}/api/validation/results", timeout=20).json()
+    anomalies = validation.get("anomalies", [])
+    kpis["anomalies_total"] = len(anomalies)
+    kpis["anomalies_error"] = sum(1 for a in anomalies if a.get("severity") == "ERROR")
+    kpis["anomalies_warning"] = sum(1 for a in anomalies if a.get("severity") == "WARNING")
+
+    context["ti"].xcom_push(key="kpis", value=kpis)
+    logger.info("KPIs platforme: %s", kpis)
+    return kpis
+
+
+def emit_monitoring_report(**context):
+    health = context["ti"].xcom_pull(task_ids="health_check", key="health_results") or {}
+    kpis = context["ti"].xcom_pull(task_ids="compute_kpis", key="kpis") or {}
+
+    report = {
+        "generated_at": datetime.utcnow().isoformat(),
+        "services": health,
+        "kpis": kpis,
+    }
+
+    logger.info("=" * 72)
+    logger.info("MONITORING REPORT DOCUFLOW")
+    logger.info(json.dumps(report, ensure_ascii=True, indent=2))
+    logger.info("=" * 72)
 
     return report
 
 
 with DAG(
     dag_id="monitoring_daily",
-    default_args=default_args,
-    description="Monitoring quotidien de la plateforme DocuFlow",
-    schedule_interval="0 8 * * *",
+    default_args=DEFAULT_ARGS,
+    description="Monitoring de la plateforme et KPIs d'industrialisation",
+    schedule_interval="*/15 * * * *",
     start_date=datetime(2024, 1, 1),
     catchup=False,
-    tags=["docuflow", "monitoring"],
+    tags=["docuflow", "monitoring", "industrialisation"],
 ) as dag:
+    t_health = PythonOperator(task_id="health_check", python_callable=check_services_health)
+    t_kpis = PythonOperator(task_id="compute_kpis", python_callable=compute_platform_kpis)
+    t_report = PythonOperator(task_id="report", python_callable=emit_monitoring_report)
 
-    t_health = PythonOperator(
-        task_id="health_check",
-        python_callable=check_services_health,
-    )
-
-    t_cleanup = PythonOperator(
-        task_id="cleanup_old",
-        python_callable=cleanup_old_documents,
-    )
-
-    t_report = PythonOperator(
-        task_id="daily_report",
-        python_callable=generate_daily_report,
-    )
-
-    t_health >> t_cleanup >> t_report
+    t_health >> t_kpis >> t_report

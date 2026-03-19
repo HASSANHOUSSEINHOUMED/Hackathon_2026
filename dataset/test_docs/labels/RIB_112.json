@@ -1,0 +1,23 @@
+{
+  "document_id": "RIB_112",
+  "file_path": "raw/RIB_112.pdf",
+  "clean_image_path": "images/RIB_112_clean.jpg",
+  "noisy_path": "noisy/RIB_112_light.jpg",
+  "type": "rib",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "94278816758030",
+    "raison_sociale": "Chevalier SARL",
+    "iban": "FR839967431737R55KKV5QX1R39",
+    "iban_formate": "FR83 9967 4317 37R5 5KKV 5QX1 R39",
+    "bic": "CEPAFRPP",
+    "code_banque": "99674",
+    "code_guichet": "31737",
+    "numero_compte": "R55KKV5QX1R",
+    "cle_rib": "39",
+    "banque": "Caisse Régionale du Centre",
+    "agence": "Agence Paris Opéra"
+  }
+}

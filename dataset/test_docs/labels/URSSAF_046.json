@@ -1,0 +1,19 @@
+{
+  "document_id": "URSSAF_046",
+  "file_path": "raw/URSSAF_046.pdf",
+  "clean_image_path": "images/URSSAF_046_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-81394920",
+    "siret": "01704622865679",
+    "siren": "017046228",
+    "raison_sociale": "Breton Deschamps SARL SNC",
+    "date_emission": "02/02/2026",
+    "date_expiration": "14/05/2026",
+    "expired": false
+  }
+}

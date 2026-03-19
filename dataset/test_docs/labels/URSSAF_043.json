@@ -1,0 +1,21 @@
+{
+  "document_id": "URSSAF_043",
+  "file_path": "raw/URSSAF_043.pdf",
+  "clean_image_path": "images/URSSAF_043_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "expired",
+  "anomalies_expected": [
+    "ATTESTATION_EXPIREE"
+  ],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-41715995",
+    "siret": "52742054193291",
+    "siren": "527420541",
+    "raison_sociale": "Laporte SAS",
+    "date_emission": "13/02/2026",
+    "date_expiration": "19/12/2025",
+    "expired": true
+  }
+}

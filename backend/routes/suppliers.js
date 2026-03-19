@@ -15,7 +15,19 @@ router.get('/', async (req, res) => {
 
 // Créer ou mettre à jour un fournisseur
 router.post('/', async (req, res) => {
-  const { siret, raison_sociale, tva_intra, forme_juridique, iban, bic, adresse_rue, adresse_cp, adresse_ville } = req.body
+  const {
+    siret,
+    raison_sociale,
+    tva_intra,
+    forme_juridique,
+    iban,
+    bic,
+    adresse_rue,
+    adresse_cp,
+    adresse_ville,
+    conformity_status,
+    last_check,
+  } = req.body
 
   if (!siret || !raison_sociale) {
     return res.status(400).json({ error: 'SIRET et raison sociale requis' })
@@ -38,6 +50,9 @@ router.post('/', async (req, res) => {
         cp: adresse_cp,
         ville: adresse_ville,
       },
+      ...(conformity_status ? { conformity_status } : {}),
+      ...(last_check ? { last_check: new Date(last_check) } : {}),
+      updated_at: new Date(),
     },
     { upsert: true, new: true },
   )

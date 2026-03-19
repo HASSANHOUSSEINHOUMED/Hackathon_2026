@@ -1,0 +1,19 @@
+{
+  "document_id": "URSSAF_056",
+  "file_path": "raw/URSSAF_056.pdf",
+  "clean_image_path": "images/URSSAF_056_clean.jpg",
+  "noisy_path": "noisy/URSSAF_056_medium.jpg",
+  "type": "attestation_urssaf",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-46093692",
+    "siret": "41212678188618",
+    "siren": "412126781",
+    "raison_sociale": "Merle Caron et Fils SA",
+    "date_emission": "26/02/2026",
+    "date_expiration": "25/04/2026",
+    "expired": false
+  }
+}

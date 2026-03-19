@@ -1,0 +1,23 @@
+{
+  "document_id": "RIB_117",
+  "file_path": "raw/RIB_117.pdf",
+  "clean_image_path": "images/RIB_117_clean.jpg",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "58617932771043",
+    "raison_sociale": "Jacquet EURL",
+    "iban": "FR085177444226Y26DQJW3LMH13",
+    "iban_formate": "FR08 5177 4442 26Y2 6DQJ W3LM H13",
+    "bic": "BPCEFRPP",
+    "code_banque": "51774",
+    "code_guichet": "44226",
+    "numero_compte": "Y26DQJW3LMH",
+    "cle_rib": "13",
+    "banque": "Banque Solidaire de France",
+    "agence": "Agence Marseille Canebière"
+  }
+}

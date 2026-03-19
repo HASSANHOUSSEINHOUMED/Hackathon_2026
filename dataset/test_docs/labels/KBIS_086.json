@@ -1,0 +1,26 @@
+{
+  "document_id": "KBIS_086",
+  "file_path": "raw/KBIS_086.pdf",
+  "clean_image_path": "images/KBIS_086_clean.jpg",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "69380686187935",
+    "siren": "693806861",
+    "raison_sociale": "Letellier SNC",
+    "forme_juridique": "SNC",
+    "capital_social": 500000,
+    "dirigeant": "Monique Marie",
+    "num_rcs": "143 533 180",
+    "ville_greffe": "Marseille",
+    "date_immatriculation": "11/01/2013",
+    "objet_social": "Formation professionnelle continue",
+    "tva_intra": "FR27693806861",
+    "code_naf": "6920Z",
+    "date_kbis": "25/02/2026",
+    "expired": false
+  }
+}

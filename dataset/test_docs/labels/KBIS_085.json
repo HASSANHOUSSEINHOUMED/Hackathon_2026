@@ -1,0 +1,26 @@
+{
+  "document_id": "KBIS_085",
+  "file_path": "raw/KBIS_085.pdf",
+  "clean_image_path": "images/KBIS_085_clean.jpg",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "49731032641717",
+    "siren": "497310326",
+    "raison_sociale": "Marie SAS",
+    "forme_juridique": "SAS",
+    "capital_social": 1000,
+    "dirigeant": "Michel Marty",
+    "num_rcs": "813 783 199",
+    "ville_greffe": "Rouen",
+    "date_immatriculation": "19/04/2009",
+    "objet_social": "Activités de nettoyage et d'entretien",
+    "tva_intra": "FR83497310326",
+    "code_naf": "4941A",
+    "date_kbis": "16/03/2026",
+    "expired": false
+  }
+}

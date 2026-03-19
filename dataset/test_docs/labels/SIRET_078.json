@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_078",
+  "file_path": "raw/SIRET_078.pdf",
+  "clean_image_path": "images/SIRET_078_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "03236519994104",
+    "siren": "032365199",
+    "nic": "94104",
+    "raison_sociale": "Adam SAS",
+    "forme_juridique": "SAS",
+    "adresse": "80, avenue de Potier, 88181 Allain",
+    "date_creation": "20/04/2006",
+    "code_naf": "4321A",
+    "libelle_naf": "Travaux d'installation électrique",
+    "dirigeant": "Inès Bourdon",
+    "date_avis": "13/03/2026",
+    "expired": false
+  }
+}

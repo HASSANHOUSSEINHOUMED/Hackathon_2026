@@ -1,0 +1,26 @@
+{
+  "document_id": "DEV_022",
+  "file_path": "raw/DEV_022.pdf",
+  "clean_image_path": "images/DEV_022_clean.jpg",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "mismatch",
+  "anomalies_expected": [
+    "SIRET_MISMATCH"
+  ],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0022",
+    "siret": "20539502340261",
+    "siret_affiche": "97863327158990",
+    "tva_intra": "FR50205395023",
+    "raison_sociale": "Masson S.A.R.L. SAS",
+    "montant_ht": 38743.35,
+    "tva": 3874.34,
+    "montant_ttc": 42617.69,
+    "date_emission": "14/02/2026",
+    "date_validite": "17/04/2026",
+    "expired": false,
+    "coherent": false
+  }
+}

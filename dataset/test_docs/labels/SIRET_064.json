@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_064",
+  "file_path": "raw/SIRET_064.pdf",
+  "clean_image_path": "images/SIRET_064_clean.jpg",
+  "noisy_path": "noisy/SIRET_064_medium.jpg",
+  "type": "attestation_siret",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "40438427397884",
+    "siren": "404384273",
+    "nic": "97884",
+    "raison_sociale": "Briand Munoz SA SARL",
+    "forme_juridique": "SARL",
+    "adresse": "2, rue de Hernandez, 53607 Sainte ÉricBourg",
+    "date_creation": "01/12/2020",
+    "code_naf": "4120A",
+    "libelle_naf": "Construction de maisons individuelles",
+    "dirigeant": "Grégoire Delorme",
+    "date_avis": "04/03/2026",
+    "expired": false
+  }
+}

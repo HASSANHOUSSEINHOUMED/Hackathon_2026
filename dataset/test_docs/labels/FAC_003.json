@@ -1,0 +1,27 @@
+{
+  "document_id": "FAC_003",
+  "file_path": "raw/FAC_003.pdf",
+  "clean_image_path": "images/FAC_003_clean.jpg",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "expired",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0003",
+    "siret": "84514627304826",
+    "siret_affiche": "84514627304826",
+    "tva_intra": "FR63845146273",
+    "raison_sociale": "Diallo Grenier S.A. SAS",
+    "montant_ht": 120225.23,
+    "tva": 6612.39,
+    "tva_affichee": 6612.39,
+    "montant_ttc": 126837.62,
+    "date_emission": "03/03/2026",
+    "iban": "FR862394791959ANL5RJSJ0B056",
+    "bic": "AGRIFRPP",
+    "nb_lignes": 7,
+    "tva_rate": 0.055,
+    "coherent": true
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_061",
+  "file_path": "raw/SIRET_061.pdf",
+  "clean_image_path": "images/SIRET_061_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "38282586773624",
+    "siren": "382825867",
+    "nic": "73624",
+    "raison_sociale": "Pascal SARL",
+    "forme_juridique": "SARL",
+    "adresse": "1, rue de Dumont, 30956 Briand-les-Bains",
+    "date_creation": "21/01/2006",
+    "code_naf": "5610A",
+    "libelle_naf": "Restauration traditionnelle",
+    "dirigeant": "Théodore Guillet",
+    "date_avis": "08/03/2026",
+    "expired": false
+  }
+}

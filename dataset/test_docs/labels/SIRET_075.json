@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_075",
+  "file_path": "raw/SIRET_075.pdf",
+  "clean_image_path": "images/SIRET_075_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "expired",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "73832060538509",
+    "siren": "738320605",
+    "nic": "38509",
+    "raison_sociale": "Gautier S.A.R.L. SNC",
+    "forme_juridique": "SNC",
+    "adresse": "83, chemin Alice Foucher, 14448 Saint Joséphine-la-Forêt",
+    "date_creation": "07/11/2014",
+    "code_naf": "6311Z",
+    "libelle_naf": "Traitement de données, hébergement et activités connexes",
+    "dirigeant": "Richard Rolland",
+    "date_avis": "16/06/2025",
+    "expired": true
+  }
+}

@@ -7,7 +7,7 @@ import logging
 import os
 
 from dotenv import load_dotenv
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 
 load_dotenv()
 
@@ -17,6 +17,22 @@ logging.basicConfig(
 )
 
 app = Flask(__name__)
+STORAGE_API_KEY = os.getenv("STORAGE_API_KEY", "")
+
+
+@app.before_request
+def require_api_key():
+    """Protège l'API stockage via clé partagée si configurée."""
+    if not STORAGE_API_KEY:
+        return None
+
+    provided = (
+        request.headers.get("X-API-Key")
+        or request.headers.get("x-api-key")
+    )
+    if provided != STORAGE_API_KEY:
+        return jsonify({"error": "unauthorized"}), 401
+    return None
 
 
 def _get_datalake():
@@ -66,15 +82,15 @@ def health():
         dl = _get_datalake()
         dl.client.list_buckets()
         status["minio"] = "ok"
-    except Exception as e:
-        status["minio"] = f"error: {e}"
+    except Exception:
+        status["minio"] = "error"
 
     try:
         db = _get_db()
         db.client.admin.command("ping")
         status["mongodb"] = "ok"
-    except Exception as e:
-        status["mongodb"] = f"error: {e}"
+    except Exception:
+        status["mongodb"] = "error"
 
     overall = "ok" if all(v == "ok" for v in status.values()) else "degraded"
     return jsonify({"status": overall, "services": status}), 200

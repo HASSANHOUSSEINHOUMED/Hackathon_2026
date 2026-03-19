@@ -1,0 +1,19 @@
+{
+  "document_id": "URSSAF_045",
+  "file_path": "raw/URSSAF_045.pdf",
+  "clean_image_path": "images/URSSAF_045_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-18557710",
+    "siret": "39822587013972",
+    "siren": "398225870",
+    "raison_sociale": "Boulanger S.A.S. SNC",
+    "date_emission": "14/02/2026",
+    "date_expiration": "31/05/2026",
+    "expired": false
+  }
+}

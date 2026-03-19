@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_062",
+  "file_path": "raw/SIRET_062.pdf",
+  "clean_image_path": "images/SIRET_062_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "71478596196917",
+    "siren": "714785961",
+    "nic": "96917",
+    "raison_sociale": "Bourgeois Loiseau SA SARL",
+    "forme_juridique": "SARL",
+    "adresse": "108, rue de Pruvost, 17888 Morin",
+    "date_creation": "03/11/2010",
+    "code_naf": "7112B",
+    "libelle_naf": "Ingénierie, études techniques",
+    "dirigeant": "Laurent Laine",
+    "date_avis": "14/03/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "document_id": "RIB_106",
+  "file_path": "raw/RIB_106.pdf",
+  "clean_image_path": "images/RIB_106_clean.jpg",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "35554398478011",
+    "raison_sociale": "Marques SARL",
+    "iban": "FR456841441502WMMYOBWYDJA76",
+    "iban_formate": "FR45 6841 4415 02WM MYOB WYDJ A76",
+    "bic": "CMCIFRPP",
+    "code_banque": "68414",
+    "code_guichet": "41502",
+    "numero_compte": "WMMYOBWYDJA",
+    "cle_rib": "76",
+    "banque": "Crédit Coopératif du Sud",
+    "agence": "Agence Strasbourg Kléber"
+  }
+}

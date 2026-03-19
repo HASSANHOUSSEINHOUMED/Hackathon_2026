@@ -1,0 +1,30 @@
+{
+  "document_id": "FAC_006",
+  "file_path": "raw/FAC_006.pdf",
+  "clean_image_path": "images/FAC_006_clean.jpg",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "mismatch",
+  "anomalies_expected": [
+    "SIRET_MISMATCH",
+    "TVA_CALCUL_ERROR"
+  ],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0006",
+    "siret": "54278498808416",
+    "siret_affiche": "54278498808416",
+    "tva_intra": "FR68542784988",
+    "raison_sociale": "Foucher SARL",
+    "montant_ht": 35492.71,
+    "tva": 3549.27,
+    "tva_affichee": 4731.19,
+    "montant_ttc": 40223.9,
+    "date_emission": "24/01/2026",
+    "iban": "FR334466425129WQ5A7COUI9W16",
+    "bic": "CEPAFRPP",
+    "nb_lignes": 5,
+    "tva_rate": 0.1,
+    "coherent": false
+  }
+}

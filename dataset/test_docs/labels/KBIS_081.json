@@ -1,0 +1,26 @@
+{
+  "document_id": "KBIS_081",
+  "file_path": "raw/KBIS_081.pdf",
+  "clean_image_path": "images/KBIS_081_clean.jpg",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "90599293978427",
+    "siren": "905992939",
+    "raison_sociale": "Rodrigues S.A.R.L. SA",
+    "forme_juridique": "SA",
+    "capital_social": 5000,
+    "dirigeant": "Élisabeth Godard",
+    "num_rcs": "245 892 213",
+    "ville_greffe": "Grenoble",
+    "date_immatriculation": "18/12/2010",
+    "objet_social": "Activités de nettoyage et d'entretien",
+    "tva_intra": "FR29905992939",
+    "code_naf": "6920Z",
+    "date_kbis": "19/02/2026",
+    "expired": false
+  }
+}

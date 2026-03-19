@@ -1,0 +1,19 @@
+{
+  "document_id": "URSSAF_042",
+  "file_path": "raw/URSSAF_042.pdf",
+  "clean_image_path": "images/URSSAF_042_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-35878707",
+    "siret": "54019380226204",
+    "siren": "540193802",
+    "raison_sociale": "Mendès Mallet S.A. SA",
+    "date_emission": "07/02/2026",
+    "date_expiration": "04/05/2026",
+    "expired": false
+  }
+}

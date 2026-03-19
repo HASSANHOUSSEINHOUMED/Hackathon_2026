@@ -1,0 +1,21 @@
+{
+  "document_id": "URSSAF_059",
+  "file_path": "raw/URSSAF_059.pdf",
+  "clean_image_path": "images/URSSAF_059_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "expired",
+  "anomalies_expected": [
+    "ATTESTATION_EXPIREE"
+  ],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-39796480",
+    "siret": "66179796988684",
+    "siren": "661797969",
+    "raison_sociale": "Chauveau Leclerc SA SARL",
+    "date_emission": "02/03/2026",
+    "date_expiration": "12/02/2026",
+    "expired": true
+  }
+}

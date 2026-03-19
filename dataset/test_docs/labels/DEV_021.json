@@ -1,0 +1,24 @@
+{
+  "document_id": "DEV_021",
+  "file_path": "raw/DEV_021.pdf",
+  "clean_image_path": "images/DEV_021_clean.jpg",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0021",
+    "siret": "05377351158503",
+    "siret_affiche": "05377351158503",
+    "tva_intra": "FR39053773511",
+    "raison_sociale": "Caron Laroche SARL SA",
+    "montant_ht": 24012.12,
+    "tva": 4802.42,
+    "montant_ttc": 28814.54,
+    "date_emission": "28/02/2026",
+    "date_validite": "17/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

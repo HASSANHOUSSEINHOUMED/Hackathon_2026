@@ -1,0 +1,19 @@
+{
+  "document_id": "URSSAF_048",
+  "file_path": "raw/URSSAF_048.pdf",
+  "clean_image_path": "images/URSSAF_048_clean.jpg",
+  "noisy_path": "noisy/URSSAF_048_medium.jpg",
+  "type": "attestation_urssaf",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-29374563",
+    "siret": "53428364340892",
+    "siren": "534283643",
+    "raison_sociale": "Benard et Fils SNC",
+    "date_emission": "17/02/2026",
+    "date_expiration": "10/06/2026",
+    "expired": false
+  }
+}

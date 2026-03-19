@@ -1,0 +1,23 @@
+{
+  "document_id": "RIB_108",
+  "file_path": "raw/RIB_108.pdf",
+  "clean_image_path": "images/RIB_108_clean.jpg",
+  "noisy_path": "noisy/RIB_108_heavy.jpg",
+  "type": "rib",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "66766506118097",
+    "raison_sociale": "Langlois SA",
+    "iban": "FR788675615965P2X3SA3RFEN70",
+    "iban_formate": "FR78 8675 6159 65P2 X3SA 3RFE N70",
+    "bic": "CRLYFRPP",
+    "code_banque": "86756",
+    "code_guichet": "15965",
+    "numero_compte": "P2X3SA3RFEN",
+    "cle_rib": "70",
+    "banque": "Banque de l'Avenir",
+    "agence": "Agence Lille Grand-Place"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "FAC_013",
+  "file_path": "raw/FAC_013.pdf",
+  "clean_image_path": "images/FAC_013_clean.jpg",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0013",
+    "siret": "70143634795788",
+    "siret_affiche": "70143634795788",
+    "tva_intra": "FR74701436347",
+    "raison_sociale": "Bigot EURL",
+    "montant_ht": 59594.73,
+    "tva": 5959.47,
+    "tva_affichee": 5959.47,
+    "montant_ttc": 65554.2,
+    "date_emission": "01/03/2026",
+    "iban": "FR845505665771ZJCGB8PBQYO34",
+    "bic": "SOGEFRPP",
+    "nb_lignes": 8,
+    "tva_rate": 0.1,
+    "coherent": true
+  }
+}

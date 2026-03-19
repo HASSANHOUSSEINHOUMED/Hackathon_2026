@@ -1,0 +1,19 @@
+{
+  "document_id": "URSSAF_050",
+  "file_path": "raw/URSSAF_050.pdf",
+  "clean_image_path": "images/URSSAF_050_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-66046380",
+    "siret": "39363854967855",
+    "siren": "393638549",
+    "raison_sociale": "Petitjean Munoz et Fils EURL",
+    "date_emission": "30/01/2026",
+    "date_expiration": "24/05/2026",
+    "expired": false
+  }
+}

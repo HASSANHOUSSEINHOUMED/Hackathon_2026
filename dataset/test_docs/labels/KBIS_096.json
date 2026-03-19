@@ -1,0 +1,26 @@
+{
+  "document_id": "KBIS_096",
+  "file_path": "raw/KBIS_096.pdf",
+  "clean_image_path": "images/KBIS_096_clean.jpg",
+  "noisy_path": "noisy/KBIS_096_light.jpg",
+  "type": "kbis",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "67618472430460",
+    "siren": "676184724",
+    "raison_sociale": "Garnier Pereira S.A.R.L. SAS",
+    "forme_juridique": "SAS",
+    "capital_social": 5000,
+    "dirigeant": "Margot Pons-Ferrand",
+    "num_rcs": "519 402 264",
+    "ville_greffe": "Grenoble",
+    "date_immatriculation": "23/06/2006",
+    "objet_social": "Activités d'architecture et d'ingénierie",
+    "tva_intra": "FR71676184724",
+    "code_naf": "4120A",
+    "date_kbis": "17/03/2026",
+    "expired": false
+  }
+}

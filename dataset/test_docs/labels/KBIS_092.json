@@ -1,0 +1,26 @@
+{
+  "document_id": "KBIS_092",
+  "file_path": "raw/KBIS_092.pdf",
+  "clean_image_path": "images/KBIS_092_clean.jpg",
+  "noisy_path": "noisy/KBIS_092_medium.jpg",
+  "type": "kbis",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "66099353687588",
+    "siren": "660993536",
+    "raison_sociale": "Mary Vincent SA EURL",
+    "forme_juridique": "EURL",
+    "capital_social": 200000,
+    "dirigeant": "Hortense Paris",
+    "num_rcs": "907 439 480",
+    "ville_greffe": "Lille",
+    "date_immatriculation": "31/12/2009",
+    "objet_social": "Transport routier de marchandises",
+    "tva_intra": "FR17660993536",
+    "code_naf": "4941A",
+    "date_kbis": "10/03/2026",
+    "expired": false
+  }
+}

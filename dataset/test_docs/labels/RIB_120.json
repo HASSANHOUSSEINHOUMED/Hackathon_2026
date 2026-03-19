@@ -1,0 +1,23 @@
+{
+  "document_id": "RIB_120",
+  "file_path": "raw/RIB_120.pdf",
+  "clean_image_path": "images/RIB_120_clean.jpg",
+  "noisy_path": "noisy/RIB_120_medium.jpg",
+  "type": "rib",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "16089899521723",
+    "raison_sociale": "Dupuis Toussaint S.A.R.L. SA",
+    "iban": "FR5437772352604FZFZMU9WW259",
+    "iban_formate": "FR54 3777 2352 604F ZFZM U9WW 259",
+    "bic": "TRNOFRP1",
+    "code_banque": "37772",
+    "code_guichet": "35260",
+    "numero_compte": "4FZFZMU9WW2",
+    "cle_rib": "59",
+    "banque": "Crédit Industriel et Financier",
+    "agence": "Agence Toulouse Capitole"
+  }
+}

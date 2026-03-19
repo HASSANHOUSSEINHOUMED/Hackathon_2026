@@ -1,0 +1,28 @@
+{
+  "document_id": "KBIS_087",
+  "file_path": "raw/KBIS_087.pdf",
+  "clean_image_path": "images/KBIS_087_clean.jpg",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "expired",
+  "anomalies_expected": [
+    "KBIS_PERIME"
+  ],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "29451168868547",
+    "siren": "294511688",
+    "raison_sociale": "Becker SARL",
+    "forme_juridique": "SARL",
+    "capital_social": 500000,
+    "dirigeant": "Margot Meyer Le Breton",
+    "num_rcs": "452 998 520",
+    "ville_greffe": "Clermont-Ferrand",
+    "date_immatriculation": "18/01/2004",
+    "objet_social": "Formation professionnelle continue",
+    "tva_intra": "FR03294511688",
+    "code_naf": "4399A",
+    "date_kbis": "04/08/2025",
+    "expired": true
+  }
+}

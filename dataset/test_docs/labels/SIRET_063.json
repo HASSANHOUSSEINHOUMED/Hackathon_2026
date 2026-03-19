@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_063",
+  "file_path": "raw/SIRET_063.pdf",
+  "clean_image_path": "images/SIRET_063_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "expired",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "66278282074221",
+    "siren": "662782820",
+    "nic": "74221",
+    "raison_sociale": "Letellier Faivre SARL SNC",
+    "forme_juridique": "SNC",
+    "adresse": "23, chemin de Giraud, 20650 Sainte MartheBourg",
+    "date_creation": "19/03/2010",
+    "code_naf": "6311Z",
+    "libelle_naf": "Traitement de données, hébergement et activités connexes",
+    "dirigeant": "Guy de Berger",
+    "date_avis": "12/09/2025",
+    "expired": true
+  }
+}
