@@ -14,9 +14,10 @@ from pathlib import Path
 from flask import Flask, jsonify, request
 
 from classifier import DocumentClassifier
-from extractor import EntityExtractor
+from smart_extractor import smart_extractor
 from ocr_engine import OCREngine
 from preprocess import ImagePreprocessor
+from postprocessor import postprocessor
 
 # ── Configuration du logger JSON ──
 logging.basicConfig(
@@ -31,8 +32,8 @@ app.config["MAX_CONTENT_LENGTH"] = 20 * 1024 * 1024  # 20 MB max
 # ── Initialisation des composants ──
 preprocessor = ImagePreprocessor()
 ocr_engine = OCREngine()
-extractor = EntityExtractor()
 classifier = DocumentClassifier()
+# Note: smart_extractor est déjà une instance globale importée
 
 ALLOWED_EXTENSIONS = {"pdf", "png", "jpg", "jpeg"}
 
@@ -82,11 +83,14 @@ def _process_document(file_path: str) -> dict:
     full_text = "\n".join(all_text)
     avg_confidence = total_confidence / len(images) if images else 0.0
 
-    # Classification
-    classification = classifier.classify(full_text)
+    # Post-traitement OCR (correction erreurs courantes)
+    cleaned_text = postprocessor.process(full_text)
 
-    # Extraction d'entités
-    entities = extractor.extract_all(full_text)
+    # Classification
+    classification = classifier.classify(cleaned_text)
+
+    # Extraction d'entités intelligente (regex + LLM)
+    entities = smart_extractor.extract(cleaned_text, classification["type"])
     extraction_confidence = entities.pop("extraction_confidence", 0.0)
 
     processing_time = int((time.time() - start) * 1000)

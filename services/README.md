@@ -17,7 +17,7 @@ Microservices Python pour le traitement des documents.
 │   Flask/Gunicorn │    │ Flask/Gunicorn   │
 │   :5001          │    │ :5002            │
 ├──────────────────┤    ├──────────────────┤
-│ • Tesseract OCR  │    │ • 11 règles      │
+│ • Tesseract OCR  │    │ • 12 règles       │
 │ • EasyOCR        │    │ • IsolationForest│
 │ • OpenCV         │    │ • Luhn/IBAN check│
 │ • Classification │    │ • Cross-doc      │

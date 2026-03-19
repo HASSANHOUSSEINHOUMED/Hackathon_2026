@@ -39,6 +39,10 @@ frontend/
 
 ### 1. Upload (`/`)
 - Upload drag & drop multiple
+- **Deux modes de traitement :**
+  - Bouton bleu : traitement individuel
+  - Bouton vert : traitement batch (même fournisseur)
+- Validation inter-documents en mode batch (MISMATCH)
 - Barre de progression
 - Aperçu des résultats OCR en temps réel
 - Détection automatique du type de document
@@ -100,8 +104,10 @@ npm run build
 ### Upload intelligent
 - Support PDF, PNG, JPEG (max 20 Mo)
 - Upload multiple (jusqu'à 10 fichiers)
+- **Mode batch** : validation croisée des documents du même fournisseur
 - OCR automatique côté serveur
 - Validation en temps réel
+- Détection des anomalies inter-documents (SIRET, IBAN, Raison Sociale)
 
 ### Raffinement LLM
 - Bouton pour re-extraire les entités avec GPT-4o-mini

@@ -71,15 +71,58 @@ class ImagePreprocessor:
         return rotated
 
     @staticmethod
-    def _binarize(image: np.ndarray) -> np.ndarray:
-        """Binarisation adaptative gaussienne."""
+    def _binarize(image: np.ndarray, blockSize: int = 25, C: int = 10) -> np.ndarray:
+        """
+        Binarisation adaptative gaussienne avec paramètres optimisés.
+        
+        Args:
+            blockSize: Taille du bloc (doit être impair, plus grand = plus doux)
+            C: Constante soustraite (plus petit = plus doux)
+        """
+        # S'assurer que blockSize est impair
+        if blockSize % 2 == 0:
+            blockSize += 1
+        
         return cv2.adaptiveThreshold(
             image, 255,
             cv2.ADAPTIVE_THRESH_GAUSSIAN_C,
             cv2.THRESH_BINARY,
-            blockSize=15,
-            C=8,
+            blockSize=blockSize,
+            C=C,
         )
+    
+    @staticmethod
+    def _binarize_otsu(image: np.ndarray) -> np.ndarray:
+        """Binarisation Otsu - meilleure pour documents de bonne qualité."""
+        _, binary = cv2.threshold(image, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+        return binary
+    
+    @staticmethod
+    def _binarize_sauvola(gray: np.ndarray, window_size: int = 25, k: float = 0.2) -> np.ndarray:
+        """
+        Binarisation de Sauvola - robuste pour éclairage non uniforme.
+        Meilleure pour les documents scannés ou photographiés.
+        """
+        if gray.dtype != np.float64:
+            gray_float = gray.astype(np.float64)
+        else:
+            gray_float = gray
+        
+        # Calculer la moyenne locale
+        mean = cv2.blur(gray_float, (window_size, window_size))
+        
+        # Calculer l'écart-type local
+        mean_sq = cv2.blur(gray_float * gray_float, (window_size, window_size))
+        std = np.sqrt(np.maximum(mean_sq - mean * mean, 0))
+        
+        # Seuil de Sauvola
+        R = 128.0  # Dynamic range
+        threshold = mean * (1.0 + k * (std / R - 1.0))
+        
+        binary = np.zeros_like(gray, dtype=np.uint8)
+        binary[gray > threshold] = 255
+        
+        return binary
 
     @staticmethod
     def _crop_borders(image: np.ndarray, margin: int = 5) -> np.ndarray:
@@ -102,9 +145,47 @@ class ImagePreprocessor:
             logger.info("Upscale ×%d appliqué (hauteur originale : %dpx)", scale, h)
         return image
 
+    def _estimate_quality(self, gray: np.ndarray) -> dict:
+        """
+        Estime la qualité de l'image pour adapter le prétraitement.
+        
+        Returns:
+            {
+                "blur": float (variance du Laplacien),
+                "noise": float (estimation du bruit),
+                "contrast": float (contraste),
+                "is_low_quality": bool,
+            }
+        """
+        # Estimation du flou (variance du Laplacien)
+        laplacian = cv2.Laplacian(gray, cv2.CV_64F)
+        blur_score = laplacian.var()
+        
+        # Estimation du contraste
+        contrast = gray.std()
+        
+        # Estimation du bruit (sur une zone unie)
+        # Utiliser la médiane des écarts-types de petits blocs
+        h, w = gray.shape
+        block_size = 16
+        noise_estimates = []
+        for y in range(0, h - block_size, block_size * 4):
+            for x in range(0, w - block_size, block_size * 4):
+                block = gray[y:y+block_size, x:x+block_size]
+                if block.std() < 10:  # Zone relativement unie
+                    noise_estimates.append(block.std())
+        noise = np.median(noise_estimates) if noise_estimates else 0
+        
+        return {
+            "blur": blur_score,
+            "noise": noise,
+            "contrast": contrast,
+            "is_low_quality": blur_score < 100 or contrast < 30 or noise > 10,
+        }
+    
     def preprocess(self, image_path: str) -> np.ndarray:
         """
-        Pipeline complet de prétraitement d'une image pour l'OCR.
+        Pipeline complet de prétraitement adaptatif pour l'OCR.
 
         Args:
             image_path: chemin vers le fichier image
@@ -116,27 +197,53 @@ class ImagePreprocessor:
         if image is None:
             raise ValueError(f"Impossible de charger l'image : {image_path}")
 
+        return self._preprocess_image(image, image_path)
+    
+    def _preprocess_image(self, image: np.ndarray, source: str = "array") -> np.ndarray:
+        """Pipeline de prétraitement adaptatif."""
+        # 1. Conversion grayscale
         gray = self._to_grayscale(image)
-        denoised = self._denoise(gray)
-        enhanced = self._enhance_contrast(denoised)
-        deskewed = self._deskew(enhanced)
-        binarized = self._binarize(deskewed)
-        cropped = self._crop_borders(binarized)
-        result = self._upscale_if_low_res(cropped)
-
-        logger.info("Prétraitement terminé : %s → shape=%s", image_path, result.shape)
+        
+        # 2. Upscale AVANT traitement si basse résolution
+        gray = self._upscale_if_low_res(gray)
+        
+        # 3. Analyser la qualité
+        quality = self._estimate_quality(gray)
+        logger.debug("Qualité image: blur=%.1f, noise=%.1f, contrast=%.1f",
+                    quality["blur"], quality["noise"], quality["contrast"])
+        
+        # 4. Débruitage adaptatif
+        if quality["noise"] > 8:
+            gray = self._denoise(gray)
+        elif quality["noise"] > 3:
+            gray = cv2.fastNlMeansDenoising(gray, h=5)  # Léger
+        
+        # 5. Amélioration du contraste (si nécessaire)
+        if quality["contrast"] < 50:
+            gray = self._enhance_contrast(gray)
+        
+        # 6. Correction d'inclinaison
+        gray = self._deskew(gray)
+        
+        # 7. Binarisation adaptative selon la qualité
+        if quality["is_low_quality"]:
+            # Utiliser Sauvola pour documents de mauvaise qualité
+            binarized = self._binarize_sauvola(gray, window_size=31, k=0.15)
+            logger.debug("Binarisation Sauvola appliquée (basse qualité)")
+        else:
+            # Utiliser binarisation adaptative standard avec paramètres doux
+            binarized = self._binarize(gray, blockSize=31, C=12)
+        
+        # 8. Nettoyage des bordures
+        result = self._crop_borders(binarized)
+        
+        logger.info("Prétraitement terminé : %s → shape=%s, qualité=%s",
+                   source, result.shape, "basse" if quality["is_low_quality"] else "bonne")
         return result
 
     def preprocess_from_array(self, image: np.ndarray) -> np.ndarray:
         """Prétraite une image déjà chargée en mémoire."""
-        gray = self._to_grayscale(image)
-        denoised = self._denoise(gray)
-        enhanced = self._enhance_contrast(denoised)
-        deskewed = self._deskew(enhanced)
-        binarized = self._binarize(deskewed)
-        cropped = self._crop_borders(binarized)
-        result = self._upscale_if_low_res(cropped)
-        return result
+        return self._preprocess_image(image, "array")
 
     @staticmethod
     def pdf_to_images(pdf_path: str) -> list[np.ndarray]:

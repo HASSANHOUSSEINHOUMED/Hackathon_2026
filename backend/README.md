@@ -45,7 +45,13 @@ backend/
 
 | Méthode | Endpoint | Description |
 |---------|----------|-------------|
-| POST | `/api/process` | Upload + OCR + validation |
+| POST | `/api/process` | Upload + OCR + validation (mode batch ou individuel) |
+
+**Mode Batch :**
+Lorsque plusieurs documents sont envoyés, le backend effectue :
+1. Phase 1 : OCR de tous les documents
+2. Phase 2 : Validation batch (règles inter-documents)
+3. Phase 3 : Sauvegarde avec anomalies indexées
 
 ### Fournisseurs
 

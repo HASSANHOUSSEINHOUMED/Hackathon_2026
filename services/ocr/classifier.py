@@ -9,38 +9,52 @@ logger = logging.getLogger("ocr-service.classifier")
 # Dictionnaire de mots-clés pondérés par type de document
 KEYWORDS: dict[str, list[tuple[str, int]]] = {
     "facture": [
-        ("facture", 3), ("invoice", 3), ("montant ttc", 2),
-        ("bon de paiement", 2), ("n° facture", 2), ("net à payer", 2),
-        ("total ht", 2), ("total ttc", 2), ("fac-", 2),
-        ("règlement", 1), ("échéance", 1),
+        ("facture", 5), ("invoice", 5), ("montant ttc", 3),
+        ("bon de paiement", 3), ("n° facture", 4), ("net à payer", 3),
+        ("total ht", 3), ("total ttc", 3), ("fac-", 3),
+        ("règlement", 1), ("échéance", 2), ("date facture", 4),
+        ("numéro de facture", 4), ("facture n°", 4),
+        # IBAN/BIC présents sur factures pour paiement (faible poids)
+        ("iban", 1), ("bic", 1),
     ],
     "devis": [
-        ("devis", 3), ("quotation", 3), ("offre de prix", 2),
-        ("bon pour accord", 2), ("validité", 1), ("dev-", 2),
-        ("proposition commerciale", 2),
+        ("devis", 5), ("quotation", 5), ("offre de prix", 3),
+        ("bon pour accord", 3), ("validité", 2), ("dev-", 3),
+        ("proposition commerciale", 3), ("devis n°", 4),
     ],
     "kbis": [
-        ("extrait kbis", 4), ("extrait k-bis", 4), ("k-bis", 3), ("kbis", 3),
-        ("greffe", 2), ("rcs", 2), ("immatriculation", 2), 
-        ("tribunal de commerce", 2), ("capital social", 1), ("objet social", 1),
-        ("personne morale", 2), ("forme juridique", 1),
+        ("extrait kbis", 5), ("extrait k-bis", 5), ("k-bis", 4), ("kbis", 4),
+        ("greffe", 3), ("rcs", 3), ("immatriculation", 3), 
+        ("tribunal de commerce", 3), ("capital social", 2), ("objet social", 2),
+        ("personne morale", 2), ("forme juridique", 2),
     ],
     "urssaf": [
-        ("urssaf", 4), ("attestation de vigilance", 4),
-        ("cotisations sociales", 2), ("régime général", 1),
-        ("sécurité sociale", 1), ("art. l.243", 1),
+        ("urssaf", 5), ("attestation de vigilance", 5),
+        ("cotisations sociales", 3), ("régime général", 2),
+        ("sécurité sociale", 2), ("art. l.243", 2),
     ],
     "siret": [
-        ("avis de situation", 3), ("répertoire sirene", 3),
-        ("insee", 2), ("code ape", 2), ("établissement", 1),
-        ("nic", 1), ("avis de situation au répertoire", 4),
+        ("avis de situation", 4), ("répertoire sirene", 4),
+        ("insee", 3), ("code ape", 3), ("établissement", 1),
+        ("nic", 2), ("avis de situation au répertoire", 5),
     ],
     "rib": [
-        ("relevé d'identité bancaire", 4), ("rib", 3),
-        ("iban", 2), ("bic", 2), ("domiciliation", 1),
-        ("code banque", 2), ("code guichet", 2), ("clé rib", 2),
-        ("swift", 1),
+        ("relevé d'identité bancaire", 6), ("identité bancaire", 5),
+        # RIB nécessite ces mots-clés spécifiques, pas juste IBAN/BIC
+        ("rib", 4), ("domiciliation", 3),
+        ("code banque", 3), ("code guichet", 3), ("clé rib", 3),
+        ("titulaire du compte", 4), ("coordonnées bancaires", 4),
+        # IBAN/BIC seuls ne suffisent pas (présents aussi sur factures)
+        ("iban", 1), ("bic", 1), ("swift", 1),
     ],
+}
+
+# Mots-clés exclusifs : si présent, exclure certains types
+EXCLUSIVE_KEYWORDS: dict[str, list[str]] = {
+    "facture": ["rib"],      # Si "facture" trouvé, ne pas classifier comme RIB
+    "devis": ["rib"],        # Si "devis" trouvé, ne pas classifier comme RIB
+    "kbis": ["rib", "siret"],
+    "urssaf": ["rib"],
 }
 
 
@@ -63,15 +77,27 @@ class DocumentClassifier:
         """
         text_lower = text.lower()
         scores: dict[str, int] = {}
+        types_to_exclude: set[str] = set()
 
+        # Phase 1: Calculer les scores et détecter les exclusions
         for doc_type, keywords in KEYWORDS.items():
             score = 0
             for keyword, weight in keywords:
                 # Chercher le mot-clé (insensible à la casse, tolère les accents manquants)
                 pattern = re.escape(keyword)
                 matches = re.findall(pattern, text_lower)
-                score += len(matches) * weight
+                if matches:
+                    score += len(matches) * weight
+                    # Vérifier si ce type exclut d'autres types
+                    if doc_type in EXCLUSIVE_KEYWORDS:
+                        types_to_exclude.update(EXCLUSIVE_KEYWORDS[doc_type])
             scores[doc_type] = score
+
+        # Phase 2: Appliquer les exclusions (mettre le score à 0)
+        for excluded_type in types_to_exclude:
+            if excluded_type in scores:
+                logger.debug("Type '%s' exclu car mot-clé exclusif détecté", excluded_type)
+                scores[excluded_type] = 0
 
         # Trouver le type avec le score maximum
         total_score = sum(scores.values())

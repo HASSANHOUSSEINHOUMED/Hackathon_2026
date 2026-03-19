@@ -26,6 +26,8 @@ dataset/
 ├── degrade.py              # Dégradation réaliste (bruit, scan)
 ├── generate.py             # Script principal
 ├── generate_test_errors.py # Génération de documents avec erreurs
+├── generate_demo_dataset.py # Génération dataset démo (40 docs, vrais SIRET)
+├── generate_test_real_companies.py # Documents avec entreprises réelles
 ├── evaluate_ocr.py         # Évaluation de la qualité OCR
 ├── requirements.txt
 └── output/                 # Dossier de sortie (ignoré par git)
@@ -54,6 +56,32 @@ Ce script génère 12 documents ciblant chaque règle de validation :
 - `FAC-ERR-TTC-001.pdf` → TTC_CALCUL_ERROR
 - `URSSAF-ERR-EXP-001.pdf` → ATTESTATION_EXPIREE
 - etc.
+
+### Générer le dataset de démonstration
+
+```bash
+python generate_demo_dataset.py
+```
+
+Ce script génère **40 documents** répartis en 3 dossiers pour la démonstration :
+
+| Dossier | Documents | Description |
+|---------|-----------|-------------|
+| `same_supplier/` | 7 | Un seul fournisseur (CARREFOUR), pas de MISMATCH |
+| `multi_supplier/` | 21 | 7 fournisseurs, erreurs individuelles |
+| `mismatch_test/` | 12 | Paires avec incohérences SIRET/IBAN/RS |
+
+**Entreprises réelles utilisées :**
+- CARREFOUR, TOTAL ENERGIES, ORANGE, SNCF, AIR FRANCE
+- RENAULT, DANONE, BOUYGUES, ENGIE, SOCIETE GENERALE
+
+### Générer avec entreprises réelles
+
+```bash
+python generate_test_real_companies.py
+```
+
+Génère des documents avec de vrais SIREN/SIRET d'entreprises françaises.
 
 ### Évaluer la qualité OCR
 

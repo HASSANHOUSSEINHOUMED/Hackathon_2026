@@ -14,7 +14,7 @@ Microservice Python pour la validation des documents et la détection d'anomalie
 ```
 services/validation/
 ├── app.py                  # API Flask
-├── rules_catalog.py        # Définition des 11 règles
+├── rules_catalog.py        # Définition des 12 règles
 ├── rules_engine.py         # Moteur d'exécution des règles
 ├── statistical_detector.py # Détection ML (IsolationForest)
 ├── tests/
@@ -87,10 +87,17 @@ Health check du service.
 | `KBIS_PERIME` | Kbis > 90 jours | WARNING | kbis |
 | `DEVIS_EXPIRE` | Devis expiré | WARNING | devis |
 | `IBAN_FORMAT_INVALIDE` | Format IBAN invalide | ERROR | facture, rib |
-| `IBAN_MISMATCH` | Incohérence IBAN | WARNING | facture, rib |
+| `IBAN_MISMATCH` | Incohérence IBAN inter-documents | WARNING | facture, rib |
 | `TVA_INTRA_INVALIDE` | TVA intracommunautaire invalide | WARNING | facture, kbis |
 | `RAISON_SOCIALE_MISMATCH` | Incohérence raison sociale | WARNING | Tous |
-| `MONTANT_ANORMAL` | Montant statistiquement anormal | INFO | facture |
+| `MONTANT_ANORMAL` | Montant statistiquement anormal (ML) | INFO | facture |
+
+### Règles inter-documents (mode batch)
+
+Les règles `*_MISMATCH` comparent les entités entre tous les documents d'un même lot :
+- **SIRET_MISMATCH** : Détecte si les SIRET diffèrent entre documents
+- **IBAN_MISMATCH** : Détecte si les IBAN diffèrent entre documents
+- **RAISON_SOCIALE_MISMATCH** : Détecte les variations de nom d'entreprise
 
 ## 🔧 Validations techniques
 
@@ -118,10 +125,17 @@ Le service utilise **IsolationForest** pour détecter les montants anormaux :
 ```python
 from sklearn.ensemble import IsolationForest
 
+# Auto-entraînement avec données synthétiques (500 échantillons log-normal)
 model = IsolationForest(contamination=0.05, random_state=42)
-model.fit(historical_amounts)
+model.fit(training_data)  # Distribution réaliste des montants
 prediction = model.predict([[new_amount]])  # -1 = anomalie
 ```
+
+**Caractéristiques :**
+- Entraînement automatique au démarrage (500 échantillons synthétiques)
+- Distribution log-normale centrée sur 5000€ (réaliste pour factures)
+- Score d'anomalie normalisé (0-100)
+- Seuil de contamination : 5%
 
 ## 🚀 Développement local
 

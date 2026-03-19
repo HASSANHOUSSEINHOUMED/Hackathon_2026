@@ -107,15 +107,17 @@ hackaton2026/
 
 ```
 Upload     ──▶    OCR       ──▶   Validation   ──▶   CRM Auto
-(PDF/IMG)       (Tesseract)      (11 règles)        (Fournisseur)
+(PDF/IMG)       (Tesseract)      (12 règles)        (Fournisseur)
                 (EasyOCR)        (IsolationForest)  (MinIO)
 ```
 
 **Fonctionnalités :**
 - Upload drag & drop multi-fichiers
+- **Mode batch** pour validation inter-documents (même fournisseur)
 - OCR double moteur (Tesseract + EasyOCR)
-- 11 règles de validation métier
-- Détection d'anomalies statistiques (ML)
+- 12 règles de validation métier
+- Détection d'anomalies statistiques (IsolationForest ML)
+- Validation inter-documents (SIRET, IBAN, Raison Sociale)
 - Raffinement LLM optionnel (GPT-4o-mini)
 - Création automatique des fournisseurs
 - Stockage Data Lake (MinIO 4 zones)
@@ -202,10 +204,16 @@ Projet réalisé dans le cadre du **Hackathon 2026**.
 
 MIT
 
+---
+
+## 🧹 Nettoyage des données
+
+```bash
 # 1. MongoDB - tout supprimer
 docker exec docuflow-mongodb mongosh -u admin -p admin --authenticationDatabase admin --eval "db = db.getSiblingDB('docuflow'); db.documents.deleteMany({}); db.suppliers.deleteMany({}); print('MongoDB nettoyé');"
 
-# 2. MinIO - toutes les zones (y compris pending-zone)
+# 2. MinIO - configurer l'alias puis nettoyer toutes les zones
+docker exec docuflow-minio mc alias set local http://localhost:9000 minioadmin minioadmin
 docker exec docuflow-minio mc rm --recursive --force local/raw-zone/
 docker exec docuflow-minio mc rm --recursive --force local/clean-zone/
 docker exec docuflow-minio mc rm --recursive --force local/curated-zone/
@@ -213,6 +221,7 @@ docker exec docuflow-minio mc rm --recursive --force local/pending-zone/
 
 # 3. Vérifier que c'est vide
 docker exec docuflow-minio mc du local/
+```
 
 
 Autres commandes utiles :

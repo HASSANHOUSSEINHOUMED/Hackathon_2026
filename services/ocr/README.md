@@ -1,6 +1,15 @@
-# Service OCR - DocuFlow
+# Service OCR - DocuFlow v2.0
 
 Microservice Python pour l'extraction de texte et d'entités depuis des documents administratifs.
+
+## 🆕 Nouveautés v2.0
+
+- **Prétraitement adaptatif** : Analyse la qualité de l'image pour adapter le traitement
+- **Binarisation Sauvola** : Meilleure gestion des documents dégradés
+- **OCR multi-pass** : Plusieurs configurations Tesseract pour maximiser la couverture
+- **Post-processeur OCR** : Correction automatique des erreurs courantes (STRET→SIRET, etc.)
+- **Extracteur LLM** : Renforcement optionnel via GPT-4o-mini pour valider/compléter l'extraction
+- **Fusion intelligente** : Combinaison regex + LLM avec validation croisée
 
 ## 📦 Technologies
 
@@ -17,11 +26,14 @@ Microservice Python pour l'extraction de texte et d'entités depuis des document
 
 ```
 services/ocr/
-├── app.py              # API Flask
-├── ocr_engine.py       # Moteur OCR (Tesseract + EasyOCR)
-├── classifier.py       # Classification du type de document
-├── extractor.py        # Extraction des entités (regex + patterns)
-├── preprocess.py       # Prétraitement des images
+├── app.py                  # API Flask (point d'entrée)
+├── ocr_engine.py           # Moteur OCR hybride v2 (multi-pass)
+├── preprocess.py           # Prétraitement adaptatif (qualité + Sauvola)
+├── classifier.py           # Classification par mots-clés
+├── extractor_v2.py         # Extraction regex robuste
+├── postprocessor.py        # Correction erreurs OCR
+├── llm_extractor.py        # Renforcement LLM (OpenAI)
+├── smart_extractor.py      # Fusion intelligente regex + LLM
 ├── tests/
 │   ├── test_ocr.py
 │   └── test_entities.py
@@ -66,6 +78,31 @@ Body: document=<fichier>
 ### GET `/api/health`
 
 Health check du service.
+
+## 🤖 Renforcement LLM
+
+Le service peut utiliser OpenAI GPT-4o-mini pour améliorer l'extraction :
+
+### Configuration
+
+```env
+OPENAI_API_KEY=sk-...  # Activer le renforcement LLM
+LLM_MODEL=gpt-4o-mini  # Modèle à utiliser (défaut)
+```
+
+### Fonctionnement
+
+1. **Extraction regex** : Patterns robustes avec validation (Luhn, IBAN checksum)
+2. **Si confiance < 80%** : Appel LLM pour valider/corriger/compléter
+3. **Fusion intelligente** : Priorité regex pour les formats stricts, LLM pour le contexte
+4. **Validation finale** : Vérification croisée SIRET ↔ TVA
+
+### Entités renforcées
+
+- **SIRET** : Correction des erreurs OCR (O→0, l→1, S→5)
+- **Montants** : Détection HT/TVA/TTC avec cohérence
+- **IBAN** : Validation checksum ISO 13616
+- **Dates** : Validation jour/mois cohérents
 
 ## 🎯 Types de documents détectés
 
