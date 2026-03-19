@@ -1,0 +1,23 @@
+{
+  "document_id": "RIB_113",
+  "file_path": "raw/RIB_113.pdf",
+  "clean_image_path": "images/RIB_113_clean.jpg",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "77005184549894",
+    "raison_sociale": "Boyer EURL",
+    "iban": "FR935936995678DLW29Z8ETCS87",
+    "iban_formate": "FR93 5936 9956 78DL W29Z 8ETC S87",
+    "bic": "BNPAFRPP",
+    "code_banque": "59369",
+    "code_guichet": "95678",
+    "numero_compte": "DLW29Z8ETCS",
+    "cle_rib": "87",
+    "banque": "Crédit Coopératif du Sud",
+    "agence": "Agence Marseille Canebière"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "document_id": "DEV_030",
+  "file_path": "raw/DEV_030.pdf",
+  "clean_image_path": "images/DEV_030_clean.jpg",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "mismatch",
+  "anomalies_expected": [
+    "SIRET_MISMATCH"
+  ],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0030",
+    "siret": "81814124478260",
+    "siret_affiche": "52383757933951",
+    "tva_intra": "FR55818141244",
+    "raison_sociale": "Lagarde S.A.R.L. SA",
+    "montant_ht": 60365.13,
+    "tva": 3320.08,
+    "montant_ttc": 63685.21,
+    "date_emission": "23/02/2026",
+    "date_validite": "17/04/2026",
+    "expired": false,
+    "coherent": false
+  }
+}

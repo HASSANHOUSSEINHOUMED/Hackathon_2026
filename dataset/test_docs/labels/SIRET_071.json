@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_071",
+  "file_path": "raw/SIRET_071.pdf",
+  "clean_image_path": "images/SIRET_071_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "expired",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "71091043100687",
+    "siren": "710910431",
+    "nic": "00687",
+    "raison_sociale": "Ferrand S.A. SARL",
+    "forme_juridique": "SARL",
+    "adresse": "60, rue Marty, 24268 Ferreira-la-Forêt",
+    "date_creation": "24/04/2013",
+    "code_naf": "4941A",
+    "libelle_naf": "Transports routiers de fret interurbains",
+    "dirigeant": "Virginie de Labbé",
+    "date_avis": "06/04/2025",
+    "expired": true
+  }
+}

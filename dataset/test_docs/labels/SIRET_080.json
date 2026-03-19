@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_080",
+  "file_path": "raw/SIRET_080.pdf",
+  "clean_image_path": "images/SIRET_080_clean.jpg",
+  "noisy_path": "noisy/SIRET_080_light.jpg",
+  "type": "attestation_siret",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "85642059130408",
+    "siren": "856420591",
+    "nic": "30408",
+    "raison_sociale": "Blanchard SARL SNC",
+    "forme_juridique": "SNC",
+    "adresse": "chemin de Voisin, 16175 Langlois",
+    "date_creation": "03/05/2010",
+    "code_naf": "6920Z",
+    "libelle_naf": "Activités comptables",
+    "dirigeant": "Anouk Étienne",
+    "date_avis": "13/03/2026",
+    "expired": false
+  }
+}

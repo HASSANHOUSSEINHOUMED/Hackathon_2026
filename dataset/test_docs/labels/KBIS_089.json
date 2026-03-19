@@ -1,0 +1,26 @@
+{
+  "document_id": "KBIS_089",
+  "file_path": "raw/KBIS_089.pdf",
+  "clean_image_path": "images/KBIS_089_clean.jpg",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "82148628990234",
+    "siren": "821486289",
+    "raison_sociale": "Auger S.A.S. SAS",
+    "forme_juridique": "SAS",
+    "capital_social": 500000,
+    "dirigeant": "Frédéric Perret",
+    "num_rcs": "664 458 452",
+    "ville_greffe": "Montpellier",
+    "date_immatriculation": "08/03/2007",
+    "objet_social": "Transport routier de marchandises",
+    "tva_intra": "FR55821486289",
+    "code_naf": "4711B",
+    "date_kbis": "13/03/2026",
+    "expired": false
+  }
+}

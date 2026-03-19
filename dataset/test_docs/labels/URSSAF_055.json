@@ -1,0 +1,21 @@
+{
+  "document_id": "URSSAF_055",
+  "file_path": "raw/URSSAF_055.pdf",
+  "clean_image_path": "images/URSSAF_055_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "expired",
+  "anomalies_expected": [
+    "ATTESTATION_EXPIREE"
+  ],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-69691437",
+    "siret": "99965047673583",
+    "siren": "999650476",
+    "raison_sociale": "Monnier SA",
+    "date_emission": "08/03/2026",
+    "date_expiration": "06/02/2026",
+    "expired": true
+  }
+}

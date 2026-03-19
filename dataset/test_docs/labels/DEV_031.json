@@ -1,0 +1,26 @@
+{
+  "document_id": "DEV_031",
+  "file_path": "raw/DEV_031.pdf",
+  "clean_image_path": "images/DEV_031_clean.jpg",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "expired",
+  "anomalies_expected": [
+    "DEVIS_EXPIRE"
+  ],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0031",
+    "siret": "03697117498089",
+    "siret_affiche": "03697117498089",
+    "tva_intra": "FR48036971174",
+    "raison_sociale": "Ramos SAS",
+    "montant_ht": 27175.89,
+    "tva": 2717.59,
+    "montant_ttc": 29893.48,
+    "date_emission": "17/01/2026",
+    "date_validite": "01/02/2026",
+    "expired": true,
+    "coherent": true
+  }
+}

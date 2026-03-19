@@ -1,0 +1,24 @@
+{
+  "document_id": "DEV_025",
+  "file_path": "raw/DEV_025.pdf",
+  "clean_image_path": "images/DEV_025_clean.jpg",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0025",
+    "siret": "76797643481567",
+    "siret_affiche": "76797643481567",
+    "tva_intra": "FR58767976434",
+    "raison_sociale": "Blanchet Morin et Fils SA",
+    "montant_ht": 73173.05,
+    "tva": 7317.31,
+    "montant_ttc": 80490.36,
+    "date_emission": "25/01/2026",
+    "date_validite": "17/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

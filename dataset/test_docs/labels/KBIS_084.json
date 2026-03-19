@@ -1,0 +1,26 @@
+{
+  "document_id": "KBIS_084",
+  "file_path": "raw/KBIS_084.pdf",
+  "clean_image_path": "images/KBIS_084_clean.jpg",
+  "noisy_path": "noisy/KBIS_084_light.jpg",
+  "type": "kbis",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "54115262518153",
+    "siren": "541152625",
+    "raison_sociale": "Lejeune S.A.S. SAS",
+    "forme_juridique": "SAS",
+    "capital_social": 200000,
+    "dirigeant": "Aimée Lévy",
+    "num_rcs": "343 198 150",
+    "ville_greffe": "Toulouse",
+    "date_immatriculation": "10/03/2016",
+    "objet_social": "Activités d'architecture et d'ingénierie",
+    "tva_intra": "FR24541152625",
+    "code_naf": "7010Z",
+    "date_kbis": "06/03/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "document_id": "DEV_029",
+  "file_path": "raw/DEV_029.pdf",
+  "clean_image_path": "images/DEV_029_clean.jpg",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0029",
+    "siret": "23573322714188",
+    "siret_affiche": "23573322714188",
+    "tva_intra": "FR47235733227",
+    "raison_sociale": "Martineau SARL SA",
+    "montant_ht": 123445.76,
+    "tva": 24689.15,
+    "montant_ttc": 148134.91,
+    "date_emission": "23/02/2026",
+    "date_validite": "17/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

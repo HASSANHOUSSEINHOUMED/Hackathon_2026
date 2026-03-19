@@ -1,0 +1,27 @@
+{
+  "document_id": "FAC_005",
+  "file_path": "raw/FAC_005.pdf",
+  "clean_image_path": "images/FAC_005_clean.jpg",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0005",
+    "siret": "60647468272344",
+    "siret_affiche": "60647468272344",
+    "tva_intra": "FR05606474682",
+    "raison_sociale": "Pierre Marie et Fils SARL",
+    "montant_ht": 70293.48,
+    "tva": 3866.14,
+    "tva_affichee": 3866.14,
+    "montant_ttc": 74159.62,
+    "date_emission": "17/01/2026",
+    "iban": "FR041766585914Q2B1HXJ2IU218",
+    "bic": "SOGEFRPP",
+    "nb_lignes": 7,
+    "tva_rate": 0.055,
+    "coherent": true
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "document_id": "RIB_102",
+  "file_path": "raw/RIB_102.pdf",
+  "clean_image_path": "images/RIB_102_clean.jpg",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "08697829322168",
+    "raison_sociale": "Charpentier SNC",
+    "iban": "FR738945052184IDZWR9YYG4E99",
+    "iban_formate": "FR73 8945 0521 84ID ZWR9 YYG4 E99",
+    "bic": "TRNOFRP1",
+    "code_banque": "89450",
+    "code_guichet": "52184",
+    "numero_compte": "IDZWR9YYG4E",
+    "cle_rib": "99",
+    "banque": "Crédit Industriel et Financier",
+    "agence": "Agence Bordeaux Centre"
+  }
+}

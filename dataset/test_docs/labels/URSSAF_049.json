@@ -1,0 +1,19 @@
+{
+  "document_id": "URSSAF_049",
+  "file_path": "raw/URSSAF_049.pdf",
+  "clean_image_path": "images/URSSAF_049_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-25745913",
+    "siret": "66882634035176",
+    "siren": "668826340",
+    "raison_sociale": "Loiseau SNC",
+    "date_emission": "24/02/2026",
+    "date_expiration": "03/06/2026",
+    "expired": false
+  }
+}

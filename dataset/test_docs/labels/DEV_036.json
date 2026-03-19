@@ -1,0 +1,24 @@
+{
+  "document_id": "DEV_036",
+  "file_path": "raw/DEV_036.pdf",
+  "clean_image_path": "images/DEV_036_clean.jpg",
+  "noisy_path": "noisy/DEV_036_medium.jpg",
+  "type": "devis",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0036",
+    "siret": "29922995590017",
+    "siret_affiche": "29922995590017",
+    "tva_intra": "FR79299229955",
+    "raison_sociale": "Lebon Barbier S.A.R.L. SNC",
+    "montant_ht": 67673.65,
+    "tva": 3722.05,
+    "montant_ttc": 71395.7,
+    "date_emission": "28/01/2026",
+    "date_validite": "17/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

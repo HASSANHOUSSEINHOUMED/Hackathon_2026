@@ -79,6 +79,13 @@ RULES: dict[str, Rule] = {
         severity="INFO",
         document_types_concerned=["facture"],
     ),
+    "MONTANT_ANORMAL_LEGER": Rule(
+        id="MONTANT_ANORMAL_LEGER",
+        name="Montant atypique (mini-modèle)",
+        description="Détection légère d'atypie via robust z-score et cohérence TVA/HT.",
+        severity="WARNING",
+        document_types_concerned=["facture", "devis"],
+    ),
     "SIRET_FORMAT_INVALIDE": Rule(
         id="SIRET_FORMAT_INVALIDE",
         name="Format SIRET invalide",

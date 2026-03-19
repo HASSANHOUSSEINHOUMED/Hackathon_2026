@@ -10,7 +10,6 @@ const ZONES = {
   RAW: 'raw-zone',
   CLEAN: 'clean-zone',
   CURATED: 'curated-zone',
-  PENDING: 'pending-zone',
 }
 
 class MinioStorage {

@@ -58,6 +58,9 @@ docker compose up -d minio mongodb storage-api
 
 ## 🔌 API Storage (port 5003)
 
+L'API peut être protégée par clé partagée via `STORAGE_API_KEY`.
+Si cette variable est définie, les appels doivent inclure l'en-tête `X-API-Key`.
+
 | Endpoint | Description |
 |----------|-------------|
 | `GET /api/storage/health` | Health check |

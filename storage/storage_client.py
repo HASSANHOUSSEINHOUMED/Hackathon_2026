@@ -160,37 +160,6 @@ class DataLakeClient:
                 return data
         return None
 
-    def list_pending(self, zone: str = "raw-zone") -> list[str]:
-        """Liste les document_ids dans raw-zone/pending/."""
-        bucket = zone
-        prefix = "pending/"
-        ids = []
-        for obj in self.client.list_objects(bucket, prefix=prefix, recursive=True):
-            name = obj.object_name.replace(prefix, "").rsplit(".", 1)[0]
-            if name:
-                ids.append(name)
-        return ids
-
-    def move_to_pending(self, document_id: str) -> None:
-        """Copie un document vers raw-zone/pending/ pour signaler à Airflow."""
-        bucket = "raw-zone"
-        for obj in self.client.list_objects(bucket, recursive=True):
-            if document_id in obj.object_name and "pending" not in obj.object_name:
-                dest = f"pending/{os.path.basename(obj.object_name)}"
-                self.client.copy_object(bucket, dest, f"/{bucket}/{obj.object_name}")
-                logger.info("Déplacé vers pending : %s", dest)
-                return
-
-    def move_from_pending_to_done(self, document_id: str) -> None:
-        """Déplace un fichier de pending/ vers done/."""
-        bucket = "raw-zone"
-        for obj in self.client.list_objects(bucket, prefix="pending/", recursive=True):
-            if document_id in obj.object_name:
-                dest = obj.object_name.replace("pending/", "done/")
-                self.client.copy_object(bucket, dest, f"/{bucket}/{obj.object_name}")
-                self.client.remove_object(bucket, obj.object_name)
-                logger.info("Déplacé de pending vers done : %s", dest)
-                return
 
     def get_stats(self) -> dict:
         """Retourne les statistiques de stockage par bucket."""

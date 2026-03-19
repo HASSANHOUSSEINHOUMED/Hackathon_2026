@@ -1,0 +1,26 @@
+{
+  "document_id": "KBIS_088",
+  "file_path": "raw/KBIS_088.pdf",
+  "clean_image_path": "images/KBIS_088_clean.jpg",
+  "noisy_path": "noisy/KBIS_088_heavy.jpg",
+  "type": "kbis",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "99702462599609",
+    "siren": "997024625",
+    "raison_sociale": "Fischer EURL",
+    "forme_juridique": "EURL",
+    "capital_social": 10000,
+    "dirigeant": "Lorraine Lejeune",
+    "num_rcs": "892 945 428",
+    "ville_greffe": "Strasbourg",
+    "date_immatriculation": "30/12/2014",
+    "objet_social": "Formation professionnelle continue",
+    "tva_intra": "FR26997024625",
+    "code_naf": "4690Z",
+    "date_kbis": "10/03/2026",
+    "expired": false
+  }
+}

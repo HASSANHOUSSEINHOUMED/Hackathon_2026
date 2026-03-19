@@ -1,0 +1,23 @@
+{
+  "document_id": "RIB_118",
+  "file_path": "raw/RIB_118.pdf",
+  "clean_image_path": "images/RIB_118_clean.jpg",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "53368844643103",
+    "raison_sociale": "Gilles SAS",
+    "iban": "FR908494382045U5CFANL706A20",
+    "iban_formate": "FR90 8494 3820 45U5 CFAN L706 A20",
+    "bic": "CCBPFRPP",
+    "code_banque": "84943",
+    "code_guichet": "82045",
+    "numero_compte": "U5CFANL706A",
+    "cle_rib": "20",
+    "banque": "Banque Européenne de Commerce",
+    "agence": "Agence Lille Grand-Place"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "document_id": "URSSAF_058",
+  "file_path": "raw/URSSAF_058.pdf",
+  "clean_image_path": "images/URSSAF_058_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-43914361",
+    "siret": "52654793056467",
+    "siren": "526547930",
+    "raison_sociale": "Guyon S.A.S. EURL",
+    "date_emission": "17/02/2026",
+    "date_expiration": "02/05/2026",
+    "expired": false
+  }
+}

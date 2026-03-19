@@ -1,0 +1,23 @@
+{
+  "document_id": "RIB_103",
+  "file_path": "raw/RIB_103.pdf",
+  "clean_image_path": "images/RIB_103_clean.jpg",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "expired",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "94522885615872",
+    "raison_sociale": "Martinez SARL",
+    "iban": "FR918479497445POWJVF03D1244",
+    "iban_formate": "FR91 8479 4974 45PO WJVF 03D1 244",
+    "bic": "CRLYFRPP",
+    "code_banque": "84794",
+    "code_guichet": "97445",
+    "numero_compte": "POWJVF03D12",
+    "cle_rib": "44",
+    "banque": "Banque Européenne de Commerce",
+    "agence": "Agence Marseille Canebière"
+  }
+}

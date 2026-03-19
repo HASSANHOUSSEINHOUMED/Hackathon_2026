@@ -22,39 +22,37 @@ dags/
 
 **Fréquence :** Toutes les 5 minutes (`*/5 * * * *`)
 
-Pipeline principal de traitement des documents :
+Pipeline d'industrialisation et d'orchestration métier :
 
 ```
-┌─────────────┐    ┌─────────────┐    ┌─────────────┐    ┌─────────────┐
-│   Ingest    │───▶│     OCR     │───▶│  Validate   │───▶│  Finalize   │
-│  (pending)  │    │  (extract)  │    │  (rules)    │    │  (update)   │
-└─────────────┘    └─────────────┘    └─────────────┘    └─────────────┘
+┌───────────────────┐    ┌────────────────────┐    ┌───────────────────┐    ┌─────────────────────┐
+│ ingest_candidates │───▶│ validate_batch_... │───▶│ curate_documents  │───▶│ sync_internal_apps  │
+│ (validated docs)  │    │ (regex+mini-model) │    │ (curated-zone)    │    │ (CRM+conformité)    │
+└───────────────────┘    └────────────────────┘    └───────────────────┘    └─────────────────────┘
 ```
 
 **Tâches :**
 
 | Tâche | Description |
 |-------|-------------|
-| `ingest_documents` | Récupère les documents en `pending-zone` |
-| `process_ocr` | Appelle le service OCR |
-| `validate_documents` | Applique les règles de validation |
-| `update_suppliers` | Met à jour le CRM automatiquement |
-| `move_to_curated` | Archive en `curated-zone` |
+| `ingest_candidates` | Récupère les documents `validated` à industrialiser |
+| `validate_batch_context` | Revalidation batch (regex/NER léger + mini-modèle + règles) |
+| `curate_documents` | Persist `curated` via `/api/process/pipeline/complete` |
+| `sync_internal_apps` | Auto-remplissage CRM et statut conformité fournisseur |
 
-### 2. `monitoring_pipeline`
+### 2. `monitoring_daily`
 
-**Fréquence :** Tous les jours à 2h (`0 2 * * *`)
+**Fréquence :** Toutes les 15 minutes (`*/15 * * * *`)
 
-Pipeline de monitoring et maintenance :
+Pipeline de monitoring plateforme :
 
 **Tâches :**
 
 | Tâche | Description |
 |-------|-------------|
-| `compute_daily_stats` | Calcule les KPIs du jour |
-| `check_expiring_docs` | Vérifie les documents expirant bientôt |
-| `cleanup_old_raw` | Nettoie les fichiers > 30 jours |
-| `send_report` | Envoie le rapport (optionnel) |
+| `health_check` | Vérifie OCR, validation, backend, storage-proxy |
+| `compute_kpis` | Agrège docs total/validated/curated + anomalies |
+| `report` | Log du rapport d'observabilité |
 
 ## ⚙️ Configuration
 

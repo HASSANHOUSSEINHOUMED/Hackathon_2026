@@ -1,0 +1,26 @@
+{
+  "document_id": "KBIS_098",
+  "file_path": "raw/KBIS_098.pdf",
+  "clean_image_path": "images/KBIS_098_clean.jpg",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "55216674667627",
+    "siren": "552166746",
+    "raison_sociale": "Diaz Pottier S.A. SAS",
+    "forme_juridique": "SAS",
+    "capital_social": 50000,
+    "dirigeant": "Juliette de la Pineau",
+    "num_rcs": "521 551 147",
+    "ville_greffe": "Clermont-Ferrand",
+    "date_immatriculation": "03/01/2007",
+    "objet_social": "Transport routier de marchandises",
+    "tva_intra": "FR16552166746",
+    "code_naf": "4120A",
+    "date_kbis": "16/03/2026",
+    "expired": false
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "document_id": "DEV_027",
+  "file_path": "raw/DEV_027.pdf",
+  "clean_image_path": "images/DEV_027_clean.jpg",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "expired",
+  "anomalies_expected": [
+    "DEVIS_EXPIRE"
+  ],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0027",
+    "siret": "55271774649058",
+    "siret_affiche": "55271774649058",
+    "tva_intra": "FR39552717746",
+    "raison_sociale": "Rousseau SNC",
+    "montant_ht": 44199.05,
+    "tva": 8839.81,
+    "montant_ttc": 53038.86,
+    "date_emission": "31/01/2026",
+    "date_validite": "15/02/2026",
+    "expired": true,
+    "coherent": true
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "FAC_012",
+  "file_path": "raw/FAC_012.pdf",
+  "clean_image_path": "images/FAC_012_clean.jpg",
+  "noisy_path": "noisy/FAC_012_heavy.jpg",
+  "type": "facture",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0012",
+    "siret": "19058651185065",
+    "siret_affiche": "19058651185065",
+    "tva_intra": "FR29190586511",
+    "raison_sociale": "Sanchez S.A.S. SNC",
+    "montant_ht": 46968.87,
+    "tva": 4696.89,
+    "tva_affichee": 4696.89,
+    "montant_ttc": 51665.76,
+    "date_emission": "23/01/2026",
+    "iban": "FR942383366822YMTPFQY9TJH65",
+    "bic": "CMCIFR2A",
+    "nb_lignes": 4,
+    "tva_rate": 0.1,
+    "coherent": true
+  }
+}

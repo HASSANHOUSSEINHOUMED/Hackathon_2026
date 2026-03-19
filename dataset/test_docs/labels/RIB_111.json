@@ -1,0 +1,23 @@
+{
+  "document_id": "RIB_111",
+  "file_path": "raw/RIB_111.pdf",
+  "clean_image_path": "images/RIB_111_clean.jpg",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "expired",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "77547812691424",
+    "raison_sociale": "Hernandez EURL",
+    "iban": "FR723574644502QMQWUMTKR7143",
+    "iban_formate": "FR72 3574 6445 02QM QWUM TKR7 143",
+    "bic": "TRNOFRP1",
+    "code_banque": "35746",
+    "code_guichet": "44502",
+    "numero_compte": "QMQWUMTKR71",
+    "cle_rib": "43",
+    "banque": "Banque de l'Avenir",
+    "agence": "Agence Nantes Commerce"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "document_id": "FAC_015",
+  "file_path": "raw/FAC_015.pdf",
+  "clean_image_path": "images/FAC_015_clean.jpg",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "expired",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0015",
+    "siret": "61832421402498",
+    "siret_affiche": "61832421402498",
+    "tva_intra": "FR41618324214",
+    "raison_sociale": "Mallet Georges S.A.R.L. SARL",
+    "montant_ht": 31189.9,
+    "tva": 6237.98,
+    "tva_affichee": 6237.98,
+    "montant_ttc": 37427.88,
+    "date_emission": "09/02/2026",
+    "iban": "FR2147828675604OPXIH21FB921",
+    "bic": "SOGEFRPP",
+    "nb_lignes": 3,
+    "tva_rate": 0.2,
+    "coherent": true
+  }
+}

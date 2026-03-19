@@ -1,0 +1,26 @@
+{
+  "document_id": "DEV_039",
+  "file_path": "raw/DEV_039.pdf",
+  "clean_image_path": "images/DEV_039_clean.jpg",
+  "noisy_path": null,
+  "type": "devis",
+  "scenario": "expired",
+  "anomalies_expected": [
+    "DEVIS_EXPIRE"
+  ],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0039",
+    "siret": "69495888579471",
+    "siret_affiche": "69495888579471",
+    "tva_intra": "FR86694958885",
+    "raison_sociale": "Ferrand et Fils SARL",
+    "montant_ht": 34621.18,
+    "tva": 1904.16,
+    "montant_ttc": 36525.34,
+    "date_emission": "04/02/2026",
+    "date_validite": "19/02/2026",
+    "expired": true,
+    "coherent": true
+  }
+}

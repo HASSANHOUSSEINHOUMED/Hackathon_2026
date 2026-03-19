@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_066",
+  "file_path": "raw/SIRET_066.pdf",
+  "clean_image_path": "images/SIRET_066_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "32536729046677",
+    "siren": "325367290",
+    "nic": "46677",
+    "raison_sociale": "Toussaint Allain SA SARL",
+    "forme_juridique": "SARL",
+    "adresse": "3, avenue de Buisson, 32571 Perrin-les-Bains",
+    "date_creation": "29/07/2008",
+    "code_naf": "4321A",
+    "libelle_naf": "Travaux d'installation électrique",
+    "dirigeant": "Martin de la Charpentier",
+    "date_avis": "21/02/2026",
+    "expired": false
+  }
+}

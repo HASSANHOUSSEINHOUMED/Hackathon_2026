@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_068",
+  "file_path": "raw/SIRET_068.pdf",
+  "clean_image_path": "images/SIRET_068_clean.jpg",
+  "noisy_path": "noisy/SIRET_068_medium.jpg",
+  "type": "attestation_siret",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "15415206043617",
+    "siren": "154152060",
+    "nic": "43617",
+    "raison_sociale": "Muller et Fils SA",
+    "forme_juridique": "SA",
+    "adresse": "23, rue William Auger, 76970 Dumont",
+    "date_creation": "11/12/2003",
+    "code_naf": "4120A",
+    "libelle_naf": "Construction de maisons individuelles",
+    "dirigeant": "William de la Gimenez",
+    "date_avis": "15/03/2026",
+    "expired": false
+  }
+}

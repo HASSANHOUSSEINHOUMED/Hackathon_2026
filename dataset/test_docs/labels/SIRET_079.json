@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_079",
+  "file_path": "raw/SIRET_079.pdf",
+  "clean_image_path": "images/SIRET_079_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "expired",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "32447209199343",
+    "siren": "324472091",
+    "nic": "99343",
+    "raison_sociale": "Paul SA",
+    "forme_juridique": "SA",
+    "adresse": "115, boulevard Thérèse Menard, 88732 Hebertboeuf",
+    "date_creation": "13/05/2005",
+    "code_naf": "6920Z",
+    "libelle_naf": "Activités comptables",
+    "dirigeant": "Aurélie Coulon",
+    "date_avis": "23/06/2025",
+    "expired": true
+  }
+}

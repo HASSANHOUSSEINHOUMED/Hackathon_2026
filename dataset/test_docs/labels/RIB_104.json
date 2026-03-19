@@ -1,0 +1,23 @@
+{
+  "document_id": "RIB_104",
+  "file_path": "raw/RIB_104.pdf",
+  "clean_image_path": "images/RIB_104_clean.jpg",
+  "noisy_path": "noisy/RIB_104_heavy.jpg",
+  "type": "rib",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "43805719283864",
+    "raison_sociale": "Huet SAS",
+    "iban": "FR237696747701O1DESOY1Q7V66",
+    "iban_formate": "FR23 7696 7477 01O1 DESO Y1Q7 V66",
+    "bic": "SOGEFRPP",
+    "code_banque": "76967",
+    "code_guichet": "47701",
+    "numero_compte": "O1DESOY1Q7V",
+    "cle_rib": "66",
+    "banque": "Crédit Industriel et Financier",
+    "agence": "Agence Bordeaux Centre"
+  }
+}

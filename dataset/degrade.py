@@ -37,8 +37,8 @@ class ImageDegrader:
         """Bruit gaussien (simule du grain de scanner)."""
         if sigma is None:
             sigma = random.uniform(10, 40)
-        gauss = np.random.normal(0, sigma, image.shape).astype(np.float64)
-        noisy = np.clip(image.astype(np.float64) + gauss, 0, 255).astype(np.uint8)
+        gauss = np.random.normal(0, sigma, image.shape).astype(np.float32)
+        noisy = np.clip(image.astype(np.float32) + gauss, 0, 255).astype(np.uint8)
         return noisy
 
     @staticmethod
@@ -55,14 +55,14 @@ class ImageDegrader:
         """Variation de luminosité (simule un éclairage inégal)."""
         if factor is None:
             factor = random.uniform(0.6, 1.4)
-        adjusted = np.clip(image.astype(np.float64) * factor, 0, 255).astype(np.uint8)
+        adjusted = np.clip(image.astype(np.float32) * factor, 0, 255).astype(np.uint8)
         return adjusted
 
     @staticmethod
     def fold_shadow(image: np.ndarray) -> np.ndarray:
         """Ombre de pliure (simule un document plié)."""
         h, w = image.shape[:2]
-        result = image.copy().astype(np.float64)
+        result = image.copy().astype(np.float32)
         # Position de la pliure (verticale aléatoire)
         fold_x = random.randint(w // 4, 3 * w // 4)
         shadow_width = random.randint(20, 60)
@@ -134,6 +134,38 @@ class ImageDegrader:
         return result
 
 
+def pdf_to_clean_image(pdf_path: str, output_path: str) -> str:
+    """
+    Convertit un PDF en image propre (sans dégradation) → simule un bon scanner.
+
+    Args:
+        pdf_path: chemin du PDF source
+        output_path: chemin de sortie (JPG ou PNG)
+
+    Returns:
+        chemin du fichier image créé
+    """
+    try:
+        import fitz
+        doc = fitz.open(pdf_path)
+        page = doc[0]
+        pix = page.get_pixmap(dpi=150)
+        image = np.frombuffer(pix.samples, dtype=np.uint8).reshape(
+            pix.height, pix.width, pix.n
+        )
+        if pix.n == 4:
+            image = cv2.cvtColor(image, cv2.COLOR_RGBA2BGR)
+        elif pix.n == 3:
+            image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+        doc.close()
+    except ImportError:
+        raise ImportError(
+            "Installez PyMuPDF : pip install PyMuPDF"
+        )
+    cv2.imwrite(output_path, image)
+    return output_path
+
+
 def degrade_pdf_to_image(
     pdf_path: str, output_path: str, level: str = "medium"
 ) -> str:
@@ -161,7 +193,7 @@ def degrade_pdf_to_image(
             import fitz
             doc = fitz.open(pdf_path)
             page = doc[0]
-            pix = page.get_pixmap(dpi=300)
+            pix = page.get_pixmap(dpi=150)
             image = np.frombuffer(pix.samples, dtype=np.uint8).reshape(
                 pix.height, pix.width, pix.n
             )
@@ -177,6 +209,11 @@ def degrade_pdf_to_image(
             )
 
     degrader = ImageDegrader()
+    # Réduire la taille avant dégradation pour accélérer le traitement
+    h, w = image.shape[:2]
+    if w > 1200:
+        scale = 1200 / w
+        image = cv2.resize(image, (1200, int(h * scale)), interpolation=cv2.INTER_AREA)
     degraded = degrader.apply_random_degradation(image, level=level)
     cv2.imwrite(output_path, degraded)
     return output_path

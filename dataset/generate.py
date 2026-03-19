@@ -23,7 +23,7 @@ from config import (
     SCENARIOS,
     TVA_RATES,
 )
-from degrade import degrade_pdf_to_image
+from degrade import degrade_pdf_to_image, pdf_to_clean_image
 from generators.attestation_siret import generate_attestation_siret
 from generators.attestation_urssaf import generate_attestation_urssaf
 from generators.devis import generate_devis
@@ -118,7 +118,17 @@ def generate_document(
     else:
         raise ValueError(f"Type de document inconnu : {doc_type}")
 
-    # Dégradation pour le scénario noisy
+    # Image propre (tous les documents)
+    images_dir = output_dir / "images"
+    images_dir.mkdir(parents=True, exist_ok=True)
+    clean_image_path = str(images_dir / f"{doc_id}_clean.jpg")
+    try:
+        pdf_to_clean_image(pdf_path, clean_image_path)
+    except Exception as e:
+        print(f"  Image propre impossible ({e}), ignoree.")
+        clean_image_path = None
+
+    # Image degradee (scenario noisy uniquement)
     noisy_path = None
     if scenario == "noisy":
         noisy_dir = output_dir / "noisy"
@@ -129,7 +139,7 @@ def generate_document(
         try:
             degrade_pdf_to_image(pdf_path, noisy_path, level=level)
         except Exception as e:
-            print(f"  ⚠ Dégradation impossible ({e}), PDF conservé tel quel.")
+            print(f"  Degradation impossible ({e}), ignoree.")
             noisy_path = None
 
     # Anomalies attendues selon le scénario
@@ -151,6 +161,7 @@ def generate_document(
     result = {
         "document_id": doc_id,
         "file_path": f"raw/{doc_id}.pdf",
+        "clean_image_path": f"images/{doc_id}_clean.jpg" if clean_image_path else None,
         "noisy_path": f"noisy/{Path(noisy_path).name}" if noisy_path else None,
         "type": doc_type,
         "scenario": scenario,
@@ -182,6 +193,10 @@ def main() -> None:
         "--seed", type=int, default=42,
         help="Graine aléatoire pour la reproductibilité (défaut: 42)",
     )
+    parser.add_argument("--types", type=str, default=None,
+        help="Types a generer (virgule-separés, ex: rib,kbis). Defaut: tous")
+    parser.add_argument("--skip-existing", action="store_true",
+        help="Ignore les documents deja generes (reprise apres interruption)")
     args = parser.parse_args()
 
     random.seed(args.seed)
@@ -189,29 +204,47 @@ def main() -> None:
     labels_dir = output_dir / "labels"
     labels_dir.mkdir(parents=True, exist_ok=True)
 
-    print(f"═══════════════════════════════════════════")
-    print(f"  Génération du dataset — {args.n} docs/type")
-    print(f"  Sortie : {output_dir.resolve()}")
-    print(f"═══════════════════════════════════════════")
+    print(f"Génération: {args.n} docs/type -> {output_dir.resolve()}")
 
     factory = CompanyFactory()
     manifest = []
     doc_counter = 0
 
-    for doc_type in DOC_TYPES:
-        print(f"\n📄 {doc_type.upper()} ({args.n} documents)")
+    # Filtrer les types si --types est spécifié
+    active_types = DOC_TYPES
+    if args.types:
+        requested = [t.strip().lower() for t in args.types.split(",")]
+        active_types = [t for t in DOC_TYPES if t in requested]
+        # Maintenir les IDs corrects en sautant les types ignorés
+        for t in DOC_TYPES:
+            if t not in active_types:
+                doc_counter += args.n
+
+    # Distribution cyclique équilibrée
+    all_scenarios = list(SCENARIOS.keys())
+
+    for doc_type in active_types:
+        print(f"\n[{doc_type.upper()}] ({args.n} documents)")
 
         for i in tqdm(range(1, args.n + 1), desc=f"  {doc_type}", ncols=70):
-            # Générer une entreprise par document
             company = factory.generate()
 
-            # Choisir le scénario
             if args.scenarios == "all":
-                scenario = choose_scenario()
+                scenario = all_scenarios[(i - 1) % len(all_scenarios)]
             else:
                 scenario = args.scenarios
 
             doc_counter += 1
+
+            # Mode --skip-existing: sauter si déjà généré
+            prefix = PREFIXES[doc_type]
+            doc_id_check = f"{prefix}_{doc_counter:03d}"
+            label_path = labels_dir / f"{doc_id_check}.json"
+            if args.skip_existing and label_path.exists():
+                with open(label_path, encoding="utf-8") as lf:
+                    manifest.append(json.load(lf))
+                continue
+
             result = generate_document(
                 doc_type=doc_type,
                 company=company,
@@ -221,35 +254,19 @@ def main() -> None:
             )
             manifest.append(result)
 
-            # Sauvegarder le ground truth individuel
-            label_path = labels_dir / f"{result['document_id']}.json"
-            with open(label_path, "w", encoding="utf-8") as f:
-                json.dump(result, f, ensure_ascii=False, indent=2)
+            with open(label_path, "w", encoding="utf-8") as lf:
+                json.dump(result, lf, ensure_ascii=False, indent=2)
 
-    # Sauvegarder le manifeste global
     manifest_path = output_dir / "dataset_manifest.json"
-    with open(manifest_path, "w", encoding="utf-8") as f:
-        json.dump(manifest, f, ensure_ascii=False, indent=2)
+    with open(manifest_path, "w", encoding="utf-8") as mf:
+        json.dump(manifest, mf, ensure_ascii=False, indent=2)
 
-    # Résumé
-    print(f"\n═══════════════════════════════════════════")
-    print(f"  ✅ {len(manifest)} documents générés")
-    print(f"  📁 PDF bruts :   {output_dir / 'raw'}")
-    print(f"  📁 Dégradés :    {output_dir / 'noisy'}")
-    print(f"  📁 Labels :      {labels_dir}")
-    print(f"  📋 Manifeste :   {manifest_path}")
-
-    # Stats par scénario
+    print(f"\n=== {len(manifest)} documents generes ===")
     from collections import Counter
-    scenario_counts = Counter(d["scenario"] for d in manifest)
-    type_counts = Counter(d["type"] for d in manifest)
-    print(f"\n  Par scénario :")
-    for s, count in scenario_counts.most_common():
-        print(f"    {s:12s} : {count}")
-    print(f"\n  Par type :")
-    for t, count in type_counts.most_common():
-        print(f"    {t:20s} : {count}")
-    print(f"═══════════════════════════════════════════")
+    sc = Counter(d["scenario"] for d in manifest)
+    tc = Counter(d["type"] for d in manifest)
+    print("Par scenario:", dict(sc))
+    print("Par type:", dict(tc))
 
 
 if __name__ == "__main__":

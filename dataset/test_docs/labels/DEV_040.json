@@ -1,0 +1,24 @@
+{
+  "document_id": "DEV_040",
+  "file_path": "raw/DEV_040.pdf",
+  "clean_image_path": "images/DEV_040_clean.jpg",
+  "noisy_path": "noisy/DEV_040_light.jpg",
+  "type": "devis",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "devis",
+    "num_devis": "DEV-2026-0040",
+    "siret": "56263689470281",
+    "siret_affiche": "56263689470281",
+    "tva_intra": "FR17562636894",
+    "raison_sociale": "Julien EURL",
+    "montant_ht": 96655.71,
+    "tva": 5316.06,
+    "montant_ttc": 101971.77,
+    "date_emission": "26/02/2026",
+    "date_validite": "17/04/2026",
+    "expired": false,
+    "coherent": true
+  }
+}

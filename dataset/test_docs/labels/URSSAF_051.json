@@ -1,0 +1,21 @@
+{
+  "document_id": "URSSAF_051",
+  "file_path": "raw/URSSAF_051.pdf",
+  "clean_image_path": "images/URSSAF_051_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "expired",
+  "anomalies_expected": [
+    "ATTESTATION_EXPIREE"
+  ],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-94651342",
+    "siret": "23536937885479",
+    "siren": "235369378",
+    "raison_sociale": "Louis SA",
+    "date_emission": "10/02/2026",
+    "date_expiration": "28/02/2026",
+    "expired": true
+  }
+}

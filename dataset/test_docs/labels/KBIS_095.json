@@ -1,0 +1,28 @@
+{
+  "document_id": "KBIS_095",
+  "file_path": "raw/KBIS_095.pdf",
+  "clean_image_path": "images/KBIS_095_clean.jpg",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "expired",
+  "anomalies_expected": [
+    "KBIS_PERIME"
+  ],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "78985625975320",
+    "siren": "789856259",
+    "raison_sociale": "Charpentier SA SA",
+    "forme_juridique": "SA",
+    "capital_social": 100000,
+    "dirigeant": "Grégoire de la Chartier",
+    "num_rcs": "210 769 956",
+    "ville_greffe": "Rennes",
+    "date_immatriculation": "09/02/2008",
+    "objet_social": "Conseil et développement en systèmes informatiques",
+    "tva_intra": "FR21789856259",
+    "code_naf": "4690Z",
+    "date_kbis": "07/12/2025",
+    "expired": true
+  }
+}

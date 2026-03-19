@@ -1,0 +1,19 @@
+{
+  "document_id": "URSSAF_054",
+  "file_path": "raw/URSSAF_054.pdf",
+  "clean_image_path": "images/URSSAF_054_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-20202996",
+    "siret": "14890250539267",
+    "siren": "148902505",
+    "raison_sociale": "Bodin SAS",
+    "date_emission": "22/02/2026",
+    "date_expiration": "09/06/2026",
+    "expired": false
+  }
+}

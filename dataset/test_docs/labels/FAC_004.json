@@ -1,0 +1,27 @@
+{
+  "document_id": "FAC_004",
+  "file_path": "raw/FAC_004.pdf",
+  "clean_image_path": "images/FAC_004_clean.jpg",
+  "noisy_path": "noisy/FAC_004_light.jpg",
+  "type": "facture",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0004",
+    "siret": "10310518534731",
+    "siret_affiche": "10310518534731",
+    "tva_intra": "FR27103105185",
+    "raison_sociale": "Goncalves S.A. SAS",
+    "montant_ht": 41787.48,
+    "tva": 4178.75,
+    "tva_affichee": 4178.75,
+    "montant_ttc": 45966.23,
+    "date_emission": "31/01/2026",
+    "iban": "FR862734284847K8HE3NCEV1N92",
+    "bic": "CEPAFRPP",
+    "nb_lignes": 5,
+    "tva_rate": 0.1,
+    "coherent": true
+  }
+}

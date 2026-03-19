@@ -1,0 +1,23 @@
+{
+  "document_id": "RIB_119",
+  "file_path": "raw/RIB_119.pdf",
+  "clean_image_path": "images/RIB_119_clean.jpg",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "expired",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "41862565327040",
+    "raison_sociale": "Gautier EURL",
+    "iban": "FR477095644524892RO3CJYLJ59",
+    "iban_formate": "FR47 7095 6445 2489 2RO3 CJYL J59",
+    "bic": "TRNOFRP1",
+    "code_banque": "70956",
+    "code_guichet": "44524",
+    "numero_compte": "892RO3CJYLJ",
+    "cle_rib": "59",
+    "banque": "Crédit Coopératif du Sud",
+    "agence": "Agence Bordeaux Centre"
+  }
+}

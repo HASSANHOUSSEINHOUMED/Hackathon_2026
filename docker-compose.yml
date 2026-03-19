@@ -53,8 +53,6 @@ services:
         mc mb --ignore-existing local/raw-zone;
         mc mb --ignore-existing local/clean-zone;
         mc mb --ignore-existing local/curated-zone;
-        mc mb --ignore-existing local/pending-zone;
-        mc anonymous set download local/raw-zone;
         echo 'Buckets initialisés avec succès';
         exit 0;
       "
@@ -145,6 +143,7 @@ services:
       MINIO_ACCESS_KEY: ${MINIO_ROOT_USER:-minioadmin}
       MINIO_SECRET_KEY: ${MINIO_ROOT_PASSWORD:-minioadmin}
       MONGO_URI: mongodb://${MONGO_USER:-admin}:${MONGO_PASSWORD:-admin}@mongodb:27017/docuflow?authSource=admin
+      STORAGE_API_KEY: ${STORAGE_API_KEY:-docuflow-storage-key}
     depends_on:
       mongodb:
         condition: service_healthy
@@ -162,10 +161,13 @@ services:
       - "4000:4000"
     environment:
       PORT: 4000
+      ADMIN_UI_PASSWORD: ${ADMIN_UI_PASSWORD:-Admin@2026}
       MONGO_URI: mongodb://${MONGO_USER:-admin}:${MONGO_PASSWORD:-admin}@mongodb:27017/docuflow?authSource=admin
       OCR_SERVICE_URL: http://ocr-service:5001
       VALIDATION_SERVICE_URL: http://validation-service:5002
-      OPENAI_API_KEY: ${OPENAI_API_KEY:-}
+      STORAGE_API_URL: http://storage-api:5003
+      STORAGE_API_KEY: ${STORAGE_API_KEY:-docuflow-storage-key}
+      # OPENAI_API_KEY: ${OPENAI_API_KEY:-}
       MINIO_ENDPOINT: minio
       MINIO_PORT: 9000
       MINIO_ACCESS_KEY: ${MINIO_ROOT_USER:-minioadmin}
@@ -173,6 +175,12 @@ services:
     depends_on:
       mongodb:
         condition: service_healthy
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://localhost:4000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 20s
+      timeout: 10s
+      retries: 5
+      start_period: 20s
     networks:
       - docuflow-net
 
@@ -184,7 +192,8 @@ services:
     ports:
       - "3000:80"
     depends_on:
-      - backend
+      backend:
+        condition: service_healthy
     networks:
       - docuflow-net
 

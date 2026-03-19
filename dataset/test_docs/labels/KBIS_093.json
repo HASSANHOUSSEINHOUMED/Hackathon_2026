@@ -1,0 +1,26 @@
+{
+  "document_id": "KBIS_093",
+  "file_path": "raw/KBIS_093.pdf",
+  "clean_image_path": "images/KBIS_093_clean.jpg",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "09991738716845",
+    "siren": "099917387",
+    "raison_sociale": "Aubry Pottier SARL EURL",
+    "forme_juridique": "EURL",
+    "capital_social": 200000,
+    "dirigeant": "Thibaut Dijoux",
+    "num_rcs": "562 380 314",
+    "ville_greffe": "Paris",
+    "date_immatriculation": "19/04/2010",
+    "objet_social": "Travaux de construction et de rénovation de bâtiments",
+    "tva_intra": "FR57099917387",
+    "code_naf": "8121Z",
+    "date_kbis": "22/02/2026",
+    "expired": false
+  }
+}

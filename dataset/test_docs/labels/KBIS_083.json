@@ -1,0 +1,28 @@
+{
+  "document_id": "KBIS_083",
+  "file_path": "raw/KBIS_083.pdf",
+  "clean_image_path": "images/KBIS_083_clean.jpg",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "expired",
+  "anomalies_expected": [
+    "KBIS_PERIME"
+  ],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "25135521057047",
+    "siren": "251355210",
+    "raison_sociale": "Rodrigues et Fils EURL",
+    "forme_juridique": "EURL",
+    "capital_social": 200000,
+    "dirigeant": "Jeannine Pasquier",
+    "num_rcs": "266 562 175",
+    "ville_greffe": "Bordeaux",
+    "date_immatriculation": "27/05/2021",
+    "objet_social": "Transport routier de marchandises",
+    "tva_intra": "FR58251355210",
+    "code_naf": "4711B",
+    "date_kbis": "30/11/2025",
+    "expired": true
+  }
+}

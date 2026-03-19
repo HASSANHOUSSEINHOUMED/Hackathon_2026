@@ -1,0 +1,28 @@
+{
+  "document_id": "KBIS_091",
+  "file_path": "raw/KBIS_091.pdf",
+  "clean_image_path": "images/KBIS_091_clean.jpg",
+  "noisy_path": null,
+  "type": "kbis",
+  "scenario": "expired",
+  "anomalies_expected": [
+    "KBIS_PERIME"
+  ],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "10858994641719",
+    "siren": "108589946",
+    "raison_sociale": "Benard SNC",
+    "forme_juridique": "SNC",
+    "capital_social": 200000,
+    "dirigeant": "Stéphane-Noël Hoarau",
+    "num_rcs": "126 771 609",
+    "ville_greffe": "Grenoble",
+    "date_immatriculation": "27/08/2014",
+    "objet_social": "Transport routier de marchandises",
+    "tva_intra": "FR06108589946",
+    "code_naf": "6311Z",
+    "date_kbis": "19/07/2025",
+    "expired": true
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "document_id": "URSSAF_053",
+  "file_path": "raw/URSSAF_053.pdf",
+  "clean_image_path": "images/URSSAF_053_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-46385762",
+    "siret": "61567933941019",
+    "siren": "615679339",
+    "raison_sociale": "Adam Louis SA SA",
+    "date_emission": "31/01/2026",
+    "date_expiration": "17/05/2026",
+    "expired": false
+  }
+}

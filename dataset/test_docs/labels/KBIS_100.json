@@ -1,0 +1,26 @@
+{
+  "document_id": "KBIS_100",
+  "file_path": "raw/KBIS_100.pdf",
+  "clean_image_path": "images/KBIS_100_clean.jpg",
+  "noisy_path": "noisy/KBIS_100_heavy.jpg",
+  "type": "kbis",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "kbis",
+    "siret": "31779717375176",
+    "siren": "317797173",
+    "raison_sociale": "Couturier EURL",
+    "forme_juridique": "EURL",
+    "capital_social": 500000,
+    "dirigeant": "Valentine Gillet",
+    "num_rcs": "565 439 673",
+    "ville_greffe": "Toulon",
+    "date_immatriculation": "09/07/2019",
+    "objet_social": "Activités d'architecture et d'ingénierie",
+    "tva_intra": "FR65317797173",
+    "code_naf": "6201Z",
+    "date_kbis": "22/02/2026",
+    "expired": false
+  }
+}

@@ -115,3 +115,74 @@ class StatDetector:
                     data = json.load(f)
                 docs = [{"entities": d.get("expected_fields", {})} for d in data]
                 self.fit(docs)
+
+    def detect_lightweight_batch(self, documents: list[dict]) -> list[dict]:
+        """
+        Mini détecteur d'anomalies rapide et léger (sans entraînement).
+        - Robust z-score sur montant TTC (factures/devis)
+        - Sanity check du ratio TVA/HT
+        """
+        candidates = []
+        for doc in documents:
+            if doc.get("type") not in ("facture", "devis"):
+                continue
+            entities = doc.get("entities", {})
+            try:
+                ttc = float(entities.get("montant_ttc") or 0)
+                ht = float(entities.get("montant_ht") or 0)
+                tva = float(entities.get("tva") or 0)
+            except (TypeError, ValueError):
+                continue
+
+            if ttc > 0:
+                candidates.append({
+                    "document_id": doc.get("document_id", "?"),
+                    "ttc": ttc,
+                    "ht": ht,
+                    "tva": tva,
+                })
+
+        anomalies = []
+        if not candidates:
+            return anomalies
+
+        amounts = np.array([c["ttc"] for c in candidates], dtype=float)
+        median = float(np.median(amounts))
+        mad = float(np.median(np.abs(amounts - median)))
+
+        for c in candidates:
+            doc_id = c["document_id"]
+            ht = c["ht"]
+            tva = c["tva"]
+
+            if ht > 0:
+                ratio = tva / ht
+                if ratio < 0 or ratio > 0.30:
+                    anomalies.append({
+                        "rule_id": "MONTANT_ANORMAL_LEGER",
+                        "severity": "WARNING",
+                        "message": f"Ratio TVA/HT suspect ({ratio:.2%}) detecte par mini-modele",
+                        "concerned_document_ids": [doc_id],
+                        "evidence": {"ratio_tva": round(float(ratio), 4)},
+                    })
+
+            if mad > 0:
+                robust_z = 0.6745 * ((c["ttc"] - median) / mad)
+                if abs(robust_z) >= 3.5:
+                    anomalies.append({
+                        "rule_id": "MONTANT_ANORMAL_LEGER",
+                        "severity": "WARNING",
+                        "message": (
+                            f"Montant TTC atypique ({c['ttc']:.2f} EUR) detecte par mini-modele "
+                            f"(robust_z={robust_z:.2f})"
+                        ),
+                        "concerned_document_ids": [doc_id],
+                        "evidence": {
+                            "montant_ttc": c["ttc"],
+                            "median_ttc": round(median, 2),
+                            "mad": round(mad, 2),
+                            "robust_z": round(float(robust_z), 4),
+                        },
+                    })
+
+        return anomalies

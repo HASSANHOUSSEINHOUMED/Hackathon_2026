@@ -1,0 +1,23 @@
+{
+  "document_id": "RIB_101",
+  "file_path": "raw/RIB_101.pdf",
+  "clean_image_path": "images/RIB_101_clean.jpg",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "88510272361497",
+    "raison_sociale": "Schneider Lagarde S.A. SA",
+    "iban": "FR183458125826XEGSP3EXULR67",
+    "iban_formate": "FR18 3458 1258 26XE GSP3 EXUL R67",
+    "bic": "CCBPFRPP",
+    "code_banque": "34581",
+    "code_guichet": "25826",
+    "numero_compte": "XEGSP3EXULR",
+    "cle_rib": "67",
+    "banque": "Banque de l'Avenir",
+    "agence": "Agence Strasbourg Kléber"
+  }
+}

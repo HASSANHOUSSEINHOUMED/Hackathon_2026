@@ -1,0 +1,23 @@
+{
+  "document_id": "RIB_115",
+  "file_path": "raw/RIB_115.pdf",
+  "clean_image_path": "images/RIB_115_clean.jpg",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "expired",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "13797723769291",
+    "raison_sociale": "Bouchet Merle SARL SA",
+    "iban": "FR939168596461I6OXL2D40IW97",
+    "iban_formate": "FR93 9168 5964 61I6 OXL2 D40I W97",
+    "bic": "BPCEFRPP",
+    "code_banque": "91685",
+    "code_guichet": "96461",
+    "numero_compte": "I6OXL2D40IW",
+    "cle_rib": "97",
+    "banque": "Crédit Moderne",
+    "agence": "Agence Marseille Canebière"
+  }
+}

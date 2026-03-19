@@ -62,19 +62,96 @@ async function upsertSupplierFromEntities(entities, documentId) {
 // Call validation service
 async function validateDocument(ocrResult) {
   try {
+    const currentDoc = {
+      document_id: ocrResult.document_id,
+      type: ocrResult.type,
+      entities: ocrResult.entities || {},
+      raw_text: ocrResult.raw_text || '',
+    }
+
+    const siret = currentDoc.entities?.siret
+    let relatedDocs = []
+
+    // Pour les règles inter-documents (SIRET/TVA/date), charger un contexte fournisseur.
+    if (siret) {
+      relatedDocs = await Document.find(
+        { 'entities.siret': siret, document_id: { $ne: currentDoc.document_id } },
+        { document_id: 1, doc_type: 1, entities: 1, raw_text: 1 },
+      )
+        .sort({ processed_at: -1, created_at: -1 })
+        .limit(20)
+        .lean()
+    }
+
+    const validationDocs = [
+      currentDoc,
+      ...relatedDocs.map((d) => ({
+        document_id: d.document_id,
+        type: d.doc_type,
+        entities: d.entities || {},
+        raw_text: d.raw_text || '',
+      })),
+    ]
+
     const response = await axios.post(`${VALIDATION_URL}/api/validate`, {
-      documents: [{
-        document_id: ocrResult.document_id,
-        type: ocrResult.type,
-        entities: ocrResult.entities || {},
-      }],
+      documents: validationDocs,
     }, { timeout: 30000 })
 
-    return response.data?.anomalies || []
+    const allAnomalies = response.data?.anomalies || []
+    return allAnomalies.filter((a) => {
+      const ids = a?.concerned_document_ids || []
+      return ids.includes(currentDoc.document_id)
+    })
   } catch (err) {
     console.warn('Validation service unavailable:', err.message)
     return []
   }
+}
+
+function buildQualityAnomalies(ocrResult) {
+  const anomalies = []
+  const ocrConfidence = Number(ocrResult?.ocr_confidence ?? 0)
+  const entities = ocrResult?.entities || {}
+  const extractedValues = Object.values(entities).filter((v) => {
+    if (v === null || v === undefined) return false
+    return String(v).trim().length > 0
+  })
+  const extractedCount = extractedValues.length
+  const rawTextLength = String(ocrResult?.raw_text || '').replace(/\s+/g, '').length
+
+  if (ocrConfidence < 0.6) {
+    anomalies.push({
+      rule_id: 'OCR_QUALITE_INSUFFISANTE',
+      severity: 'ERROR',
+      message: `Qualite OCR insuffisante (${Math.round(ocrConfidence * 100)}%). Document possiblement bruite, flou ou mal scanne.`,
+      evidence: { ocr_confidence: ocrConfidence },
+    })
+  } else if (ocrConfidence < 0.78) {
+    anomalies.push({
+      rule_id: 'OCR_QUALITE_FAIBLE',
+      severity: 'WARNING',
+      message: `Qualite OCR faible (${Math.round(ocrConfidence * 100)}%). Verification manuelle recommandee.`,
+      evidence: { ocr_confidence: ocrConfidence },
+    })
+  }
+
+  if (rawTextLength < 40 && extractedCount === 0) {
+    anomalies.push({
+      rule_id: 'DOCUMENT_ILLISIBLE',
+      severity: 'ERROR',
+      message: 'Texte quasi illisible ou inexploitable. Cause probable: bruit, resolution insuffisante ou cadrage incorrect.',
+      evidence: { raw_text_chars: rawTextLength, extracted_fields: extractedCount },
+    })
+  } else if (extractedCount <= 1 && ocrConfidence < 0.75) {
+    anomalies.push({
+      rule_id: 'EXTRACTION_PARTIELLE',
+      severity: 'WARNING',
+      message: 'Extraction partielle des champs. Le document est lisible mais la qualite limite la fiabilite des donnees.',
+      evidence: { extracted_fields: extractedCount, ocr_confidence: ocrConfidence },
+    })
+  }
+
+  return anomalies
 }
 
 router.post('/', upload.array('documents', 10), async (req, res) => {
@@ -103,21 +180,16 @@ router.post('/', upload.array('documents', 10), async (req, res) => {
           timeout: 120000,
         })
         ocrResult = ocrResponse.data
-      } catch {
-        ocrResult = {
-          document_id: documentId,
-          type: 'inconnu',
-          type_confidence: 0,
-          ocr_confidence: 0,
-          entities: {},
-          raw_text: '',
-          processing_time_ms: 0,
-        }
+      } catch (ocrError) {
+        const message = ocrError.response?.data?.error || ocrError.message || 'OCR service unavailable'
+        throw new Error(`Service OCR indisponible: ${message}`)
       }
 
       // Appel service de validation
       ocrResult.document_id = documentId
-      const anomalies = await validateDocument(ocrResult)
+      const validationAnomalies = await validateDocument(ocrResult)
+      const qualityAnomalies = buildQualityAnomalies(ocrResult)
+      const anomalies = [...validationAnomalies, ...qualityAnomalies]
 
       // Déterminer le statut pipeline
       const hasErrors = anomalies.some(a => a.severity === 'ERROR')
@@ -242,12 +314,25 @@ router.post('/pipeline/complete', async (req, res) => {
   }
 
   for (const doc of documents) {
+    let curatedPath = null
+    try {
+      curatedPath = await storage.uploadCurated(doc.document_id, {
+        document_id: doc.document_id,
+        entities: doc.entities,
+        anomalies: doc.anomalies || [],
+        validated_at: new Date().toISOString(),
+      })
+    } catch (err) {
+      console.warn(`[MinIO] Curated upload failed for ${doc.document_id}:`, err.message)
+    }
+
     await Document.findOneAndUpdate(
       { document_id: doc.document_id },
       {
         pipeline_status: 'curated',
         entities: doc.entities,
         anomalies: doc.anomalies || [],
+        ...(curatedPath ? { 'minio_paths.curated': curatedPath } : {}),
       },
     )
   }

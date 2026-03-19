@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_072",
+  "file_path": "raw/SIRET_072.pdf",
+  "clean_image_path": "images/SIRET_072_clean.jpg",
+  "noisy_path": "noisy/SIRET_072_medium.jpg",
+  "type": "attestation_siret",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "46303161779909",
+    "siren": "463031617",
+    "nic": "79909",
+    "raison_sociale": "Devaux Maillard et Fils SAS",
+    "forme_juridique": "SAS",
+    "adresse": "16, avenue Lacombe, 92866 Saint DenisVille",
+    "date_creation": "13/09/2003",
+    "code_naf": "4941A",
+    "libelle_naf": "Transports routiers de fret interurbains",
+    "dirigeant": "Sylvie Le Briand",
+    "date_avis": "08/03/2026",
+    "expired": false
+  }
+}

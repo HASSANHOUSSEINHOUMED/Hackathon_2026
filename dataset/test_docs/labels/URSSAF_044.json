@@ -1,0 +1,19 @@
+{
+  "document_id": "URSSAF_044",
+  "file_path": "raw/URSSAF_044.pdf",
+  "clean_image_path": "images/URSSAF_044_clean.jpg",
+  "noisy_path": "noisy/URSSAF_044_light.jpg",
+  "type": "attestation_urssaf",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-85721444",
+    "siret": "17426841745936",
+    "siren": "174268417",
+    "raison_sociale": "François et Fils SAS",
+    "date_emission": "13/02/2026",
+    "date_expiration": "21/04/2026",
+    "expired": false
+  }
+}

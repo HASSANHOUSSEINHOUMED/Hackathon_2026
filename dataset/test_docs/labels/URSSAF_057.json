@@ -1,0 +1,19 @@
+{
+  "document_id": "URSSAF_057",
+  "file_path": "raw/URSSAF_057.pdf",
+  "clean_image_path": "images/URSSAF_057_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-36957830",
+    "siret": "12646471854378",
+    "siren": "126464718",
+    "raison_sociale": "Blondel SARL",
+    "date_emission": "29/01/2026",
+    "date_expiration": "16/06/2026",
+    "expired": false
+  }
+}

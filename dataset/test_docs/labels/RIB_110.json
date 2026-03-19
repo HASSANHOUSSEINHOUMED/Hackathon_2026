@@ -1,0 +1,23 @@
+{
+  "document_id": "RIB_110",
+  "file_path": "raw/RIB_110.pdf",
+  "clean_image_path": "images/RIB_110_clean.jpg",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "41397552531494",
+    "raison_sociale": "Bailly SAS",
+    "iban": "FR183536251652HBNO5KTY6BS92",
+    "iban_formate": "FR18 3536 2516 52HB NO5K TY6B S92",
+    "bic": "BPCEFRPP",
+    "code_banque": "35362",
+    "code_guichet": "51652",
+    "numero_compte": "HBNO5KTY6BS",
+    "cle_rib": "92",
+    "banque": "Banque de l'Avenir",
+    "agence": "Agence Nantes Commerce"
+  }
+}

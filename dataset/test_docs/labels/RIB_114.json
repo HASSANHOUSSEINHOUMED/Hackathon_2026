@@ -1,0 +1,23 @@
+{
+  "document_id": "RIB_114",
+  "file_path": "raw/RIB_114.pdf",
+  "clean_image_path": "images/RIB_114_clean.jpg",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "mismatch",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "84322259713656",
+    "raison_sociale": "Gay Guyot S.A. SAS",
+    "iban": "FR587311398503H75U01K5M1K17",
+    "iban_formate": "FR58 7311 3985 03H7 5U01 K5M1 K17",
+    "bic": "CRLYFRPP",
+    "code_banque": "73113",
+    "code_guichet": "98503",
+    "numero_compte": "H75U01K5M1K",
+    "cle_rib": "17",
+    "banque": "Banque Solidaire de France",
+    "agence": "Agence Paris Opéra"
+  }
+}

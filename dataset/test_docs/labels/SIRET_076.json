@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_076",
+  "file_path": "raw/SIRET_076.pdf",
+  "clean_image_path": "images/SIRET_076_clean.jpg",
+  "noisy_path": "noisy/SIRET_076_medium.jpg",
+  "type": "attestation_siret",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "19182619790624",
+    "siren": "191826197",
+    "nic": "90624",
+    "raison_sociale": "Bouvier SA EURL",
+    "forme_juridique": "EURL",
+    "adresse": "38, rue de Roux, 41657 GaillardVille",
+    "date_creation": "17/05/2011",
+    "code_naf": "8559A",
+    "libelle_naf": "Formation continue d'adultes",
+    "dirigeant": "Thomas Bruneau",
+    "date_avis": "08/03/2026",
+    "expired": false
+  }
+}

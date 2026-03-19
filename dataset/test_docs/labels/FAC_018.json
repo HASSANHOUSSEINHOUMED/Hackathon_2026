@@ -1,0 +1,30 @@
+{
+  "document_id": "FAC_018",
+  "file_path": "raw/FAC_018.pdf",
+  "clean_image_path": "images/FAC_018_clean.jpg",
+  "noisy_path": null,
+  "type": "facture",
+  "scenario": "mismatch",
+  "anomalies_expected": [
+    "SIRET_MISMATCH",
+    "TVA_CALCUL_ERROR"
+  ],
+  "expected_fields": {
+    "type": "facture",
+    "num_facture": "FAC-2026-0018",
+    "siret": "80913431561171",
+    "siret_affiche": "80913431561171",
+    "tva_intra": "FR73809134315",
+    "raison_sociale": "Le Roux SA EURL",
+    "montant_ht": 26765.82,
+    "tva": 5353.16,
+    "tva_affichee": 8003.3,
+    "montant_ttc": 34769.12,
+    "date_emission": "09/03/2026",
+    "iban": "FR9349251137941SAD5JKS62V89",
+    "bic": "SOGEFRPP",
+    "nb_lignes": 4,
+    "tva_rate": 0.2,
+    "coherent": false
+  }
+}

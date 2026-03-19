@@ -1,0 +1,24 @@
+{
+  "document_id": "SIRET_077",
+  "file_path": "raw/SIRET_077.pdf",
+  "clean_image_path": "images/SIRET_077_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_siret",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_siret",
+    "siret": "37474112249036",
+    "siren": "374741122",
+    "nic": "49036",
+    "raison_sociale": "Blanchard SA",
+    "forme_juridique": "SA",
+    "adresse": "52, boulevard Arthur Leconte, 52452 Saint Cécile",
+    "date_creation": "28/04/2004",
+    "code_naf": "6311Z",
+    "libelle_naf": "Traitement de données, hébergement et activités connexes",
+    "dirigeant": "Luce Clément de la Nguyen",
+    "date_avis": "15/03/2026",
+    "expired": false
+  }
+}

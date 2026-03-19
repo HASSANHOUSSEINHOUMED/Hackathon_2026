@@ -1,0 +1,19 @@
+{
+  "document_id": "URSSAF_041",
+  "file_path": "raw/URSSAF_041.pdf",
+  "clean_image_path": "images/URSSAF_041_clean.jpg",
+  "noisy_path": null,
+  "type": "attestation_urssaf",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-36770527",
+    "siret": "57473384684214",
+    "siren": "574733846",
+    "raison_sociale": "Morel SAS",
+    "date_emission": "06/02/2026",
+    "date_expiration": "28/05/2026",
+    "expired": false
+  }
+}

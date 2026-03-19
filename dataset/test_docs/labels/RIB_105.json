@@ -1,0 +1,23 @@
+{
+  "document_id": "RIB_105",
+  "file_path": "raw/RIB_105.pdf",
+  "clean_image_path": "images/RIB_105_clean.jpg",
+  "noisy_path": null,
+  "type": "rib",
+  "scenario": "coherent",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "rib",
+    "siret": "48422940657208",
+    "raison_sociale": "Charpentier EURL",
+    "iban": "FR1052287882341XMNHKCSB7618",
+    "iban_formate": "FR10 5228 7882 341X MNHK CSB7 618",
+    "bic": "TRNOFRP1",
+    "code_banque": "52287",
+    "code_guichet": "88234",
+    "numero_compte": "1XMNHKCSB76",
+    "cle_rib": "18",
+    "banque": "Banque Solidaire de France",
+    "agence": "Agence Lyon Part-Dieu"
+  }
+}

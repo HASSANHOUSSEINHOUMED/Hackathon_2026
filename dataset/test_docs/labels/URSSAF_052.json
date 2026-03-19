@@ -1,0 +1,19 @@
+{
+  "document_id": "URSSAF_052",
+  "file_path": "raw/URSSAF_052.pdf",
+  "clean_image_path": "images/URSSAF_052_clean.jpg",
+  "noisy_path": "noisy/URSSAF_052_medium.jpg",
+  "type": "attestation_urssaf",
+  "scenario": "noisy",
+  "anomalies_expected": [],
+  "expected_fields": {
+    "type": "attestation_urssaf",
+    "num_attestation": "ATT-80659726",
+    "siret": "12038750199776",
+    "siren": "120387501",
+    "raison_sociale": "Poirier SARL",
+    "date_emission": "24/02/2026",
+    "date_expiration": "26/05/2026",
+    "expired": false
+  }
+}
