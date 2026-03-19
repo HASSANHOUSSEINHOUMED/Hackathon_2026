@@ -5,7 +5,7 @@
 
 ---
 
-## 🚀 Démarrage rapide
+##  Démarrage rapide
 
 ### Prérequis
 
@@ -33,7 +33,7 @@ docker compose up -d --build
 docker compose ps
 ```
 
-> ⏱️ Le premier démarrage prend 5-10 minutes (téléchargement des images Docker).
+>  Le premier démarrage prend 5-10 minutes (téléchargement des images Docker).
 
 ### Accès aux services
 
@@ -46,7 +46,7 @@ docker compose ps
 
 ---
 
-## 📐 Architecture
+##  Architecture
 
 ```
 ┌──────────────┐     ┌───────────────┐     ┌──────────────────┐
@@ -69,7 +69,7 @@ docker compose ps
 
 ---
 
-## 📁 Structure du projet
+##  Structure du projet
 
 ```
 hackaton2026/
@@ -90,7 +90,7 @@ hackaton2026/
 
 ---
 
-## 📄 Types de documents supportés
+##  Types de documents supportés
 
 | Type | Description | Règles de validation |
 |------|-------------|---------------------|
@@ -103,7 +103,7 @@ hackaton2026/
 
 ---
 
-## 🔄 Pipeline de traitement
+##  Pipeline de traitement
 
 ```
 Upload     ──▶    OCR       ──▶   Validation   ──▶   CRM Auto
@@ -124,7 +124,7 @@ Upload     ──▶    OCR       ──▶   Validation   ──▶   CRM Auto
 
 ---
 
-## 🛠️ Commandes utiles
+##  Commandes utiles
 
 ```bash
 # Démarrer
@@ -146,7 +146,7 @@ docker compose up -d backend
 
 ---
 
-## 🧪 Tests
+##  Tests
 
 ```bash
 # Tests OCR
@@ -163,7 +163,7 @@ curl http://localhost:5002/api/health
 
 ---
 
-## 📊 Génération du dataset
+##  Génération du dataset
 
 ```bash
 cd dataset
@@ -178,7 +178,7 @@ python generate_test_errors.py
 
 ---
 
-## ⚙️ Stack technique
+##  Stack technique
 
 | Composant | Technologies |
 |-----------|--------------|
@@ -194,19 +194,19 @@ python generate_test_errors.py
 
 ---
 
-## 👥 Équipe
+##  Équipe
 
 Projet réalisé dans le cadre du **Hackathon 2026**.
 
 ---
 
-## 📜 Licence
+##  Licence
 
 MIT
 
 ---
 
-## 🧹 Nettoyage des données
+##  Nettoyage des données
 
 ```bash
 # 1. MongoDB - tout supprimer
